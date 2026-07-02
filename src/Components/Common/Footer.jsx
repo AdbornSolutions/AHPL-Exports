@@ -1,4 +1,4 @@
-import { Globe2, Mail, MapPin, Phone, Share2 } from "lucide-react";
+import { Mail, MapPin, Phone, Share2 } from "lucide-react";
 import footerBg from "../../assets/footer.png";
 import footerLogo from "../../assets/footerlogo.png";
 import { containerClass } from "../../utils/tailwindClasses";
@@ -22,10 +22,11 @@ const Footer = () => (
             AHPL is a trusted export company connecting businesses worldwide through reliable
             sourcing, quality products, efficient logistics, and seamless trade solutions.
           </p>
-          <div className="mt-4 flex gap-2.5 text-[#30c8bb] [&_svg]:size-5">
-            <Globe2 />
-            <Share2 />
-            <Mail />
+          <div className="mt-4 flex gap-1.5 text-white [&_span]:grid [&_span]:size-5 [&_span]:place-items-center [&_span]:rounded-full [&_span]:text-[10px] [&_span]:font-bold [&_svg]:size-3">
+            <span className="bg-[#1877f2]">f</span>
+            <span className="bg-[#ff4d7d]">ig</span>
+            <span className="bg-[#0a66c2]">in</span>
+            <span className="bg-black"><Share2 /></span>
           </div>
         </div>
 
@@ -40,22 +41,22 @@ const Footer = () => (
 
         <div>
           <h3 className="mb-4 text-[15px] font-bold">Product Categories</h3>
-          <a className={footerLinkClass} href="#industries">Agricultural Products</a>
-          <a className={footerLinkClass} href="#industries">Spices & Food Products</a>
-          <a className={footerLinkClass} href="#industries">Textiles & Garments</a>
-          <a className={footerLinkClass} href="#industries">Industrial Materials</a>
-          <a className={footerLinkClass} href="#industries">Packaging Solutions</a>
+          <a className={footerLinkClass} href="#industries">Metal Table Decor</a>
+          <a className={footerLinkClass} href="#industries">Metal Wall Decor</a>
+          <a className={footerLinkClass} href="#industries">Polyresin Decor</a>
+          <a className={footerLinkClass} href="#industries">Marble Decor</a>
         </div>
 
         <div className="max-[980px]:col-span-full max-md:col-span-full max-[430px]:col-span-1">
           <h3 className="mb-4 text-[15px] font-bold">Contact</h3>
+          <h4 className="mb-4 text-xs font-bold text-[#dce5f5]">Operational Address:</h4>
           <p className={footerTextClass}>
             <MapPin className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
-            47, Kirtan Nagar, Khamla, Nagpur, Maharashtra 440022, India
+            47, Kotwal Nagar, Khamla, Nagpur, Maharashtra 440022, India
           </p>
           <p className={footerTextClass}>
             <Phone className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
-            +91 1234567890
+            1234567890
           </p>
           <p className={footerTextClass}>
             <Mail className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
@@ -65,8 +66,8 @@ const Footer = () => (
       </div>
 
       <div className="mt-6 flex justify-between gap-6 border-t border-white/15 pt-[22px] text-[10px] text-[#91a1b9] max-md:flex-col">
-        <span>Privacy Policy &nbsp; Terms & Conditions</span>
-        <span>© 2026 AHPL. All Rights Reserved.</span>
+        <span>Privacy Policy &nbsp;&nbsp; Terms & Conditions</span>
+        <span>(c) 2026 AHPL. All Rights Reserved. Site Design and Maintained by AdBorn Solutions.</span>
       </div>
     </div>
   </footer>
