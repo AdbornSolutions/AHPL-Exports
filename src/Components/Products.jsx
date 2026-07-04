@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import productOne from "../assets/product1.png";
 import productTwo from "../assets/product2.png";
-import productThree from "../assets/p3.png";
-import productFour from "../assets/p4.png";
+import productThree from "../assets/product3.png";
+import productFour from "../assets/product4.png";
+import product5 from "../assets/product5.png";
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
 
 const products = [
+  
   {
     title: "Metal Table\nDecor",
     text: "Elegant handcrafted metal table décor designed to enhance homes, hotels, offices, and hospitality spaces with timeless style, durability, and premium craftsmanship.",
@@ -20,6 +22,12 @@ const products = [
     alt: "Metal Wall  Decor for export",
   },
   {
+    title: "Marble Decor",
+    text: "Elegant handcrafted marble décor that adds timeless charm, artistic craftsmanship, and sophisticated style to your home, office, or gifting collection.",
+    image: product5,
+    alt: "Marble Decor for export",
+  },
+  {
     title: "Resin Decor",
     text: "Handcrafted resin décor collection featuring artistic pen holders and a decorative tealight holder, blending functionality, elegance, and traditional craftsmanship for stylish interiors.",
     image: productThree,
@@ -31,6 +39,7 @@ const products = [
     image: productFour,
     alt: "Wooden Decor for export",
   },
+  
 ];
 
 const productButtonClass =
