@@ -1,35 +1,35 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
-import productOne from "../assets/p1.png";
-import productTwo from "../assets/p2.png";
+import productOne from "../assets/product1.png";
+import productTwo from "../assets/product2.png";
 import productThree from "../assets/p3.png";
 import productFour from "../assets/p4.png";
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
 
 const products = [
   {
-    title: "Agricultural\nProducts",
-    text: "Premium agricultural commodities sourced from trusted producers and supplied to international markets with consistent quality and reliability.",
+    title: "Metal Table\nDecor",
+    text: "Elegant handcrafted metal table décor designed to enhance homes, hotels, offices, and hospitality spaces with timeless style, durability, and premium craftsmanship.",
     image: productOne,
-    alt: "Agricultural grains for export",
+    alt: "Metal table décor for export",
   },
   {
-    title: "Spices &\nFood Products",
-    text: "Authentic and high-quality food products and spices carefully sourced to meet global demand while maintaining freshness and quality standards.",
+    title: "Metal Wall\nDecor",
+    text: "Add artistic elegance to your walls with this handcrafted metal wall decor, featuring vibrant colors, premium craftsmanship, and a timeless contemporary design.",
     image: productTwo,
-    alt: "Spices and packaged food products for export",
+    alt: "Metal Wall  Decor for export",
   },
   {
-    title: "Textiles &\nGarments",
-    text: "A wide selection of textile products and apparel tailored to meet the needs of wholesalers, retailers, and international buyers.",
+    title: "Resin Decor",
+    text: "Handcrafted resin décor collection featuring artistic pen holders and a decorative tealight holder, blending functionality, elegance, and traditional craftsmanship for stylish interiors.",
     image: productThree,
-    alt: "Textiles and garments arranged for export",
+    alt: "Resin Decorfor export",
   },
   {
-    title: "Industrial\nMaterials",
-    text: "Reliable industrial products and raw materials supplied to manufacturing and infrastructure sectors worldwide.",
+    title: "Wooden Decor",
+    text: "Beautiful handcrafted wooden décor pieces that add warmth, elegance, and artistic charm to your home, office, or gifting spaces.",
     image: productFour,
-    alt: "Industrial materials and raw products for export",
+    alt: "Wooden Decor for export",
   },
 ];
 
