@@ -1,4 +1,4 @@
-export const containerClass = "mx-auto w-[calc(100%_-_48px)] max-w-[1180px] max-md:w-[calc(100%_-_28px)]";
+export const containerClass = "mx-auto w-[calc(100%_-_32px)] max-w-[1680px] max-md:w-[calc(100%_-_24px)]";
 
 export const sectionClass = "py-[82px] max-md:py-[62px]";
 
