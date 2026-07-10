@@ -1,43 +1,57 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import productOne from "../assets/product1.png";
 import productTwo from "../assets/product2.png";
 import productThree from "../assets/product3.png";
 import productFour from "../assets/product4.png";
 import product5 from "../assets/product5.png";
+import product6 from "../assets/product6.png";
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
 
 const products = [
   
   {
     title: "Metal Table\nDecor",
+    to: "/product/metal-table-decor",
     text: "Elegant handcrafted metal table décor designed to enhance homes, hotels, offices, and hospitality spaces with timeless style, durability, and premium craftsmanship.",
     image: productOne,
     alt: "Metal table décor for export",
   },
   {
     title: "Metal Wall\nDecor",
+    to: "/product/metal-wall-decor",
     text: "Add artistic elegance to your walls with this handcrafted metal wall decor, featuring vibrant colors, premium craftsmanship, and a timeless contemporary design.",
     image: productTwo,
     alt: "Metal Wall  Decor for export",
   },
   {
     title: "Marble Decor",
+    to: "/product/marble-decor",
     text: "Elegant handcrafted marble décor that adds timeless charm, artistic craftsmanship, and sophisticated style to your home, office, or gifting collection.",
     image: product5,
     alt: "Marble Decor for export",
   },
   {
     title: "Resin Decor",
+    to: "/product/polyresin-decor",
     text: "Handcrafted resin décor collection featuring artistic pen holders and a decorative tealight holder, blending functionality, elegance, and traditional craftsmanship for stylish interiors.",
     image: productThree,
     alt: "Resin Decorfor export",
   },
   {
     title: "Wooden Decor",
+    to: "/product/wooden-decor",
     text: "Beautiful handcrafted wooden décor pieces that add warmth, elegance, and artistic charm to your home, office, or gifting spaces.",
     image: productFour,
     alt: "Wooden Decor for export",
+  },
+  {
+    title: "Lifestyle & Utility",
+    to: "/product/lifestyle-utility",
+    text: "Premium lifestyle & utility products that combine practical functionality, contemporary design, and exceptional craftsmanship for modern living and everyday use.",
+    image: product6,
+    alt: "Lifestyle & Utility for export",
   },
   
 ];
@@ -76,12 +90,12 @@ const Products = () => {
             </h2>
           </div>
 
-          <button className={`${productButtonClass} shrink-0 max-sm:px-5 max-sm:py-3`}>
+          <Link className={`${productButtonClass} shrink-0 max-sm:px-5 max-sm:py-3`} to="/product">
             Browse All
             <span className={productButtonIconClass}>
               <ArrowUpRight size={15} />
             </span>
-          </button>
+          </Link>
         </div>
 
         <div className="overflow-hidden rounded-[26px] max-md:rounded-[22px]">
@@ -116,12 +130,15 @@ const Products = () => {
                     </ul>
                   </div>
 
-                  <button className={`${productButtonClass} mt-7 w-fit max-sm:px-5 max-sm:py-3`}>
+                  <Link
+                    className={`${productButtonClass} mt-7 w-fit max-sm:px-5 max-sm:py-3`}
+                    to={product.to}
+                  >
                     View More
                     <span className={productButtonIconClass}>
                       <ArrowUpRight size={15} />
                     </span>
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="relative min-h-[455px] p-[34px] pl-0 max-lg:min-h-[390px] max-lg:p-6 max-lg:pl-0 max-md:min-h-[320px] max-md:p-4 max-sm:min-h-[260px]">

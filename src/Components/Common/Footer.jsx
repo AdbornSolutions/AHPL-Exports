@@ -20,10 +20,12 @@ const quickLinks = [
 ];
 
 const productLinks = [
-  "Metal Table Decor",
-  "Metal Wall Decor",
-  "Resin Decor",
-  "Wooden Decor",
+  { label: "Metal Table Decor", to: "/product/metal-table-decor" },
+  { label: "Metal Wall Decor", to: "/product/metal-wall-decor" },
+  { label: "Polyresin Decor", to: "/product/polyresin-decor" },
+  { label: "Marble Decor", to: "/product/marble-decor" },
+  { label: "Lifestyle & Utility", to: "/product/lifestyle-utility" },
+  { label: "Wooden Decor", to: "/product/wooden-decor" },
 ];
 
 const Footer = () => (
@@ -61,9 +63,9 @@ const Footer = () => (
 
         <div>
           <h3 className="mb-4 text-[15px] font-bold">Product Categories</h3>
-          {productLinks.map((label) => (
-            <Link className={footerLinkClass} to="/product#industries" key={label}>
-              {label}
+          {productLinks.map((link) => (
+            <Link className={footerLinkClass} to={link.to} key={link.label}>
+              {link.label}
             </Link>
           ))}
         </div>
