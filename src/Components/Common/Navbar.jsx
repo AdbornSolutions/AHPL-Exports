@@ -12,14 +12,26 @@ const links = [
   { label: "Contact Us", to: "/contact-us" },
 ];
 
-const productDropdownLinks = [
-  { label: "Metal Table Decor", to: "/product/metal-table-decor" },
-  { label: "Metal Wall Decor", to: "/product/metal-wall-decor" },
-  { label: "Polyresin Decor", to: "/product/polyresin-decor" },
-  { label: "Marble Decor", to: "/product/marble-decor" },
-  { label: "Lifestyle & Utility", to: "/product/lifestyle-utility" },
-  { label: "Wooden Decor", to: "/product/wooden-decor" },
-  { label: "Industrial V-Belts", to: "/product/lifestyle-utility" },
+const productDropdownGroups = [
+  {
+    label: "Handicraft",
+    links: [
+      { label: "Metal Table Decor", to: "/product/metal-table-decor" },
+      { label: "Metal Wall Decor", to: "/product/metal-wall-decor" },
+      { label: "Polyresin Decor", to: "/product/polyresin-decor" },
+      { label: "Marble Decor", to: "/product/marble-decor" },
+      { label: "Lifestyle & Utility", to: "/product/lifestyle-utility" },
+      { label: "Wooden Decor", to: "/product/wooden-decor" },
+    ],
+  },
+  {
+    label: "Industry - V-Belt",
+    links: [{ label: "Industrial V-Belts", to: "/product#industries" }],
+  },
+  {
+    label: "Saffron ",
+    links: [{ label: "Saffron", to: "/product#industries" }],
+  },
 ];
 
 const Navbar = () => {
@@ -52,17 +64,27 @@ const Navbar = () => {
                   <ChevronDown className="transition duration-200 group-hover:rotate-180 group-focus-within:rotate-180 max-[850px]:rotate-0" size={14} />
                 </NavLink>
 
-                <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[218px] -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:translate-x-0 max-[850px]:pt-0 max-[850px]:opacity-100">
+                <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[250px] -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:translate-x-0 max-[850px]:pt-0 max-[850px]:opacity-100">
                   <div className="grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:py-0 max-[850px]:shadow-none">
-                    {productDropdownLinks.map((product) => (
-                      <Link
-                        className="px-4 py-1.5 text-[17px] font-medium leading-[1.25] text-[#183255] no-underline transition hover:bg-[#eef8f8] hover:text-[#28bdb2] focus-visible:bg-[#eef8f8] focus-visible:text-[#28bdb2] focus-visible:outline-none max-[850px]:px-3 max-[850px]:py-2 max-[850px]:text-[14px]"
-                        to={product.to}
-                        onClick={() => setOpen(false)}
-                        key={product.label}
+                    {productDropdownGroups.map((category, categoryIndex) => (
+                      <div
+                        className={categoryIndex > 0 ? "mt-2 border-t border-[#d8e3e8] pt-2 max-[850px]:border-[#183255]/10" : ""}
+                        key={category.label}
                       >
-                        {product.label}
-                      </Link>
+                        <p className="px-4 pb-1 pt-1 text-[12px] font-bold uppercase tracking-[0.12em] text-[#28bdb2] max-[850px]:px-3">
+                          {category.label}
+                        </p>
+                        {category.links.map((product) => (
+                          <Link
+                            className="block px-4 py-1.5 text-[16px] font-medium leading-[1.25] text-[#183255] no-underline transition hover:bg-[#eef8f8] hover:text-[#28bdb2] focus-visible:bg-[#eef8f8] focus-visible:text-[#28bdb2] focus-visible:outline-none max-[850px]:px-3 max-[850px]:py-2 max-[850px]:text-[14px]"
+                            to={product.to}
+                            onClick={() => setOpen(false)}
+                            key={product.label}
+                          >
+                            {product.label}
+                          </Link>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 </div>

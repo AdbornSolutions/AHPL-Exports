@@ -9,11 +9,13 @@ const ProductDetail = () => {
   const { categorySlug, productSlug } = useParams();
   const result = getProduct(categorySlug, productSlug);
   const [activeTab, setActiveTab] = useState("description");
-  const [selectedImage, setSelectedImage] = useState(0);
+  const [selectedImage, setSelectedImage] = useState({ productSlug: null, index: 0 });
 
   if (!result) return <Navigate to="/product" replace />;
 
   const { category, product } = result;
+  const productImages = product.images.filter(Boolean);
+  const selectedImageIndex = selectedImage.productSlug === productSlug ? selectedImage.index : 0;
   const index = category.products.findIndex((item) => item.slug === product.slug);
   const complementary = Array.from({ length: 5 }, (_, offset) => category.products[(index + offset + 1) % category.products.length]);
   const features = ["100% Handcrafted Artistry", `Premium ${category.material.split(",")[0]}`, "Export-Grade Protective Finish", "Quality-Assured Materials"];
@@ -25,10 +27,10 @@ const ProductDetail = () => {
         <section className={`${containerClass} grid max-w-[1460px] grid-cols-[1.03fr_1fr] gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
           <div>
             <div className="aspect-square overflow-hidden bg-[#f4f1eb]">
-              <img className={`h-full w-full object-cover ${selectedImage === 1 ? "object-left" : selectedImage === 2 ? "object-right" : "object-center"}`} src={product.image} alt={product.name} />
+              <img className="h-full w-full object-cover" src={productImages[selectedImageIndex]} alt={`${product.name} view ${selectedImageIndex + 1}`} />
             </div>
             <div className="mt-5 flex gap-4">
-              {[0, 1, 2].map((view) => <button className={`aspect-square w-28 overflow-hidden border-2 bg-[#f4f1eb] transition ${selectedImage === view ? "border-[#30c8bb]" : "border-transparent"}`} type="button" onClick={() => setSelectedImage(view)} key={view}><img className={`h-full w-full object-cover ${view === 1 ? "object-left" : view === 2 ? "object-right" : "object-center"}`} src={product.image} alt={`${product.name} view ${view + 1}`} /></button>)}
+              {productImages.map((image, view) => <button className={`aspect-square w-28 overflow-hidden border-2 bg-[#f4f1eb] transition ${selectedImageIndex === view ? "border-[#30c8bb]" : "border-transparent"}`} type="button" onClick={() => setSelectedImage({ productSlug, index: view })} aria-label={`Show ${product.name} view ${view + 1}`} key={image}><img className="h-full w-full object-cover" src={image} alt={`${product.name} thumbnail ${view + 1}`} /></button>)}
             </div>
           </div>
 
