@@ -21,14 +21,46 @@ const ProductDetail = () => {
 
   return (
     <>
-      <main className="bg-white py-14 text-[#1b3156] max-md:py-8">
+      <main key={`${categorySlug}-${productSlug}`} className="bg-white py-14 text-[#1b3156] max-md:py-8">
         <section className={`${containerClass} grid max-w-[1460px] grid-cols-[1.03fr_1fr] gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
           <div>
             <div className="aspect-square overflow-hidden bg-[#f4f1eb]">
-              <img className={`h-full w-full object-cover ${selectedImage === 1 ? "object-left" : selectedImage === 2 ? "object-right" : "object-center"}`} src={product.image} alt={product.name} />
+              <img
+                className="h-full w-full object-contain transition-opacity duration-300"
+                src={
+                  product.images?.[selectedImage] ||
+                  product.image
+                }
+                alt={`${product.name} view ${selectedImage + 1
+                  }`}
+              />
             </div>
-            <div className="mt-5 flex gap-4">
-              {[0, 1, 2].map((view) => <button className={`aspect-square w-28 overflow-hidden border-2 bg-[#f4f1eb] transition ${selectedImage === view ? "border-[#30c8bb]" : "border-transparent"}`} type="button" onClick={() => setSelectedImage(view)} key={view}><img className={`h-full w-full object-cover ${view === 1 ? "object-left" : view === 2 ? "object-right" : "object-center"}`} src={product.image} alt={`${product.name} view ${view + 1}`} /></button>)}
+
+            <div className="mt-5 flex flex-wrap gap-4">
+              {(product.images || [product.image]).map(
+                (image, imageIndex) => (
+                  <button
+                    className={`aspect-square w-28 overflow-hidden border-2 bg-[#f4f1eb] transition ${selectedImage === imageIndex
+                      ? "border-[#30c8bb]"
+                      : "border-transparent hover:border-[#30c8bb]/50"
+                      }`}
+                    type="button"
+                    onClick={() =>
+                      setSelectedImage(imageIndex)
+                    }
+                    key={`${product.slug}-${imageIndex}`}
+                    aria-label={`Show ${product.name
+                      } image ${imageIndex + 1}`}
+                  >
+                    <img
+                      className="h-full w-full object-cover"
+                      src={image}
+                      alt={`${product.name} thumbnail ${imageIndex + 1
+                        }`}
+                    />
+                  </button>
+                )
+              )}
             </div>
           </div>
 
