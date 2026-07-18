@@ -5,16 +5,16 @@ import Footer from "../../Components/Common/Footer";
 import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
 import heroImage from "../../assets/products-images/Wooden Decor/Rectangle 20 (2).png";
 import aboutImage from "../../assets/products-images/Wooden Decor/Subtract (7).png";
-import rangeOne from "../../assets/products-images/Wooden Decor/6701fc4d7aa36dceaa70d80a3fa4dd7010ea260e.png";
-import rangeTwo from "../../assets/products-images/Wooden Decor/f038f01e05810928096069f8527344bcdcf0c6e1.png";
-import rangeThree from "../../assets/products-images/Wooden Decor/a3f9d599f0cd64cbe18c0708f49bf51e403ee1e9.png";
-import rangeFour from "../../assets/products-images/Wooden Decor/0e8e63cfbb3ae41c380795921df983572402e08e.png";
-import rangeFive from "../../assets/products-images/Wooden Decor/3496779946eec74591dbcce19895a12a1aef3c67.png";
-import rangeSix from "../../assets/products-images/Wooden Decor/75b720287b12baa753351c0291600f1efac219ee.png";
-import rangeSeven from "../../assets/products-images/Wooden Decor/c3ddf796d77dad048e227e2acd800d9fdb0ac4d4.png";
-import rangeEight from "../../assets/products-images/Wooden Decor/0b26e21418452cfd7b5314055e989679bace97da.png";
-import rangeNine from "../../assets/products-images/Wooden Decor/dd78483c0f9915db215b5cba59056c46d134b8cf.png";
-import rangeTen from "../../assets/products-images/Wooden Decor/f174ea1760b33510a1eb8a25fecbdcc59cd2d420.png";
+import rangeOne from "../../assets/products-images/Wooden Decor/1.png";
+import rangeTwo from "../../assets/products-images/Wooden Decor/2.png";
+import rangeThree from "../../assets/products-images/Wooden Decor/3.png";
+import rangeFour from "../../assets/products-images/Wooden Decor/4.png";
+import rangeFive from "../../assets/products-images/Wooden Decor/5.png";
+import rangeSix from "../../assets/products-images/Wooden Decor/6.png";
+import rangeSeven from "../../assets/products-images/Wooden Decor/7.png";
+import rangeEight from "../../assets/products-images/Wooden Decor/8.png";
+import rangeNine from "../../assets/products-images/Wooden Decor/9.png";
+import rangeTen from "../../assets/products-images/Wooden Decor/10.png";
 
 const productRange = [
   { name: "Rudra-Ansh (Black)", image: rangeOne }, { name: "Ashwa", image: rangeTwo },

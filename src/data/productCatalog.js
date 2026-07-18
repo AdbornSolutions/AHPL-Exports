@@ -51,7 +51,7 @@ const categoryDefinitions = [
     slug: "wooden-decor", folder: "Wooden Decor", title: "Wooden Decor", material: "Premium Seasoned Wood",
     finish: "Natural, Matte, Polished, Painted & Custom", subtitle: "Handcrafted Wooden Accent Rich in Indian Artistry",
     names: sharedNames,
-    files: ["6701fc4d7aa36dceaa70d80a3fa4dd7010ea260e.png", "f038f01e05810928096069f8527344bcdcf0c6e1.png", "a3f9d599f0cd64cbe18c0708f49bf51e403ee1e9.png", "0e8e63cfbb3ae41c380795921df983572402e08e.png", "3496779946eec74591dbcce19895a12a1aef3c67.png", "75b720287b12baa753351c0291600f1efac219ee.png", "c3ddf796d77dad048e227e2acd800d9fdb0ac4d4.png", "0b26e21418452cfd7b5314055e989679bace97da.png", "dd78483c0f9915db215b5cba59056c46d134b8cf.png", "f174ea1760b33510a1eb8a25fecbdcc59cd2d420.png"],
+    files: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"],
   },
 ];
 
