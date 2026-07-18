@@ -1,4 +1,4 @@
-const imageModules = import.meta.glob("../assets/products-images/**/*.png", {
+const imageModules = import.meta.glob("../assets/products-images/**/*.{png,jpg,jpeg,webp,PNG,JPG,JPEG,WEBP}", {
   eager: true,
   import: "default",
 });
@@ -44,7 +44,7 @@ const categoryDefinitions = [
   {
     slug: "polyresin-decor", folder: "Poyresin Decor", title: "Polyresin Decor", material: "Premium Polyresin",
     finish: "Matte, Glossy, Antique, Metallic & Custom", subtitle: "Precision-Crafted Sculpture for Distinctive Spaces",
-    names: sharedNames, files: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"],
+    names: sharedNames, files: ["1.jpg", "2.png", "3.jpg", "4.jpg", "5.jpg", "6.png", "7.png", "8.png", "9.png", "10.png"],
   },
   {
     slug: "marble-decor", folder: "Marble Decor", title: "Marble Decor", material: "Premium Natural Marble",
@@ -66,18 +66,13 @@ const categoryDefinitions = [
 
 export const productCatalog = categoryDefinitions.map((category) => ({
   ...category,
-  products: category.names.map((name, index) => {
-    const image = findImage(category.folder, category.files[index]);
-    const galleryImages = findGalleryImages(category.folder, index + 1);
-
-    return {
-      name,
-      slug: slugify(name),
-      image,
-      images: galleryImages.length > 0 ? galleryImages : [image],
-    };
-  }),
+  products: category.names.map((name, index) => ({
+    name,
+    slug: slugify(name),
+    image: findImage(category.folder, category.files[index]),
+  })),
 }));
+
 
 export const getProduct = (categorySlug, productSlug) => {
   const category = productCatalog.find((item) => item.slug === categorySlug);
@@ -86,3 +81,4 @@ export const getProduct = (categorySlug, productSlug) => {
 };
 
 export { slugify };
+

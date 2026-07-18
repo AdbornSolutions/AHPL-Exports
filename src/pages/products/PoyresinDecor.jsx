@@ -6,11 +6,11 @@ import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/ta
 import heroImage from "../../assets/products-images/Poyresin Decor/hero.png";
 import aboutImage from "../../assets/products-images/Poyresin Decor/about.png";
 import whyChooseImage from "../../assets/products-images/Poyresin Decor/whychoose.png";
-import rangeOne from "../../assets/products-images/Poyresin Decor/1.png";
+import rangeOne from "../../assets/products-images/Poyresin Decor/1.jpg";
 import rangeTwo from "../../assets/products-images/Poyresin Decor/2.png";
-import rangeThree from "../../assets/products-images/Poyresin Decor/3.png";
-import rangeFour from "../../assets/products-images/Poyresin Decor/4.png";
-import rangeFive from "../../assets/products-images/Poyresin Decor/5.png";
+import rangeThree from "../../assets/products-images/Poyresin Decor/3.jpg";
+import rangeFour from "../../assets/products-images/Poyresin Decor/4.jpg";
+import rangeFive from "../../assets/products-images/Poyresin Decor/5.jpg";
 import rangeSix from "../../assets/products-images/Poyresin Decor/6.png";
 import rangeSeven from "../../assets/products-images/Poyresin Decor/7.png";
 import rangeEight from "../../assets/products-images/Poyresin Decor/8.png";
