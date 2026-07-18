@@ -20,6 +20,7 @@ const quickLinks = [
 ];
 
 const productLinks = [
+  { label: "Industrial V-Belts", to: "/product/industrial-v-belts" },
   { label: "Metal Table Decor", to: "/product/metal-table-decor" },
   { label: "Metal Wall Decor", to: "/product/metal-wall-decor" },
   { label: "Polyresin Decor", to: "/product/polyresin-decor" },

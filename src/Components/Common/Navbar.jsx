@@ -8,6 +8,7 @@ const links = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about-us" },
   { label: "Products", to: "/product", hasDropdown: true },
+  { label: "Saffron", to: "/saffron" },
   { label: "Blog", to: "/blog" },
   { label: "Contact Us", to: "/contact-us" },
 ];
@@ -25,12 +26,8 @@ const productDropdownGroups = [
     ],
   },
   {
-    label: "Industry - V-Belt",
-    links: [{ label: "Industrial V-Belts", to: "/product#industries" }],
-  },
-  {
-    label: "Saffron ",
-    links: [{ label: "Saffron", to: "/product#industries" }],
+    label: "Industrial Goods",
+    links: [{ label: "Industrial V-Belts", to: "/product/industrial-v-belts" }],
   },
 ];
 

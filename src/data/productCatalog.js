@@ -12,6 +12,15 @@ const findImage = (folder, file) => {
   return entry?.[1];
 };
 
+const findGalleryImages = (folder, productNumber) => {
+  const galleryPath = `/products-images/${folder}/${productNumber}/`;
+
+  return Object.entries(imageModules)
+    .filter(([path]) => path.includes(galleryPath))
+    .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath, undefined, { numeric: true }))
+    .map(([, image]) => image);
+};
+
 const sharedNames = [
   "Rudra-Ansh (Black)", "Ashwa", "Mayureshwar", "Night-Charm (White)", "Gaj-Jhoola",
   "Carbon Horse", "Aura-Hawk", "Midnight Monk (White)", "Chhatrapati", "Twin Grace",
@@ -57,11 +66,17 @@ const categoryDefinitions = [
 
 export const productCatalog = categoryDefinitions.map((category) => ({
   ...category,
-  products: category.names.map((name, index) => ({
-    name,
-    slug: slugify(name),
-    image: findImage(category.folder, category.files[index]),
-  })),
+  products: category.names.map((name, index) => {
+    const image = findImage(category.folder, category.files[index]);
+    const galleryImages = findGalleryImages(category.folder, index + 1);
+
+    return {
+      name,
+      slug: slugify(name),
+      image,
+      images: galleryImages.length > 0 ? galleryImages : [image],
+    };
+  }),
 }));
 
 export const getProduct = (categorySlug, productSlug) => {

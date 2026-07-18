@@ -7,6 +7,8 @@ import productThree from "../assets/product3.png";
 import productFour from "../assets/product4.png";
 import product5 from "../assets/product5.png";
 import product6 from "../assets/product6.png";
+import product7 from "../assets/product7.png";
+
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
 
 const products = [
@@ -52,6 +54,13 @@ const products = [
     text: "Premium lifestyle & utility products that combine practical functionality, contemporary design, and exceptional craftsmanship for modern living and everyday use.",
     image: product6,
     alt: "Lifestyle & Utility for export",
+  },
+  {
+    title: "Industrial V-Belts",
+    to: "/product/industrial-v-belts",
+    text: "High-performance Industrial V-Belts engineered for reliable power transmission, exceptional durability, and efficient performance across industrial, automotive, and agricultural applications.",
+    image: product7,
+    alt: "Industrial V-Belts for export",
   },
   
 ];

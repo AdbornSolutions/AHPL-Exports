@@ -14,8 +14,8 @@ import {
 const stats = [
   ["25+", "Countries Served"],
   ["500+", "Products Traded"],
-  ["1000+", "Successful Shipments"],
-  ["100+", "Global Clients"],
+  ["98%", "On-Time Delivery"],
+  ["24/7", "Global Support"],
 ];
 
 const Aboutus = () => (

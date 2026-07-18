@@ -7,7 +7,7 @@ const tabs = {
     content: (
       <>
         <p className="mb-6 text-gray-600 leading-8">
-          Founded in March 2026 and headquartered in Nagpur, India, AHPL was
+          Headquartered in Nagpur, India, AHPL was
           established with a clear vision to bridge the gap between India's
           diverse manufacturing landscape and the evolving demands of the global
           marketplace.

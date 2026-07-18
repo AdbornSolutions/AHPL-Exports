@@ -12,6 +12,7 @@ import MarbleDecor from "./pages/products/MarbleDecor";
 import LifestyleUtility from "./pages/products/LifestyleUtility";
 import WoodenDecore from "./pages/products/WoodenDecore";
 import ProductDetail from "./pages/products/ProductDetail";
+import IndustryVBelt from "./pages/products/Industry-v-Belt";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => (
@@ -28,6 +29,7 @@ const App = () => (
       <Route path="/product/marble-decor" element={<MarbleDecor />} />
       <Route path="/product/lifestyle-utility" element={<LifestyleUtility />} />
       <Route path="/product/wooden-decor" element={<WoodenDecore />} />
+      <Route path="/product/industrial-v-belts" element={<IndustryVBelt />} />
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact-us" element={<Contactus />} />
