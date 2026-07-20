@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero.png";
+import { Link } from "react-router-dom";
 
 const Hero = ({ title = "About Us", breadcrumb = title }) => {
   return (
@@ -17,7 +18,9 @@ const Hero = ({ title = "About Us", breadcrumb = title }) => {
         </h1>
 
         <div className="mt-6 flex items-center rounded-md bg-white/10 px-5 py-3 text-sm text-white backdrop-blur-sm">
-          <span className="hover:text-blue-300 cursor-pointer">Home</span>
+          <Link to="/" className="cursor-pointer hover:text-blue-300">
+            Home
+          </Link>
           <span className="mx-3 text-gray-300">&gt;</span>
           <span>{breadcrumb}</span>
         </div>
