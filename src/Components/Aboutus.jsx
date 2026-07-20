@@ -4,7 +4,6 @@ import truck from "../assets/Subtract (1).png";
 import {
   buttonIconClass,
   containerClass,
-  eyebrowClass,
   pillButtonClass,
   sectionClass,
   sectionCopyClass,
@@ -24,7 +23,7 @@ const Aboutus = () => (
       <div className="grid grid-cols-[245px_1fr_245px] items-center gap-8 max-[980px]:grid-cols-[160px_1fr_160px] max-[980px]:gap-5 max-md:grid-cols-2 max-[430px]:gap-2">
         <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={ship} alt="Container ship at sea" />
         <div className="text-center max-md:col-span-full max-md:row-start-1">
-          <span className={eyebrowClass}>Best Transportation Agency</span>
+
           <h2 className={sectionTitleClass}>Connecting Global<br />Markets with <span className="text-[#30c8bb]">Confidence.</span></h2>
           <p className={sectionCopyClass}>
             At Anant Horizons Pvt. Ltd, we simplify international trade by providing comprehensive

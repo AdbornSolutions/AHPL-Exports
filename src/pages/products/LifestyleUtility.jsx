@@ -46,7 +46,7 @@ const LifestyleUtility = () => (
   <>
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#eee2d4]">
-        <img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-[230px]" src={heroImage} alt="Functional lifestyle and utility products for modern living" />
+        <img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt="Functional lifestyle and utility products for modern living" />
       </section>
 
       <section className="py-[68px] max-lg:py-14 max-md:py-10">

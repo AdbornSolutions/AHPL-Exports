@@ -50,7 +50,7 @@ const MetalWall = () => (
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#e9e4db]">
         <img
-          className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-[230px]"
+          className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain"
           src={heroImage}
           alt="Metal wall decor exported from India"
         />

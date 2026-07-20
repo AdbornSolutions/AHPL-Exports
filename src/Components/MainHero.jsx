@@ -14,9 +14,9 @@ const MainHero = () => (
         Global Trade. Trusted<br />
         Partnerships. <span className="text-[#30c8bb]">Limitless<br />Opportunities.</span>
       </h1>
-      <a className={pillButtonClass} href="#contact-us">
-        Get a Quote <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
-      </a>
+      <a className={pillButtonClass} href="/product">
+        Explore Products <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
+      </a> 
     </div>
   </section>
 );

@@ -37,7 +37,7 @@ const reasons = ["Authentic Indian Craftsmanship", "Superior Quality", "Decorati
 const WoodenDecore = () => (
   <>
     <main className="bg-white text-[#1b3156]">
-      <section className="bg-[#eadcc6]"><img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-[230px]" src={heroImage} alt="Premium wooden decor exported from India" /></section>
+      <section className="bg-[#eadcc6]"><img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt="Premium wooden decor exported from India" /></section>
 
       <section className="py-[68px] max-lg:py-14 max-md:py-10">
         <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.9fr_1fr] items-center gap-14 max-lg:grid-cols-1 max-lg:gap-8`}>

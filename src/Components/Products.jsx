@@ -99,12 +99,7 @@ const Products = () => {
             </h2>
           </div>
 
-          <Link className={`${productButtonClass} shrink-0 max-sm:px-5 max-sm:py-3`} to="/product">
-            Browse All
-            <span className={productButtonIconClass}>
-              <ArrowUpRight size={15} />
-            </span>
-          </Link>
+         
         </div>
 
         <div className="overflow-hidden rounded-[26px] max-md:rounded-[22px]">

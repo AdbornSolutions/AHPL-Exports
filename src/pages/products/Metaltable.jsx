@@ -52,7 +52,7 @@ const Metaltable = () => (
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#efe0cf]">
         <img
-          className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-[230px]"
+          className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain"
           src={heroImage}
           alt="Metal table decor exported from India"
         />
@@ -115,7 +115,7 @@ const Metaltable = () => (
           </div>
 
           <a className={`${pillButtonClass} mt-10`} href="/contact-us">
-            View Brucher
+            View Broucher
             <span className={buttonIconClass}>
               <ArrowUpRight size={15} />
             </span>

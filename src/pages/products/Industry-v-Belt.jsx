@@ -34,7 +34,7 @@ const IndustryVBelt = () => {
     <>
       <main className="bg-white text-[#1b3156]">
         <section className="bg-[#eef3f7]">
-          <img className="h-auto min-h-[260px] w-full object-cover object-center max-md:min-h-[230px]" src={heroImage} alt="High-performance industrial V-belts exported from India" />
+          <img className="h-auto min-h-[260px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt="High-performance industrial V-belts exported from India" />
         </section>
 
         <section className="py-[70px] max-md:py-12">
