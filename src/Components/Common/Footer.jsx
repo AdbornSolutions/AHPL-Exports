@@ -109,7 +109,7 @@ const Footer = () => (
             Terms & Conditions
           </Link>
         </span>
-        <span>&copy; 2026 AHPL. All Rights Reserved. Site Design and Maintained by AdBorn Solutions.</span>
+        <span>&copy; 2026 AHPL. All Rights Reserved. Site Design and Maintained by <a className="text-[#fff] no-underline transition hover:text-[#30c8bb]" href="https://www.adbornsolutions.com/" target="_blank" rel="noreferrer"> AdBorn Solutions.</a></span>
       </div>
     </div>
   </footer>
