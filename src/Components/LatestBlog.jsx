@@ -34,7 +34,7 @@ const LatestBlog = () => (
             <div className="p-5">
               <h3 className="mb-3 min-h-[50px] text-lg font-bold leading-[1.3] text-[#172b50] max-md:min-h-0">{post.title}</h3>
               <p className="mb-[18px] min-h-[84px] text-[13px] leading-[1.45] text-[#6d7889] max-md:min-h-0">{post.text}</p>
-              <a className="inline-flex items-center gap-1.5 text-xs font-bold text-[#30c8bb] no-underline" href="#blog">View More <ArrowRight size={15} /></a>
+              <a className="inline-flex items-center gap-1.5 text-xs font-bold text-[#30c8bb] no-underline" href="/blog">View More <ArrowRight size={15} /></a>
             </div>
           </article>
         ))}
