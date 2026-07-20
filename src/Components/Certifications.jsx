@@ -1,18 +1,12 @@
 import logoOne from "../assets/logo1.png";
 import logoTwo from "../assets/logo2.png";
 import logoThree from "../assets/logo3.png";
-import logoFour from "../assets/logo4.png";
-import logoFive from "../assets/logo5.png";
-import logoSix from "../assets/logo6.png";
 import { containerClass, eyebrowClass } from "../utils/tailwindClasses";
 
 const certifications = [
   { image: logoOne, name: "Export Council" },
   { image: logoTwo, name: "Goods and Services Tax" },
-  { image: logoThree, name: "APEDA" },
-  { image: logoFour, name: "ISO 9001" },
-  { image: logoFive, name: "MSME" },
-  { image: logoSix, name: "FIEO" },
+  { image: logoThree, name: "DGFT" },
 ];
 
 const Certifications = () => (
@@ -31,11 +25,11 @@ const Certifications = () => (
         </span>
       </h2>
 
-      <div className="mt-14 grid grid-cols-6 items-center gap-9 max-lg:gap-6 max-md:grid-cols-3 max-md:gap-y-10 max-sm:grid-cols-2">
+      <div className="mx-auto mt-16 flex flex-wrap items-center justify-center gap-12 sm:gap-16 md:gap-24">
         {certifications.map(({ image, name }) => (
-          <div className="flex min-h-[96px] items-center justify-center" key={name}>
+          <div className="flex h-28 w-44 items-center justify-center md:h-36 md:w-60" key={name}>
             <img
-              className="max-h-[92px] w-auto max-w-[138px] object-contain transition duration-300 hover:scale-105 max-lg:max-w-[120px] max-md:max-h-[78px] max-sm:max-w-[112px]"
+              className="max-h-full max-w-full object-contain transition duration-300 hover:scale-105"
               src={image}
               alt={name}
             />
