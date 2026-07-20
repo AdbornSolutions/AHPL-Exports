@@ -82,19 +82,19 @@ const Footer = () => (
               target="_blank"
               rel="noreferrer"
             >
-              47, Kotwal Nagar, Khamla, Nagpur, Maharashtra 440022, India
+             1st floor, Lajwanti Complex, 10/2, Central Ave, Sut Market, Itwari, Nagpur, Maharashtra 440002
             </a>
           </p>
           <p className={footerTextClass}>
             <Phone className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
             <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="tel:+911234567890">
-              1234567890
+             8920279982
             </a>
           </p>
           <p className={footerTextClass}>
             <Mail className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
             <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="mailto:info@ahpl.com">
-              info@ahpl.com
+             Info@ahplexports.com
             </a>
           </p>
         </div>
