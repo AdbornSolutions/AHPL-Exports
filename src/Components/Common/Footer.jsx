@@ -49,7 +49,7 @@ const Footer = () => (
             <a className={`${socialLinkClass} bg-[#1877f2]`} href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="AHPL on Facebook">f</a>
             <a className={`${socialLinkClass} bg-[#ff4d7d]`} href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="AHPL on Instagram">ig</a>
             <a className={`${socialLinkClass} bg-[#0a66c2]`} href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="AHPL on LinkedIn">in</a>
-            <a className={`${socialLinkClass} bg-black`} href="mailto:info@ahpl.com?subject=AHPL%20export%20enquiry" aria-label="Share AHPL by email"><Share2 /></a>
+            <a className={`${socialLinkClass} bg-black`} href="mailto:Info@ahplexports.com?subject=AHPL%20export%20enquiry" aria-label="Share AHPL by email"><Share2 /></a>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const Footer = () => (
             <MapPin className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
             <a
               className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]"
-              href="https://www.google.com/maps/search/?api=1&query=47%2C%20Kotwal%20Nagar%2C%20Khamla%2C%20Nagpur%2C%20Maharashtra%20440022%2C%20India"
+              href="https://www.google.com/maps/search/1st+floor,+Lajwanti+Complex,+10%2F2,+Central+Ave,+Sut+Market,+Itwari,+Nagpur,+Maharashtra+440002/@21.1163552,79.0595834,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noreferrer"
             >
@@ -87,13 +87,13 @@ const Footer = () => (
           </p>
           <p className={footerTextClass}>
             <Phone className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
-            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="tel:+911234567890">
+            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="tel:+91892027998290">
              +91 8920279982
             </a>
           </p>
           <p className={footerTextClass}>
             <Mail className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
-            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="mailto:info@ahpl.com">
+            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="mailto:Info@ahplexports.com">
              Info@ahplexports.com
             </a>
           </p>

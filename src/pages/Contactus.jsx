@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-import Hero from '../Components/Hero'
 import Footer from '../Components/Common/Footer'
+import Hero from '../Components/Hero'
 import contactCardBg from '../assets/Contactcard.png'
 import { containerClass } from '../utils/tailwindClasses'
 
@@ -8,17 +8,17 @@ const contactItems = [
   {
     icon: Mail,
     title: 'Email Address',
-    value: 'info@ahpl.com',
+    value: 'Info@ahplexports.com',
   },
   {
     icon: Phone,
     title: 'Phone Number',
-    value: '1234567890',
+    value: '892027998290',
   },
   {
     icon: MapPin,
     title: 'Address',
-    value: '47, Kotwal Nagar, Khamla, Nagpur, Maharashtra 440022, India',
+    value: '1st floor, Lajwanti Complex, 10/2, Central Ave, Sut Market, Itwari, Nagpur, Maharashtra 440002',
   },
 ]
 
