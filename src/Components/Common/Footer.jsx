@@ -87,7 +87,7 @@ const Footer = () => (
           </p>
           <p className={footerTextClass}>
             <Phone className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
-            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="tel:+91892027998290">
+            <a className="text-[#becbe0] no-underline transition hover:text-[#30c8bb]" href="tel:+918920279982">
              +91 8920279982
             </a>
           </p>
