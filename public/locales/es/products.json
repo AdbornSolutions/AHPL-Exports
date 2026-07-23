@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Producto",
+  "cards": [
+    {
+      "title": "Mesa Metálica\nDecoración",
+      "description": "Elegante decoración de mesa de metal hecha a mano diseñada para realzar hogares, hoteles, oficinas y espacios de hospitalidad con un estilo atemporal, durabilidad y artesanía de primera calidad.",
+      "alt": "Decoración de mesa de metal para exportación."
+    },
+    {
+      "title": "pared metálica\nDecoración",
+      "description": "Agregue elegancia artística a sus paredes con esta decoración de pared de metal hecha a mano, que presenta colores vibrantes, artesanía de primera calidad y un diseño contemporáneo atemporal.",
+      "alt": "Decoración de paredes metálicas para exportación."
+    },
+    {
+      "title": "Decoración de mármol",
+      "description": "Elegante decoración de mármol hecha a mano que agrega encanto atemporal, artesanía artística y estilo sofisticado a su hogar, oficina o colección de regalos.",
+      "alt": "Decoración de mármol para exportación"
+    },
+    {
+      "title": "Decoración de resina",
+      "description": "Colección de decoración de resina hecha a mano que incluye portalápices artísticos y un portavelas decorativo, que combina funcionalidad, elegancia y artesanía tradicional para interiores elegantes.",
+      "alt": "Decoración de resina para exportación"
+    },
+    {
+      "title": "Decoración de madera",
+      "description": "Hermosas piezas decorativas de madera hechas a mano que añaden calidez, elegancia y encanto artístico a su hogar, oficina o espacios para regalar.",
+      "alt": "Decoración de madera para exportación."
+    },
+    {
+      "title": "Estilo de vida y utilidad",
+      "description": "Productos premium de estilo de vida y utilidad que combinan funcionalidad práctica, diseño contemporáneo y artesanía excepcional para la vida moderna y el uso diario.",
+      "alt": "Estilo de vida y utilidad para exportación"
+    },
+    {
+      "title": "Correas trapezoidales industriales",
+      "description": "Correas trapezoidales industriales de alto rendimiento diseñadas para una transmisión de potencia confiable, una durabilidad excepcional y un rendimiento eficiente en aplicaciones industriales, automotrices y agrícolas.",
+      "alt": "Correas trapezoidales industriales para exportación"
+    }
+  ],
+  "details": {
+    "heading": "Técnico",
+    "headingHighlight": "Detalles",
+    "whyChoose": "¿Por qué elegir AHPL?",
+    "rangeIntro": "Exportamos una amplia variedad de productos decorativos, entre ellos:",
+    "countryOfOrigin": "País natal",
+    "india": "India",
+    "packaging": "Embalaje",
+    "exportPackaging": "Embalaje estándar de exportación"
+  },
+  "productDetail": {
+    "imageView": "{{name}} ver {{number}}",
+    "showImage": "Mostrar {{name}} imagen {{number}}",
+    "thumbnail": "{{name}} miniatura {{number}}",
+    "features": [
+      "Arte 100% hecho a mano",
+      "Prima {{material}}",
+      "Acabado protector de calidad de exportación",
+      "Materiales de calidad garantizada"
+    ],
+    "intro": "{{name}} es una pieza refinada {{category}} seleccionada por Ananta Horizons Pvt Ltd para hogares, hoteles, oficinas, minoristas y proyectos hoteleros internacionales. Su cuidada forma combina la hábil artesanía india con una construcción confiable y un acabado premium listo para exportar.",
+    "rating": "Artesanía india de primera calidad | Calidad de exportación",
+    "requestQuote": "Solicitar Cotización",
+    "tabs": {
+      "description": "Descripción",
+      "specifications": "Presupuesto"
+    },
+    "heritage": "Patrimonio en cada detalle",
+    "descriptionOne": "El {{name}} representa una expresión reflexiva de la artesanía india en la colección {{category}}. Cada pieza está terminada con cuidado para que su forma, color, textura y detalles se sientan distintivos y al mismo tiempo sean prácticos para interiores modernos.",
+    "descriptionTwo": "Su construcción duradera y su acabado de calidad de exportación lo convierten en una opción segura para colecciones minoristas premium, espacios hoteleros boutique, regalos y proyectos de decoración residencial.",
+    "complementary": "Complementario",
+    "complementaryHighlight": "Productos",
+    "specLabels": {
+      "category": "Categoría de producto",
+      "material": "Material",
+      "finish": "Finalizar",
+      "style": "Estilo",
+      "application": "Solicitud",
+      "origin": "País natal"
+    },
+    "style": "Calidad Contemporánea, Artesanal y de Exportación",
+    "application": "Hogar, hotel, oficina, comercio minorista y hostelería"
+  }
+}

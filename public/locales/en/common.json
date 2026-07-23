@@ -1,0 +1,58 @@
+{
+  "navigation": { "home": "Home", "about": "About Us", "products": "Products", "saffron": "Saffron", "blog": "Blog", "contact": "Contact Us", "handicraft": "Handicraft", "industrialGoods": "Industrial Goods" },
+  "buttons": { "exploreProducts": "Explore Products", "learnMore": "Learn More", "contactUs": "Contact Us", "viewMore": "View More", "viewBrochure": "View Brochure", "sendMessage": "Send Message", "readMore": "Read More", "getQuote": "Get a Quote", "moreAbout": "More About Us", "requestQuote": "Request a Quote" },
+  "accessibility": { "home": "AHPL home", "logo": "AHPL Global Trade Partner", "mainNavigation": "Main navigation", "openMenu": "Open menu", "closeMenu": "Close menu", "previousSlide": "Previous slide", "nextSlide": "Next slide", "previousTestimonial": "Previous testimonial", "nextTestimonial": "Next testimonial", "viewTestimonial": "View testimonial from {{name}}", "productSlide": "Go to {{product}} slide", "scrollTop": "Scroll to top", "facebook": "AHPL on Facebook", "instagram": "AHPL on Instagram", "linkedin": "AHPL on LinkedIn", "shareEmail": "Share AHPL by email" },
+  "status": { "loading": "Loading...", "notFound": "Product not found." },
+  "company": { "shortName": "AHPL", "name": "Ananta Horizons Pvt Ltd" },
+  "productCategories": { "metalTable": "Metal Table Decor", "metalWall": "Metal Wall Decor", "polyresin": "Polyresin Decor", "marble": "Marble Decor", "lifestyle": "Lifestyle & Utility", "wooden": "Wooden Decor", "belts": "Industrial V-Belts" },
+  "breadcrumbs": { "separator": ">" },
+  "language": { "label": "Language", "english": "English", "hindi": "हिन्दी", "german": "Deutsch", "spanish": "Español", "french": "Français", "portuguese": "Português", "russian": "Русский", "mandarin": "中文", "select": "Select language" },
+  "saffron": { 
+    "shopBy": "Shop By", 
+    "category": "Category",
+    "handpickedTitle": "Handpicked for Your",
+    "handpickedHighlight": "Home",
+    "handpickedSubtitle": "Curated artisanal treasures delivered with love",
+    "legacy": {
+      "eyebrow": "OUR LEGACY",
+      "titleLine1": "Crafted by Hands.",
+      "titleLine2": "Inspired by Heritage.",
+      "description": "At Saffron, we believe every handcrafted piece carries the soul of its maker. We partner with over 200 artisan clusters across India to bring you authentic crafts that blend age-old traditions with modern aesthetics. Our mission is to sustain heritage crafts and provide meaningful livelihoods to our master artisans.",
+      "stat1Number": "200+",
+      "stat1Label": "Artisan Families",
+      "stat2Number": "15+",
+      "stat2Label": "Indian States"
+    },
+    "spaceTitle": "Shop By",
+    "spaceHighlight": "Space",
+    "spaces": {
+      "livingRoom": "Living Room",
+      "diningSpace": "Dining Space",
+      "entryway": "Entryway",
+      "prayerRoom": "Prayer Room",
+      "workDesk": "Work Desk"
+    },
+    "blog": {
+      "eyebrow": "Latest Blog",
+      "titleLine1": "Read Our Latest Insights",
+      "titleLine2": "From",
+      "titleHighlight1": "Update",
+      "titleHighlight2": "Blog",
+      "viewMore": "View More",
+      "posts": [
+        {
+          "title": "A Complete Guide to Export Documentation",
+          "short": "Understanding essential trade documents such as commercial invoices, bills of lading, certificates of origin, and customs paperwork for smooth international transactions."
+        },
+        {
+          "title": "Top Emerging Markets for Export Businesses in 2026",
+          "short": "Discover high-growth international markets and new opportunities for businesses looking to expand their global footprint."
+        },
+        {
+          "title": "How to Choose the Right Global Sourcing Partner",
+          "short": "Learn the key factors to consider when selecting reliable suppliers and sourcing partners for long-term business success."
+        }
+      ]
+    }
+  }
+}

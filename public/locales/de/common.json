@@ -1,0 +1,122 @@
+{
+  "navigation": {
+    "home": "Heim",
+    "about": "Über uns",
+    "products": "Produkte",
+    "saffron": "Safran",
+    "blog": "Blog",
+    "contact": "Kontaktieren Sie uns",
+    "handicraft": "Handwerk",
+    "industrialGoods": "Industriegüter"
+  },
+  "buttons": {
+    "exploreProducts": "Entdecken Sie Produkte",
+    "learnMore": "Erfahren Sie mehr",
+    "contactUs": "Kontaktieren Sie uns",
+    "viewMore": "Mehr anzeigen",
+    "viewBrochure": "Broschüre ansehen",
+    "sendMessage": "Nachricht senden",
+    "readMore": "Mehr lesen",
+    "getQuote": "Holen Sie sich ein Angebot",
+    "moreAbout": "Mehr über uns",
+    "requestQuote": "Fordern Sie ein Angebot an"
+  },
+  "accessibility": {
+    "home": "AHPL-Startseite",
+    "logo": "AHPL Globaler Handelspartner",
+    "mainNavigation": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "previousSlide": "Vorherige Folie",
+    "nextSlide": "Nächste Folie",
+    "previousTestimonial": "Vorheriger Erfahrungsbericht",
+    "nextTestimonial": "Nächstes Zeugnis",
+    "viewTestimonial": "Erfahrungsbericht von {{name}} ansehen",
+    "productSlide": "Gehen Sie zur Folie {{product}}",
+    "scrollTop": "Scrollen Sie nach oben",
+    "facebook": "AHPL auf Facebook",
+    "instagram": "AHPL auf Instagram",
+    "linkedin": "AHPL auf LinkedIn",
+    "shareEmail": "Teilen Sie AHPL per E-Mail"
+  },
+  "status": {
+    "loading": "Laden...",
+    "notFound": "Produkt nicht gefunden."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "Ananta Horizons Pvt Ltd"
+  },
+  "productCategories": {
+    "metalTable": "Tischdekoration aus Metall",
+    "metalWall": "Wanddekoration aus Metall",
+    "polyresin": "Polyresin-Dekor",
+    "marble": "Marmordekor",
+    "lifestyle": "Lebensstil und Nutzen",
+    "wooden": "Holzdekor",
+    "belts": "Industrielle Keilriemen"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "Sprache",
+    "english": "Englisch",
+    "hindi": "हिन्दी",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "french": "Français",
+    "portuguese": "Português",
+    "russian": "Русский",
+    "mandarin": "中文",
+    "select": "Sprache auswählen"
+  },
+  "saffron": {
+    "shopBy": "Einkaufen nach",
+    "category": "Kategorie",
+    "handpickedTitle": "Handverlesen für Sie",
+    "handpickedHighlight": "Heim",
+    "handpickedSubtitle": "Kuratierte, mit Liebe gelieferte Kunstschätze",
+    "legacy": {
+      "eyebrow": "UNSER VERMÄCHTNIS",
+      "titleLine1": "Von Hand gefertigt.",
+      "titleLine2": "Inspiriert vom Erbe.",
+      "description": "Wir bei Saffron glauben, dass jedes handgefertigte Stück die Seele seines Schöpfers in sich trägt. Wir arbeiten mit über 200 Kunsthandwerksclustern in ganz Indien zusammen, um Ihnen authentisches Kunsthandwerk zu bieten, das jahrhundertealte Traditionen mit moderner Ästhetik verbindet. Unsere Mission ist es, das traditionelle Handwerk zu erhalten und unseren Meisterhandwerkern eine sinnvolle Lebensgrundlage zu bieten.",
+      "stat1Number": "200+",
+      "stat1Label": "Handwerkerfamilien",
+      "stat2Number": "15+",
+      "stat2Label": "Indische Staaten"
+    },
+    "spaceTitle": "Einkaufen nach",
+    "spaceHighlight": "Raum",
+    "spaces": {
+      "livingRoom": "Wohnzimmer",
+      "diningSpace": "Essbereich",
+      "entryway": "Eingang",
+      "prayerRoom": "Gebetsraum",
+      "workDesk": "Schreibtisch"
+    },
+    "blog": {
+      "eyebrow": "Neuester Blog",
+      "titleLine1": "Lesen Sie unsere neuesten Erkenntnisse",
+      "titleLine2": "Aus",
+      "titleHighlight1": "Aktualisieren",
+      "titleHighlight2": "Blog",
+      "viewMore": "Mehr anzeigen",
+      "posts": [
+        {
+          "title": "Eine vollständige Anleitung zum Exportieren von Dokumentation",
+          "short": "Verständnis wichtiger Handelsdokumente wie Handelsrechnungen, Frachtbriefe, Ursprungszeugnisse und Zollpapiere für reibungslose internationale Transaktionen."
+        },
+        {
+          "title": "Top-Schwellenmärkte für Exportunternehmen im Jahr 2026",
+          "short": "Entdecken Sie wachstumsstarke internationale Märkte und neue Möglichkeiten für Unternehmen, die ihre globale Präsenz ausbauen möchten."
+        },
+        {
+          "title": "So wählen Sie den richtigen globalen Beschaffungspartner aus",
+          "short": "Erfahren Sie, welche Schlüsselfaktoren bei der Auswahl zuverlässiger Lieferanten und Beschaffungspartner für einen langfristigen Geschäftserfolg zu berücksichtigen sind."
+        }
+      ]
+    }
+  }
+}

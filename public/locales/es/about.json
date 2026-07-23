@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Sobre nosotros",
+  "heading": "Su socio de exportación confiable desde",
+  "headingHighlight": "India",
+  "imageAlt": "Acerca de AHPL",
+  "tabs": {
+    "about": {
+      "title": "Acerca de AHPL",
+      "paragraphs": [
+        "Con sede en Nagpur, India, AHPL se estableció con una visión clara de cerrar la brecha entre el diverso panorama manufacturero de la India y las demandas cambiantes del mercado global.",
+        "Como empresa comercial exportadora, trabajamos en estrecha colaboración con fabricantes y artesanos confiables de toda la India para obtener productos de alta calidad que cumplan con los estándares internacionales. Nuestra experiencia se extiende más allá de las adquisiciones y ofrece gestión de calidad, cumplimiento de exportaciones, coordinación logística y entrega confiable a clientes de todo el mundo.",
+        "En AHPL, no solo exportamos productos: construimos asociaciones a largo plazo brindando confiabilidad, transparencia y valor constante."
+      ]
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "paragraphs": [
+        "Estamos comprometidos a transformar la forma en que los compradores internacionales obtienen productos de la India. Al combinar la rica herencia manufacturera de la India con una gestión moderna de la cadena de suministro y procesos de exportación eficientes, AHPL actúa como un socio confiable para minoristas, mayoristas, distribuidores e importadores que buscan ampliar su oferta de productos con productos premium de origen indio."
+      ]
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "paragraphs": [
+        "Nuestra misión es brindar a los compradores internacionales un acceso fluido a productos indios de calidad a través de abastecimiento ético, estándares de calidad estrictos, comunicación transparente y operaciones de exportación eficientes. Nos esforzamos por crear valor duradero para nuestros clientes garantizando que cada envío refleje nuestro compromiso con la excelencia."
+      ]
+    }
+  }
+}

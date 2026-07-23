@@ -9,37 +9,31 @@ import {
   sectionCopyClass,
   sectionTitleClass,
 } from "../utils/tailwindClasses";
+import { useTranslation } from "react-i18next";
 
-const stats = [
-  ["25+", "Countries Served"],
-  ["500+", "Products Traded"],
-  ["98%", "On-Time Delivery"],
-  ["24/7", "Global Support"],
-];
-
-const Aboutus = () => (
+const Aboutus = () => {
+  const { t } = useTranslation(["home", "common"]);
+  const stats = t("about.stats", { returnObjects: true });
+  return (
   <section id="about-us" className={sectionClass}>
     <div className={containerClass}>
       <div className="grid grid-cols-[245px_1fr_245px] items-center gap-8 max-[980px]:grid-cols-[160px_1fr_160px] max-[980px]:gap-5 max-md:grid-cols-2 max-[430px]:gap-2">
-        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={ship} alt="Container ship at sea" />
+        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={ship} alt={t("about.shipAlt")} />
         <div className="text-center max-md:col-span-full max-md:row-start-1">
 
-          <h2 className={sectionTitleClass}>Connecting Global<br />Markets with <span className="text-[#30c8bb]">Confidence.</span></h2>
+          <h2 className={sectionTitleClass}>{t("about.title")} <span className="text-[#30c8bb]">{t("about.titleHighlight")}</span></h2>
           <p className={sectionCopyClass}>
-            At Anant Horizons Pvt. Ltd, we simplify international trade by providing comprehensive
-            export solutions tailored to the needs of modern businesses. With a strong global
-            network of suppliers, manufacturers, logistics partners, and buyers, we ensure
-            efficient and transparent trade operations from sourcing to delivery.
+            {t("about.description")}
           </p>
           <a className={`${pillButtonClass} mt-6`} href="#why-ahpl">
-            More About Us <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
+            {t("buttons.moreAbout", { ns: "common" })} <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
           </a>
         </div>
-        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={truck} alt="Freight truck at a container yard" />
+        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={truck} alt={t("about.truckAlt")} />
       </div>
 
       <div className="mt-[58px] grid grid-cols-4 gap-[18px] max-md:grid-cols-2 max-[430px]:gap-2.5">
-        {stats.map(([value, label], index) => (
+        {stats.map(({ value, label }, index) => (
           <article
             className={`grid min-h-[140px] place-content-center rounded-[26px] text-center text-white [clip-path:polygon(11%_0,89%_0,100%_18%,100%_100%,0_100%,0_18%)] max-md:min-h-[120px] ${
               index % 2 === 0 ? "bg-[#164778]" : "bg-[#30c8bb]"
@@ -53,6 +47,7 @@ const Aboutus = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default Aboutus;

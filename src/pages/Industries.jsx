@@ -6,11 +6,13 @@ import Testimonials from '../Components/Testimonials'
 import WhyChoose from '../Components/WhyChoose'
 import ContactForm from '../Components/ContactForm'
 import Footer from '../Components/Common/Footer'
+import { useTranslation } from 'react-i18next'
 
 const Industries = () => {
+  const { t } = useTranslation('products')
   return (
     <>
-      <Hero title="Product" />
+      <Hero title={t('pageTitle')} />
       <section className="bg-white py-[60px] max-md:py-10" />
       <Products />
       <Testimonials />

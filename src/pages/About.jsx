@@ -7,11 +7,13 @@ import Certifications from '../Components/Certifications'
 import Testimonials from '../Components/Testimonials'
 import ContactForm from '../Components/ContactForm'
 import Aboutabout from '../Components/About-about'
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+  const { t } = useTranslation('about')
   return (
     <>
-      <Hero title="About Us" />  
+      <Hero title={t('pageTitle')} />  
       <Aboutabout />
       <WhyChoose />
       <Certifications />

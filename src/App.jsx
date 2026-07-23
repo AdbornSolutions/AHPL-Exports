@@ -14,6 +14,7 @@ import WoodenDecore from "./pages/products/WoodenDecore";
 import ProductDetail from "./pages/products/ProductDetail";
 import IndustryVBelt from "./pages/products/Industry-v-Belt";
 import { Route, Routes } from "react-router-dom";
+import Saffron from "./pages/Saffron";
 
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
@@ -22,6 +23,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<About />} />
+      <Route path="/saffron" element={<Saffron />} />
       <Route path="/product" element={<Industries />} />
       <Route path="/product/metal-table-decor" element={<Metaltable />} />
       <Route path="/product/metal-wall-decor" element={<MetalWall />} />

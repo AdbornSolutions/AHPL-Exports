@@ -1,0 +1,28 @@
+{
+  "pageTitle": "À propos de nous",
+  "heading": "Votre partenaire d'exportation fiable de",
+  "headingHighlight": "Inde",
+  "imageAlt": "À propos de l'AHPL",
+  "tabs": {
+    "about": {
+      "title": "À propos de l'AHPL",
+      "paragraphs": [
+        "Basée à Nagpur, en Inde, AHPL a été créée avec la vision claire de combler le fossé entre le paysage manufacturier diversifié de l'Inde et l'évolution des demandes du marché mondial.",
+        "En tant que société d'exportation marchande, nous travaillons en étroite collaboration avec des fabricants et des artisans de confiance dans toute l'Inde pour nous procurer des produits de haute qualité répondant aux normes internationales. Notre expertise s'étend au-delà de l'approvisionnement, offrant une gestion de la qualité, la conformité des exportations, une coordination logistique et une livraison fiable à des clients du monde entier.",
+        "Chez AHPL, nous n'exportons pas seulement des produits : nous construisons des partenariats à long terme en offrant fiabilité, transparence et valeur constante."
+      ]
+    },
+    "vision": {
+      "title": "Notre vision",
+      "paragraphs": [
+        "Nous nous engageons à transformer la façon dont les acheteurs internationaux s’approvisionnent en produits indiens. En combinant le riche héritage manufacturier indien avec une gestion moderne de la chaîne d'approvisionnement et des processus d'exportation efficaces, AHPL constitue un partenaire fiable pour les détaillants, les grossistes, les distributeurs et les importateurs qui cherchent à élargir leur offre de produits avec des produits haut de gamme d'origine indienne."
+      ]
+    },
+    "mission": {
+      "title": "Notre mission",
+      "paragraphs": [
+        "Notre mission est de fournir aux acheteurs internationaux un accès transparent à des produits indiens de qualité grâce à un approvisionnement éthique, des normes de qualité strictes, une communication transparente et des opérations d'exportation efficaces. Nous nous efforçons de créer une valeur durable pour nos clients en veillant à ce que chaque expédition reflète notre engagement envers l'excellence."
+      ]
+    }
+  }
+}

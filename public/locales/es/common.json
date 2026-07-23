@@ -1,0 +1,122 @@
+{
+  "navigation": {
+    "home": "Hogar",
+    "about": "Sobre nosotros",
+    "products": "Productos",
+    "saffron": "Azafrán",
+    "blog": "Blog",
+    "contact": "Contáctenos",
+    "handicraft": "Artesanía",
+    "industrialGoods": "Bienes Industriales"
+  },
+  "buttons": {
+    "exploreProducts": "Explorar productos",
+    "learnMore": "Más información",
+    "contactUs": "Contáctenos",
+    "viewMore": "Ver más",
+    "viewBrochure": "Ver folleto",
+    "sendMessage": "Enviar mensaje",
+    "readMore": "Leer más",
+    "getQuote": "Obtenga una cotización",
+    "moreAbout": "Más sobre nosotros",
+    "requestQuote": "Solicitar una cotización"
+  },
+  "accessibility": {
+    "home": "AHPL casa",
+    "logo": "Socio comercial global de AHPL",
+    "mainNavigation": "Navegación principal",
+    "openMenu": "abrir menú",
+    "closeMenu": "Cerrar menú",
+    "previousSlide": "Diapositiva anterior",
+    "nextSlide": "Siguiente diapositiva",
+    "previousTestimonial": "Testimonio anterior",
+    "nextTestimonial": "Siguiente testimonio",
+    "viewTestimonial": "Ver testimonio de {{name}}",
+    "productSlide": "Ir a la diapositiva {{product}}",
+    "scrollTop": "Desplazarse hacia arriba",
+    "facebook": "AHPL en Facebook",
+    "instagram": "AHPL en Instagram",
+    "linkedin": "AHPL en LinkedIn",
+    "shareEmail": "Compartir AHPL por correo electrónico"
+  },
+  "status": {
+    "loading": "Cargando...",
+    "notFound": "Producto no encontrado."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "Ananta Horizons Pvt. Ltd."
+  },
+  "productCategories": {
+    "metalTable": "Decoración de mesa de metal",
+    "metalWall": "Decoración de pared metálica",
+    "polyresin": "Decoración de poliresina",
+    "marble": "Decoración de mármol",
+    "lifestyle": "Estilo de vida y utilidad",
+    "wooden": "Decoración de madera",
+    "belts": "Correas trapezoidales industriales"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "Idioma",
+    "english": "Inglés",
+    "hindi": "हिन्दी",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "french": "Français",
+    "portuguese": "Português",
+    "russian": "Русский",
+    "mandarin": "中文",
+    "select": "Seleccionar idioma"
+  },
+  "saffron": {
+    "shopBy": "Comprar por",
+    "category": "Categoría",
+    "handpickedTitle": "Seleccionado cuidadosamente para su",
+    "handpickedHighlight": "Hogar",
+    "handpickedSubtitle": "Tesoros artesanales seleccionados y entregados con amor.",
+    "legacy": {
+      "eyebrow": "NUESTRO LEGADO",
+      "titleLine1": "Elaborado a mano.",
+      "titleLine2": "Inspirado en el Patrimonio.",
+      "description": "En Saffron, creemos que cada pieza hecha a mano lleva el alma de su creador. Nos asociamos con más de 200 grupos de artesanos en toda la India para ofrecerle artesanías auténticas que combinan tradiciones ancestrales con una estética moderna. Nuestra misión es mantener la artesanía patrimonial y proporcionar medios de vida significativos a nuestros maestros artesanos.",
+      "stat1Number": "200+",
+      "stat1Label": "Familias Artesanas",
+      "stat2Number": "15+",
+      "stat2Label": "Estados indios"
+    },
+    "spaceTitle": "Comprar por",
+    "spaceHighlight": "Espacio",
+    "spaces": {
+      "livingRoom": "Sala de estar",
+      "diningSpace": "Comedor",
+      "entryway": "Entrada",
+      "prayerRoom": "Sala de oración",
+      "workDesk": "Escritorio de trabajo"
+    },
+    "blog": {
+      "eyebrow": "Blog más reciente",
+      "titleLine1": "Lea nuestras últimas ideas",
+      "titleLine2": "De",
+      "titleHighlight1": "Actualizar",
+      "titleHighlight2": "Blog",
+      "viewMore": "Ver más",
+      "posts": [
+        {
+          "title": "Una guía completa para la documentación de exportación",
+          "short": "Comprender los documentos comerciales esenciales, como facturas comerciales, conocimientos de embarque, certificados de origen y trámites aduaneros para transacciones internacionales fluidas."
+        },
+        {
+          "title": "Principales mercados emergentes para empresas exportadoras en 2026",
+          "short": "Descubra mercados internacionales de alto crecimiento y nuevas oportunidades para empresas que buscan expandir su presencia global."
+        },
+        {
+          "title": "Cómo elegir el socio de abastecimiento global adecuado",
+          "short": "Conozca los factores clave a considerar al seleccionar proveedores y socios de abastecimiento confiables para el éxito comercial a largo plazo."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "eyebrow": "Empresa AHPL",
+    "title": "Comércio Global. Confiável",
+    "titleLine2": "Parcerias.",
+    "titleHighlight": "Oportunidades ilimitadas."
+  },
+  "products": {
+    "eyebrow": "Produtos que exportamos",
+    "title": "Produtos diversos. Mercados Globais.",
+    "titleHighlight": "Soluções comerciais confiáveis.",
+    "quality": "Fornecimento verificado com qualidade",
+    "delivery": "Rede de entrega global"
+  },
+  "whyChoose": {
+    "eyebrow": "Por que escolher a AHPL",
+    "title": "Por que as empresas confiam",
+    "titleHighlight": "AHPL para comércio global.",
+    "description": "Na Ananta Horizons Pvt Ltd, vamos além da compra e venda de produtos. Construímos parcerias de longo prazo, fornecendo fornecimento confiável, garantia de qualidade, processos transparentes e soluções de comércio internacional integradas que ajudam as empresas a crescer com confiança nos mercados globais.",
+    "points": [
+      "Rede Global de Comércio",
+      "Suporte logístico confiável",
+      "Garantia de Qualidade",
+      "Preços competitivos"
+    ],
+    "imageAlt": "Armazém AHPL, logística e anos de experiência"
+  },
+  "about": {
+    "title": "Conectando mercados globais com",
+    "titleHighlight": "Confiança.",
+    "description": "Na Anant Horizons Unip. Ltd, simplificamos o comércio internacional, fornecendo soluções de exportação abrangentes e adaptadas às necessidades das empresas modernas. Com uma forte rede global de fornecedores, fabricantes, parceiros logísticos e compradores, garantimos operações comerciais eficientes e transparentes, desde o fornecimento até a entrega.",
+    "shipAlt": "Navio porta-contêineres no mar",
+    "truckAlt": "Caminhão de carga em um pátio de contêineres",
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Países atendidos"
+      },
+      {
+        "value": "500+",
+        "label": "Produtos comercializados"
+      },
+      {
+        "value": "98%",
+        "label": "Entrega no prazo"
+      },
+      {
+        "value": "24/7",
+        "label": "Suporte Global"
+      }
+    ]
+  },
+  "contactForm": {
+    "eyebrow": "Vamos entrar em contato!",
+    "title": "Otimize sua logística hoje mesmo com nossas soluções especializadas.",
+    "formTitle": "Entre em contato:",
+    "name": "Nome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "inquiry": "Investigação",
+    "comment": "Comentário",
+    "placeholders": {
+      "name": "Digite seu nome completo",
+      "email": "Digite seu e-mail",
+      "phone": "Digite seu número de telefone",
+      "message": "Escreva sua mensagem"
+    },
+    "inquiries": [
+      "Consulta de produto",
+      "Produtos Agrícolas",
+      "Especiarias e produtos alimentícios",
+      "Consulta Geral"
+    ]
+  },
+  "certifications": {
+    "eyebrow": "Certificações e associação",
+    "title": "Certificado. Compatível.",
+    "titleHighlight": "Confiável em todo o mundo.",
+    "items": [
+      "Conselho de Exportação",
+      "Imposto sobre Bens e Serviços",
+      "DGFT"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Depoimento",
+    "title": "Depoimento de clientes",
+    "items": [
+      {
+        "name": "Rajiv Mehta",
+        "role": "Proprietário de empresa, Mumbai",
+        "quote": "AHPL tem sido um parceiro comercial confiável para nossos negócios. Seu compromisso com a qualidade, remessas oportunas e comunicação profissional nos ajudou a agilizar nosso processo de aquisição."
+      },
+      {
+        "name": "Neha Sharma",
+        "role": "Gerente de compras, Delhi",
+        "quote": "A equipe entende nossos requisitos de forma clara e entrega consistentemente produtos que atendem aos nossos padrões de qualidade. Trabalhar com a AHPL tornou o fornecimento muito mais simples."
+      },
+      {
+        "name": "Arjun Patel",
+        "role": "Diretor de Exportação, Ahmedabad",
+        "quote": "Desde a documentação até a entrega final, todas as etapas são tratadas com profissionalismo. Sua transparência e serviço confiável fazem deles um parceiro confiável de longo prazo."
+      },
+      {
+        "name": "Priya Nair",
+        "role": "Chefe de Operações, Bengaluru",
+        "quote": "O suporte ágil e a atenção aos detalhes da AHPL têm sido excepcionais. Eles nos mantêm informados durante todo o processo e sempre entregam com cuidado."
+      },
+      {
+        "name": "Rohan Kapoor",
+        "role": "Empreendedor de varejo, Jaipur",
+        "quote": "Valorizamos sua qualidade consistente e abordagem flexível. AHPL ajudou-nos a expandir a nossa gama de produtos, mantendo os padrões que os nossos clientes esperam."
+      },
+      {
+        "name": "Ananya Iyer",
+        "role": "Consultor de cadeia de suprimentos, Chennai",
+        "quote": "Destacam-se seu conhecimento de mercado, coordenação confiável e execução oportuna. AHPL é um parceiro que podemos recomendar com confiança para necessidades de fornecimento global."
+      },
+      {
+        "name": "Vikram Desai",
+        "role": "Executivo de Manufatura, Pune",
+        "quote": "O profissionalismo da equipa AHPL é visível em cada interação. Eles apoiaram nosso crescimento com fornecimento confiável e excelente comunicação."
+      },
+      {
+        "name": "Kavya Reddy",
+        "role": "Fundador, Hyderabad",
+        "quote": "Trabalhar com a AHPL tem sido tranquilo desde o primeiro dia. A qualidade de seus produtos, respostas rápidas e compromisso com os prazos conquistaram nossa total confiança."
+      }
+    ]
+  }
+}

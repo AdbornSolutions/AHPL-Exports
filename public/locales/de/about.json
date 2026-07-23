@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Über uns",
+  "heading": "Ihr zuverlässiger Exportpartner von",
+  "headingHighlight": "Indien",
+  "imageAlt": "Über AHPL",
+  "tabs": {
+    "about": {
+      "title": "Über AHPL",
+      "paragraphs": [
+        "AHPL mit Hauptsitz in Nagpur, Indien, wurde mit der klaren Vision gegründet, die Lücke zwischen Indiens vielfältiger Produktionslandschaft und den sich entwickelnden Anforderungen des globalen Marktes zu schließen.",
+        "Als Handelsexportunternehmen arbeiten wir eng mit vertrauenswürdigen Herstellern und Handwerkern in ganz Indien zusammen, um qualitativ hochwertige Produkte zu beschaffen, die internationalen Standards entsprechen. Unser Fachwissen geht über die Beschaffung hinaus und bietet Qualitätsmanagement, Export-Compliance, Logistikkoordination und zuverlässige Lieferung an Kunden auf der ganzen Welt.",
+        "Bei AHPL exportieren wir nicht nur Produkte – wir bauen langfristige Partnerschaften auf, indem wir Zuverlässigkeit, Transparenz und gleichbleibenden Wert liefern."
+      ]
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "paragraphs": [
+        "Wir sind bestrebt, die Art und Weise zu verändern, wie internationale Käufer Produkte aus Indien beziehen. Durch die Kombination der reichen Fertigungstradition Indiens mit modernem Lieferkettenmanagement und effizienten Exportprozessen fungiert AHPL als zuverlässiger Partner für Einzelhändler, Großhändler, Distributoren und Importeure, die ihr Produktangebot um Premiumwaren indischer Herkunft erweitern möchten."
+      ]
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "paragraphs": [
+        "Unsere Mission ist es, internationalen Käufern durch ethische Beschaffung, strenge Qualitätsstandards, transparente Kommunikation und effiziente Exportabläufe einen nahtlosen Zugang zu hochwertigen indischen Produkten zu ermöglichen. Wir streben danach, für unsere Kunden dauerhaften Wert zu schaffen, indem wir sicherstellen, dass jede Lieferung unser Engagement für Spitzenleistungen widerspiegelt."
+      ]
+    }
+  }
+}

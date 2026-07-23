@@ -1,0 +1,8 @@
+{
+  "pageTitle": "About Us", "heading": "Your Reliable Export Partner from", "headingHighlight": "India", "imageAlt": "About AHPL",
+  "tabs": {
+    "about": { "title": "About AHPL", "paragraphs": ["Headquartered in Nagpur, India, AHPL was established with a clear vision to bridge the gap between India's diverse manufacturing landscape and the evolving demands of the global marketplace.", "As a merchant export company, we work closely with trusted manufacturers and artisans across India to source high-quality products that meet international standards. Our expertise extends beyond procurement, offering quality management, export compliance, logistics coordination, and dependable delivery to clients around the world.", "At AHPL, we don't just export products—we build long-term partnerships by delivering reliability, transparency, and consistent value."] },
+    "vision": { "title": "Our Vision", "paragraphs": ["We are committed to transforming the way international buyers source products from India. By combining India's rich manufacturing heritage with modern supply chain management and efficient export processes, AHPL serves as a dependable partner for retailers, wholesalers, distributors, and importers looking to expand their product offerings with premium Indian-origin goods."] },
+    "mission": { "title": "Our Mission", "paragraphs": ["Our mission is to provide international buyers with seamless access to quality Indian products through ethical sourcing, stringent quality standards, transparent communication, and efficient export operations. We strive to create lasting value for our customers by ensuring every shipment reflects our commitment to excellence."] }
+  }
+}

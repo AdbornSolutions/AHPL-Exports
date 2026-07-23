@@ -1,0 +1,83 @@
+{
+  "pageTitle": "产品",
+  "cards": [
+    {
+      "title": "金属桌\n装饰",
+      "description": "优雅的手工金属餐桌装饰，旨在以永恒的风格、耐用性和优质的工艺增强家庭、酒店、办公室和接待空间。",
+      "alt": "出口金属餐桌装饰"
+    },
+    {
+      "title": "金属墙\n装饰",
+      "description": "这款手工制作的金属墙壁装饰具有鲜艳的色彩、优质的工艺和永恒的现代设计，为您的墙壁增添艺术优雅。",
+      "alt": "出口金属墙饰"
+    },
+    {
+      "title": "大理石装饰",
+      "description": "优雅的手工大理石装饰，为您的家庭、办公室或礼品收藏增添永恒的魅力、艺术工艺和精致的风格。",
+      "alt": "出口大理石装饰"
+    },
+    {
+      "title": "树脂装饰",
+      "description": "手工制作的树脂装饰系列，包括艺术笔筒和装饰性小蜡烛架，融合了功能性、优雅和传统工艺，打造时尚的内饰。",
+      "alt": "出口树脂装饰"
+    },
+    {
+      "title": "木制装饰",
+      "description": "美丽的手工木制装饰品为您的家庭、办公室或礼品空间增添温暖、优雅和艺术魅力。",
+      "alt": "出口木制装饰品"
+    },
+    {
+      "title": "生活方式与实用性",
+      "description": "优质生活方式和实用产品，结合实用功能、现代设计和卓越工艺，适合现代生活和日常使用。",
+      "alt": "出口生活方式和实用工具"
+    },
+    {
+      "title": "工业三角带",
+      "description": "高性能工业 V 型皮带专为工业、汽车和农业应用中可靠的动力传输、卓越的耐用性和高效性能而设计。",
+      "alt": "出口工业V带"
+    }
+  ],
+  "details": {
+    "heading": "技术的",
+    "headingHighlight": "细节",
+    "whyChoose": "为什么选择 AHPL",
+    "rangeIntro": "我们出口各种装饰产品，包括：",
+    "countryOfOrigin": "原产地",
+    "india": "印度",
+    "packaging": "包装",
+    "exportPackaging": "出口标准包装"
+  },
+  "productDetail": {
+    "imageView": "{{name}} 视图 {{number}}",
+    "showImage": "显示 {{name}} 图片 {{number}}",
+    "thumbnail": "{{name}} 缩略图 {{number}}",
+    "features": [
+      "100%手工艺术",
+      "高级 {{material}}",
+      "出口级防护面漆",
+      "质量有保证的材料"
+    ],
+    "intro": "{{name}} 是 Ananta Horizo​​ns Pvt Ltd 为国际住宅、酒店、办公室、零售商和酒店项目选择的精致 {{category}} 作品。其深思熟虑的形式将熟练的印度工艺与可靠的结构和优质的出口就绪饰面相结合。",
+    "rating": "优质印度工艺|出口品质",
+    "requestQuote": "请求报价",
+    "tabs": {
+      "description": "描述",
+      "specifications": "规格"
+    },
+    "heritage": "每个细节的传承",
+    "descriptionOne": "{{name}} 代表了 {{category}} 系列中印度工艺的深思熟虑的表达。每件作品均经过精心制作，其形式、颜色、纹理和细节都给人独特的感觉，同时又保持了现代室内装饰的实用性。",
+    "descriptionTwo": "其耐用的结构和出口品质的饰面使其成为优质零售系列、精品酒店空间、礼品和住宅装饰项目的可靠选择。",
+    "complementary": "补充",
+    "complementaryHighlight": "产品",
+    "specLabels": {
+      "category": "产品类别",
+      "material": "材料",
+      "finish": "结束",
+      "style": "风格",
+      "application": "应用",
+      "origin": "原产地"
+    },
+    "style": "现代、工匠和出口品质",
+    "application": "住宅、酒店、办公室、零售和酒店业"
+  }
+}

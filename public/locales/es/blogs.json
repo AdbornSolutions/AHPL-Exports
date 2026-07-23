@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blog",
+  "latest": "Blog más reciente",
+  "heading": "Lea nuestras últimas ideas de",
+  "headingHighlight": "Actualizar blog",
+  "viewMoreAbout": "Ver más sobre {{title}}",
+  "posts": [
+    {
+      "title": "Una guía completa para la documentación de exportación",
+      "short": "Comprensión de documentos comerciales esenciales, como facturas comerciales, conocimientos de embarque, certificados de origen y trámites aduaneros.",
+      "description": "Comprender los documentos comerciales esenciales, como facturas comerciales, conocimientos de embarque, certificados de origen y trámites aduaneros para transacciones internacionales fluidas."
+    },
+    {
+      "title": "Principales mercados emergentes para empresas exportadoras en 2026",
+      "short": "Descubra mercados internacionales de alto crecimiento y nuevas oportunidades para empresas que buscan expandir su presencia global.",
+      "description": "Descubra mercados internacionales de alto crecimiento y nuevas oportunidades para empresas que buscan expandir su presencia global."
+    },
+    {
+      "title": "Cómo elegir el socio de abastecimiento global adecuado",
+      "short": "Conozca los factores clave a considerar al seleccionar proveedores y socios de abastecimiento confiables para el éxito comercial a largo plazo.",
+      "description": "Conozca los factores clave a considerar al seleccionar proveedores y socios de abastecimiento confiables para el éxito comercial a largo plazo."
+    }
+  ]
+}

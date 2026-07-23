@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Kontaktieren Sie uns",
+  "cards": {
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "address": "Adresse"
+  },
+  "form": {
+    "title": "Senden Sie uns eine Anfrage",
+    "description": "Suchen Sie einen vertrauenswürdigen Exportpartner? Füllen Sie das untenstehende Formular aus und unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+    "placeholders": {
+      "name": "Schneller Name",
+      "phone": "Telefonnummer",
+      "email": "E-Mail-Adresse",
+      "service": "Servicetyp schreiben",
+      "message": "Geben Sie Ihre Nachricht ein..."
+    }
+  }
+}

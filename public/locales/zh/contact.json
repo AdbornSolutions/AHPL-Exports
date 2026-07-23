@@ -1,0 +1,19 @@
+{
+  "pageTitle": "联系我们",
+  "cards": {
+    "email": "电子邮件",
+    "phone": "电话号码",
+    "address": "地址"
+  },
+  "form": {
+    "title": "向我们发送询问",
+    "description": "正在寻找值得信赖的出口合作伙伴？填写下面的表格，我们的团队将尽快回复您。",
+    "placeholders": {
+      "name": "快名",
+      "phone": "电话号码",
+      "email": "电子邮件",
+      "service": "写入服务类型",
+      "message": "输入您的消息..."
+    }
+  }
+}
