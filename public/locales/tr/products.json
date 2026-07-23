@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Ürün",
+  "cards": [
+    {
+      "title": "Metal Masa\nDekor",
+      "description": "Evleri, otelleri, ofisleri ve konaklama alanlarını zamansız bir stil, dayanıklılık ve birinci sınıf işçilikle zenginleştirmek için tasarlanmış zarif el işi metal masa dekoru.",
+      "alt": "İhracata yönelik metal masa dekoru"
+    },
+    {
+      "title": "Metal Duvar\nDekor",
+      "description": "Canlı renklere, birinci sınıf işçiliğe ve zamana meydan okuyan çağdaş bir tasarıma sahip bu el yapımı metal duvar dekoruyla duvarlarınıza sanatsal zarafet katın.",
+      "alt": "İhracat için Metal Duvar Dekoru"
+    },
+    {
+      "title": "Mermer Dekor",
+      "description": "Evinize, ofisinize veya hediyelik koleksiyonunuza zamansız bir çekicilik, sanatsal işçilik ve sofistike bir tarz katan zarif el işi mermer dekor.",
+      "alt": "İhracat için Mermer Dekor"
+    },
+    {
+      "title": "Reçine Dekor",
+      "description": "Sanatsal kalem tutucuları ve dekoratif bir tealight tutucusu içeren el işi reçine dekor koleksiyonu, şık iç mekanlar için işlevsellik, zarafet ve geleneksel işçiliği harmanlıyor.",
+      "alt": "İhracat için Reçine Dekor"
+    },
+    {
+      "title": "Ahşap Dekor",
+      "description": "Evinize, ofisinize veya hediyelik alanlarınıza sıcaklık, zarafet ve sanatsal çekicilik katan güzel el işi ahşap dekor parçaları.",
+      "alt": "İhracata yönelik ahşap dekor"
+    },
+    {
+      "title": "Yaşam Tarzı ve Fayda",
+      "description": "Modern yaşam ve günlük kullanım için pratik işlevselliği, çağdaş tasarımı ve olağanüstü işçiliği birleştiren birinci sınıf yaşam tarzı ve kullanışlı ürünler.",
+      "alt": "İhracat için Yaşam Tarzı ve Fayda"
+    },
+    {
+      "title": "Endüstriyel V Kayışları",
+      "description": "Endüstriyel, otomotiv ve tarımsal uygulamalarda güvenilir güç iletimi, olağanüstü dayanıklılık ve verimli performans için tasarlanmış yüksek performanslı Endüstriyel V Kayışları.",
+      "alt": "İhracata yönelik endüstriyel V-kayışları"
+    }
+  ],
+  "details": {
+    "heading": "Teknik",
+    "headingHighlight": "Detaylar",
+    "whyChoose": "Neden AHPL'yi Seçmelisiniz?",
+    "rangeIntro": "Aşağıdakiler de dahil olmak üzere çok çeşitli dekoratif ürünler ihraç ediyoruz:",
+    "countryOfOrigin": "Menşei ülke",
+    "india": "Hindistan",
+    "packaging": "Ambalajlama",
+    "exportPackaging": "İhracat Standart Ambalajı"
+  },
+  "productDetail": {
+    "imageView": "{{name}} görüntüle {{number}}",
+    "showImage": "{{name}} resmini göster {{number}}",
+    "thumbnail": "{{name}} küçük resim {{number}}",
+    "features": [
+      "%100 El İşi Sanatsallık",
+      "Premium {{material}}",
+      "İhracat Sınıfında Koruyucu Kaplama",
+      "Kalite Güvenceli Malzemeler"
+    ],
+    "intro": "{{name}}, Ananta Horizons Pvt Ltd tarafından uluslararası evler, oteller, ofisler, perakendeciler ve konaklama projeleri için seçilen zarif bir {{category}} parçasıdır. Düşünceli formu, yetenekli Hint işçiliğini güvenilir yapı ve ihracata hazır birinci sınıf kaplamayla birleştiriyor.",
+    "rating": "Birinci Sınıf Hint İşçiliği | İhracat Kalitesi",
+    "requestQuote": "Teklif İste",
+    "tabs": {
+      "description": "Tanım",
+      "specifications": "Özellikler"
+    },
+    "heritage": "Her Ayrıntıdaki Miras",
+    "descriptionOne": "{{name}}, {{category}} koleksiyonundaki Hint zanaatının düşünceli bir ifadesini temsil ediyor. Her bir parça özenle tamamlanmıştır, böylece biçimi, rengi, dokusu ve ayrıntıları modern iç mekanlar için kullanışlı kalırken farklı hissettirir.",
+    "descriptionTwo": "Dayanıklı yapısı ve ihracat kalitesinde kaplaması, birinci sınıf perakende koleksiyonları, butik konaklama alanları, hediyelik eşya ve konut dekorasyonu projeleri için onu güvenilir bir seçim haline getiriyor.",
+    "complementary": "Tamamlayıcı",
+    "complementaryHighlight": "Ürünler",
+    "specLabels": {
+      "category": "Ürün Kategorisi",
+      "material": "Malzeme",
+      "finish": "Sona ermek",
+      "style": "Stil",
+      "application": "Başvuru",
+      "origin": "Menşei ülke"
+    },
+    "style": "Çağdaş, Zanaatkar ve İhracat Kalitesi",
+    "application": "Ev, Otel, Ofis, Perakende ve Konaklama"
+  }
+}

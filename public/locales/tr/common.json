@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "Ev",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "saffron": "Safran",
+    "blog": "Blog",
+    "contact": "Bize Ulaşın",
+    "handicraft": "El sanatları",
+    "industrialGoods": "Endüstriyel Ürünler"
+  },
+  "buttons": {
+    "exploreProducts": "Ürünleri Keşfedin",
+    "learnMore": "Daha fazla bilgi edin",
+    "contactUs": "Bize Ulaşın",
+    "viewMore": "Daha Fazlasını Görüntüle",
+    "viewBrochure": "Broşürü Görüntüle",
+    "getBrochure": "Broşür Al",
+    "sendMessage": "Mesaj Gönder",
+    "readMore": "Devamını oku",
+    "getQuote": "Teklif Al",
+    "moreAbout": "Hakkımızda Daha Fazla Bilgi",
+    "requestQuote": "Fiyat Teklifi İste"
+  },
+  "accessibility": {
+    "home": "AHPL ana sayfası",
+    "logo": "AHPL Küresel Ticaret Ortağı",
+    "mainNavigation": "Ana gezinme",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "previousSlide": "Önceki slayt",
+    "nextSlide": "Sonraki slayt",
+    "previousTestimonial": "Önceki referans",
+    "nextTestimonial": "Sonraki referans",
+    "viewTestimonial": "{{name}} adlı kişinin referansını görüntüle",
+    "productSlide": "{{product}} slaytına git",
+    "scrollTop": "Yukarıya doğru kaydır",
+    "facebook": "Facebook'ta AHPL",
+    "instagram": "Instagram'da AHPL",
+    "linkedin": "LinkedIn'de APL",
+    "shareEmail": "AHPL'yi e-postayla paylaşın"
+  },
+  "status": {
+    "loading": "Yükleniyor...",
+    "notFound": "Ürün bulunamadı."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "Ananta Horizons Pvt Ltd"
+  },
+  "productCategories": {
+    "metalTable": "Metal Masa Dekoru",
+    "metalWall": "Metal Duvar Dekoru",
+    "polyresin": "Polireçine Dekor",
+    "marble": "Mermer Dekor",
+    "lifestyle": "Yaşam Tarzı ve Fayda",
+    "wooden": "Ahşap Dekor",
+    "belts": "Endüstriyel V Kayışları"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "Dil",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "chinese": "中文",
+    "russian": "Русский",
+    "portuguese": "Português",
+    "japanese": "日本語",
+    "turkish": "Türkçe",
+    "korean": "한국어",
+    "italian": "Italiano",
+    "select": "Dil seçin"
+  },
+  "saffron": {
+    "shopBy": "Şuna Göre Alışveriş Yapın",
+    "category": "Kategori",
+    "handpickedTitle": "Sizin için özenle seçilmiş",
+    "handpickedHighlight": "Ev",
+    "handpickedSubtitle": "Sevgiyle teslim edilen özenle seçilmiş zanaatkar hazineleri",
+    "legacy": {
+      "eyebrow": "MİRASIMIZ",
+      "titleLine1": "Eller tarafından hazırlanmış.",
+      "titleLine2": "Miras'tan ilham alındı.",
+      "description": "Saffron'da el yapımı her parçanın, yapımcısının ruhunu taşıdığına inanıyoruz. Asırlık gelenekleri modern estetikle harmanlayan özgün el sanatlarını size sunmak için Hindistan genelinde 200'den fazla zanaatkâr grubuyla ortaklık yapıyoruz. Misyonumuz miras zanaatlarını sürdürmek ve usta zanaatkarlarımıza anlamlı geçim kaynakları sağlamaktır.",
+      "stat1Number": "200+",
+      "stat1Label": "Esnaf Aileleri",
+      "stat2Number": "15+",
+      "stat2Label": "Hint Eyaletleri"
+    },
+    "spaceTitle": "Şuna Göre Alışveriş Yapın",
+    "spaceHighlight": "Uzay",
+    "spaces": {
+      "livingRoom": "Oturma odası",
+      "diningSpace": "Yemek Alanı",
+      "entryway": "Giriş yolu",
+      "prayerRoom": "İbadet Odası",
+      "workDesk": "Çalışma Masası"
+    },
+    "blog": {
+      "eyebrow": "En Son Blog",
+      "titleLine1": "En Son Bilgilerimizi Okuyun",
+      "titleLine2": "İtibaren",
+      "titleHighlight1": "Güncelleme",
+      "titleHighlight2": "Blog",
+      "viewMore": "Daha Fazlasını Görüntüle",
+      "posts": [
+        {
+          "title": "Belgeleri Dışa Aktarmak İçin Eksiksiz Bir Kılavuz",
+          "short": "Sorunsuz uluslararası işlemler için ticari faturalar, konşimentolar, menşe şahadetnameleri ve gümrük evrakları gibi temel ticari belgeleri anlamak."
+        },
+        {
+          "title": "2026'da İhracat İşletmeleri için En İyi Yükselen Pazarlar",
+          "short": "Hızlı büyüyen uluslararası pazarları ve küresel ayak izlerini genişletmek isteyen işletmeler için yeni fırsatları keşfedin."
+        },
+        {
+          "title": "Doğru Küresel Kaynak Kullanımı Ortağı Nasıl Seçilir?",
+          "short": "Uzun vadeli iş başarısı için güvenilir tedarikçileri ve kaynak bulma ortaklarını seçerken göz önünde bulundurulması gereken temel faktörleri öğrenin."
+        }
+      ]
+    }
+  }
+}

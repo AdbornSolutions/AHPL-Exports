@@ -1,0 +1,432 @@
+{
+  "common": {
+    "technical": "Teknik",
+    "details": "Detaylar",
+    "whyChoose": "Neden AHPL'yi Seçmelisiniz?",
+    "rangeIntro": "Aşağıdakiler de dahil olmak üzere çok çeşitli dekoratif ürünler ihraç ediyoruz:",
+    "viewBrochure": "Broşürü Görüntüle"
+  },
+  "sharedProducts": [
+    "Rudra-Anş (Siyah)",
+    "Aşwa",
+    "Mayureshwar",
+    "Gece Cazibesi (Beyaz)",
+    "Gaj-Jhoola",
+    "Karbon At",
+    "Aura-Şahin",
+    "Gece Yarısı Keşişi (Beyaz)",
+    "Chatrapati",
+    "İkiz Lütuf"
+  ],
+  "metalTable": {
+    "heroAlt": "Hindistan'dan ihraç edilen metal masa dekoru",
+    "title": "Zarif Tasarımlar Hazırlandı",
+    "titleHighlight": "Küresel Piyasalar için",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, Hindistan'ın olağanüstü işçiliğini ve üretim mükemmelliğini yansıtan birinci sınıf bir metal masa dekoru ürünleri yelpazesi sunmaktadır. Her parça, güvenilir üreticilerden özenle tedarik edilir ve uluslararası kalite standartlarını karşılayacak şekilde tamamlanır.",
+      "Koleksiyonumuz sanatsal tasarımı üstün dayanıklılıkla birleştirerek yüksek kaliteli dekoratif ürünler arayan perakendeciler, toptancılar, ithalatçılar, iç tasarımcılar ve distribütörler için mükemmel bir seçim haline geliyor."
+    ],
+    "aboutAlt": "Küresel pazarlar için metal masa dekoru koleksiyonu",
+    "rangeTitle": "Metal Masamız",
+    "rangeHighlight": "Dekor Aralığı",
+    "products": [
+      "Mangal- Jyoti(Siyah)",
+      "Alaap",
+      "Parlayan Kanat",
+      "Yuh Tutucu",
+      "Senfoni (Turuncu)",
+      "Modak Yaprağı (Yeşil)",
+      "Lume Lady (Tek Kişilik)",
+      "Kalam Kashti",
+      "Pedal Direği",
+      "Mayur"
+    ],
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Metal Masa Dekoru"
+      ],
+      [
+        "Malzeme",
+        "Demir, Alüminyum, Pirinç, Paslanmaz Çelik (Gerektiği Gibi)"
+      ],
+      [
+        "Sona ermek",
+        "Toz Boya, Antik, Mat, Parlak, Altın, Siyah ve Özel"
+      ],
+      [
+        "Stil",
+        "Modern, Çağdaş, Klasik ve Lüks"
+      ],
+      [
+        "Kullanım",
+        "Ev, Otel, Ofis ve Ticari İç Mekanlar"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyAlt": "Metal masa dekorasyonu işçiliği ve kalitesi",
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Metal Masa Dekoru?",
+    "whyDescription": "Ananta Horizons pvt ltd olarak, küresel pazarlara birinci sınıf metal masa dekorları sunmak için Hindistan'ın zengin işçiliğini modern üretimle birleştiriyoruz. İthalatçılar, toptancılar, perakendeciler ve distribütörler için olağanüstü değer sağlayan her ürün özenle tedarik edilir, kalite kontrolü yapılır ve ihracata hazır hale getirilir.",
+    "reasons": [
+      "Birinci Sınıf İşçilik",
+      "Üstün Kaliteli Malzemeler",
+      "Geniş Tasarım Koleksiyonu",
+      "Sıkı Kalite Güvencesi"
+    ]
+  },
+  "metalWall": {
+    "heroAlt": "Hindistan'dan ihraç edilen metal duvar dekoru",
+    "title": "Şık Duvar Dekoru Hazırlanmış",
+    "titleHighlight": "Küresel İç Mekanlar için",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, modern ve çağdaş mekanları geliştirmek için tasarlanmış özel bir metal duvar dekoru yelpazesi ihraç etmektedir. Güvenilir Hintli üreticilerden alınan her parça, yüksek kaliteli malzemeler kullanılarak hassasiyetle üretilir ve uluslararası kalite standartlarını karşılayacak şekilde tamamlanır.",
+      "Koleksiyonumuz, zarif ve ihracata hazır dekoratif duvar sanatı arayan ithalatçılar, toptancılar, perakendeciler, distribütörler, iç tasarımcılar ve konaklama işletmeleri için idealdir."
+    ],
+    "aboutAlt": "Çağdaş bir iç mekanda dekoratif metal duvar sanatı",
+    "rangeTitle": "Metal Duvarımız",
+    "rangeHighlight": "Dekor Aralığı",
+    "products": [
+      "Türban Masalları",
+      "İlahi Saat",
+      "Türban Sanatı",
+      "Bansuri Mutluluğu",
+      "Yaldızlı Ganesha",
+      "Çiçek Sepeti (Altın)",
+      "Kutsal Kanca",
+      "Gaj-Kriti",
+      "Zaman Yolculuğu",
+      "Senfoni Dizeleri"
+    ],
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Metal Duvar Dekoru"
+      ],
+      [
+        "Malzeme",
+        "Demir, Alüminyum, Pirinç, Paslanmaz Çelik"
+      ],
+      [
+        "Sona ermek",
+        "Mat, Parlak, Antik, Altın, Siyah ve Özel"
+      ],
+      [
+        "Stil",
+        "Modern, Çağdaş, Lüks, Endüstriyel"
+      ],
+      [
+        "Başvuru",
+        "Konut ve Ticari İç Mekanlar"
+      ],
+      [
+        "Montaj",
+        "Duvara Monte"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ]
+  },
+  "polyresin": {
+    "heroAlt": "Hindistan'dan ihraç edilen birinci sınıf polyresin dekor",
+    "title": "Zarif Dekor",
+    "titleHighlight": "Kesinlik",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, yaratıcılığı, işçiliği ve kaliteyi harmanlayan üstün kaliteli poliresin dekor ürünleri ihraç etmektedir. Güvenilir Hintli zanaatkarlar ve tedarikçiler tarafından üretilen her parça, olağanüstü estetik ve uzun süreli dayanıklılık sunmak üzere özenle tasarlanmıştır.",
+      "Dekoratif figürlerden çağdaş heykellere kadar koleksiyonumuz uluslararası perakendecilerin, toptancıların, distribütörlerin ve iç tasarımcıların beklentilerini karşılamak için yaratılmıştır."
+    ],
+    "aboutAlt": "Birinci sınıf dekoratif polyresin koleksiyonu",
+    "rangeTitle": "Polireçinemiz",
+    "rangeHighlight": "Dekor Aralığı",
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Polireçine Dekor"
+      ],
+      [
+        "Malzeme",
+        "Premium Polireçine"
+      ],
+      [
+        "Sona ermek",
+        "Mat, Parlak, Antik, Metalik ve Özel"
+      ],
+      [
+        "Stil",
+        "Modern, Çağdaş, Klasik, Lüks"
+      ],
+      [
+        "Başvuru",
+        "Ev, Otel, Ofis ve Ticari İç Mekanlar"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyAlt": "Polyresin işçiliği ve dekoratif koleksiyon",
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Polyresin Dekor?",
+    "whyDescription": "Ananta Horizons Pvt Ltd'de polyresin dekor koleksiyonumuz sanatsal güzelliği olağanüstü dayanıklılıkla birleştirmek için tasarlanmıştır. Her ürün, en yüksek uluslararası kalite standartlarını karşılayacak şekilde hassasiyetle üretilmiştir.",
+    "reasons": [
+      "Birinci Sınıf İşçilik",
+      "Geniş Tasarım Yelpazesi",
+      "Yüksek Kaliteli Malzemeler",
+      "Kalite Güvencesi"
+    ]
+  },
+  "marble": {
+    "heroAlt": "Hindistan'dan ihraç edilen birinci sınıf mermer dekor",
+    "title": "Zamansız Zarafet",
+    "titleHighlight": "Her Parça",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, üstün kaliteli doğal mermer kullanılarak yetenekli Hintli zanaatkarlar tarafından hazırlanmış mermer dekor ürünlerinden oluşan özel bir koleksiyon ihraç etmektedir. Her parça olağanüstü işçiliği, karmaşık detayları ve üstün kaplamayı yansıtarak geleneksel sanat ve çağdaş tasarımın mükemmel bir karışımını sunuyor.",
+      "Mermer dekor koleksiyonumuz, uluslararası kalite standartlarını karşılayan lüks dekoratif ürünler arayan ithalatçılar, toptancılar, perakendeciler, iç tasarımcılar ve konaklama işletmeleri için idealdir."
+    ],
+    "aboutAlt": "El işi mermer dekor koleksiyonu",
+    "rangeTitle": "Mermerimiz",
+    "rangeHighlight": "Dekor Aralığı",
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Mermer Dekor"
+      ],
+      [
+        "Malzeme",
+        "Doğal Mermer"
+      ],
+      [
+        "Sona ermek",
+        "Cilalı, Mat, Honlanmış ve Özel"
+      ],
+      [
+        "Stil",
+        "Modern, Çağdaş, Geleneksel ve Lüks"
+      ],
+      [
+        "Başvuru",
+        "Ev, Otel, Ofis ve Ticari İç Mekanlar"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyAlt": "Doğal mermer işçiliği ve dekoratif koleksiyon",
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Mermer Dekor?",
+    "whyDescription": "Ananta Horizons Pvt Ltd'deki mermer dekor koleksiyonumuz doğal güzellik, yetenekli işçilik ve kalıcı dayanıklılığın mükemmel dengesini yansıtıyor. Her ürün, uluslararası alıcıların beklentilerini karşılarken, zamansız bir zarafet sunmak için özenle hazırlanmıştır.",
+    "reasons": [
+      "Birinci Sınıf Doğal Mermer",
+      "Zarif Tasarımlar",
+      "Üstün Kalite",
+      "Güvenilir İhracat Çözümleri"
+    ]
+  },
+  "wooden": {
+    "heroAlt": "Hindistan'dan ihraç edilen birinci sınıf ahşap dekor",
+    "title": "El İşi Ahşap Dekor",
+    "titleHighlight": "Her Alan",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, yetenekli Hintli zanaatkarlar tarafından özenle seçilmiş ahşap dekor ürünleri ihraç etmektedir. Doğal ahşabı sanatsal detaylarla birleştiren koleksiyonumuz, hem geleneksel hem de çağdaş iç mekanlara uyum sağlayan zarif dekor ve fonksiyonel yaşam tarzı ürünleri sunuyor.",
+      "Her ürün özenle tedarik edilir, kalite denetimi yapılır ve uluslararası ihracat standartlarını karşılayacak şekilde paketlenir; bu da onu ithalatçılar, toptancılar, perakendeciler, hediyelik eşya mağazaları ve iç dekorasyon markaları için ideal bir seçim haline getirir."
+    ],
+    "aboutAlt": "El işi ahşap dekor ürünleri",
+    "rangeTitle": "Ahşap Ürünlerimizi Keşfedin",
+    "rangeHighlight": "Dekor Koleksiyonu",
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Ahşap Dekor"
+      ],
+      [
+        "Malzeme",
+        "Birinci Sınıf Ahşap"
+      ],
+      [
+        "Sona ermek",
+        "Doğal, Mat, Cilalı, Boyalı ve Özel"
+      ],
+      [
+        "Stil",
+        "Geleneksel, Çağdaş, Rustik ve Modern"
+      ],
+      [
+        "Başvuru",
+        "Ev, Ofis, Ağırlama ve Hediye Verme"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Ahşap Dekor mu?",
+    "whyDescription": "Ananta Horizons Pvt Ltd'deki ahşap dekor koleksiyonumuz, doğal ahşabın sıcaklığını olağanüstü Hint işçiliğiyle birleştiriyor. Her ürün güzellik, işlevsellik ve kalıcı kalite sunmak üzere tasarlanmıştır.",
+    "reasons": [
+      "Otantik Hint İşçiliği",
+      "Üstün Kalite",
+      "Dekoratif Tasarımlar",
+      "Birinci Sınıf Doğal Malzemeler"
+    ]
+  },
+  "lifestyle": {
+    "heroAlt": "Modern yaşam için fonksiyonel yaşam tarzı ve faydalı ürünler",
+    "title": "Fonksiyonel Ürünler",
+    "titleHighlight": "Modern Yaşam",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd, pratik tasarım ve güvenilir performans yoluyla günlük yaşamı zenginleştiren geniş bir yaşam tarzı ve hizmet ürünleri yelpazesi ihraç etmektedir. Hindistan genelindeki güvenilir üreticilerden temin edilen ürünlerimiz, uluslararası standartları karşılayacak şekilde kaliteli malzemeler ve modern üretim teknikleri kullanılarak üretilmektedir.",
+      "İster perakendeci, toptancı, distribütör veya ithalatçı olun, koleksiyonumuz evler, ofisler ve ticari alanlar için şık, dayanıklı ve ihracata hazır ürünler sunmaktadır."
+    ],
+    "aboutAlt": "Yaşam tarzı ve faydalı ürün koleksiyonu",
+    "rangeTitle": "Yaşam Tarzımız ve Faydamız",
+    "rangeHighlight": "Menzil",
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Yaşam Tarzı ve Faydalı Ürünler"
+      ],
+      [
+        "Malzeme",
+        "Metal, Ahşap, Mermer, Polyresin, Cam ve Diğer Malzemeler"
+      ],
+      [
+        "Sona ermek",
+        "Mat, Parlak, Toz Boyalı, Doğal ve Özel"
+      ],
+      [
+        "Stil",
+        "Modern, Çağdaş, Klasik ve Fonksiyonel"
+      ],
+      [
+        "Başvuru",
+        "Ev, Ofis, Perakende ve Konaklama"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyAlt": "Premium yaşam tarzı ve faydalı ürün seçimi",
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Yaşam Tarzı ve Faydalı Ürünler?",
+    "whyDescription": "Ananta Horizons Pvt Ltd'de ürünlerimiz, pratikliği birinci sınıf işçilikle birleştirerek onları küresel pazarlara ve günlük kullanıma uygun hale getirecek şekilde tasarlanmıştır.",
+    "reasons": [
+      "Üstün Kalite",
+      "Fonksiyonel Tasarımlar",
+      "Geniş Ürün Seçimi",
+      "Güvenilir İhracat Hizmetleri"
+    ]
+  },
+  "belts": {
+    "heroAlt": "Hindistan'dan ihraç edilen yüksek performanslı endüstriyel V kayışları",
+    "title": "Güvenilir Güç İletimi",
+    "titleHighlight": "Çözümler",
+    "paragraphs": [
+      "Ananta Horizons Pvt. Ltd., çeşitli endüstriyel uygulamalarda üstün performans, dayanıklılık ve verimlilik sağlayan kapsamlı bir Endüstriyel V-Kayış yelpazesi ihraç etmektedir. Sertifikalı üreticilerden temin edilen kayışlarımız, tutarlı kalite ve güvenilir çalışmayı sağlamak için yüksek kaliteli malzemeler ve gelişmiş üretim süreçleri kullanılarak üretilmektedir.",
+      "İster ithalatçı, ister distribütör, OEM veya endüstriyel tedarikçi olun, V-Kayışlarımız verimli ve kesintisiz güç iletimi gerektiren makineler için güvenilir bir çözüm sunar."
+    ],
+    "aboutAlt": "Endüstriyel V kayışları ürün yelpazesi",
+    "technical": [
+      [
+        "Ürün Kategorisi",
+        "Endüstriyel V Kayışları"
+      ],
+      [
+        "Malzeme",
+        "Güçlendirilmiş Germe Kordonlu Yüksek Kaliteli Kauçuk"
+      ],
+      [
+        "Kemer Tipi",
+        "Klasik, Dar, Dişli, Sarılmış, Bantlı ve Özel"
+      ],
+      [
+        "Sıcaklık Dayanımı",
+        "Endüstriyel Çalışma Koşullarına Uygun"
+      ],
+      [
+        "Başvuru",
+        "Endüstriyel Makineler, Tarım, Otomotiv ve İmalat"
+      ],
+      [
+        "Ambalajlama",
+        "İhracat Standart Ambalajı"
+      ],
+      [
+        "Menşei ülke",
+        "Hindistan"
+      ]
+    ],
+    "whyAlt": "Yüksek kaliteli endüstriyel V kayışları",
+    "whyTitle": "Neden Bizi Seçmelisiniz?",
+    "whyHighlight": "Endüstriyel V Kayışları?",
+    "whyDescription": "Ananta Horizons Pvt.'da çalışıyor Ltd. tarafından güvenilirlik ve verimlilik için tasarlanan Endüstriyel V-Kayışlarımız zorlu çalışma ortamlarında bile güvenilir performans sunar.",
+    "benefits": [
+      "Üstün Kaliteli Malzemeler",
+      "Yüksek Performans",
+      "Güvenilir Dayanıklılık",
+      "Hassas İmalat"
+    ],
+    "craftedTitle": "Hassaslıkla Üretildi",
+    "craftedDescription": "Titiz kalite kontrolümüz, tesisimizden çıkan her ürünün Hint işçiliğinin bir başyapıtı olmasını sağlar. Büyük ölçekte mükemmellik sunmak için asırlık teknikleri modern üretim süreçleriyle harmanlıyoruz.",
+    "qualityPoints": [
+      "Sıkı Kalite Kontrolleri",
+      "Birinci Sınıf Hammaddeler"
+    ],
+    "customTitle": "İş İhtiyaçlarınıza Göre Özelleştirildi",
+    "customizations": [
+      "Özel Etiket Sanatı Tasarımları",
+      "Boyut Farklılıkları",
+      "Renk ve Kaplama Seçenekleri",
+      "Marka Logosu",
+      "Özelleştirilmiş Ambalaj",
+      "OEM Üretim Desteği"
+    ],
+    "enquire": "Özelleştirme Hakkında Bilgi Alın",
+    "faqTitle": "Sık Sorulan Sorular",
+    "faqHighlight": "Sorular",
+    "faqs": [
+      {
+        "question": "Toplu ihracat siparişlerini nasıl verebilirim?",
+        "answer": "İletişim formumuz veya e-posta yoluyla fiyat teklifi isteyebilirsiniz. Ekibimiz MOQ, fiyatlandırma katmanları, paketleme, dokümantasyon ve uluslararası gönderi süreci boyunca size rehberlik edecektir."
+      },
+      {
+        "question": "Hangi özelleştirme seçeneklerini sunuyorsunuz?",
+        "answer": "Sipariş gereksinimlerine göre özel ebat, bant profilleri, renkler, özel etiketler, marka logoları, ihracat ambalajları ve OEM üretim desteği sunuyoruz."
+      },
+      {
+        "question": "İhracat kalitesinde ambalajlamayı nasıl sağlıyorsunuz?",
+        "answer": "Her sipariş kalite kontrolünden geçirilir ve kayışları nemden, tozdan, deformasyondan ve nakliye hasarlarından korumak için tasarlanmış ihracat standardı malzemeler kullanılarak paketlenir."
+      },
+      {
+        "question": "Şu anda hangi ülkelere ihracat yapıyorsunuz?",
+        "answer": "Küresel pazarlardaki alıcıları destekliyoruz. Lojistik, dokümantasyon ve teslimat seçeneklerini onaylayabilmemiz için varış ülkenizle ilgili ihracat ekibimizle iletişime geçin."
+      }
+    ]
+  }
+}

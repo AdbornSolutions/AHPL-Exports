@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "家",
+    "about": "私たちについて",
+    "products": "製品",
+    "saffron": "サフラン",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "handicraft": "手芸",
+    "industrialGoods": "工業製品"
+  },
+  "buttons": {
+    "exploreProducts": "製品を調べる",
+    "learnMore": "もっと詳しく知る",
+    "contactUs": "お問い合わせ",
+    "viewMore": "もっと見る",
+    "viewBrochure": "パンフレットを見る",
+    "getBrochure": "パンフレットを入手する",
+    "sendMessage": "メッセージを送信する",
+    "readMore": "続きを読む",
+    "getQuote": "見積もりを取得する",
+    "moreAbout": "私たちについてもっと詳しく",
+    "requestQuote": "見積もりを依頼する"
+  },
+  "accessibility": {
+    "home": "AHPLホーム",
+    "logo": "AHPL グローバル トレード パートナー",
+    "mainNavigation": "メインナビゲーション",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "previousSlide": "前のスライド",
+    "nextSlide": "次のスライド",
+    "previousTestimonial": "以前の体験談",
+    "nextTestimonial": "次の体験談",
+    "viewTestimonial": "{{name}} からの紹介を見る",
+    "productSlide": "{{product}} スライドに移動",
+    "scrollTop": "一番上までスクロール",
+    "facebook": "AHPL の Facebook",
+    "instagram": "AHPLのインスタグラム",
+    "linkedin": "LinkedIn の AHPL",
+    "shareEmail": "AHPL を電子メールで共有する"
+  },
+  "status": {
+    "loading": "読み込み中...",
+    "notFound": "製品が見つかりません。"
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "アナンタ ホライゾンズ プライベート リミテッド"
+  },
+  "productCategories": {
+    "metalTable": "金属製のテーブル装飾",
+    "metalWall": "金属製の壁の装飾",
+    "polyresin": "ポリレジン装飾",
+    "marble": "大理石の装飾",
+    "lifestyle": "ライフスタイルとユーティリティ",
+    "wooden": "木製の装飾",
+    "belts": "工業用Vベルト"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "言語",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "chinese": "中文",
+    "russian": "Русский",
+    "portuguese": "Português",
+    "japanese": "日本語",
+    "turkish": "Türkçe",
+    "korean": "한국어",
+    "italian": "Italiano",
+    "select": "言語を選択してください"
+  },
+  "saffron": {
+    "shopBy": "購入方法",
+    "category": "カテゴリ",
+    "handpickedTitle": "あなたのために厳選",
+    "handpickedHighlight": "家",
+    "handpickedSubtitle": "厳選された職人技の宝物を愛を込めてお届けします",
+    "legacy": {
+      "eyebrow": "私たちの遺産",
+      "titleLine1": "手で作られています。",
+      "titleLine2": "ヘリテージからインスピレーションを受けています。",
+      "description": "サフランでは、すべての手作り作品には作り手の魂が宿っていると信じています。当社はインド全土の 200 を超える職人集団と提携し、古くからの伝統と現代の美学を融合させた本物の工芸品をお届けします。私たちの使命は、伝統的な工芸品を維持し、熟練した職人たちに有意義な生計を提供することです。",
+      "stat1Number": "200+",
+      "stat1Label": "職人の家族",
+      "stat2Number": "15+",
+      "stat2Label": "インドの諸州"
+    },
+    "spaceTitle": "購入方法",
+    "spaceHighlight": "空間",
+    "spaces": {
+      "livingRoom": "リビングルーム",
+      "diningSpace": "ダイニングスペース",
+      "entryway": "玄関",
+      "prayerRoom": "礼拝室",
+      "workDesk": "ワークデスク"
+    },
+    "blog": {
+      "eyebrow": "最新のブログ",
+      "titleLine1": "最新の洞察を読む",
+      "titleLine2": "から",
+      "titleHighlight1": "アップデート",
+      "titleHighlight2": "ブログ",
+      "viewMore": "もっと見る",
+      "posts": [
+        {
+          "title": "ドキュメントのエクスポートに関する完全ガイド",
+          "short": "円滑な国際取引のために商業送り状、船荷証券、原産地証明書、税関書類などの重要な貿易文書を理解します。"
+        },
+        {
+          "title": "2026 年の輸出ビジネスにとって上位の新興市場",
+          "short": "高成長の国際市場と、世界的な拠点の拡大を目指す企業の新たな機会を発見してください。"
+        },
+        {
+          "title": "適切なグローバル ソーシング パートナーを選択する方法",
+          "short": "長期的なビジネスの成功のために、信頼できるサプライヤーと調達パートナーを選択する際に考慮すべき重要な要素を学びます。"
+        }
+      ]
+    }
+  }
+}

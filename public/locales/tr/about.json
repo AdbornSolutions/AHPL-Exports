@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Hakkımızda",
+  "heading": "Güvenilir İhracat Ortağınız",
+  "headingHighlight": "Hindistan",
+  "imageAlt": "AHPL Hakkında",
+  "tabs": {
+    "about": {
+      "title": "AHPL Hakkında",
+      "paragraphs": [
+        "Merkezi Nagpur, Hindistan'da bulunan AHPL, Hindistan'ın çeşitli üretim ortamı ile küresel pazarın gelişen talepleri arasındaki boşluğu doldurmaya yönelik net bir vizyonla kuruldu.",
+        "Bir ticari ihracat şirketi olarak, uluslararası standartları karşılayan yüksek kaliteli ürünler tedarik etmek için Hindistan genelinde güvenilir üreticiler ve zanaatkârlarla yakın işbirliği içinde çalışıyoruz. Uzmanlığımız satın almanın ötesine geçerek kalite yönetimi, ihracat uyumluluğu, lojistik koordinasyonu ve dünya çapındaki müşterilere güvenilir teslimat sunmaktadır.",
+        "AHPL'de yalnızca ürün ihraç etmiyoruz; güvenilirlik, şeffaflık ve tutarlı değer sunarak uzun vadeli ortaklıklar kuruyoruz."
+      ]
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "paragraphs": [
+        "Uluslararası alıcıların Hindistan'dan ürün tedarik etme şeklini değiştirmeye kararlıyız. AHPL, Hindistan'ın zengin üretim mirasını modern tedarik zinciri yönetimi ve verimli ihracat süreçleriyle birleştirerek, ürün tekliflerini birinci sınıf Hint menşeli ürünlerle genişletmek isteyen perakendeciler, toptancılar, distribütörler ve ithalatçılar için güvenilir bir ortak olarak hizmet vermektedir."
+      ]
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "paragraphs": [
+        "Misyonumuz, etik kaynak kullanımı, katı kalite standartları, şeffaf iletişim ve verimli ihracat operasyonları yoluyla uluslararası alıcılara kaliteli Hint ürünlerine sorunsuz erişim sağlamaktır. Her gönderinin mükemmelliğe olan bağlılığımızı yansıtmasını sağlayarak müşterilerimiz için kalıcı değer yaratmaya çalışıyoruz."
+      ]
+    }
+  }
+}

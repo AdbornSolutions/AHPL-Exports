@@ -3,6 +3,7 @@ import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import navLogo from "../../assets/navlogo.png";
+import { languages } from "../../config/languages";
 import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
 
 const links = [
@@ -32,17 +33,6 @@ const productDropdownGroups = [
   },
 ];
 
-const languages = [
-  { code: "en", labelKey: "language.english" },
-  { code: "hi", labelKey: "language.hindi" },
-  { code: "de", labelKey: "language.german" },
-  { code: "es", labelKey: "language.spanish" },
-  { code: "fr", labelKey: "language.french" },
-  { code: "pt", labelKey: "language.portuguese" },
-  { code: "ru", labelKey: "language.russian" },
-  { code: "zh", labelKey: "language.mandarin" },
-];
-
 const Navbar = () => {
   const { t, i18n } = useTranslation("common");
   const [open, setOpen] = useState(false);
@@ -54,6 +44,9 @@ const Navbar = () => {
 
   useEffect(() => {
     document.documentElement.lang = currentLanguage;
+    document.documentElement.dir =
+      languages.find(({ code }) => code === currentLanguage)?.direction ??
+      "ltr";
   }, [currentLanguage]);
 
   return (

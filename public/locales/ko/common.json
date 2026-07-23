@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "집",
+    "about": "회사 소개",
+    "products": "제품",
+    "saffron": "사프란",
+    "blog": "블로그",
+    "contact": "문의하기",
+    "handicraft": "손재주",
+    "industrialGoods": "산업용품"
+  },
+  "buttons": {
+    "exploreProducts": "제품 살펴보기",
+    "learnMore": "자세히 알아보기",
+    "contactUs": "문의하기",
+    "viewMore": "더 많이 보기",
+    "viewBrochure": "브로셔 보기",
+    "getBrochure": "브로셔 받기",
+    "sendMessage": "메시지 보내기",
+    "readMore": "자세히 알아보기",
+    "getQuote": "견적 받기",
+    "moreAbout": "회사 소개",
+    "requestQuote": "견적 요청"
+  },
+  "accessibility": {
+    "home": "AHPL 홈",
+    "logo": "AHPL 글로벌 무역 파트너",
+    "mainNavigation": "메인 네비게이션",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "previousSlide": "이전 슬라이드",
+    "nextSlide": "다음 슬라이드",
+    "previousTestimonial": "이전 평가",
+    "nextTestimonial": "다음 평가",
+    "viewTestimonial": "{{name}}의 평가 보기",
+    "productSlide": "{{product}} 슬라이드로 이동",
+    "scrollTop": "맨 위로 스크롤",
+    "facebook": "AHPL 페이스북",
+    "instagram": "AHPL 인스타그램",
+    "linkedin": "LinkedIn의 AHPL",
+    "shareEmail": "이메일로 AHPL 공유"
+  },
+  "status": {
+    "loading": "로드 중...",
+    "notFound": "제품을 찾을 수 없습니다."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "아난타 호라이즌스 Pvt Ltd"
+  },
+  "productCategories": {
+    "metalTable": "금속 테이블 장식",
+    "metalWall": "금속 벽 장식",
+    "polyresin": "폴리레진 장식",
+    "marble": "대리석 장식",
+    "lifestyle": "라이프스타일 및 유틸리티",
+    "wooden": "나무 장식",
+    "belts": "산업용 V-벨트"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "언어",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "chinese": "中文",
+    "russian": "Русский",
+    "portuguese": "Português",
+    "japanese": "日本語",
+    "turkish": "Türkçe",
+    "korean": "한국어",
+    "italian": "Italiano",
+    "select": "언어 선택"
+  },
+  "saffron": {
+    "shopBy": "쇼핑 기준",
+    "category": "범주",
+    "handpickedTitle": "당신을 위해 엄선된",
+    "handpickedHighlight": "집",
+    "handpickedSubtitle": "엄선된 장인의 보물을 사랑으로 전달합니다",
+    "legacy": {
+      "eyebrow": "우리의 유산",
+      "titleLine1": "손으로 제작되었습니다.",
+      "titleLine2": "헤리티지에서 영감을 받았습니다.",
+      "description": "Saffron에서는 모든 수공예품에 제작자의 영혼이 담겨 있다고 믿습니다. 우리는 인도 전역의 200개 이상의 장인 클러스터와 협력하여 오래된 전통과 현대적인 미학을 혼합한 정통 공예품을 제공합니다. 우리의 사명은 전통 공예를 유지하고 장인들에게 의미 있는 생계를 제공하는 것입니다.",
+      "stat1Number": "200+",
+      "stat1Label": "장인 가족",
+      "stat2Number": "15+",
+      "stat2Label": "인도 주"
+    },
+    "spaceTitle": "쇼핑 기준",
+    "spaceHighlight": "공간",
+    "spaces": {
+      "livingRoom": "거실",
+      "diningSpace": "식사 공간",
+      "entryway": "진입로",
+      "prayerRoom": "기도실",
+      "workDesk": "업무용 책상"
+    },
+    "blog": {
+      "eyebrow": "최신 블로그",
+      "titleLine1": "최신 통찰력을 읽어보세요",
+      "titleLine2": "에서",
+      "titleHighlight1": "업데이트",
+      "titleHighlight2": "블로그",
+      "viewMore": "더 많이 보기",
+      "posts": [
+        {
+          "title": "문서 내보내기에 대한 완벽한 가이드",
+          "short": "원활한 국제거래를 위해 상업송장, 선하증권, 원산지증명서, 통관서류 등 필수 무역서류를 이해합니다."
+        },
+        {
+          "title": "2026년 수출 기업을 위한 최고의 신흥 시장",
+          "short": "고성장하는 국제 시장과 글로벌 입지를 확장하려는 기업을 위한 새로운 기회를 찾아보세요."
+        },
+        {
+          "title": "올바른 글로벌 소싱 파트너를 선택하는 방법",
+          "short": "장기적인 비즈니스 성공을 위해 신뢰할 수 있는 공급업체와 소싱 파트너를 선택할 때 고려해야 할 주요 요소에 대해 알아보세요."
+        }
+      ]
+    }
+  }
+}

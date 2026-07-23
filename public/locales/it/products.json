@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Prodotto",
+  "cards": [
+    {
+      "title": "Tavolo in metallo\nArredamento",
+      "description": "Eleganti decorazioni da tavolo in metallo realizzate a mano, progettate per valorizzare case, hotel, uffici e spazi di ospitalità con uno stile senza tempo, resistenza e lavorazione di alta qualità.",
+      "alt": "Decorazioni da tavolo in metallo per l'esportazione"
+    },
+    {
+      "title": "Parete metallica\nArredamento",
+      "description": "Aggiungi eleganza artistica alle tue pareti con questa decorazione da parete in metallo realizzata a mano, caratterizzata da colori vivaci, lavorazione di alta qualità e un design contemporaneo senza tempo.",
+      "alt": "Decorazione da parete in metallo per l'esportazione"
+    },
+    {
+      "title": "Arredamento in marmo",
+      "description": "Elegante decorazione in marmo realizzata a mano che aggiunge fascino senza tempo, artigianato artistico e stile sofisticato alla tua casa, ufficio o collezione regalo.",
+      "alt": "Decorazioni in marmo per l'esportazione"
+    },
+    {
+      "title": "Decoro in resina",
+      "description": "Collezione di decorazioni in resina realizzate a mano con portapenne artistici e un portacandelina decorativo, che unisce funzionalità, eleganza e artigianato tradizionale per interni eleganti.",
+      "alt": "Decori in resina per esportazione"
+    },
+    {
+      "title": "Arredamento in legno",
+      "description": "Bellissimi pezzi decorativi in ​​legno realizzati a mano che aggiungono calore, eleganza e fascino artistico alla tua casa, ufficio o spazi regalo.",
+      "alt": "Decorazioni in legno per l'esportazione"
+    },
+    {
+      "title": "Stile di vita e utilità",
+      "description": "Prodotti premium lifestyle e utili che combinano funzionalità pratica, design contemporaneo e maestria artigianale eccezionale per la vita moderna e l'uso quotidiano.",
+      "alt": "Stile di vita e utilità per l'esportazione"
+    },
+    {
+      "title": "Cinghie trapezoidali industriali",
+      "description": "Cinghie trapezoidali industriali ad alte prestazioni progettate per una trasmissione di potenza affidabile, una durata eccezionale e prestazioni efficienti in applicazioni industriali, automobilistiche e agricole.",
+      "alt": "Cinghie trapezoidali industriali per l'esportazione"
+    }
+  ],
+  "details": {
+    "heading": "Tecnico",
+    "headingHighlight": "Dettagli",
+    "whyChoose": "Perché scegliere AHPL",
+    "rangeIntro": "Esportiamo un'ampia varietà di prodotti decorativi, tra cui:",
+    "countryOfOrigin": "Paese di origine",
+    "india": "India",
+    "packaging": "Confezione",
+    "exportPackaging": "Imballaggio standard per l'esportazione"
+  },
+  "productDetail": {
+    "imageView": "{{name}} visualizza {{number}}",
+    "showImage": "Mostra {{name}} immagine {{number}}",
+    "thumbnail": "{{name}} miniatura {{number}}",
+    "features": [
+      "Arte artigianale al 100%.",
+      "Premium {{material}}",
+      "Finitura protettiva per l'esportazione",
+      "Materiali di qualità garantita"
+    ],
+    "intro": "{{name}} è un raffinato pezzo {{category}} selezionato da Ananta Horizons Pvt Ltd per case, hotel, uffici, rivenditori e progetti di ospitalità internazionali. La sua forma studiata combina l'abilità artigianale indiana con una costruzione affidabile e una finitura di alta qualità pronta per l'esportazione.",
+    "rating": "Artigianato indiano di alta qualità | Qualità dell'esportazione",
+    "requestQuote": "Richiedi preventivo",
+    "tabs": {
+      "description": "Descrizione",
+      "specifications": "Specifiche"
+    },
+    "heritage": "Patrimonio in ogni dettaglio",
+    "descriptionOne": "{{name}} rappresenta un'espressione premurosa dell'artigianato indiano nella collezione {{category}}. Ogni pezzo è rifinito con cura in modo che la sua forma, colore, struttura e dettagli risultino distintivi pur rimanendo pratici per gli interni moderni.",
+    "descriptionTwo": "La sua struttura durevole e le finiture di qualità per l'esportazione lo rendono una scelta sicura per collezioni di vendita al dettaglio premium, spazi di ospitalità boutique, articoli da regalo e progetti di arredamento residenziale.",
+    "complementary": "Complementare",
+    "complementaryHighlight": "Prodotti",
+    "specLabels": {
+      "category": "Categoria di prodotto",
+      "material": "Materiale",
+      "finish": "Fine",
+      "style": "Stile",
+      "application": "Applicazione",
+      "origin": "Paese di origine"
+    },
+    "style": "Qualità contemporanea, artigianale e da esportazione",
+    "application": "Casa, hotel, ufficio, vendita al dettaglio e ospitalità"
+  }
+}
