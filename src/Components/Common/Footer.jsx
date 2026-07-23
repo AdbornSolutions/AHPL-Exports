@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer.png";
 import footerLogo from "../../assets/footerlogo.png";
 import { containerClass } from "../../utils/tailwindClasses";
@@ -12,24 +13,21 @@ const socialLinkClass =
   "grid size-5 place-items-center rounded-full text-[10px] font-bold text-white no-underline transition hover:-translate-y-0.5 hover:opacity-90 [&_svg]:size-3";
 
 const quickLinks = [
-  { label: "Home", to: "/" },
-  { label: "About Us", to: "/about-us" },
-  { label: "Products", to: "/product" },
-  { label: "Blog", to: "/blog" },
-  { label: "Contact Us", to: "/contact-us" },
+  { labelKey: "navigation.home", to: "/" }, { labelKey: "navigation.about", to: "/about-us" },
+  { labelKey: "navigation.products", to: "/product" }, { labelKey: "navigation.blog", to: "/blog" },
+  { labelKey: "navigation.contact", to: "/contact-us" },
 ];
 
 const productLinks = [
-  { label: "Industrial V-Belts", to: "/product/industrial-v-belts" },
-  { label: "Metal Table Decor", to: "/product/metal-table-decor" },
-  { label: "Metal Wall Decor", to: "/product/metal-wall-decor" },
-  { label: "Polyresin Decor", to: "/product/polyresin-decor" },
-  { label: "Marble Decor", to: "/product/marble-decor" },
-  { label: "Lifestyle & Utility", to: "/product/lifestyle-utility" },
-  { label: "Wooden Decor", to: "/product/wooden-decor" },
+  { labelKey: "productCategories.belts", to: "/product/industrial-v-belts" }, { labelKey: "productCategories.metalTable", to: "/product/metal-table-decor" },
+  { labelKey: "productCategories.metalWall", to: "/product/metal-wall-decor" }, { labelKey: "productCategories.polyresin", to: "/product/polyresin-decor" },
+  { labelKey: "productCategories.marble", to: "/product/marble-decor" }, { labelKey: "productCategories.lifestyle", to: "/product/lifestyle-utility" },
+  { labelKey: "productCategories.wooden", to: "/product/wooden-decor" },
 ];
 
-const Footer = () => (
+const Footer = () => {
+  const { t } = useTranslation(["footer", "common"]);
+  return (
   <footer className="pb-6">
     <div
       className={`${containerClass} overflow-hidden rounded-[28px] bg-cover bg-center px-12 pb-[22px] pt-12 text-white max-md:px-6 max-md:pb-5 max-md:pt-[38px]`}
@@ -37,43 +35,42 @@ const Footer = () => (
     >
       <div className="grid grid-cols-[1.5fr_0.65fr_1fr_1.15fr] gap-[42px] max-[980px]:grid-cols-[1.5fr_1fr_1fr] max-md:grid-cols-2 max-md:gap-x-5 max-md:gap-y-[30px] max-[430px]:grid-cols-1">
         <div className="max-md:col-span-full max-[430px]:col-span-1">
-          <Link className="mb-6 block w-fit" to="/" aria-label="AHPL home">
-            <img className="w-[170px]" src={footerLogo} alt="AHPL Global Trade Partner" />
+          <Link className="mb-6 block w-fit" to="/" aria-label={t("accessibility.home", { ns: "common" })}>
+            <img className="w-[170px]" src={footerLogo} alt={t("accessibility.logo", { ns: "common" })} />
           </Link>
-          <h3 className="mb-4 text-[15px] font-bold">About Company.</h3>
+          <h3 className="mb-4 text-[15px] font-bold">{t("aboutTitle")}</h3>
           <p className="text-xs leading-[1.55] text-[#becbe0]">
-            AHPL is a trusted export company connecting businesses worldwide through reliable
-            sourcing, quality products, efficient logistics, and seamless trade solutions.
+            {t("description")}
           </p>
           <div className="mt-4 flex gap-1.5 text-white">
-            <a className={`${socialLinkClass} bg-[#1877f2]`} href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="AHPL on Facebook">f</a>
-            <a className={`${socialLinkClass} bg-[#ff4d7d]`} href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="AHPL on Instagram">ig</a>
-            <a className={`${socialLinkClass} bg-[#0a66c2]`} href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="AHPL on LinkedIn">in</a>
-            <a className={`${socialLinkClass} bg-black`} href="mailto:Info@ahplexports.com?subject=AHPL%20export%20enquiry" aria-label="Share AHPL by email"><Share2 /></a>
+            <a className={`${socialLinkClass} bg-[#1877f2]`} href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label={t("accessibility.facebook", { ns: "common" })}>f</a>
+            <a className={`${socialLinkClass} bg-[#ff4d7d]`} href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label={t("accessibility.instagram", { ns: "common" })}>ig</a>
+            <a className={`${socialLinkClass} bg-[#0a66c2]`} href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label={t("accessibility.linkedin", { ns: "common" })}>in</a>
+            <a className={`${socialLinkClass} bg-black`} href="mailto:Info@ahplexports.com?subject=AHPL%20export%20enquiry" aria-label={t("accessibility.shareEmail", { ns: "common" })}><Share2 /></a>
           </div>
         </div>
 
         <div>
-          <h3 className="mb-4 text-[15px] font-bold">Quick Links</h3>
+          <h3 className="mb-4 text-[15px] font-bold">{t("quickLinks")}</h3>
           {quickLinks.map((link) => (
             <Link className={footerLinkClass} to={link.to} key={link.to}>
-              {link.label}
+              {t(link.labelKey, { ns: "common" })}
             </Link>
           ))}
         </div>
 
         <div>
-          <h3 className="mb-4 text-[15px] font-bold">Product Categories</h3>
+          <h3 className="mb-4 text-[15px] font-bold">{t("products")}</h3>
           {productLinks.map((link) => (
-            <Link className={footerLinkClass} to={link.to} key={link.label}>
-              {link.label}
+            <Link className={footerLinkClass} to={link.to} key={link.labelKey}>
+              {t(link.labelKey, { ns: "common" })}
             </Link>
           ))}
         </div>
 
         <div className="max-[980px]:col-span-full max-md:col-span-full max-[430px]:col-span-1">
-          <h3 className="mb-4 text-[15px] font-bold">Contact</h3>
-          <h4 className="mb-4 text-xs font-bold text-[#dce5f5]">Operational Address:</h4>
+          <h3 className="mb-4 text-[15px] font-bold">{t("contact")}</h3>
+          <h4 className="mb-4 text-xs font-bold text-[#dce5f5]">{t("operationalAddress")}</h4>
           <p className={footerTextClass}>
             <MapPin className="mt-0.5 size-[15px] flex-none text-[#30c8bb]" />
             <a
@@ -103,16 +100,17 @@ const Footer = () => (
       <div className="mt-6 flex justify-between gap-6 border-t border-white/15 pt-[22px] text-[10px] text-[#91a1b9] max-md:flex-col">
         <span className="flex flex-wrap gap-x-5 gap-y-2">
           <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/contact-us">
-            Privacy Policy
+            {t("privacy")}
           </Link>
           <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/contact-us">
-            Terms & Conditions
+            {t("terms")}
           </Link>
         </span>
-        <span>&copy; 2026 AHPL. All Rights Reserved. Site Design and Maintained by <a className="text-[#fff] no-underline transition hover:text-[#30c8bb]" href="https://www.adbornsolutions.com/" target="_blank" rel="noreferrer"> AdBorn Solutions.</a></span>
+        <span>{t("copyright")} <a className="text-[#fff] no-underline transition hover:text-[#30c8bb]" href="https://www.adbornsolutions.com/" target="_blank" rel="noreferrer"> {t("agency")}</a></span>
       </div>
     </div>
   </footer>
-);
+  );
+};
 
 export default Footer;

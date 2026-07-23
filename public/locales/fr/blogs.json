@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blogue",
+  "latest": "Dernier blog",
+  "heading": "Lisez nos dernières informations sur",
+  "headingHighlight": "Mettre à jour le blog",
+  "viewMoreAbout": "En savoir plus sur {{title}}",
+  "posts": [
+    {
+      "title": "Un guide complet de la documentation d'exportation",
+      "short": "Comprendre les documents commerciaux essentiels tels que les factures commerciales, les connaissements, les certificats d'origine et les documents douaniers.",
+      "description": "Comprendre les documents commerciaux essentiels tels que les factures commerciales, les connaissements, les certificats d'origine et les documents douaniers pour des transactions internationales fluides."
+    },
+    {
+      "title": "Principaux marchés émergents pour les entreprises exportatrices en 2026",
+      "short": "Découvrez des marchés internationaux à forte croissance et de nouvelles opportunités pour les entreprises cherchant à étendre leur présence mondiale.",
+      "description": "Découvrez des marchés internationaux à forte croissance et de nouvelles opportunités pour les entreprises cherchant à étendre leur présence mondiale."
+    },
+    {
+      "title": "Comment choisir le bon partenaire d'approvisionnement mondial",
+      "short": "Découvrez les facteurs clés à prendre en compte lors de la sélection de fournisseurs et de partenaires d'approvisionnement fiables pour un succès commercial à long terme.",
+      "description": "Découvrez les facteurs clés à prendre en compte lors de la sélection de fournisseurs et de partenaires d'approvisionnement fiables pour un succès commercial à long terme."
+    }
+  ]
+}

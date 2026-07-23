@@ -1,0 +1,432 @@
+{
+  "common": {
+    "technical": "Technisch",
+    "details": "Einzelheiten",
+    "whyChoose": "Warum AHPL wählen?",
+    "rangeIntro": "Wir exportieren eine große Auswahl an Dekorationsprodukten, darunter:",
+    "viewBrochure": "Broschüre ansehen"
+  },
+  "sharedProducts": [
+    "Rudra-Ansh (Schwarz)",
+    "Ashwa",
+    "Mayureshwar",
+    "Nachtzauber (Weiß)",
+    "Gaj-Jhoola",
+    "Kohlenstoffpferd",
+    "Aura-Hawk",
+    "Mitternachtsmönch (Weiß)",
+    "Chhatrapati",
+    "Zwillings-Grace"
+  ],
+  "metalTable": {
+    "heroAlt": "Tischdekoration aus Metall, exportiert aus Indien",
+    "title": "Elegante Designs gefertigt",
+    "titleHighlight": "für globale Märkte",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd. bietet ein erstklassiges Sortiment an Tischdekorationsprodukten aus Metall, die Indiens außergewöhnliche Handwerkskunst und hervorragende Fertigungsqualität widerspiegeln. Jedes Stück wird sorgfältig von vertrauenswürdigen Herstellern bezogen und nach internationalen Qualitätsstandards gefertigt.",
+      "Unsere Kollektion vereint künstlerisches Design mit überragender Haltbarkeit und ist damit die perfekte Wahl für Einzelhändler, Großhändler, Importeure, Innenarchitekten und Händler, die hochwertige Dekorationsprodukte suchen."
+    ],
+    "aboutAlt": "Tischdekorationskollektion aus Metall für globale Märkte",
+    "rangeTitle": "Unser Metalltisch",
+    "rangeHighlight": "Dekorsortiment",
+    "products": [
+      "Mangal-Jyoti (Schwarz)",
+      "Alaap",
+      "Glühflügel",
+      "Hoot-Halter",
+      "Symphonie (Orange)",
+      "Das Modak-Blatt (Grün)",
+      "Lume Lady (Single)",
+      "Kalam Kashti",
+      "Pedalpfosten",
+      "Mayur"
+    ],
+    "technical": [
+      [
+        "Produktkategorie",
+        "Tischdekoration aus Metall"
+      ],
+      [
+        "Material",
+        "Eisen, Aluminium, Messing, Edelstahl (nach Bedarf)"
+      ],
+      [
+        "Beenden",
+        "Pulverbeschichtet, Antik, Matt, Glänzend, Gold, Schwarz und individuell"
+      ],
+      [
+        "Stil",
+        "Modern, zeitgenössisch, klassisch und luxuriös"
+      ],
+      [
+        "Verwendung",
+        "Heim-, Hotel-, Büro- und Gewerbeeinrichtungen"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyAlt": "Tischdekoration aus Metall, Handwerkskunst und Qualität",
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Tischdekoration aus Metall?",
+    "whyDescription": "Bei Ananta Horizons pvt ltd kombinieren wir Indiens reiche Handwerkskunst mit moderner Fertigung, um hochwertige Tischdekorationen aus Metall für globale Märkte zu liefern. Jedes Produkt wird sorgfältig beschafft, qualitätsgeprüft und für den Export vorbereitet, was einen außergewöhnlichen Mehrwert für Importeure, Großhändler, Einzelhändler und Händler gewährleistet.",
+    "reasons": [
+      "Erstklassige Handwerkskunst",
+      "Hochwertige Materialien",
+      "Umfangreiche Designkollektion",
+      "Strenge Qualitätssicherung"
+    ]
+  },
+  "metalWall": {
+    "heroAlt": "Wanddekoration aus Metall, exportiert aus Indien",
+    "title": "Stilvolle Wanddekoration",
+    "titleHighlight": "für Global Interiors",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd exportiert ein exklusives Sortiment an Wanddekorationen aus Metall, die moderne und zeitgemäße Räume aufwerten sollen. Jedes Stück wird von vertrauenswürdigen indischen Herstellern bezogen, mit Präzision aus hochwertigen Materialien gefertigt und nach internationalen Qualitätsstandards fertiggestellt.",
+      "Unsere Kollektion ist ideal für Importeure, Großhändler, Einzelhändler, Vertriebshändler, Innenarchitekten und Gastronomiebetriebe, die elegante und exportfähige dekorative Wandkunst suchen."
+    ],
+    "aboutAlt": "Dekorative Wandkunst aus Metall in einem modernen Interieur",
+    "rangeTitle": "Unsere Metallwand",
+    "rangeHighlight": "Dekorsortiment",
+    "products": [
+      "Turban-Geschichten",
+      "Die göttliche Stunde",
+      "Turban-Kunst",
+      "Bansuri-Glückseligkeit",
+      "Vergoldeter Ganesha",
+      "Blütenkorb (Golden)",
+      "Der Heilige Haken",
+      "Gaj-Kriti",
+      "Zeitreise",
+      "Symphonie-Streicher"
+    ],
+    "technical": [
+      [
+        "Produktkategorie",
+        "Wanddekoration aus Metall"
+      ],
+      [
+        "Material",
+        "Eisen, Aluminium, Messing, Edelstahl"
+      ],
+      [
+        "Beenden",
+        "Matt, glänzend, antik, gold, schwarz und benutzerdefiniert"
+      ],
+      [
+        "Stil",
+        "Modern, zeitgenössisch, luxuriös, industriell"
+      ],
+      [
+        "Anwendung",
+        "Wohn- und Gewerbeinnenräume"
+      ],
+      [
+        "Montage",
+        "Wandmontage"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ]
+  },
+  "polyresin": {
+    "heroAlt": "Hochwertiges Polyresin-Dekor, exportiert aus Indien",
+    "title": "Elegantes Dekor, gefertigt mit",
+    "titleHighlight": "Präzision",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd exportiert ein erstklassiges Sortiment an Polyresin-Dekorprodukten, die Kreativität, Handwerkskunst und Qualität vereinen. Jedes Stück wird von vertrauenswürdigen indischen Handwerkern und Lieferanten hergestellt und sorgfältig entworfen, um herausragende Ästhetik und lange Haltbarkeit zu bieten.",
+      "Von dekorativen Figuren bis hin zu zeitgenössischen Skulpturen ist unsere Kollektion darauf ausgelegt, die Erwartungen internationaler Einzelhändler, Großhändler, Vertriebshändler und Innenarchitekten zu erfüllen."
+    ],
+    "aboutAlt": "Hochwertige dekorative Polyresin-Kollektion",
+    "rangeTitle": "Unser Polyresin",
+    "rangeHighlight": "Dekorsortiment",
+    "technical": [
+      [
+        "Produktkategorie",
+        "Polyresin-Dekor"
+      ],
+      [
+        "Material",
+        "Premium-Polyresin"
+      ],
+      [
+        "Beenden",
+        "Matt, glänzend, antik, metallisch und individuell"
+      ],
+      [
+        "Stil",
+        "Modern, zeitgenössisch, klassisch, luxuriös"
+      ],
+      [
+        "Anwendung",
+        "Heim-, Hotel-, Büro- und Gewerbeeinrichtungen"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyAlt": "Kunsthandwerkliche und dekorative Kollektion aus Polyresin",
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Polyresin-Dekor?",
+    "whyDescription": "Bei Ananta Horizons Pvt Ltd ist unsere Polyresin-Dekorkollektion darauf ausgelegt, künstlerische Schönheit mit außergewöhnlicher Haltbarkeit zu verbinden. Jedes Produkt wird mit Präzision gefertigt, um den höchsten internationalen Qualitätsstandards zu entsprechen.",
+    "reasons": [
+      "Erstklassige Handwerkskunst",
+      "Große Auswahl an Designs",
+      "Hochwertige Materialien",
+      "Qualitätsgesichert"
+    ]
+  },
+  "marble": {
+    "heroAlt": "Aus Indien exportiertes Premium-Marmordekor",
+    "title": "Zeitlose Eleganz in",
+    "titleHighlight": "Jedes Stück",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd exportiert eine exklusive Kollektion von Marmordekorprodukten, die von erfahrenen indischen Handwerkern aus hochwertigem Naturmarmor hergestellt werden. Jedes Stück spiegelt außergewöhnliche Handwerkskunst, aufwendige Details und erstklassige Verarbeitung wider und bietet eine perfekte Mischung aus traditioneller Kunstfertigkeit und zeitgenössischem Design.",
+      "Unsere Marmordekorkollektion ist ideal für Importeure, Großhändler, Einzelhändler, Innenarchitekten und Gastronomiebetriebe, die luxuriöse Dekorationsprodukte suchen, die internationalen Qualitätsstandards entsprechen."
+    ],
+    "aboutAlt": "Handgefertigte Marmordekor-Kollektion",
+    "rangeTitle": "Unser Marmor",
+    "rangeHighlight": "Dekorsortiment",
+    "technical": [
+      [
+        "Produktkategorie",
+        "Marmordekor"
+      ],
+      [
+        "Material",
+        "Natürlicher Marmor"
+      ],
+      [
+        "Beenden",
+        "Poliert, matt, geschliffen und individuell"
+      ],
+      [
+        "Stil",
+        "Modern, zeitgenössisch, traditionell und luxuriös"
+      ],
+      [
+        "Anwendung",
+        "Heim-, Hotel-, Büro- und Gewerbeeinrichtungen"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyAlt": "Handwerkskunst und dekorative Kollektion aus natürlichem Marmor",
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Marmordekor?",
+    "whyDescription": "Bei Ananta Horizons Pvt Ltd spiegelt unsere Marmordekorkollektion die perfekte Balance aus natürlicher Schönheit, handwerklichem Können und dauerhafter Haltbarkeit wider. Jedes Produkt wird sorgfältig gefertigt, um zeitlose Eleganz zu bieten und gleichzeitig die Erwartungen internationaler Käufer zu erfüllen.",
+    "reasons": [
+      "Premium-Naturmarmor",
+      "Elegante Designs",
+      "Überlegene Qualität",
+      "Zuverlässige Exportlösungen"
+    ]
+  },
+  "wooden": {
+    "heroAlt": "Aus Indien exportiertes Premium-Holzdekor",
+    "title": "Handgefertigte Holzdekoration für",
+    "titleHighlight": "Jeder Raum",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd exportiert eine sorgfältig zusammengestellte Auswahl an Holzdekorprodukten, die von erfahrenen indischen Handwerkern hergestellt werden. Unsere Kollektion kombiniert Naturholz mit künstlerischen Details und bietet elegantes Dekor und funktionale Lifestyle-Produkte, die sowohl zu traditionellen als auch zu modernen Innenräumen passen.",
+      "Jedes Produkt wird sorgfältig beschafft, qualitätsgeprüft und verpackt, um internationalen Exportstandards zu entsprechen, was es zur idealen Wahl für Importeure, Großhändler, Einzelhändler, Geschenkartikelläden und Innendekorationsmarken macht."
+    ],
+    "aboutAlt": "Handgefertigte Dekorationsprodukte aus Holz",
+    "rangeTitle": "Entdecken Sie unser Holz",
+    "rangeHighlight": "Dekorkollektion",
+    "technical": [
+      [
+        "Produktkategorie",
+        "Holzdekor"
+      ],
+      [
+        "Material",
+        "Premium-Holz"
+      ],
+      [
+        "Beenden",
+        "Natürlich, matt, poliert, lackiert und individuell"
+      ],
+      [
+        "Stil",
+        "Traditionell, zeitgenössisch, rustikal und modern"
+      ],
+      [
+        "Anwendung",
+        "Zuhause, Büro, Gastgewerbe und Geschenke"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Holzdekor?",
+    "whyDescription": "Bei Ananta Horizons Pvt Ltd präsentiert unsere Holzdekorkollektion die Wärme von Naturholz kombiniert mit außergewöhnlicher indischer Handwerkskunst. Jedes Produkt ist darauf ausgelegt, Schönheit, Funktionalität und dauerhafte Qualität zu bieten.",
+    "reasons": [
+      "Authentische indische Handwerkskunst",
+      "Überlegene Qualität",
+      "Dekorative Designs",
+      "Hochwertige Naturmaterialien"
+    ]
+  },
+  "lifestyle": {
+    "heroAlt": "Funktionelle Lifestyle- und Gebrauchsprodukte für modernes Wohnen",
+    "title": "Funktionelle Produkte für",
+    "titleHighlight": "Modernes Leben",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd exportiert eine breite Palette an Lifestyle- und Gebrauchsprodukten, die den Alltag durch praktisches Design und zuverlässige Leistung verbessern. Unsere Produkte beziehen wir von vertrauenswürdigen Herstellern in ganz Indien und werden unter Verwendung hochwertiger Materialien und moderner Fertigungstechniken hergestellt, um internationalen Standards zu entsprechen.",
+      "Egal, ob Sie Einzelhändler, Großhändler, Händler oder Importeur sind, unsere Kollektion bietet stilvolle, langlebige und exportfähige Produkte für Privathäuser, Büros und Gewerbeflächen."
+    ],
+    "aboutAlt": "Kollektion von Lifestyle- und Gebrauchsprodukten",
+    "rangeTitle": "Unser Lebensstil und Nutzen",
+    "rangeHighlight": "Reichweite",
+    "technical": [
+      [
+        "Produktkategorie",
+        "Lifestyle- und Gebrauchsprodukte"
+      ],
+      [
+        "Material",
+        "Metall, Holz, Marmor, Polyresin, Glas und andere Materialien"
+      ],
+      [
+        "Beenden",
+        "Matt, glänzend, pulverbeschichtet, natürlich und individuell"
+      ],
+      [
+        "Stil",
+        "Modern, zeitgenössisch, klassisch und funktional"
+      ],
+      [
+        "Anwendung",
+        "Zuhause, Büro, Einzelhandel und Gastgewerbe"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyAlt": "Auswahl hochwertiger Lifestyle- und Gebrauchsprodukte",
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Lifestyle- und Gebrauchsprodukte?",
+    "whyDescription": "Bei Ananta Horizons Pvt Ltd sind unsere Produkte so konzipiert, dass sie Praktikabilität mit erstklassiger Handwerkskunst verbinden und sie für globale Märkte und den täglichen Gebrauch geeignet machen.",
+    "reasons": [
+      "Premium-Qualität",
+      "Funktionelle Designs",
+      "Große Produktauswahl",
+      "Zuverlässige Exportdienste"
+    ]
+  },
+  "belts": {
+    "heroAlt": "Aus Indien exportierte Hochleistungs-Industriekeilriemen",
+    "title": "Zuverlässige Kraftübertragung",
+    "titleHighlight": "Lösungen",
+    "paragraphs": [
+      "Ananta Horizons Pvt. Ltd. exportiert ein umfassendes Sortiment an Industriekeilriemen, die in einer Vielzahl von Industrieanwendungen überragende Leistung, Haltbarkeit und Effizienz bieten. Unsere Riemen stammen von zertifizierten Herstellern und werden unter Verwendung hochwertiger Materialien und fortschrittlicher Herstellungsverfahren hergestellt, um eine gleichbleibende Qualität und einen zuverlässigen Betrieb zu gewährleisten.",
+      "Ganz gleich, ob Sie Importeur, Händler, OEM oder Industrielieferant sind: Unsere Keilriemen bieten eine zuverlässige Lösung für Maschinen, die eine effiziente und unterbrechungsfreie Kraftübertragung erfordern."
+    ],
+    "aboutAlt": "Produktpalette Industriekeilriemen",
+    "technical": [
+      [
+        "Produktkategorie",
+        "Industrielle Keilriemen"
+      ],
+      [
+        "Material",
+        "Hochwertiger Gummi mit verstärkten Zugschnüren"
+      ],
+      [
+        "Riementyp",
+        "Klassisch, schmal, gezahnt, gewickelt, gebändert und individuell"
+      ],
+      [
+        "Temperaturbeständigkeit",
+        "Geeignet für industrielle Betriebsbedingungen"
+      ],
+      [
+        "Anwendung",
+        "Industriemaschinen, Landwirtschaft, Automobil und Fertigung"
+      ],
+      [
+        "Verpackung",
+        "Exportieren Sie Standardverpackungen"
+      ],
+      [
+        "Ursprungsland",
+        "Indien"
+      ]
+    ],
+    "whyAlt": "Hochwertige Industriekeilriemen",
+    "whyTitle": "Warum sollten Sie sich für uns entscheiden?",
+    "whyHighlight": "Industriekeilriemen?",
+    "whyDescription": "Bei Ananta Horizons Pvt. Ltd., auf Zuverlässigkeit und Effizienz ausgelegt, liefern unsere Industriekeilriemen zuverlässige Leistung auch in anspruchsvollen Betriebsumgebungen.",
+    "benefits": [
+      "Hochwertige Materialien",
+      "Hohe Leistung",
+      "Zuverlässige Haltbarkeit",
+      "Präzisionsfertigung"
+    ],
+    "craftedTitle": "Mit Präzision gefertigt",
+    "craftedDescription": "Unsere strenge Qualitätskontrolle stellt sicher, dass jeder Artikel, der unser Werk verlässt, ein Meisterwerk indischer Handwerkskunst ist. Wir kombinieren jahrhundertealte Techniken mit modernen Herstellungsprozessen, um Spitzenleistungen in großem Maßstab zu liefern.",
+    "qualityPoints": [
+      "Strenge Qualitätskontrollen",
+      "Premium-Rohstoffe"
+    ],
+    "customTitle": "Maßgeschneidert für Ihre Geschäftsanforderungen",
+    "customizations": [
+      "Benutzerdefinierte Etikettenkunstdesigns",
+      "Größenvariationen",
+      "Farb- und Finish-Optionen",
+      "Markenlogo",
+      "Maßgeschneiderte Verpackung",
+      "OEM-Fertigungsunterstützung"
+    ],
+    "enquire": "Erkundigen Sie sich nach der Anpassung",
+    "faqTitle": "Häufig gefragt",
+    "faqHighlight": "Fragen",
+    "faqs": [
+      {
+        "question": "Wie kann ich große Exportbestellungen aufgeben?",
+        "answer": "Sie können ein Angebot über unser Kontaktformular oder per E-Mail anfordern. Unser Team führt Sie durch die Mindestbestellmenge, Preisstufen, Verpackung, Dokumentation und den internationalen Versandprozess."
+      },
+      {
+        "question": "Welche Individualisierungsmöglichkeiten bieten Sie an?",
+        "answer": "Wir bieten kundenspezifische Größen, Bandprofile, Farben, Eigenmarken, Markenlogos, Exportverpackungen und OEM-Fertigungsunterstützung basierend auf den Bestellanforderungen."
+      },
+      {
+        "question": "Wie stellen Sie eine Verpackung in Exportqualität sicher?",
+        "answer": "Jede Bestellung wird qualitätsgeprüft und mit exportstandardisierten Materialien verpackt, die die Bänder vor Feuchtigkeit, Staub, Verformung und Transportschäden schützen sollen."
+      },
+      {
+        "question": "In welche Länder exportieren Sie derzeit?",
+        "answer": "Wir unterstützen Käufer auf allen globalen Märkten. Kontaktieren Sie unser Exportteam für Ihr Zielland, damit wir Logistik, Dokumentation und Lieferoptionen bestätigen können."
+      }
+    ]
+  }
+}

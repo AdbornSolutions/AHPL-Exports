@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Contate-nos",
+  "cards": {
+    "email": "Endereço de email",
+    "phone": "Número de telefone",
+    "address": "Endereço"
+  },
+  "form": {
+    "title": "Envie-nos uma pergunta",
+    "description": "Procurando um parceiro de exportação confiável? Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais breve possível.",
+    "placeholders": {
+      "name": "Nome rápido",
+      "phone": "Número de telefone",
+      "email": "Endereço de email",
+      "service": "Tipo de serviço de gravação",
+      "message": "Digite sua mensagem..."
+    }
+  }
+}

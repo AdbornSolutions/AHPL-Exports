@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Contactez-nous",
+  "cards": {
+    "email": "Adresse email",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse"
+  },
+  "form": {
+    "title": "Envoyez-nous une demande",
+    "description": "Vous recherchez un partenaire d’exportation de confiance ? Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais.",
+    "placeholders": {
+      "name": "Nom rapide",
+      "phone": "Numéro de téléphone",
+      "email": "Adresse email",
+      "service": "Type de service d'écriture",
+      "message": "Tapez votre message..."
+    }
+  }
+}

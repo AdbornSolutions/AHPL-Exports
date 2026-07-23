@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { slugify } from "../../data/productCatalog";
 import Footer from "../../Components/Common/Footer";
 import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
+import { useTranslation } from "react-i18next";
 import heroImage from "../../assets/products-images/Metal-table/hero.png";
 import aboutImage from "../../assets/products-images/Metal-table/about.png";
 import whyChooseImage from "../../assets/products-images/Metal-table/whychoose.png";
@@ -30,31 +31,18 @@ const productRange = [
   { name: "Mayur", image: rangeTen },
 ];
 
-const technicalDetails = [
-  ["Product Category", "Metal Table Decor"],
-  ["Material", "Iron, Aluminum, Brass, Stainless Steel (As Required)"],
-  ["Finish", "Powder Coated, Antique, Matte, Glossy, Gold, Black & Custom"],
-  ["Style", "Modern, Contemporary, Classic & Luxury"],
-  ["Usage", "Home, Hotel, Office & Commercial Interiors"],
-  ["Packaging", "Export Standard Packaging"],
-  ["Country of Origin", "India"],
-];
-
-const reasons = [
-  "Premium Craftsmanship",
-  "Superior Quality Materials",
-  "Wide Design Collection",
-  "Strict Quality Assurance",
-];
-
-const Metaltable = () => (
+const Metaltable = () => {
+  const { t } = useTranslation("categories");
+  const content = t("metalTable", { returnObjects: true });
+  const common = t("common", { returnObjects: true });
+  return (
   <>
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#efe0cf]">
         <img
           className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain"
           src={heroImage}
-          alt="Metal table decor exported from India"
+          alt={content.heroAlt}
         />
       </section>
 
@@ -62,28 +50,19 @@ const Metaltable = () => (
         <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.9fr_1fr] items-center gap-14 max-lg:grid-cols-1 max-lg:gap-8`}>
           <div className="max-w-[620px] max-lg:max-w-none">
             <h1 className="text-[clamp(34px,4.3vw,56px)] font-bold leading-[1.12] tracking-normal text-[#1b3156]">
-              Elegant Designs Crafted
+              {content.title}
               <br className="max-sm:hidden" />
-              for <span className="text-[#30c8bb]">Global Markets</span>
+              <span className="text-[#30c8bb]">{content.titleHighlight}</span>
             </h1>
             <div className="mt-6 space-y-5 text-[16px] leading-[1.45] text-[#6d7480] max-md:text-[15px]">
-              <p>
-                Ananta horizons pvt ltd offers a premium range of metal table decor products that reflect
-                India's exceptional craftsmanship and manufacturing excellence. Every piece is carefully
-                sourced from trusted manufacturers and finished to meet international quality standards.
-              </p>
-              <p>
-                Our collection combines artistic design with superior durability, making it the perfect choice
-                for retailers, wholesalers, importers, interior designers, and distributors seeking high-quality
-                decorative products.
-              </p>
+              {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </div>
 
           <img
             className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto"
             src={aboutImage}
-            alt="Metal table decor collection for global markets"
+            alt={content.aboutAlt}
           />
         </div>
       </section>
@@ -91,31 +70,31 @@ const Metaltable = () => (
       <section className="pb-[70px] max-md:pb-12">
         <div className={`${containerClass} max-w-[1480px] text-center`}>
           <h2 className="mx-auto max-w-[650px] text-[clamp(34px,4vw,52px)] font-bold leading-[1.18] tracking-normal text-[#1b3156]">
-            Our Metal Table <span className="text-[#30c8bb]">Decor Range</span>
+            {content.rangeTitle} <span className="text-[#30c8bb]">{content.rangeHighlight}</span>
           </h2>
           <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">
-            We export a wide variety of decorative products, including:
+            {common.rangeIntro}
           </p>
 
           <div className="mt-10 grid grid-cols-5 gap-x-6 gap-y-7 text-left max-xl:gap-x-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
-            {productRange.map((product) => (
+            {productRange.map((product, index) => (
               <Link className="group text-inherit no-underline" to={`/product/metal-table-decor/${slugify(product.name)}`} key={product.name}>
                 <div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]">
                   <img
                     className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                     src={product.image}
-                    alt={product.name}
+                    alt={content.products[index]}
                   />
                 </div>
                 <h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">
-                  {product.name}
+                  {content.products[index]}
                 </h3>
               </Link>
             ))}
           </div>
 
           <a className={`${pillButtonClass} mt-10`} href="/contact-us">
-            View Broucher
+            {common.viewBrochure}
             <span className={buttonIconClass}>
               <ArrowUpRight size={15} />
             </span>
@@ -126,10 +105,10 @@ const Metaltable = () => (
       <section className="pb-[76px] max-md:pb-12">
         <div className={`${containerClass} max-w-[1600px] rounded-[26px] bg-[#1d3058] px-8 py-[82px] text-white max-lg:py-14 max-md:rounded-[20px] max-md:px-4 max-md:py-10`}>
           <h2 className="text-center text-[clamp(34px,4vw,50px)] font-bold leading-tight tracking-normal">
-            Technical <span className="text-[#30c8bb]">Details</span>
+            {common.technical} <span className="text-[#30c8bb]">{common.details}</span>
           </h2>
           <div className="mx-auto mt-7 max-w-[920px] overflow-hidden border-t border-white/18">
-            {technicalDetails.map(([label, value]) => (
+            {content.technical.map(([label, value]) => (
               <div
                 className="grid grid-cols-[0.55fr_1fr] border-b border-white/14 py-4 text-[14px] leading-relaxed max-md:grid-cols-1 max-md:gap-1"
                 key={label}
@@ -147,25 +126,22 @@ const Metaltable = () => (
           <img
             className="w-full max-w-[690px] max-lg:mx-auto"
             src={whyChooseImage}
-            alt="Metal table decor craftsmanship and quality"
+            alt={content.whyAlt}
           />
 
           <div>
             <span className="inline-flex rounded-full border border-[#30c8bb] px-6 py-2 text-[12px] font-bold text-[#30c8bb]">
-              Why Choose AHPL
+              {common.whyChoose}
             </span>
             <h2 className="mt-6 text-[clamp(34px,4vw,52px)] font-bold leading-[1.12] tracking-normal text-[#1b3156]">
-              Why Choose Our <span className="text-[#30c8bb]">Metal Table Decor?</span>
+              {content.whyTitle} <span className="text-[#30c8bb]">{content.whyHighlight}</span>
             </h2>
             <p className="mt-7 max-w-[650px] text-[16px] leading-[1.55] text-[#677180]">
-              At Ananta Horizons pvt ltd, we combine India's rich craftsmanship with modern manufacturing
-              to deliver premium metal table decor for global markets. Every product is carefully sourced,
-              quality-checked, and export-ready, ensuring exceptional value for importers, wholesalers,
-              retailers, and distributors.
+              {content.whyDescription}
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-5 max-sm:grid-cols-1">
-              {reasons.map((reason) => (
+              {content.reasons.map((reason) => (
                 <div className="flex items-center gap-3 text-[14px] font-bold text-[#1b3156]" key={reason}>
                   <CheckCircle2 className="size-5 flex-none fill-[#30c8bb] text-white" />
                   {reason}
@@ -179,6 +155,7 @@ const Metaltable = () => (
 
     <Footer />
   </>
-);
+  );
+};
 
 export default Metaltable;

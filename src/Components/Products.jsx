@@ -10,6 +10,7 @@ import product6 from "../assets/product6.png";
 import product7 from "../assets/product7.png";
 
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
+import { useTranslation } from "react-i18next";
 
 const products = [
   
@@ -71,6 +72,8 @@ const productButtonClass =
 const productButtonIconClass = "grid size-6 place-items-center rounded-full bg-white text-[#2EC4B6]";
 
 const Products = () => {
+  const { t } = useTranslation(["home", "products", "common"]);
+  const translatedProducts = t("cards", { ns: "products", returnObjects: true });
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -90,12 +93,12 @@ const Products = () => {
       >
         <div className="flex items-end justify-between gap-6 px-3.5 pb-7 max-lg:items-start max-md:flex-col max-md:px-0 max-md:pb-6">
           <div>
-            <span className={darkEyebrowClass}>Products We Export</span>
+            <span className={darkEyebrowClass}>{t("products.eyebrow", { ns: "home" })}</span>
 
             <h2 className="mt-4 text-[clamp(28px,3.2vw,40px)] font-bold leading-[1.15] tracking-normal max-sm:text-[30px]">
-              Diverse Products. Global Markets.
+              {t("products.title", { ns: "home" })}
               <br />
-              <span className="text-[#2EC4B6]">Reliable Trade Solutions.</span>
+              <span className="text-[#2EC4B6]">{t("products.titleHighlight", { ns: "home" })}</span>
             </h2>
           </div>
 
@@ -107,7 +110,7 @@ const Products = () => {
             className="flex transition-transform duration-700 ease-out"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
-            {products.map((product) => (
+            {products.map((product, index) => (
               <article
                 className="grid min-w-full grid-cols-[0.9fr_1.55fr] overflow-hidden rounded-[26px] border border-white/20 bg-[#3b4b6d] max-lg:grid-cols-[1fr_1.35fr] max-md:grid-cols-1 max-md:rounded-[22px]"
                 key={product.title}
@@ -115,21 +118,21 @@ const Products = () => {
                 <div className="flex flex-col justify-between p-[34px] max-lg:p-7 max-md:p-6">
                   <div>
                     <h3 className="mb-40 whitespace-pre-line text-[40px] font-bold leading-[1.35] max-xl:mb-28 max-lg:mb-16 max-lg:text-[34px] max-md:mb-6 max-md:text-[32px] max-sm:text-[30px]">
-                      {product.title}
+                      {translatedProducts[index].title}
                     </h3>
 
                     <p className="max-w-[390px] text-[19px] leading-[1.35] text-white max-lg:text-[17px] max-md:max-w-full max-md:text-[16px]">
-                      {product.text}
+                      {translatedProducts[index].description}
                     </p>
 
                     <div className="mt-4 h-px w-full max-w-[420px] bg-white/15" />
 
                     <ul className="sr-only">
                       <li>
-                        <Check size={14} /> Quality checked sourcing
+                        <Check size={14} /> {t("products.quality", { ns: "home" })}
                       </li>
                       <li>
-                        <Check size={14} /> Global delivery network
+                        <Check size={14} /> {t("products.delivery", { ns: "home" })}
                       </li>
                     </ul>
                   </div>
@@ -138,7 +141,7 @@ const Products = () => {
                     className={`${productButtonClass} mt-7 w-fit max-sm:px-5 max-sm:py-3`}
                     to={product.to}
                   >
-                    View More
+                    {t("buttons.viewMore", { ns: "common" })}
                     <span className={productButtonIconClass}>
                       <ArrowUpRight size={15} />
                     </span>
@@ -149,7 +152,7 @@ const Products = () => {
                   <img
                     className="h-full w-full rounded-[24px] object-cover [clip-path:polygon(15%_0,100%_0,100%_100%,0_100%,0_24%)] max-md:rounded-[18px] max-md:[clip-path:none]"
                     src={product.image}
-                    alt={product.alt}
+                    alt={translatedProducts[index].alt}
                   />
                 </div>
               </article>

@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blog",
+  "latest": "Neuester Blog",
+  "heading": "Lesen Sie unsere neuesten Erkenntnisse von",
+  "headingHighlight": "Blog aktualisieren",
+  "viewMoreAbout": "Erfahren Sie mehr über {{title}}",
+  "posts": [
+    {
+      "title": "Eine vollständige Anleitung zum Exportieren von Dokumentation",
+      "short": "Grundlegende Handelsdokumente wie Handelsrechnungen, Frachtbriefe, Ursprungszeugnisse und Zollpapiere verstehen.",
+      "description": "Verständnis wichtiger Handelsdokumente wie Handelsrechnungen, Frachtbriefe, Ursprungszeugnisse und Zollpapiere für reibungslose internationale Transaktionen."
+    },
+    {
+      "title": "Top-Schwellenmärkte für Exportunternehmen im Jahr 2026",
+      "short": "Entdecken Sie wachstumsstarke internationale Märkte und neue Möglichkeiten für Unternehmen, die ihre globale Präsenz ausbauen möchten.",
+      "description": "Entdecken Sie wachstumsstarke internationale Märkte und neue Möglichkeiten für Unternehmen, die ihre globale Präsenz ausbauen möchten."
+    },
+    {
+      "title": "So wählen Sie den richtigen globalen Beschaffungspartner aus",
+      "short": "Erfahren Sie, welche Schlüsselfaktoren bei der Auswahl zuverlässiger Lieferanten und Beschaffungspartner für einen langfristigen Geschäftserfolg zu berücksichtigen sind.",
+      "description": "Erfahren Sie, welche Schlüsselfaktoren bei der Auswahl zuverlässiger Lieferanten und Beschaffungspartner für einen langfristigen Geschäftserfolg zu berücksichtigen sind."
+    }
+  ]
+}

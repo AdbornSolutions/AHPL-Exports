@@ -1,0 +1,122 @@
+{
+  "navigation": {
+    "home": "家",
+    "about": "关于我们",
+    "products": "产品",
+    "saffron": "藏红花",
+    "blog": "博客",
+    "contact": "联系我们",
+    "handicraft": "手工业",
+    "industrialGoods": "工业品"
+  },
+  "buttons": {
+    "exploreProducts": "探索产品",
+    "learnMore": "了解更多",
+    "contactUs": "联系我们",
+    "viewMore": "查看更多",
+    "viewBrochure": "查看手册",
+    "sendMessage": "发送消息",
+    "readMore": "阅读更多",
+    "getQuote": "获取报价",
+    "moreAbout": "更多关于我们",
+    "requestQuote": "索取报价"
+  },
+  "accessibility": {
+    "home": "AHPL主页",
+    "logo": "AHPL 全球贸易合作伙伴",
+    "mainNavigation": "主导航",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "previousSlide": "上一张幻灯片",
+    "nextSlide": "下一张幻灯片",
+    "previousTestimonial": "以前的感言",
+    "nextTestimonial": "下一个感言",
+    "viewTestimonial": "查看 {{name}} 的推荐",
+    "productSlide": "转到 {{product}} 幻灯片",
+    "scrollTop": "滚动到顶部",
+    "facebook": "脸书上的 AHPL",
+    "instagram": "Instagram 上的 AHPL",
+    "linkedin": "LinkedIn 上的 AHPL",
+    "shareEmail": "通过电子邮件分享 AHPL"
+  },
+  "status": {
+    "loading": "加载中...",
+    "notFound": "未找到产品。"
+  },
+  "company": {
+    "shortName": "高效液相色谱法",
+    "name": "阿南塔地平线私人有限公司"
+  },
+  "productCategories": {
+    "metalTable": "金属餐桌装饰",
+    "metalWall": "金属墙面装饰",
+    "polyresin": "树脂装饰",
+    "marble": "大理石装饰",
+    "lifestyle": "生活方式与实用性",
+    "wooden": "木制装饰",
+    "belts": "工业三角带"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "语言",
+    "english": "英语",
+    "hindi": "हिन्दी",
+    "german": "Deutsch",
+    "spanish": "Español",
+    "french": "Français",
+    "portuguese": "Português",
+    "russian": "Русский",
+    "mandarin": "中文",
+    "select": "选择语言"
+  },
+  "saffron": {
+    "shopBy": "选购",
+    "category": "类别",
+    "handpickedTitle": "为您精心挑选",
+    "handpickedHighlight": "家",
+    "handpickedSubtitle": "精心策划的手工珍品，充满爱意",
+    "legacy": {
+      "eyebrow": "我们的遗产",
+      "titleLine1": "手工制作。",
+      "titleLine2": "灵感来自遗产。",
+      "description": "在 Saffron，我们相信每一件手工制品都承载着其制造者的灵魂。我们与印度各地 200 多个工匠集群合作，为您带来融合古老传统与现代美学的正宗工艺品。我们的使命是维持传统工艺并为我们的工匠大师提供有意义的生计。",
+      "stat1Number": "200+",
+      "stat1Label": "工匠家庭",
+      "stat2Number": "15+",
+      "stat2Label": "印度各邦"
+    },
+    "spaceTitle": "选购",
+    "spaceHighlight": "空间",
+    "spaces": {
+      "livingRoom": "客厅",
+      "diningSpace": "用餐空间",
+      "entryway": "入口通道",
+      "prayerRoom": "祈祷室",
+      "workDesk": "办公桌"
+    },
+    "blog": {
+      "eyebrow": "最新博客",
+      "titleLine1": "阅读我们的最新见解",
+      "titleLine2": "从",
+      "titleHighlight1": "更新",
+      "titleHighlight2": "博客",
+      "viewMore": "查看更多",
+      "posts": [
+        {
+          "title": "出口文件完整指南",
+          "short": "了解商业发票、提单、原产地证书和海关文书等重要贸易文件，以确保国际交易顺利进行。"
+        },
+        {
+          "title": "2026 年出口企业的主要新兴市场",
+          "short": "为寻求扩大全球足迹的企业发现高增长的国际市场和新机遇。"
+        },
+        {
+          "title": "如何选择合适的全球采购合作伙伴",
+          "short": "了解在选择可靠的供应商和采购合作伙伴以获得长期业务成功时要考虑的关键因素。"
+        }
+      ]
+    }
+  }
+}

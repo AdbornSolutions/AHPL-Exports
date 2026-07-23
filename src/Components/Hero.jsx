@@ -1,11 +1,13 @@
 import heroImg from "../assets/hero.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const Hero = ({ title = "About Us", breadcrumb = title }) => {
+const Hero = ({ title = "About Us", breadcrumb = title, bgImage }) => {
+  const { t } = useTranslation("common");
   return (
     <section className="relative h-[320px] md:h-[400px] overflow-hidden">
       <img
-        src={heroImg}
+        src={bgImage || heroImg}
         alt={title}
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -19,7 +21,7 @@ const Hero = ({ title = "About Us", breadcrumb = title }) => {
 
         <div className="mt-6 flex items-center rounded-md bg-white/10 px-5 py-3 text-sm text-white backdrop-blur-sm">
           <Link to="/" className="cursor-pointer hover:text-blue-300">
-            Home
+            {t("navigation.home")}
           </Link>
           <span className="mx-3 text-gray-300">&gt;</span>
           <span>{breadcrumb}</span>

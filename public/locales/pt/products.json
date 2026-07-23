@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Produto",
+  "cards": [
+    {
+      "title": "Mesa Metálica\nDecoração",
+      "description": "Decoração elegante de mesa de metal feita à mão, projetada para aprimorar residências, hotéis, escritórios e espaços de hospitalidade com estilo atemporal, durabilidade e artesanato premium.",
+      "alt": "Decoração de mesa de metal para exportação"
+    },
+    {
+      "title": "Parede Metálica\nDecoração",
+      "description": "Adicione elegância artística às suas paredes com esta decoração de parede de metal feita à mão, com cores vibrantes, acabamento premium e um design contemporâneo atemporal.",
+      "alt": "Decoração de parede de metal para exportação"
+    },
+    {
+      "title": "Decoração em Mármore",
+      "description": "Decoração elegante em mármore artesanal que adiciona charme atemporal, habilidade artística e estilo sofisticado à sua casa, escritório ou coleção de presentes.",
+      "alt": "Decoração de mármore para exportação"
+    },
+    {
+      "title": "Decoração de resina",
+      "description": "Coleção de decoração feita à mão em resina com porta-canetas artísticos e um porta-velas decorativo, combinando funcionalidade, elegância e artesanato tradicional para interiores elegantes.",
+      "alt": "Decoração de resina para exportação"
+    },
+    {
+      "title": "Decoração de madeira",
+      "description": "Lindas peças de decoração de madeira feitas à mão que adicionam calor, elegância e charme artístico à sua casa, escritório ou espaços para presentes.",
+      "alt": "Decoração de madeira para exportação"
+    },
+    {
+      "title": "Estilo de vida e utilidade",
+      "description": "Produtos premium de estilo de vida e utilitários que combinam funcionalidade prática, design contemporâneo e artesanato excepcional para a vida moderna e o uso diário.",
+      "alt": "Estilo de vida e utilidade para exportação"
+    },
+    {
+      "title": "Correias em V Industriais",
+      "description": "Correias trapezoidais industriais de alto desempenho projetadas para transmissão de energia confiável, durabilidade excepcional e desempenho eficiente em aplicações industriais, automotivas e agrícolas.",
+      "alt": "Correias trapezoidais industriais para exportação"
+    }
+  ],
+  "details": {
+    "heading": "Técnico",
+    "headingHighlight": "Detalhes",
+    "whyChoose": "Por que escolher a AHPL",
+    "rangeIntro": "Exportamos uma grande variedade de produtos decorativos, incluindo:",
+    "countryOfOrigin": "País de origem",
+    "india": "Índia",
+    "packaging": "Embalagem",
+    "exportPackaging": "Embalagem padrão de exportação"
+  },
+  "productDetail": {
+    "imageView": "{{name}} visualizar {{number}}",
+    "showImage": "Mostrar {{name}} imagem {{number}}",
+    "thumbnail": "{{name}} miniatura {{number}}",
+    "features": [
+      "Arte 100% artesanal",
+      "Prêmio {{material}}",
+      "Acabamento protetor de nível de exportação",
+      "Materiais de qualidade garantida"
+    ],
+    "intro": "{{name}} é uma peça {{category}} refinada selecionada pela Ananta Horizons Pvt Ltd para residências internacionais, hotéis, escritórios, varejistas e projetos de hospitalidade. Sua forma cuidadosa combina o artesanato indiano qualificado com uma construção confiável e um acabamento premium pronto para exportação.",
+    "rating": "Artesanato Indiano Premium | Qualidade de exportação",
+    "requestQuote": "Solicitar orçamento",
+    "tabs": {
+      "description": "Descrição",
+      "specifications": "Especificações"
+    },
+    "heritage": "Patrimônio em cada detalhe",
+    "descriptionOne": "O {{name}} representa uma expressão cuidadosa do artesanato indiano na coleção {{category}}. Cada peça é acabada com cuidado para que sua forma, cor, textura e detalhes sejam distintos, ao mesmo tempo que permanecem práticos para interiores modernos.",
+    "descriptionTwo": "Sua construção durável e acabamento de qualidade de exportação o tornam uma escolha confiável para coleções de varejo premium, espaços de hospitalidade boutique, presentes e projetos de decoração residencial.",
+    "complementary": "Complementar",
+    "complementaryHighlight": "Produtos",
+    "specLabels": {
+      "category": "Categoria de produto",
+      "material": "Material",
+      "finish": "Terminar",
+      "style": "Estilo",
+      "application": "Aplicativo",
+      "origin": "País de origem"
+    },
+    "style": "Qualidade contemporânea, artesanal e de exportação",
+    "application": "Casa, hotelaria, escritório, varejo e hospitalidade"
+  }
+}

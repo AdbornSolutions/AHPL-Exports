@@ -1,0 +1,21 @@
+{
+  "pageTitle": "Product",
+  "cards": [
+    { "title": "Metal Table\nDecor", "description": "Elegant handcrafted metal table décor designed to enhance homes, hotels, offices, and hospitality spaces with timeless style, durability, and premium craftsmanship.", "alt": "Metal table décor for export" },
+    { "title": "Metal Wall\nDecor", "description": "Add artistic elegance to your walls with this handcrafted metal wall decor, featuring vibrant colors, premium craftsmanship, and a timeless contemporary design.", "alt": "Metal Wall  Decor for export" },
+    { "title": "Marble Decor", "description": "Elegant handcrafted marble décor that adds timeless charm, artistic craftsmanship, and sophisticated style to your home, office, or gifting collection.", "alt": "Marble Decor for export" },
+    { "title": "Resin Decor", "description": "Handcrafted resin décor collection featuring artistic pen holders and a decorative tealight holder, blending functionality, elegance, and traditional craftsmanship for stylish interiors.", "alt": "Resin Decorfor export" },
+    { "title": "Wooden Decor", "description": "Beautiful handcrafted wooden décor pieces that add warmth, elegance, and artistic charm to your home, office, or gifting spaces.", "alt": "Wooden Decor for export" },
+    { "title": "Lifestyle & Utility", "description": "Premium lifestyle & utility products that combine practical functionality, contemporary design, and exceptional craftsmanship for modern living and everyday use.", "alt": "Lifestyle & Utility for export" },
+    { "title": "Industrial V-Belts", "description": "High-performance Industrial V-Belts engineered for reliable power transmission, exceptional durability, and efficient performance across industrial, automotive, and agricultural applications.", "alt": "Industrial V-Belts for export" }
+  ],
+  "details": { "heading": "Technical", "headingHighlight": "Details", "whyChoose": "Why Choose AHPL", "rangeIntro": "We export a wide variety of decorative products, including:", "countryOfOrigin": "Country of Origin", "india": "India", "packaging": "Packaging", "exportPackaging": "Export Standard Packaging" },
+  "productDetail": {
+    "imageView": "{{name}} view {{number}}", "showImage": "Show {{name}} image {{number}}", "thumbnail": "{{name}} thumbnail {{number}}",
+    "features": ["100% Handcrafted Artistry", "Premium {{material}}", "Export-Grade Protective Finish", "Quality-Assured Materials"],
+    "intro": "{{name}} is a refined {{category}} piece selected by Ananta Horizons Pvt Ltd for international homes, hotels, offices, retailers, and hospitality projects. Its thoughtful form combines skilled Indian craftsmanship with dependable construction and a premium export-ready finish.",
+    "rating": "Premium Indian Craftsmanship | Export Quality", "requestQuote": "Request Quote", "tabs": { "description": "Description", "specifications": "Specifications" },
+    "heritage": "Heritage in Every Detail", "descriptionOne": "The {{name}} represents a thoughtful expression of Indian craft in the {{category}} collection. Each piece is finished with care so its form, color, texture, and detailing feel distinctive while remaining practical for modern interiors.", "descriptionTwo": "Its durable construction and export-quality finishing make it a confident choice for premium retail collections, boutique hospitality spaces, gifting, and residential décor projects.",
+    "complementary": "Complementary", "complementaryHighlight": "Products", "specLabels": { "category": "Product Category", "material": "Material", "finish": "Finish", "style": "Style", "application": "Application", "origin": "Country of Origin" }, "style": "Contemporary, Artisan & Export Quality", "application": "Home, Hotel, Office, Retail & Hospitality"
+  }
+}

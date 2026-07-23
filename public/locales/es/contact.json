@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Contáctenos",
+  "cards": {
+    "email": "Dirección de correo electrónico",
+    "phone": "Número de teléfono",
+    "address": "DIRECCIÓN"
+  },
+  "form": {
+    "title": "Envíenos una consulta",
+    "description": "¿Busca un socio exportador de confianza? Complete el siguiente formulario y nuestro equipo se comunicará con usted lo antes posible.",
+    "placeholders": {
+      "name": "nombre rápido",
+      "phone": "Número de teléfono",
+      "email": "Dirección de correo electrónico",
+      "service": "Escribir tipo de servicio",
+      "message": "Escribe tu mensaje..."
+    }
+  }
+}

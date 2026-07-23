@@ -7,34 +7,17 @@ import blogOne from '../assets/blog1.png'
 import blogTwo from '../assets/blog2.png'
 import blogThree from '../assets/blog3.png'
 import { containerClass } from '../utils/tailwindClasses'
+import { useTranslation } from 'react-i18next'
 
-const blogPosts = [
-  {
-    image: blogOne,
-    title: 'A Complete Guide to Export Documentation',
-    description:
-      'Understanding essential trade documents such as commercial invoices, bills of lading, certificates of origin, and customs paperwork for smooth international transactions.',
-  },
-  {
-    image: blogTwo,
-    title: 'Top Emerging Markets for Export Businesses in 2026',
-    description:
-      'Discover high-growth international markets and new opportunities for businesses looking to expand their global footprint.',
-  },
-  {
-    image: blogThree,
-    title: 'How to Choose the Right Global Sourcing Partner',
-    description:
-      'Learn the key factors to consider when selecting reliable suppliers and sourcing partners for long-term business success.',
-  },
-]
-
-const posts = [...blogPosts, ...blogPosts]
+const postImages = [blogOne, blogTwo, blogThree]
 
 const Blog = () => {
+  const { t } = useTranslation(['blogs', 'common'])
+  const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
+  const posts = [...blogPosts, ...blogPosts]
   return (
     <>
-      <Hero title="Blog" />
+      <Hero title={t('pageTitle')} />
 
       <main className="bg-white py-[60px] max-md:py-10">
         <div className={`${containerClass} grid grid-cols-3 gap-x-4 gap-y-[18px] max-lg:grid-cols-2 max-md:grid-cols-1`}>
@@ -59,9 +42,9 @@ const Blog = () => {
                 <a
                   className="mt-5 inline-flex items-center gap-3 text-[16px] font-medium text-[#30c8bb] no-underline"
                   href="#"
-                  aria-label={`View more about ${post.title}`}
+                  aria-label={t('viewMoreAbout', { title: post.title })}
                 >
-                  View More <ArrowRight size={18} strokeWidth={2} />
+                  {t('buttons.viewMore', { ns: 'common' })} <ArrowRight size={18} strokeWidth={2} />
                 </a>
               </div>
             </article>

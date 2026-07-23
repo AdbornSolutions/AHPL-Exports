@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blogue",
+  "latest": "Blog mais recente",
+  "heading": "Leia nossos últimos insights de",
+  "headingHighlight": "Atualizar blog",
+  "viewMoreAbout": "Veja mais sobre {{title}}",
+  "posts": [
+    {
+      "title": "Um guia completo para exportar documentação",
+      "short": "Compreender documentos comerciais essenciais, como faturas comerciais, conhecimentos de embarque, certificados de origem e documentação alfandegária.",
+      "description": "Compreender documentos comerciais essenciais, como faturas comerciais, conhecimentos de embarque, certificados de origem e documentação alfandegária para transações internacionais tranquilas."
+    },
+    {
+      "title": "Principais mercados emergentes para empresas de exportação em 2026",
+      "short": "Descubra mercados internacionais de alto crescimento e novas oportunidades para empresas que buscam expandir sua presença global.",
+      "description": "Descubra mercados internacionais de alto crescimento e novas oportunidades para empresas que buscam expandir sua presença global."
+    },
+    {
+      "title": "Como escolher o parceiro de fornecimento global certo",
+      "short": "Aprenda os principais fatores a serem considerados ao selecionar fornecedores confiáveis ​​e parceiros de fornecimento para o sucesso comercial de longo prazo.",
+      "description": "Aprenda os principais fatores a serem considerados ao selecionar fornecedores confiáveis ​​e parceiros de fornecimento para o sucesso comercial de longo prazo."
+    }
+  ]
+}

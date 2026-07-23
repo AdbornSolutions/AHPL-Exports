@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Produkt",
+  "cards": [
+    {
+      "title": "Metalltisch\nDekor",
+      "description": "Elegante, handgefertigte Tischdekoration aus Metall, die Häuser, Hotels, Büros und Gastronomiebereiche mit zeitlosem Stil, Haltbarkeit und erstklassiger Handwerkskunst verschönert.",
+      "alt": "Tischdekoration aus Metall für den Export"
+    },
+    {
+      "title": "Metallwand\nDekor",
+      "description": "Verleihen Sie Ihren Wänden künstlerische Eleganz mit diesem handgefertigten Wanddekor aus Metall, das sich durch lebendige Farben, erstklassige Handwerkskunst und ein zeitloses, modernes Design auszeichnet.",
+      "alt": "Wanddekoration aus Metall für den Export"
+    },
+    {
+      "title": "Marmordekor",
+      "description": "Elegantes, handgefertigtes Marmordekor, das Ihrem Zuhause, Büro oder Ihrer Geschenkkollektion zeitlosen Charme, künstlerische Handwerkskunst und anspruchsvollen Stil verleiht.",
+      "alt": "Marmordekor für den Export"
+    },
+    {
+      "title": "Harzdekor",
+      "description": "Handgefertigte Dekorkollektion aus Kunstharz mit kunstvollen Stifthaltern und einem dekorativen Teelichthalter, die Funktionalität, Eleganz und traditionelle Handwerkskunst für stilvolle Innenräume vereint.",
+      "alt": "Harzdekor für den Export"
+    },
+    {
+      "title": "Holzdekor",
+      "description": "Wunderschöne handgefertigte Dekorationsstücke aus Holz, die Ihrem Zuhause, Ihrem Büro oder Ihren Geschenkräumen Wärme, Eleganz und künstlerischen Charme verleihen.",
+      "alt": "Holzdekor für den Export"
+    },
+    {
+      "title": "Lebensstil und Nutzen",
+      "description": "Premium-Lifestyle- und Gebrauchsprodukte, die praktische Funktionalität, zeitgemäßes Design und außergewöhnliche Handwerkskunst für modernes Wohnen und den täglichen Gebrauch vereinen.",
+      "alt": "Lifestyle & Utility für den Export"
+    },
+    {
+      "title": "Industrielle Keilriemen",
+      "description": "Hochleistungs-Industriekeilriemen, die für zuverlässige Kraftübertragung, außergewöhnliche Haltbarkeit und effiziente Leistung in Industrie-, Automobil- und Landwirtschaftsanwendungen entwickelt wurden.",
+      "alt": "Industriekeilriemen für den Export"
+    }
+  ],
+  "details": {
+    "heading": "Technisch",
+    "headingHighlight": "Einzelheiten",
+    "whyChoose": "Warum AHPL wählen?",
+    "rangeIntro": "Wir exportieren eine große Auswahl an Dekorationsprodukten, darunter:",
+    "countryOfOrigin": "Ursprungsland",
+    "india": "Indien",
+    "packaging": "Verpackung",
+    "exportPackaging": "Exportieren Sie Standardverpackungen"
+  },
+  "productDetail": {
+    "imageView": "{{name}} anzeigen {{number}}",
+    "showImage": "{{name}} Bild {{number}} anzeigen",
+    "thumbnail": "{{name}} Miniaturansicht {{number}}",
+    "features": [
+      "100 % handgefertigte Kunst",
+      "Premium {{material}}",
+      "Schutzlackierung in Exportqualität",
+      "Qualitätsgesicherte Materialien"
+    ],
+    "intro": "{{name}} ist ein raffiniertes {{category}}-Stück, das von Ananta Horizons Pvt Ltd für internationale Häuser, Hotels, Büros, Einzelhändler und Gastgewerbeprojekte ausgewählt wurde. Seine durchdachte Form kombiniert indische Handwerkskunst mit zuverlässiger Konstruktion und einem erstklassigen exporttauglichen Finish.",
+    "rating": "Premium indische Handwerkskunst | Exportqualität",
+    "requestQuote": "Angebot anfordern",
+    "tabs": {
+      "description": "Beschreibung",
+      "specifications": "Spezifikationen"
+    },
+    "heritage": "Erbe in jedem Detail",
+    "descriptionOne": "Der {{name}} stellt einen durchdachten Ausdruck indischer Handwerkskunst in der {{category}}-Kollektion dar. Jedes Stück wird sorgfältig verarbeitet, sodass Form, Farbe, Textur und Details unverwechselbar wirken und gleichzeitig für moderne Innenräume praktisch bleiben.",
+    "descriptionTwo": "Seine langlebige Konstruktion und die Verarbeitung in Exportqualität machen es zu einer sicheren Wahl für hochwertige Einzelhandelskollektionen, Boutique-Gaststätten, Geschenkartikel und Wohndekorationsprojekte.",
+    "complementary": "Komplementär",
+    "complementaryHighlight": "Produkte",
+    "specLabels": {
+      "category": "Produktkategorie",
+      "material": "Material",
+      "finish": "Beenden",
+      "style": "Stil",
+      "application": "Anwendung",
+      "origin": "Ursprungsland"
+    },
+    "style": "Zeitgenössische, handwerkliche und exportierte Qualität",
+    "application": "Zuhause, Hotel, Büro, Einzelhandel und Gastgewerbe"
+  }
+}

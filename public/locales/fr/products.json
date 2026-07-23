@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Produit",
+  "cards": [
+    {
+      "title": "Table en métal\nDécor",
+      "description": "Élégante décoration de table en métal fabriquée à la main, conçue pour améliorer les maisons, les hôtels, les bureaux et les espaces d'accueil avec un style intemporel, une durabilité et un savoir-faire haut de gamme.",
+      "alt": "Décor de table en métal pour l'export"
+    },
+    {
+      "title": "Mur métallique\nDécor",
+      "description": "Ajoutez une élégance artistique à vos murs avec cette décoration murale en métal fabriquée à la main, dotée de couleurs vives, d'un savoir-faire haut de gamme et d'un design contemporain intemporel.",
+      "alt": "Décoration murale en métal pour l'exportation"
+    },
+    {
+      "title": "Décor en marbre",
+      "description": "Élégant décor en marbre fabriqué à la main qui ajoute un charme intemporel, un savoir-faire artistique et un style sophistiqué à votre maison, votre bureau ou votre collection de cadeaux.",
+      "alt": "Décor en marbre pour l'exportation"
+    },
+    {
+      "title": "Décor en résine",
+      "description": "Collection de décorations en résine fabriquées à la main comprenant des porte-stylos artistiques et un photophore décoratif, alliant fonctionnalité, élégance et savoir-faire traditionnel pour des intérieurs élégants.",
+      "alt": "Décor en résinepour l'export"
+    },
+    {
+      "title": "Décor en bois",
+      "description": "De belles pièces de décoration en bois fabriquées à la main qui ajoutent de la chaleur, de l'élégance et du charme artistique à votre maison, votre bureau ou vos espaces cadeaux.",
+      "alt": "Décor en bois pour l'exportation"
+    },
+    {
+      "title": "Style de vie et utilité",
+      "description": "Produits de style de vie et utilitaires haut de gamme qui combinent fonctionnalité pratique, design contemporain et savoir-faire exceptionnel pour la vie moderne et un usage quotidien.",
+      "alt": "Style de vie et utilitaire pour l'exportation"
+    },
+    {
+      "title": "Courroies trapézoïdales industrielles",
+      "description": "Courroies trapézoïdales industrielles hautes performances conçues pour une transmission de puissance fiable, une durabilité exceptionnelle et des performances efficaces dans les applications industrielles, automobiles et agricoles.",
+      "alt": "Courroies trapézoïdales industrielles pour l'exportation"
+    }
+  ],
+  "details": {
+    "heading": "Technique",
+    "headingHighlight": "Détails",
+    "whyChoose": "Pourquoi choisir AHPL",
+    "rangeIntro": "Nous exportons une grande variété de produits décoratifs, notamment :",
+    "countryOfOrigin": "Pays d'origine",
+    "india": "Inde",
+    "packaging": "Conditionnement",
+    "exportPackaging": "Emballage standard d'exportation"
+  },
+  "productDetail": {
+    "imageView": "{{name}} voir {{number}}",
+    "showImage": "Afficher l'image {{name}} {{number}}",
+    "thumbnail": "{{name}} vignette {{number}}",
+    "features": [
+      "Artistique 100% artisanale",
+      "Prime {{material}}",
+      "Finition protectrice de qualité exportation",
+      "Matériaux de qualité garantie"
+    ],
+    "intro": "{{name}} est une pièce raffinée {{category}} sélectionnée par Ananta Horizons Pvt Ltd pour les maisons internationales, les hôtels, les bureaux, les détaillants et les projets hôteliers. Sa forme réfléchie combine un savoir-faire indien qualifié avec une construction fiable et une finition haut de gamme prête à l'exportation.",
+    "rating": "Artisanat indien haut de gamme | Qualité des exportations",
+    "requestQuote": "Demander un devis",
+    "tabs": {
+      "description": "Description",
+      "specifications": "Caractéristiques"
+    },
+    "heritage": "Le patrimoine dans les moindres détails",
+    "descriptionOne": "Le {{name}} représente une expression réfléchie de l'artisanat indien dans la collection {{category}}. Chaque pièce est finie avec soin afin que sa forme, sa couleur, sa texture et ses détails soient distinctifs tout en restant pratiques pour les intérieurs modernes.",
+    "descriptionTwo": "Sa construction durable et sa finition de qualité export en font un choix sûr pour les collections de vente au détail haut de gamme, les espaces d'accueil de boutique, les cadeaux et les projets de décoration résidentielle.",
+    "complementary": "Complémentaire",
+    "complementaryHighlight": "Produits",
+    "specLabels": {
+      "category": "Catégorie de produit",
+      "material": "Matériel",
+      "finish": "Finition",
+      "style": "Style",
+      "application": "Application",
+      "origin": "Pays d'origine"
+    },
+    "style": "Qualité Contemporaine, Artisanale & Export",
+    "application": "Maison, hôtel, bureau, vente au détail et hôtellerie"
+  }
+}
