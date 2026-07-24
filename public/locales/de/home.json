@@ -64,13 +64,7 @@
       "email": "Geben Sie Ihre E-Mail-Adresse ein",
       "phone": "Geben Sie Ihre Telefonnummer ein",
       "message": "Schreiben Sie Ihre Nachricht"
-    },
-    "inquiries": [
-      "Produktanfrage",
-      "Agrarprodukte",
-      "Gewürze und Lebensmittel",
-      "Allgemeine Anfrage"
-    ]
+    }
   },
   "certifications": {
     "eyebrow": "Zertifizierungen und Mitgliedschaft",

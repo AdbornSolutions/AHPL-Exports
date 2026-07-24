@@ -64,13 +64,7 @@
       "email": "Introduce tu correo electrónico",
       "phone": "Introduce tu número de teléfono",
       "message": "Escribe tu mensaje"
-    },
-    "inquiries": [
-      "Consulta de producto",
-      "Productos Agrícolas",
-      "Especias y productos alimenticios",
-      "Consulta general"
-    ]
+    }
   },
   "certifications": {
     "eyebrow": "Certificaciones y membresía",

@@ -79,7 +79,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-             1st floor, Lajwanti Complex, 10/2, Central Ave, Sut Market, Itwari, Nagpur, Maharashtra 440002
+             {t("address")}
             </a>
           </p>
           <p className={footerTextClass}>

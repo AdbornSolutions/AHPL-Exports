@@ -64,13 +64,7 @@
       "email": "E-postanızı girin",
       "phone": "Telefon numaranızı girin",
       "message": "Mesajınızı yazın"
-    },
-    "inquiries": [
-      "Ürün sorgulama",
-      "Tarım Ürünleri",
-      "Baharatlar ve Gıda Ürünleri",
-      "Genel Sorgulama"
-    ]
+    }
   },
   "certifications": {
     "eyebrow": "Sertifikalar ve Üyelik",
