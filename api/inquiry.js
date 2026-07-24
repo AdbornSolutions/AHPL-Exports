@@ -1,16 +1,7 @@
-/* global process */
+import { inquiryValues } from "../src/config/inquiryOptions.js";
+import { formEndpoints } from "../config/formEndpoints.js";
 
-const ALLOWED_INQUIRIES = new Set([
-  "Handicraft",
-  "Metal Table Decor",
-  "Metal Wall Decor",
-  "Polyresin Decor",
-  "Marble Decor",
-  "Lifestyle & Utility",
-  "Wooden Decor",
-  "Industrial V-Belts",
-  "Saffron",
-]);
+const ALLOWED_INQUIRIES = new Set(inquiryValues);
 
 const clean = (value, maxLength) =>
   typeof value === "string" ? value.trim().slice(0, maxLength) : "";
@@ -19,12 +10,6 @@ export default async function handler(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return response.status(405).json({ ok: false, error: "Method not allowed." });
-  }
-
-  const endpoint = process.env.GOOGLE_SHEETS_WEB_APP_URL;
-  if (!endpoint) {
-    console.error("GOOGLE_SHEETS_WEB_APP_URL is not configured.");
-    return response.status(503).json({ ok: false, error: "Form service is unavailable." });
   }
 
   const body =
@@ -51,7 +36,7 @@ export default async function handler(request, response) {
   }
 
   try {
-    const googleResponse = await fetch(endpoint, {
+    const googleResponse = await fetch(formEndpoints.productInquiry, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(submission),

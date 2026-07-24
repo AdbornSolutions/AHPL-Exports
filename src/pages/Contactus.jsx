@@ -5,6 +5,8 @@ import contactCardBg from '../assets/Contactcard.png'
 import { containerClass } from '../utils/tailwindClasses'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import FormStatusToast from '../Components/Common/FormStatusToast'
+import { inquiryOptions } from '../config/inquiryOptions'
 
 const contactItems = [
   {
@@ -31,7 +33,7 @@ const initialForm = {
   name: '',
   phone: '',
   email: '',
-  service: '',
+  service: 'Handicraft',
   message: '',
 }
 
@@ -108,13 +110,24 @@ const Contactus = () => {
           </div>
 
           <form
-            className="mt-8 grid grid-cols-2 gap-x-[18px] gap-y-[22px] max-md:grid-cols-1"
+            className="relative mt-8 grid grid-cols-2 gap-x-[18px] gap-y-[22px] overflow-hidden rounded-[12px] max-md:grid-cols-1"
             onSubmit={submitContactInquiry}
           >
             <input className={inputClass} type="text" name="name" value={form.name} onChange={updateField} placeholder={t('form.placeholders.name')} autoComplete="name" required maxLength="100" />
             <input className={inputClass} type="tel" name="phone" value={form.phone} onChange={updateField} placeholder={t('form.placeholders.phone')} autoComplete="tel" required minLength="7" maxLength="20" />
             <input className={inputClass} type="email" name="email" value={form.email} onChange={updateField} placeholder={t('form.placeholders.email')} autoComplete="email" required maxLength="254" />
-            <input className={inputClass} type="text" name="service" value={form.service} onChange={updateField} placeholder={t('form.placeholders.service')} required maxLength="150" />
+            <select
+              className={`${inputClass} appearance-auto`}
+              name="service"
+              value={form.service}
+              onChange={updateField}
+              aria-label={t('form.placeholders.service')}
+              required
+            >
+              {inquiryOptions.map(({ value, labelKey }) => (
+                <option value={value} key={value}>{t(labelKey, { ns: 'common' })}</option>
+              ))}
+            </select>
             <textarea
               className="col-span-2 h-[155px] w-full resize-none rounded-[8px] border-0 bg-white px-[26px] py-5 text-[14px] text-[#183255] outline-none placeholder:text-[#8b8b8b] focus:shadow-[0_0_0_3px_rgba(48,200,187,0.2)] max-md:col-span-1"
               name="message"
@@ -133,10 +146,13 @@ const Contactus = () => {
                 {status === 'submitting' ? 'Sending...' : t('buttons.sendMessage', { ns: 'common' })}
               </button>
             </div>
-            <div aria-live="polite" className="col-span-2 min-h-5 text-center text-sm font-medium max-md:col-span-1">
-              {status === 'success' && <p className="text-[#168477]">Thank you. Your message has been sent successfully.</p>}
-              {status === 'error' && <p className="text-red-700">We could not send your message. Please try again.</p>}
-            </div>
+
+            <FormStatusToast
+              status={status}
+              successMessage="We’ve received your message and will get back to you shortly."
+              errorMessage="We could not send your message. Please try again."
+              onDismiss={() => setStatus('idle')}
+            />
           </form>
         </section>
       </main>
