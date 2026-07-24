@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "بيت",
+    "about": "معلومات عنا",
+    "products": "منتجات",
+    "saffron": "زعفران",
+    "blog": "مدونة",
+    "contact": "اتصل بنا",
+    "handicraft": "الحرف اليدوية",
+    "industrialGoods": "السلع الصناعية"
+  },
+  "buttons": {
+    "exploreProducts": "اكتشف المنتجات",
+    "learnMore": "يتعلم أكثر",
+    "contactUs": "اتصل بنا",
+    "viewMore": "عرض المزيد",
+    "viewBrochure": "عرض الكتيب",
+    "getBrochure": "احصل على الكتيب",
+    "sendMessage": "أرسل رسالة",
+    "readMore": "اقرأ المزيد",
+    "getQuote": "احصل على عرض أسعار",
+    "moreAbout": "المزيد عنا",
+    "requestQuote": "طلب عرض أسعار"
+  },
+  "accessibility": {
+    "home": "منزل AHPL",
+    "logo": "AHPL شريك التجارة العالمية",
+    "mainNavigation": "الملاحة الرئيسية",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "previousSlide": "الشريحة السابقة",
+    "nextSlide": "الشريحة التالية",
+    "previousTestimonial": "الشهادة السابقة",
+    "nextTestimonial": "الشهادة القادمة",
+    "viewTestimonial": "عرض الشهادة من {{name}}",
+    "productSlide": "انتقل إلى الشريحة {{product}}",
+    "scrollTop": "قم بالتمرير إلى الأعلى",
+    "facebook": "AHPL على الفيسبوك",
+    "instagram": "AHPL على إنستغرام",
+    "linkedin": "AHPL على لينكدإن",
+    "shareEmail": "مشاركة AHPL عن طريق البريد الإلكتروني"
+  },
+  "status": {
+    "loading": "تحميل...",
+    "notFound": "لم يتم العثور على المنتج."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "أنانتا هورايزونز المحدودة"
+  },
+  "productCategories": {
+    "metalTable": "ديكور طاولة معدنية",
+    "metalWall": "ديكور حائط معدني",
+    "polyresin": "ديكور بوليريسين",
+    "marble": "ديكور رخام",
+    "lifestyle": "نمط الحياة والمنفعة",
+    "wooden": "ديكور خشبي",
+    "belts": "أحزمة V الصناعية"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "لغة",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "chinese": "中文",
+    "russian": "Русский",
+    "portuguese": "Português",
+    "japanese": "日本語",
+    "turkish": "Türkçe",
+    "korean": "한국어",
+    "italian": "Italiano",
+    "select": "اختر اللغة"
+  },
+  "saffron": {
+    "shopBy": "تسوق حسب",
+    "category": "فئة",
+    "handpickedTitle": "تم اختياره بعناية من أجلك",
+    "handpickedHighlight": "بيت",
+    "handpickedSubtitle": "كنوز حرفية منسقة تم تسليمها بالحب",
+    "legacy": {
+      "eyebrow": "تراثنا",
+      "titleLine1": "صنعت بأيدي.",
+      "titleLine2": "مستوحاة من التراث.",
+      "description": "في سافرون، نؤمن بأن كل قطعة مصنوعة يدويًا تحمل روح صانعها. نحن نتشارك مع أكثر من 200 مجموعة حرفية في جميع أنحاء الهند لنقدم لك الحرف اليدوية الأصيلة التي تمزج بين التقاليد القديمة والجماليات الحديثة. مهمتنا هي الحفاظ على الحرف التراثية وتوفير سبل عيش ذات مغزى للحرفيين الرئيسيين لدينا.",
+      "stat1Number": "200+",
+      "stat1Label": "عائلات حرفية",
+      "stat2Number": "15+",
+      "stat2Label": "الولايات الهندية"
+    },
+    "spaceTitle": "تسوق حسب",
+    "spaceHighlight": "فضاء",
+    "spaces": {
+      "livingRoom": "غرفة الجلوس",
+      "diningSpace": "مساحة لتناول الطعام",
+      "entryway": "مدخل",
+      "prayerRoom": "غرفة الصلاة",
+      "workDesk": "مكتب العمل"
+    },
+    "blog": {
+      "eyebrow": "أحدث مدونة",
+      "titleLine1": "اقرأ أحدث أفكارنا",
+      "titleLine2": "من",
+      "titleHighlight1": "تحديث",
+      "titleHighlight2": "مدونة",
+      "viewMore": "عرض المزيد",
+      "posts": [
+        {
+          "title": "دليل كامل لتصدير الوثائق",
+          "short": "فهم المستندات التجارية الأساسية مثل الفواتير التجارية وسندات الشحن وشهادات المنشأ والأوراق الجمركية لإجراء معاملات دولية سلسة."
+        },
+        {
+          "title": "أهم الأسواق الناشئة لأعمال التصدير في عام 2026",
+          "short": "اكتشف الأسواق الدولية ذات النمو المرتفع والفرص الجديدة للشركات التي تتطلع إلى توسيع نطاق تواجدها العالمي."
+        },
+        {
+          "title": "كيفية اختيار شريك التوريد العالمي المناسب",
+          "short": "تعرف على العوامل الأساسية التي يجب مراعاتها عند اختيار الموردين وشركاء المصادر الموثوقين لتحقيق نجاح تجاري على المدى الطويل."
+        }
+      ]
+    }
+  }
+}

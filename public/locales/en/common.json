@@ -1,12 +1,12 @@
 {
   "navigation": { "home": "Home", "about": "About Us", "products": "Products", "saffron": "Saffron", "blog": "Blog", "contact": "Contact Us", "handicraft": "Handicraft", "industrialGoods": "Industrial Goods" },
-  "buttons": { "exploreProducts": "Explore Products", "learnMore": "Learn More", "contactUs": "Contact Us", "viewMore": "View More", "viewBrochure": "View Brochure", "sendMessage": "Send Message", "readMore": "Read More", "getQuote": "Get a Quote", "moreAbout": "More About Us", "requestQuote": "Request a Quote" },
+  "buttons": { "exploreProducts": "Explore Products", "learnMore": "Learn More", "contactUs": "Contact Us", "viewMore": "View More", "viewBrochure": "View Brochure", "getBrochure": "Get Brochure", "sendMessage": "Send Message", "readMore": "Read More", "getQuote": "Get a Quote", "moreAbout": "More About Us", "requestQuote": "Request a Quote" },
   "accessibility": { "home": "AHPL home", "logo": "AHPL Global Trade Partner", "mainNavigation": "Main navigation", "openMenu": "Open menu", "closeMenu": "Close menu", "previousSlide": "Previous slide", "nextSlide": "Next slide", "previousTestimonial": "Previous testimonial", "nextTestimonial": "Next testimonial", "viewTestimonial": "View testimonial from {{name}}", "productSlide": "Go to {{product}} slide", "scrollTop": "Scroll to top", "facebook": "AHPL on Facebook", "instagram": "AHPL on Instagram", "linkedin": "AHPL on LinkedIn", "shareEmail": "Share AHPL by email" },
   "status": { "loading": "Loading...", "notFound": "Product not found." },
   "company": { "shortName": "AHPL", "name": "Ananta Horizons Pvt Ltd" },
   "productCategories": { "metalTable": "Metal Table Decor", "metalWall": "Metal Wall Decor", "polyresin": "Polyresin Decor", "marble": "Marble Decor", "lifestyle": "Lifestyle & Utility", "wooden": "Wooden Decor", "belts": "Industrial V-Belts" },
   "breadcrumbs": { "separator": ">" },
-  "language": { "label": "Language", "english": "English", "hindi": "हिन्दी", "german": "Deutsch", "spanish": "Español", "french": "Français", "portuguese": "Português", "russian": "Русский", "mandarin": "中文", "select": "Select language" },
+  "language": { "label": "Language", "english": "English", "spanish": "Español", "french": "Français", "german": "Deutsch", "arabic": "العربية", "chinese": "中文", "russian": "Русский", "portuguese": "Português", "japanese": "日本語", "turkish": "Türkçe", "korean": "한국어", "italian": "Italiano", "select": "Select language" },
   "saffron": { 
     "shopBy": "Shop By", 
     "category": "Category",

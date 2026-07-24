@@ -19,7 +19,9 @@ const ProductDetail = () => {
   const index = category.products.findIndex((item) => item.slug === product.slug);
   const complementary = Array.from({ length: 5 }, (_, offset) => category.products[(index + offset + 1) % category.products.length]);
   const features = t("productDetail.features", { returnObjects: true, material: category.material.split(",")[0] });
-  const intro = t("productDetail.intro", { name: product.name, category: category.title.toLowerCase() });
+  const intro = product.shortDescription ?? t("productDetail.intro", { name: product.name, category: category.title.toLowerCase() });
+  const descriptionOne = product.description ?? t("productDetail.descriptionOne", { name: product.name, category: category.title.toLowerCase() });
+  const descriptionTwo = product.descriptionTwo ?? t("productDetail.descriptionTwo");
 
   return (
     <>
@@ -65,7 +67,7 @@ const ProductDetail = () => {
 
           <div className="pt-2">
             <h1 className="text-[clamp(38px,4.4vw,62px)] font-bold leading-[1.05] tracking-[-0.025em]">{product.name}</h1>
-            <h2 className="mt-3 max-w-[690px] text-[clamp(22px,2.2vw,31px)] font-bold leading-[1.25] text-[#30c8bb]">{category.subtitle}</h2>
+            <h2 className="mt-3 max-w-[690px] text-[clamp(22px,2.2vw,31px)] font-bold leading-[1.25] text-[#30c8bb]">{product.subtitle ?? category.subtitle}</h2>
             <p className="mt-6 text-[15px] font-bold text-[#6b5a25]"><span className="tracking-[-2px] text-[#b58a16]">★★★★★</span> <span className="ml-2 text-[#676767]">{t("productDetail.rating")}</span></p>
             <p className="mt-6 max-w-[690px] text-[18px] leading-[1.65] text-[#727272]">{intro}</p>
             <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-5 max-sm:grid-cols-1">{features.map((feature) => <div className="flex items-start gap-3 text-[14px] font-bold text-[#414141]" key={feature}><CheckCircle2 className="mt-0.5 size-5 flex-none text-[#30c8bb]" />{feature}</div>)}</div>
@@ -79,7 +81,7 @@ const ProductDetail = () => {
           </div>
           {activeTab === "description" ? (
             <div className="grid grid-cols-[1.45fr_0.75fr] gap-16 py-10 max-lg:grid-cols-1">
-              <div><h2 className="text-[32px] font-bold">{t("productDetail.heritage")}</h2><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{t("productDetail.descriptionOne", { name: product.name, category: category.title.toLowerCase() })}</p><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{t("productDetail.descriptionTwo")}</p></div>
+              <div><h2 className="text-[32px] font-bold">{t("productDetail.heritage")}</h2><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{descriptionOne}</p><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{descriptionTwo}</p></div>
               <img className="aspect-[1.18/1] h-full max-h-[390px] w-full rounded-[14px] object-cover" src={product.image} alt={`${product.name} detail`} />
             </div>
           ) : (

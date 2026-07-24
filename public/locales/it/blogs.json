@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blog",
+  "latest": "Ultimo blog",
+  "heading": "Leggi i nostri ultimi approfondimenti da",
+  "headingHighlight": "Blog di aggiornamento",
+  "viewMoreAbout": "Visualizza ulteriori informazioni su {{title}}",
+  "posts": [
+    {
+      "title": "Una guida completa alla documentazione di esportazione",
+      "short": "Comprendere i documenti commerciali essenziali come fatture commerciali, polizze di carico, certificati di origine e pratiche doganali.",
+      "description": "Comprendere documenti commerciali essenziali come fatture commerciali, polizze di carico, certificati di origine e pratiche doganali per transazioni internazionali senza intoppi."
+    },
+    {
+      "title": "I principali mercati emergenti per le imprese di esportazione nel 2026",
+      "short": "Scopri i mercati internazionali in forte crescita e le nuove opportunità per le aziende che desiderano espandere la propria presenza globale.",
+      "description": "Scopri i mercati internazionali in forte crescita e le nuove opportunità per le aziende che desiderano espandere la propria presenza globale."
+    },
+    {
+      "title": "Come scegliere il giusto partner di approvvigionamento globale",
+      "short": "Scopri i fattori chiave da considerare quando si selezionano fornitori affidabili e partner di approvvigionamento per il successo aziendale a lungo termine.",
+      "description": "Scopri i fattori chiave da considerare quando si selezionano fornitori affidabili e partner di approvvigionamento per il successo aziendale a lungo termine."
+    }
+  ]
+}

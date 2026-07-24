@@ -1,0 +1,432 @@
+{
+  "common": {
+    "technical": "Tecnico",
+    "details": "Dettagli",
+    "whyChoose": "Perché scegliere AHPL",
+    "rangeIntro": "Esportiamo un'ampia varietà di prodotti decorativi, tra cui:",
+    "viewBrochure": "Visualizza la brochure"
+  },
+  "sharedProducts": [
+    "Rudra-Ansh (Nero)",
+    "Ashwa",
+    "Mayureshwar",
+    "Incantesimo notturno (bianco)",
+    "Gaj-Jhoola",
+    "Cavallo di carbonio",
+    "Aura-Falco",
+    "Monaco di mezzanotte (bianco)",
+    "Chhatrapati",
+    "Grazia gemella"
+  ],
+  "metalTable": {
+    "heroAlt": "Decorazioni da tavolo in metallo esportate dall'India",
+    "title": "Disegni eleganti realizzati",
+    "titleHighlight": "per i mercati globali",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd offre una gamma premium di prodotti per l'arredamento della tavola in metallo che riflettono l'eccezionale artigianato e l'eccellenza manifatturiera dell'India. Ogni pezzo viene accuratamente selezionato da produttori affidabili e rifinito per soddisfare gli standard di qualità internazionali.",
+      "La nostra collezione combina un design artistico con una durata superiore, rendendola la scelta perfetta per rivenditori, grossisti, importatori, designer di interni e distributori che cercano prodotti decorativi di alta qualità."
+    ],
+    "aboutAlt": "Collezione di decorazioni per la tavola in metallo per i mercati globali",
+    "rangeTitle": "Il nostro tavolo in metallo",
+    "rangeHighlight": "Gamma Decor",
+    "products": [
+      "Mangal-Jyoti (Nero)",
+      "Alaap",
+      "Ala luminosa",
+      "Titolare del fischio",
+      "Sinfonia (arancione)",
+      "La foglia di Modak (verde)",
+      "Lume Lady (singolo)",
+      "Kalam Kashti",
+      "Posta a pedale",
+      "Mayur"
+    ],
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Decorazioni da tavola in metallo"
+      ],
+      [
+        "Materiale",
+        "Ferro, alluminio, ottone, acciaio inossidabile (come richiesto)"
+      ],
+      [
+        "Fine",
+        "Verniciato a polvere, antico, opaco, lucido, oro, nero e personalizzato"
+      ],
+      [
+        "Stile",
+        "Moderno, contemporaneo, classico e di lusso"
+      ],
+      [
+        "Utilizzo",
+        "Interni di case, hotel, uffici e negozi"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyAlt": "Artigianalità e qualità dell'arredamento della tavola in metallo",
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Decorazioni da tavola in metallo?",
+    "whyDescription": "Noi di Ananta Horizons pvt ltd combiniamo il ricco artigianato indiano con la produzione moderna per offrire decorazioni da tavola in metallo di alta qualità per i mercati globali. Ogni prodotto viene accuratamente selezionato, controllato dalla qualità e pronto per l'esportazione, garantendo un valore eccezionale per importatori, grossisti, rivenditori e distributori.",
+    "reasons": [
+      "Artigianato di prima qualità",
+      "Materiali di qualità superiore",
+      "Ampia collezione di design",
+      "Garanzia di qualità rigorosa"
+    ]
+  },
+  "metalWall": {
+    "heroAlt": "Decorazione da parete in metallo esportata dall'India",
+    "title": "Elegante decorazione da parete realizzata",
+    "titleHighlight": "per Interni Globali",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd esporta una gamma esclusiva di decorazioni murali in metallo progettate per valorizzare gli spazi moderni e contemporanei. Proveniente da produttori indiani di fiducia, ogni pezzo è realizzato con precisione utilizzando materiali di alta qualità e rifinito per soddisfare gli standard di qualità internazionali.",
+      "La nostra collezione è ideale per importatori, grossisti, rivenditori, distributori, interior designer e aziende del settore alberghiero che cercano decorazioni murali eleganti e pronte per l'esportazione."
+    ],
+    "aboutAlt": "Decorazione da parete decorativa in metallo in un interno contemporaneo",
+    "rangeTitle": "La nostra parete metallica",
+    "rangeHighlight": "Gamma Decor",
+    "products": [
+      "Racconti di turbanti",
+      "L'Ora Divina",
+      "Arte del turbante",
+      "La felicità di Bansuri",
+      "Ganesha dorato",
+      "Cesto fiorito (dorato)",
+      "Il Santo Gancio",
+      "Gaj-Kriti",
+      "Viaggio nel tempo",
+      "Archi sinfonici"
+    ],
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Decorazione da parete in metallo"
+      ],
+      [
+        "Materiale",
+        "Ferro, Alluminio, Ottone, Acciaio Inox"
+      ],
+      [
+        "Fine",
+        "Opaco, lucido, antico, oro, nero e personalizzato"
+      ],
+      [
+        "Stile",
+        "Moderno, Contemporaneo, Lusso, Industriale"
+      ],
+      [
+        "Applicazione",
+        "Interni residenziali e commerciali"
+      ],
+      [
+        "Montaggio",
+        "Montaggio a parete"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ]
+  },
+  "polyresin": {
+    "heroAlt": "Decorazioni in poliresina premium esportate dall'India",
+    "title": "Arredamento elegante realizzato con",
+    "titleHighlight": "Precisione",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd esporta una gamma premium di prodotti decorativi in ​​poliresina che fondono creatività, artigianalità e qualità. Prodotto da fidati artigiani e fornitori indiani, ogni pezzo è accuratamente progettato per offrire un'estetica eccezionale e una lunga durata.",
+      "Dalle figurine decorative alle sculture contemporanee, la nostra collezione è creata per soddisfare le aspettative di rivenditori, grossisti, distributori e interior designer internazionali."
+    ],
+    "aboutAlt": "Collezione premium in poliresina decorativa",
+    "rangeTitle": "La nostra poliresina",
+    "rangeHighlight": "Gamma Decor",
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Decoro in poliresina"
+      ],
+      [
+        "Materiale",
+        "Poliresina di prima qualità"
+      ],
+      [
+        "Fine",
+        "Opaco, lucido, antico, metallizzato e personalizzato"
+      ],
+      [
+        "Stile",
+        "Moderno, Contemporaneo, Classico, Lusso"
+      ],
+      [
+        "Applicazione",
+        "Interni di case, hotel, uffici e negozi"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyAlt": "Collezione artigianale e decorativa in poliresina",
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Decorazioni in poliresina?",
+    "whyDescription": "Presso Ananta Horizons Pvt Ltd, la nostra collezione di decorazioni in poliresina è progettata per combinare bellezza artistica e durata eccezionale. Ogni prodotto è realizzato con precisione per soddisfare i più alti standard di qualità internazionali.",
+    "reasons": [
+      "Artigianato di prima qualità",
+      "Ampia gamma di design",
+      "Materiali di alta qualità",
+      "Qualità assicurata"
+    ]
+  },
+  "marble": {
+    "heroAlt": "Decorazioni in marmo di alta qualità esportate dall'India",
+    "title": "Eleganza senza tempo dentro",
+    "titleHighlight": "Ogni pezzo",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd esporta una collezione esclusiva di prodotti per l'arredamento in marmo realizzati da abili artigiani indiani utilizzando marmo naturale di alta qualità. Ogni pezzo riflette un'eccezionale maestria artigianale, dettagli intricati e finiture superiori, offrendo una miscela perfetta di arte tradizionale e design contemporaneo.",
+      "La nostra collezione di decorazioni in marmo è ideale per importatori, grossisti, rivenditori, designer di interni e aziende del settore alberghiero che cercano prodotti decorativi di lusso che soddisfino gli standard di qualità internazionali."
+    ],
+    "aboutAlt": "Collezione di decori in marmo realizzati a mano",
+    "rangeTitle": "Il nostro Marmo",
+    "rangeHighlight": "Gamma Decor",
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Arredamento in marmo"
+      ],
+      [
+        "Materiale",
+        "Marmo naturale"
+      ],
+      [
+        "Fine",
+        "Lucido, opaco, levigato e personalizzato"
+      ],
+      [
+        "Stile",
+        "Moderno, contemporaneo, tradizionale e di lusso"
+      ],
+      [
+        "Applicazione",
+        "Interni di case, hotel, uffici e negozi"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyAlt": "Lavorazione artigianale del marmo naturale e collezione decorativa",
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Decorazioni in marmo?",
+    "whyDescription": "Presso Ananta Horizons Pvt Ltd, la nostra collezione di decorazioni in marmo riflette il perfetto equilibrio tra bellezza naturale, maestria artigianale e durabilità nel tempo. Ogni prodotto è realizzato con cura per offrire un'eleganza senza tempo e soddisfare le aspettative degli acquirenti internazionali.",
+    "reasons": [
+      "Marmo naturale di prima qualità",
+      "Disegni eleganti",
+      "Qualità superiore",
+      "Soluzioni di esportazione affidabili"
+    ]
+  },
+  "wooden": {
+    "heroAlt": "Decorazioni in legno di alta qualità esportate dall'India",
+    "title": "Decorazioni in legno artigianali per",
+    "titleHighlight": "Ogni spazio",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd esporta una gamma accuratamente curata di prodotti per l'arredamento in legno realizzati da abili artigiani indiani. Combinando il legno naturale con dettagli artistici, la nostra collezione offre decorazioni eleganti e prodotti lifestyle funzionali che si adattano sia agli interni tradizionali che a quelli contemporanei.",
+      "Ogni prodotto viene accuratamente selezionato, controllato dalla qualità e confezionato per soddisfare gli standard di esportazione internazionali, rendendolo la scelta ideale per importatori, grossisti, rivenditori, negozi di articoli da regalo e marchi di arredamento d'interni."
+    ],
+    "aboutAlt": "Prodotti d'arredo in legno realizzati artigianalmente",
+    "rangeTitle": "Esplora il nostro legno",
+    "rangeHighlight": "Collezione di decorazioni",
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Arredamento in legno"
+      ],
+      [
+        "Materiale",
+        "Legno di prima qualità"
+      ],
+      [
+        "Fine",
+        "Naturale, opaco, lucido, verniciato e personalizzato"
+      ],
+      [
+        "Stile",
+        "Tradizionale, contemporaneo, rustico e moderno"
+      ],
+      [
+        "Applicazione",
+        "Casa, ufficio, ospitalità e regali"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Decorazioni in legno?",
+    "whyDescription": "Presso Ananta Horizons Pvt Ltd, la nostra collezione di decorazioni in legno mette in mostra il calore del legno naturale combinato con l'eccezionale artigianato indiano. Ogni prodotto è progettato per offrire bellezza, funzionalità e qualità duratura.",
+    "reasons": [
+      "Autentico artigianato indiano",
+      "Qualità superiore",
+      "Disegni decorativi",
+      "Materiali naturali di prima qualità"
+    ]
+  },
+  "lifestyle": {
+    "heroAlt": "Stile di vita funzionale e prodotti di utilità per la vita moderna",
+    "title": "Prodotti funzionali per",
+    "titleHighlight": "Vita moderna",
+    "paragraphs": [
+      "Ananta Horizons Pvt Ltd esporta un'ampia gamma di prodotti lifestyle e di utilità che migliorano la vita quotidiana attraverso un design pratico e prestazioni affidabili. Provenienti da produttori affidabili in tutta l'India, i nostri prodotti sono realizzati utilizzando materiali di qualità e moderne tecniche di produzione per soddisfare gli standard internazionali.",
+      "Che tu sia un rivenditore, un grossista, un distributore o un importatore, la nostra collezione offre prodotti eleganti, durevoli e pronti per l'esportazione per case, uffici e spazi commerciali."
+    ],
+    "aboutAlt": "Collezione di prodotti lifestyle e di utilità",
+    "rangeTitle": "Il nostro stile di vita e utilità",
+    "rangeHighlight": "Allineare",
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Prodotti di stile di vita e utilità"
+      ],
+      [
+        "Materiale",
+        "Metallo, legno, marmo, poliresina, vetro e altri materiali"
+      ],
+      [
+        "Fine",
+        "Opaco, lucido, verniciato a polvere, naturale e personalizzato"
+      ],
+      [
+        "Stile",
+        "Moderno, contemporaneo, classico e funzionale"
+      ],
+      [
+        "Applicazione",
+        "Casa, ufficio, vendita al dettaglio e ospitalità"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyAlt": "Selezione di prodotti di lifestyle e utilità premium",
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Prodotti di stile di vita e utilità?",
+    "whyDescription": "Presso Ananta Horizons Pvt Ltd, i nostri prodotti sono progettati per combinare praticità e artigianalità di alta qualità, rendendoli adatti ai mercati globali e all'uso quotidiano.",
+    "reasons": [
+      "Qualità premium",
+      "Disegni funzionali",
+      "Ampia selezione di prodotti",
+      "Servizi di esportazione affidabili"
+    ]
+  },
+  "belts": {
+    "heroAlt": "Cinghie trapezoidali industriali ad alte prestazioni esportate dall'India",
+    "title": "Trasmissione di potenza affidabile",
+    "titleHighlight": "Soluzioni",
+    "paragraphs": [
+      "Ananta Horizons Pvt. Ltd. esporta una gamma completa di cinghie trapezoidali industriali che offrono prestazioni, durata ed efficienza superiori in una varietà di applicazioni industriali. Provenienti da produttori certificati, le nostre cinture sono prodotte utilizzando materiali di alta qualità e processi di produzione avanzati per garantire una qualità costante e un funzionamento affidabile.",
+      "Che tu sia un importatore, distributore, OEM o fornitore industriale, le nostre cinghie trapezoidali forniscono una soluzione affidabile per macchinari che richiedono una trasmissione di potenza efficiente e ininterrotta."
+    ],
+    "aboutAlt": "Gamma di prodotti per cinghie trapezoidali industriali",
+    "technical": [
+      [
+        "Categoria di prodotto",
+        "Cinghie trapezoidali industriali"
+      ],
+      [
+        "Materiale",
+        "Gomma di alta qualità con corde di trazione rinforzate"
+      ],
+      [
+        "Tipo di cintura",
+        "Classico, stretto, dentellato, avvolto, fasciato e personalizzato"
+      ],
+      [
+        "Resistenza alla temperatura",
+        "Adatto per condizioni operative industriali"
+      ],
+      [
+        "Applicazione",
+        "Macchinari industriali, agricoltura, settore automobilistico e manifatturiero"
+      ],
+      [
+        "Confezione",
+        "Imballaggio standard per l'esportazione"
+      ],
+      [
+        "Paese di origine",
+        "India"
+      ]
+    ],
+    "whyAlt": "Cinghie trapezoidali industriali di alta qualità",
+    "whyTitle": "Perché scegliere il nostro",
+    "whyHighlight": "Cinghie trapezoidali industriali?",
+    "whyDescription": "Ad Ananta Horizons Pvt. Ltd., progettate per garantire affidabilità ed efficienza, le nostre cinghie trapezoidali industriali offrono prestazioni affidabili anche in ambienti operativi impegnativi.",
+    "benefits": [
+      "Materiali di qualità superiore",
+      "Alte prestazioni",
+      "Durata affidabile",
+      "Produzione di precisione"
+    ],
+    "craftedTitle": "Realizzato con precisione",
+    "craftedDescription": "Il nostro rigoroso controllo di qualità garantisce che ogni articolo che lascia la nostra struttura sia un capolavoro dell'artigianato indiano. Uniamo tecniche secolari con processi di produzione moderni per offrire l'eccellenza su larga scala.",
+    "qualityPoints": [
+      "Controlli di qualità rigorosi",
+      "Materie prime di prima qualità"
+    ],
+    "customTitle": "Su misura per le tue esigenze aziendali",
+    "customizations": [
+      "Disegni artistici di etichette personalizzate",
+      "Variazioni di dimensioni",
+      "Opzioni di colore e finitura",
+      "Logo del marchio",
+      "Imballaggio personalizzato",
+      "Supporto alla produzione OEM"
+    ],
+    "enquire": "Richiedi informazioni sulla personalizzazione",
+    "faqTitle": "Domande frequenti",
+    "faqHighlight": "Domande",
+    "faqs": [
+      {
+        "question": "Come posso effettuare ordini di esportazione all'ingrosso?",
+        "answer": "Puoi richiedere un preventivo tramite il nostro modulo di contatto o via e-mail. Il nostro team ti guiderà attraverso il MOQ, i livelli di prezzo, l'imballaggio, la documentazione e il processo di spedizione internazionale."
+      },
+      {
+        "question": "Quali opzioni di personalizzazione offrite?",
+        "answer": "Offriamo dimensionamenti personalizzati, profili di nastri, colori, etichette private, loghi di marchi, imballaggi per l'esportazione e supporto per la produzione OEM in base ai requisiti dell'ordine."
+      },
+      {
+        "question": "Come garantite un imballaggio di qualità per l'esportazione?",
+        "answer": "Ogni ordine viene sottoposto a controlli di qualità e imballato utilizzando materiali standard per l'esportazione progettati per proteggere le cinghie da umidità, polvere, deformazione e danni da trasporto."
+      },
+      {
+        "question": "In quali paesi esportate attualmente?",
+        "answer": "Supportiamo gli acquirenti nei mercati globali. Contatta il nostro team di esportazione con il tuo paese di destinazione in modo che possiamo confermare la logistica, la documentazione e le opzioni di consegna."
+      }
+    ]
+  }
+}

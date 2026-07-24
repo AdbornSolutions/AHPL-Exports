@@ -1,38 +1,88 @@
-import React from "react";
+import { useCallback, useEffect, useRef } from "react";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import mangalJyotiImg from "../assets/products-images/Metal-table/1.png";
+import { productCatalog } from "../data/productCatalog";
+import {
+  buttonIconClass,
+  pillButtonClass,
+} from "../utils/tailwindClasses";
 
-const handpickedItems = [
-  {
-    name: "Mangal- Jyoti(Black)",
-    to: "/product/metal-table-decor/mangal-jyoti-black",
-    image: mangalJyotiImg,
-  },
-  {
-    name: "Mangal- Jyoti(Black)",
-    to: "/product/metal-table-decor/mangal-jyoti-black",
-    image: mangalJyotiImg,
-  },
-  {
-    name: "Mangal- Jyoti(Black)",
-    to: "/product/metal-table-decor/mangal-jyoti-black",
-    image: mangalJyotiImg,
-  },
-  {
-    name: "Mangal- Jyoti(Black)",
-    to: "/product/metal-table-decor/mangal-jyoti-black",
-    image: mangalJyotiImg,
-  },
-  {
-    name: "Mangal- Jyoti(Black)",
-    to: "/product/metal-table-decor/mangal-jyoti-black",
-    image: mangalJyotiImg,
-  },
-];
+const handpickedCategories = productCatalog.filter(
+  (category) =>
+    category.slug !== "marble-decor" && category.slug !== "wooden-decor",
+);
+
+const handpickedItems = Array.from({ length: 3 }, (_, productIndex) =>
+  handpickedCategories.map((category) => {
+    const product = category.handpickedProducts[productIndex];
+
+    return {
+      name: product.name,
+      to: `/product/${category.slug}/${product.slug}`,
+      image: product.image,
+    };
+  }),
+).flat();
 
 const HandpickedProducts = () => {
   const { t } = useTranslation("common");
+  const carouselRef = useRef(null);
+  const swipeStartX = useRef(null);
+  const didSwipe = useRef(false);
+  const isAutoPlayPaused = useRef(false);
+
+  const moveCarousel = useCallback((direction) => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    const isAtEnd =
+      carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 4;
+    const isAtStart = carousel.scrollLeft <= 4;
+    const firstCard = carousel.firstElementChild;
+    const gap = Number.parseFloat(getComputedStyle(carousel).columnGap) || 0;
+    const distance = firstCard
+      ? firstCard.getBoundingClientRect().width + gap
+      : carousel.clientWidth;
+
+    carousel.scrollTo({
+      left:
+        direction === "next"
+          ? isAtEnd
+            ? 0
+            : carousel.scrollLeft + distance
+          : isAtStart
+            ? carousel.scrollWidth - carousel.clientWidth
+            : carousel.scrollLeft - distance,
+      behavior: "smooth",
+    });
+  }, []);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      if (!isAutoPlayPaused.current) moveCarousel("next");
+    }, 2000);
+
+    return () => window.clearInterval(interval);
+  }, [moveCarousel]);
+
+  const handleSwipeStart = (event) => {
+    swipeStartX.current = event.clientX;
+    didSwipe.current = false;
+    isAutoPlayPaused.current = true;
+  };
+
+  const handleSwipeEnd = (event) => {
+    if (swipeStartX.current === null) return;
+
+    const distance = event.clientX - swipeStartX.current;
+    swipeStartX.current = null;
+    isAutoPlayPaused.current = false;
+
+    if (Math.abs(distance) < 45) return;
+    didSwipe.current = true;
+    moveCarousel(distance < 0 ? "next" : "previous");
+  };
 
   return (
     <section className="bg-white pb-20 pt-10 max-md:pb-12 max-md:pt-6">
@@ -48,10 +98,42 @@ const HandpickedProducts = () => {
           </p>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-5 gap-6 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
-          {handpickedItems.map((item, index) => (
-            <div key={index} className="flex flex-col">
+        {/* Swipeable Products Carousel */}
+        <div
+          ref={carouselRef}
+          className="flex touch-pan-y snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          onPointerDown={handleSwipeStart}
+          onPointerUp={handleSwipeEnd}
+          onPointerCancel={() => {
+            swipeStartX.current = null;
+            isAutoPlayPaused.current = false;
+          }}
+          onMouseEnter={() => {
+            isAutoPlayPaused.current = true;
+          }}
+          onMouseLeave={() => {
+            isAutoPlayPaused.current = false;
+          }}
+          onFocusCapture={() => {
+            isAutoPlayPaused.current = true;
+          }}
+          onBlurCapture={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) {
+              isAutoPlayPaused.current = false;
+            }
+          }}
+          onClickCapture={(event) => {
+            if (!didSwipe.current) return;
+            event.preventDefault();
+            event.stopPropagation();
+            didSwipe.current = false;
+          }}
+        >
+          {handpickedItems.map((item) => (
+            <div
+              key={item.to}
+              className="flex min-w-[calc((100%_-_96px)/5)] snap-start flex-col max-xl:min-w-[calc((100%_-_48px)/3)] max-md:min-w-[calc((100%_-_24px)/2)] max-sm:min-w-full"
+            >
               {/* Image Container with Hover Effect */}
               <Link
                 to={item.to}
@@ -72,6 +154,34 @@ const HandpickedProducts = () => {
               </Link>
             </div>
           ))}
+        </div>
+
+        <div className="relative mt-5 flex min-h-12 items-center justify-center max-sm:flex-col max-sm:gap-5">
+          <Link className={pillButtonClass} to="/contact-us">
+            {t("buttons.getBrochure")}
+            <span className={buttonIconClass}>
+              <ArrowUpRight size={15} />
+            </span>
+          </Link>
+
+          <div className="absolute right-0 flex gap-3 max-sm:static">
+            <button
+              type="button"
+              onClick={() => moveCarousel("previous")}
+              aria-label={t("accessibility.previousSlide")}
+              className="grid size-12 place-items-center rounded-full border-0 bg-[#172b50] text-white shadow-sm transition hover:bg-[#30c8bb]"
+            >
+              <ArrowLeft size={20} />
+            </button>
+            <button
+              type="button"
+              onClick={() => moveCarousel("next")}
+              aria-label={t("accessibility.nextSlide")}
+              className="grid size-12 place-items-center rounded-full border-0 bg-[#172b50] text-white shadow-sm transition hover:bg-[#30c8bb]"
+            >
+              <ArrowRight size={20} />
+            </button>
+          </div>
         </div>
       </div>
     </section>

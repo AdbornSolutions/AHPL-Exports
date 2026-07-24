@@ -3,16 +3,35 @@ import path from "node:path";
 
 const sourceDirectory = path.resolve("public/locales/en");
 const localesDirectory = path.resolve("public/locales");
-const languages = ["de", "es", "fr", "pt", "ru", "zh"];
+const supportedLanguages = [
+  "es",
+  "fr",
+  "de",
+  "ar",
+  "zh",
+  "ru",
+  "pt",
+  "ja",
+  "tr",
+  "ko",
+  "it",
+];
+const requestedLanguages = process.argv.slice(2);
+const languages =
+  requestedLanguages.length > 0 ? requestedLanguages : supportedLanguages;
 const languageNames = {
   english: "English",
-  hindi: "हिन्दी",
-  german: "Deutsch",
   spanish: "Español",
   french: "Français",
-  portuguese: "Português",
+  german: "Deutsch",
+  arabic: "العربية",
+  chinese: "中文",
   russian: "Русский",
-  mandarin: "中文",
+  portuguese: "Português",
+  japanese: "日本語",
+  turkish: "Türkçe",
+  korean: "한국어",
+  italian: "Italiano",
 };
 const placeholderPattern = /\{\{[^}]+\}\}/g;
 const requestQueue = [];

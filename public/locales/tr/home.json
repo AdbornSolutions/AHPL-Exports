@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "eyebrow": "AHPL Şirketi",
+    "title": "Küresel Ticaret. Güvenilir",
+    "titleLine2": "Ortaklıklar.",
+    "titleHighlight": "Sınırsız Fırsatlar."
+  },
+  "products": {
+    "eyebrow": "İhracat Yaptığımız Ürünler",
+    "title": "Çeşitli Ürünler. Küresel Piyasalar.",
+    "titleHighlight": "Güvenilir Ticaret Çözümleri.",
+    "quality": "Kalite kontrollü kaynak kullanımı",
+    "delivery": "Küresel teslimat ağı"
+  },
+  "whyChoose": {
+    "eyebrow": "Neden AHPL'yi Seçmelisiniz?",
+    "title": "İşletmeler Neden Güvenir?",
+    "titleHighlight": "Küresel Ticaret için AHPL.",
+    "description": "Ananta Horizons Pvt Ltd olarak ürün alıp satmanın ötesine geçiyoruz. İşletmelerin küresel pazarlarda güvenle büyümesine yardımcı olan güvenilir kaynak kullanımı, kalite güvencesi, şeffaf süreçler ve kusursuz uluslararası ticaret çözümleri sunarak uzun vadeli ortaklıklar kuruyoruz.",
+    "points": [
+      "Küresel Ticaret Ağı",
+      "Güvenilir Lojistik Desteği",
+      "Kalite Güvencesi",
+      "Rekabetçi Fiyatlandırma"
+    ],
+    "imageAlt": "AHPL depo, lojistik ve yılların deneyimi"
+  },
+  "about": {
+    "title": "Küresel Pazarları Birbirine Bağlamak",
+    "titleHighlight": "Kendinden emin.",
+    "description": "Anant Horizons Pvt.'da çalışıyor Ltd olarak, modern işletmelerin ihtiyaçlarına göre tasarlanmış kapsamlı ihracat çözümleri sunarak uluslararası ticareti kolaylaştırıyoruz. Tedarikçiler, üreticiler, lojistik ortaklar ve alıcılardan oluşan güçlü küresel ağımızla, kaynak temininden teslimata kadar verimli ve şeffaf ticaret operasyonları sağlıyoruz.",
+    "shipAlt": "Konteyner gemisi denizde",
+    "truckAlt": "Bir konteyner sahasında yük kamyonu",
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Hizmet Verilen Ülkeler"
+      },
+      {
+        "value": "500+",
+        "label": "Ticareti Yapılan Ürünler"
+      },
+      {
+        "value": "%98",
+        "label": "Zamanında Teslimat"
+      },
+      {
+        "value": "24/7",
+        "label": "Küresel Destek"
+      }
+    ]
+  },
+  "contactForm": {
+    "eyebrow": "İletişime geçelim!",
+    "title": "Uzman Çözümlerimizle Lojistiğinizi Bugün Optimize Edin.",
+    "formTitle": "İletişime Geçin:",
+    "name": "İsim",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "inquiry": "Sorgu",
+    "comment": "Yorum",
+    "placeholders": {
+      "name": "Tam adınızı girin",
+      "email": "E-postanızı girin",
+      "phone": "Telefon numaranızı girin",
+      "message": "Mesajınızı yazın"
+    },
+    "inquiries": [
+      "Ürün sorgulama",
+      "Tarım Ürünleri",
+      "Baharatlar ve Gıda Ürünleri",
+      "Genel Sorgulama"
+    ]
+  },
+  "certifications": {
+    "eyebrow": "Sertifikalar ve Üyelik",
+    "title": "Sertifikalı. Uyumlu.",
+    "titleHighlight": "Dünya çapında güvenilir.",
+    "items": [
+      "İhracat Konseyi",
+      "Mal ve Hizmet Vergisi",
+      "DGFT"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Referans",
+    "title": "Müşteri Görüşleri",
+    "items": [
+      {
+        "name": "Rajiv Mehta",
+        "role": "İşletme Sahibi, Mumbai",
+        "quote": "AHPL işimiz için güvenilir bir ticaret ortağı olmuştur. Kaliteye, zamanında sevkiyata ve profesyonel iletişime olan bağlılıkları, satın alma sürecimizi kolaylaştırmamıza yardımcı oldu."
+      },
+      {
+        "name": "Neha Sharma",
+        "role": "Tedarik Müdürü, Delhi",
+        "quote": "Ekip gereksinimlerimizi net bir şekilde anlıyor ve kalite standartlarımızı karşılayan ürünleri tutarlı bir şekilde sunuyor. AHPL ile çalışmak kaynak bulmayı çok daha basit hale getirdi."
+      },
+      {
+        "name": "Arjun Patel",
+        "role": "İhracat Direktörü, Ahmedabad",
+        "quote": "Dokümantasyondan nihai teslimata kadar her adım profesyonelce gerçekleştirilir. Şeffaflıkları ve güvenilir hizmetleri onları uzun vadeli güvenilir bir ortak haline getiriyor."
+      },
+      {
+        "name": "Priya Nair",
+        "role": "Operasyon Başkanı, Bengaluru",
+        "quote": "AHPL'nin duyarlı desteği ve detaylara gösterdiği özen olağanüstüydü. Süreç boyunca bizi bilgilendiriyorlar ve her zaman özenle teslimat yapıyorlar."
+      },
+      {
+        "name": "Rohan Kapoor",
+        "role": "Perakende Girişimcisi, Jaipur",
+        "quote": "Tutarlı kalitelerine ve esnek yaklaşımlarına değer veriyoruz. AHPL, müşterilerimizin beklediği standartları korurken ürün yelpazemizi genişletmemize yardımcı oldu."
+      },
+      {
+        "name": "Ananya Iyer",
+        "role": "Tedarik Zinciri Danışmanı, Chennai",
+        "quote": "Pazar bilgileri, güvenilir koordinasyonları ve zamanında uygulamaları ön plana çıkıyor. AHPL, küresel kaynak ihtiyaçları için güvenle önerebileceğimiz bir iş ortağıdır."
+      },
+      {
+        "name": "Vikram Desai",
+        "role": "Üretim Yöneticisi, Pune",
+        "quote": "AHPL ekibinin profesyonelliği her etkileşimde görülebilir. Güvenilir tedarik ve mükemmel iletişim ile büyümemizi desteklediler."
+      },
+      {
+        "name": "Kavya Reddy",
+        "role": "Kurucu, Haydarabad",
+        "quote": "AHPL ile çalışmak ilk günden itibaren sorunsuz geçti. Ürün kalitesi, hızlı yanıtları ve zaman çizelgelerine bağlılıkları tam güvenimizi kazandı."
+      }
+    ]
+  }
+}

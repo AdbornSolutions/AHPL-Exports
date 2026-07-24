@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "Casa",
+    "about": "Chi siamo",
+    "products": "Prodotti",
+    "saffron": "Zafferano",
+    "blog": "Blog",
+    "contact": "Contattaci",
+    "handicraft": "Artigianato",
+    "industrialGoods": "Beni industriali"
+  },
+  "buttons": {
+    "exploreProducts": "Esplora i prodotti",
+    "learnMore": "Saperne di più",
+    "contactUs": "Contattaci",
+    "viewMore": "Visualizza altro",
+    "viewBrochure": "Visualizza la brochure",
+    "getBrochure": "Ottieni la brochure",
+    "sendMessage": "Invia messaggio",
+    "readMore": "Per saperne di più",
+    "getQuote": "Ottieni un preventivo",
+    "moreAbout": "Maggiori informazioni su di noi",
+    "requestQuote": "Richiedi un preventivo"
+  },
+  "accessibility": {
+    "home": "Casa dell'AHPL",
+    "logo": "Partner commerciale globale di AHPL",
+    "mainNavigation": "Navigazione principale",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi menù",
+    "previousSlide": "Diapositiva precedente",
+    "nextSlide": "Diapositiva successiva",
+    "previousTestimonial": "Testimonianza precedente",
+    "nextTestimonial": "Prossima testimonianza",
+    "viewTestimonial": "Visualizza la testimonianza di {{name}}",
+    "productSlide": "Vai alla diapositiva {{product}}",
+    "scrollTop": "Scorri verso l'alto",
+    "facebook": "AHPL su Facebook",
+    "instagram": "AHPL su Instagram",
+    "linkedin": "AHPL su LinkedIn",
+    "shareEmail": "Condividi AHPL via e-mail"
+  },
+  "status": {
+    "loading": "Caricamento...",
+    "notFound": "Prodotto non trovato."
+  },
+  "company": {
+    "shortName": "AHPL",
+    "name": "Ananta Horizons Pvt Ltd"
+  },
+  "productCategories": {
+    "metalTable": "Decorazioni da tavola in metallo",
+    "metalWall": "Decorazione da parete in metallo",
+    "polyresin": "Decoro in poliresina",
+    "marble": "Arredamento in marmo",
+    "lifestyle": "Stile di vita e utilità",
+    "wooden": "Arredamento in legno",
+    "belts": "Cinghie trapezoidali industriali"
+  },
+  "breadcrumbs": {
+    "separator": ">"
+  },
+  "language": {
+    "label": "Lingua",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "chinese": "中文",
+    "russian": "Русский",
+    "portuguese": "Português",
+    "japanese": "日本語",
+    "turkish": "Türkçe",
+    "korean": "한국어",
+    "italian": "Italiano",
+    "select": "Seleziona la lingua"
+  },
+  "saffron": {
+    "shopBy": "Acquista per",
+    "category": "Categoria",
+    "handpickedTitle": "Selezionato a mano per il tuo",
+    "handpickedHighlight": "Casa",
+    "handpickedSubtitle": "Tesori artigianali curati consegnati con amore",
+    "legacy": {
+      "eyebrow": "LA NOSTRA EREDITÀ",
+      "titleLine1": "Realizzato a mano.",
+      "titleLine2": "Ispirato dal patrimonio.",
+      "description": "Noi di Saffron crediamo che ogni pezzo artigianale porti l'anima di chi lo ha creato. Collaboriamo con oltre 200 gruppi artigiani in tutta l'India per offrirti artigianato autentici che fondono tradizioni secolari con l'estetica moderna. La nostra missione è sostenere l’artigianato storico e fornire mezzi di sussistenza significativi ai nostri maestri artigiani.",
+      "stat1Number": "200+",
+      "stat1Label": "Famiglie Artigiane",
+      "stat2Number": "15+",
+      "stat2Label": "Stati indiani"
+    },
+    "spaceTitle": "Acquista per",
+    "spaceHighlight": "Spazio",
+    "spaces": {
+      "livingRoom": "Soggiorno",
+      "diningSpace": "Spazio da pranzo",
+      "entryway": "Ingresso",
+      "prayerRoom": "Sala di preghiera",
+      "workDesk": "Scrivania"
+    },
+    "blog": {
+      "eyebrow": "Ultimo blog",
+      "titleLine1": "Leggi i nostri ultimi approfondimenti",
+      "titleLine2": "Da",
+      "titleHighlight1": "Aggiornamento",
+      "titleHighlight2": "Blog",
+      "viewMore": "Visualizza altro",
+      "posts": [
+        {
+          "title": "Una guida completa alla documentazione di esportazione",
+          "short": "Comprendere documenti commerciali essenziali come fatture commerciali, polizze di carico, certificati di origine e pratiche doganali per transazioni internazionali senza intoppi."
+        },
+        {
+          "title": "I principali mercati emergenti per le imprese di esportazione nel 2026",
+          "short": "Scopri i mercati internazionali in forte crescita e le nuove opportunità per le aziende che desiderano espandere la propria presenza globale."
+        },
+        {
+          "title": "Come scegliere il giusto partner di approvvigionamento globale",
+          "short": "Scopri i fattori chiave da considerare quando si selezionano fornitori affidabili e partner di approvvigionamento per il successo aziendale a lungo termine."
+        }
+      ]
+    }
+  }
+}

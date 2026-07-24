@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Bize Ulaşın",
+  "cards": {
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "address": "Adres"
+  },
+  "form": {
+    "title": "Bize bir soruşturma gönderin",
+    "description": "Güvenilir bir ihracat ortağı mı arıyorsunuz? Aşağıdaki formu doldurun, ekibimiz en kısa sürede size geri dönüş yapacaktır.",
+    "placeholders": {
+      "name": "Kısa ad",
+      "phone": "Telefon numarası",
+      "email": "E-posta adresi",
+      "service": "Hizmet Tipini Yazın",
+      "message": "Mesajınızı yazın..."
+    }
+  }
+}

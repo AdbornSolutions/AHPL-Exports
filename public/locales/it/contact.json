@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Contattaci",
+  "cards": {
+    "email": "Indirizzo e-mail",
+    "phone": "Numero di telefono",
+    "address": "Indirizzo"
+  },
+  "form": {
+    "title": "Inviaci una richiesta",
+    "description": "Cerchi un partner di fiducia per l'esportazione? Compila il modulo sottostante e il nostro team ti ricontatterà il prima possibile.",
+    "placeholders": {
+      "name": "Nome veloce",
+      "phone": "Numero di telefono",
+      "email": "Indirizzo e-mail",
+      "service": "Scrivi il tipo di servizio",
+      "message": "Scrivi il tuo messaggio..."
+    }
+  }
+}

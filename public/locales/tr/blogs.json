@@ -1,0 +1,24 @@
+{
+  "pageTitle": "Blog",
+  "latest": "En Son Blog",
+  "heading": "En Son Bilgilerimizi Okuyun",
+  "headingHighlight": "Blogu Güncelle",
+  "viewMoreAbout": "{{title}} hakkında daha fazlasını görüntüleyin",
+  "posts": [
+    {
+      "title": "Belgeleri Dışa Aktarmak İçin Eksiksiz Bir Kılavuz",
+      "short": "Ticari faturalar, konşimentolar, menşe şahadetnameleri ve gümrük evrakları gibi temel ticari belgeleri anlamak.",
+      "description": "Sorunsuz uluslararası işlemler için ticari faturalar, konşimentolar, menşe şahadetnameleri ve gümrük evrakları gibi temel ticari belgeleri anlamak."
+    },
+    {
+      "title": "2026'da İhracat İşletmeleri için En İyi Yükselen Pazarlar",
+      "short": "Hızlı büyüyen uluslararası pazarları ve küresel ayak izlerini genişletmek isteyen işletmeler için yeni fırsatları keşfedin.",
+      "description": "Hızlı büyüyen uluslararası pazarları ve küresel ayak izlerini genişletmek isteyen işletmeler için yeni fırsatları keşfedin."
+    },
+    {
+      "title": "Doğru Küresel Kaynak Kullanımı Ortağı Nasıl Seçilir?",
+      "short": "Uzun vadeli iş başarısı için güvenilir tedarikçileri ve kaynak bulma ortaklarını seçerken göz önünde bulundurulması gereken temel faktörleri öğrenin.",
+      "description": "Uzun vadeli iş başarısı için güvenilir tedarikçileri ve kaynak bulma ortaklarını seçerken göz önünde bulundurulması gereken temel faktörleri öğrenin."
+    }
+  ]
+}
