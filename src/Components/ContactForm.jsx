@@ -1,15 +1,65 @@
 import contactBg from "../assets/form.png";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const fieldClass =
   "h-11 w-full rounded-[9px] border border-[#c8c8c8] bg-white/85 px-3 text-[13px] text-[#27344b] outline-none transition placeholder:text-[#707070] focus:border-[#2EC4B6] focus:bg-white focus:shadow-[0_0_0_3px_rgba(46,196,182,0.16)]";
 
 const labelClass = "grid gap-2 text-left text-[16px] font-semibold text-black";
 
+const inquiries = [
+  "Handicraft",
+  "Metal Table Decor",
+  "Metal Wall Decor",
+  "Polyresin Decor",
+  "Marble Decor",
+  "Lifestyle & Utility",
+  "Wooden Decor",
+  "Industrial V-Belts",
+  "Saffron",
+];
+
+const initialForm = {
+  name: "",
+  email: "",
+  phone: "",
+  inquiry: "Handicraft",
+  comment: "",
+};
+
 const ContactForm = () => {
   const { t } = useTranslation(["home", "common"]);
-  const inquiries = t("contactForm.inquiries", { returnObjects: true });
+  const [form, setForm] = useState(initialForm);
+  const [status, setStatus] = useState("idle");
+
+  const updateField = ({ target: { name, value } }) => {
+    setForm((current) => ({ ...current, [name]: value }));
+  };
+
+  const submitInquiry = async (event) => {
+    event.preventDefault();
+    setStatus("submitting");
+
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(form),
+      });
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || !result?.ok) {
+        throw new Error(result?.error || "Inquiry submission failed.");
+      }
+
+      setForm(initialForm);
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  };
+
   return (
   <section id="contact-us" className="pb-16 pt-5">
     <div
@@ -28,27 +78,27 @@ const ContactForm = () => {
 
       <form
         className="relative grid gap-[18px] bg-white/90 px-[50px] pb-[30px] pt-10 text-[#172b50] shadow-[-10px_10px_0_rgba(255,255,255,0.22)] backdrop-blur-sm [clip-path:polygon(0_0,78%_0,100%_18%,100%_100%,0_100%)] max-lg:px-9 max-md:mx-auto max-md:w-full max-md:max-w-[460px] max-md:[clip-path:none] max-md:rounded-[28px] max-sm:px-5"
-        onSubmit={(event) => event.preventDefault()}
+        onSubmit={submitInquiry}
       >
         <h3 className="text-[30px] font-bold leading-none text-[#172b50]">{t("contactForm.formTitle")}</h3>
         <div className="h-px w-full bg-black/25" />
 
         <label className={labelClass}>
-          {t("contactForm.name")}<input className={fieldClass} type="text" placeholder={t("contactForm.placeholders.name")} />
+          {t("contactForm.name")}<input className={fieldClass} type="text" name="name" value={form.name} onChange={updateField} placeholder={t("contactForm.placeholders.name")} autoComplete="name" required maxLength="100" />
         </label>
 
         <label className={labelClass}>
-          {t("contactForm.email")}<input className={fieldClass} type="email" placeholder={t("contactForm.placeholders.email")} />
+          {t("contactForm.email")}<input className={fieldClass} type="email" name="email" value={form.email} onChange={updateField} placeholder={t("contactForm.placeholders.email")} autoComplete="email" required maxLength="254" />
         </label>
 
         <label className={labelClass}>
-          {t("contactForm.phone")}<input className={fieldClass} type="tel" placeholder={t("contactForm.placeholders.phone")} />
+          {t("contactForm.phone")}<input className={fieldClass} type="tel" name="phone" value={form.phone} onChange={updateField} placeholder={t("contactForm.placeholders.phone")} autoComplete="tel" required minLength="7" maxLength="20" />
         </label>
 
         <label className={labelClass}>
           {t("contactForm.inquiry")}
-          <select className={`${fieldClass} appearance-auto`} defaultValue="">
-            {inquiries.map((inquiry, index) => <option value={index === 0 ? "" : inquiry} disabled={index === 0} key={inquiry}>{inquiry}</option>)}
+          <select className={`${fieldClass} appearance-auto`} name="inquiry" value={form.inquiry} onChange={updateField} required>
+            {inquiries.map((inquiry) => <option value={inquiry} key={inquiry}>{inquiry}</option>)}
           </select>
         </label>
 
@@ -57,16 +107,27 @@ const ContactForm = () => {
           <textarea
             className={`${fieldClass} h-20 resize-none py-3`}
             rows="3"
+            name="comment"
+            value={form.comment}
+            onChange={updateField}
             placeholder={t("contactForm.placeholders.message")}
+            required
+            maxLength="2000"
           />
         </label>
 
         <button
-          className="mt-3 min-h-[50px] w-full rounded-[9px] border-0 bg-[#2EC4B6] px-5 text-[18px] font-medium text-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(46,196,182,0.28)]"
+          className="mt-3 min-h-[50px] w-full rounded-[9px] border-0 bg-[#2EC4B6] px-5 text-[18px] font-medium text-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(46,196,182,0.28)] disabled:cursor-not-allowed disabled:opacity-60"
           type="submit"
+          disabled={status === "submitting"}
         >
-          {t("buttons.requestQuote", { ns: "common" })}
+          {status === "submitting" ? "Sending..." : t("buttons.requestQuote", { ns: "common" })}
         </button>
+
+        <div aria-live="polite" className="min-h-5 text-center text-sm font-medium">
+          {status === "success" && <p className="text-[#168477]">Thank you. Your inquiry has been submitted successfully.</p>}
+          {status === "error" && <p className="text-red-700">We could not submit your inquiry. Please try again.</p>}
+        </div>
       </form>
     </div>
   </section>

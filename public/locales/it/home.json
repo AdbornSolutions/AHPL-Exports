@@ -64,13 +64,7 @@
       "email": "Inserisci la tua email",
       "phone": "Inserisci il tuo numero di telefono",
       "message": "Scrivi il tuo messaggio"
-    },
-    "inquiries": [
-      "Richiesta di prodotto",
-      "Prodotti agricoli",
-      "Spezie e prodotti alimentari",
-      "Inchiesta generale"
-    ]
+    }
   },
   "certifications": {
     "eyebrow": "Certificazioni e iscrizione",

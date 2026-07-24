@@ -1,4 +1,4 @@
 {
-  "pageTitle": "Contact Us", "cards": { "email": "Email Address", "phone": "Phone Number", "address": "Address" },
+  "pageTitle": "Contact Us", "cards": { "email": "Email Address", "phone": "Phone Number", "address": "Address" }, "addressValue": "1st floor, Lajwanti Complex, 10/2, Central Ave, Sut Market, Itwari, Nagpur, Maharashtra 440002",
   "form": { "title": "Send Us an Inquiry", "description": "Looking for a trusted export partner? Fill out the form below, and our team will get back to you as soon as possible.", "placeholders": { "name": "Fast name", "phone": "Phone number", "email": "Email address", "service": "Write Service Type", "message": "Type your message..." } }
 }
