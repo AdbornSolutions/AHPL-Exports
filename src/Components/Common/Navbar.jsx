@@ -86,8 +86,8 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 h-[72px] border-b border-[#0d2d51]/5 bg-[#f1f6f8]/95 backdrop-blur-[14px] max-[850px]:h-[66px]">
       <div className={`${containerClass} grid h-full grid-cols-[150px_minmax(0,1fr)_auto] items-center gap-7 max-[850px]:flex max-[850px]:justify-between`}>
-        <Link className="flex h-[52px] w-[150px] items-center overflow-hidden max-[850px]:w-32" to="/" aria-label={t("accessibility.home")}>
-          <img className="h-24 w-[146px] object-cover object-center mix-blend-multiply max-[850px]:w-[125px]" src={navLogo} alt={t("accessibility.logo")} />
+        <Link className="flex h-[52px] w-[150px] shrink-0 items-center overflow-hidden max-[850px]:w-28 max-[480px]:w-24 max-[380px]:w-20" to="/" aria-label={t("accessibility.home")}>
+          <img className="h-24 w-[146px] object-cover object-center mix-blend-multiply max-[850px]:w-28 max-[480px]:w-24 max-[380px]:w-20" src={navLogo} alt={t("accessibility.logo")} />
         </Link>
 
         <div className="contents">
@@ -176,15 +176,29 @@ const Navbar = () => {
           </div>
         </div>
 
-        <button
-          className="hidden cursor-pointer place-items-center border-0 bg-transparent text-[#172b50] max-[850px]:grid"
-          type="button"
-          aria-label={t(open ? "accessibility.closeMenu" : "accessibility.openMenu")}
-          aria-expanded={open}
-          onClick={() => setOpen((value) => !value)}
-        >
-          {open ? <X /> : <Menu />}
-        </button>
+        <div className="hidden items-center gap-2 max-[850px]:flex">
+          <Link
+            className={`${pillButtonClass} min-h-10 shrink-0 whitespace-nowrap px-3.5 text-[clamp(9px,2.8vw,12px)] max-[480px]:px-2.5`}
+            to="/contact-us"
+            onClick={() => setOpen(false)}
+            title={t("buttons.getQuote")}
+          >
+            <span>{t("buttons.getQuote")}</span>
+            <span className={`${buttonIconClass} size-5 shrink-0 max-[500px]:hidden`}>
+              <ArrowUpRight size={13} />
+            </span>
+          </Link>
+
+          <button
+            className="grid size-9 shrink-0 cursor-pointer place-items-center rounded-full border-0 bg-transparent text-[#172b50] transition hover:bg-[#e4eff1] hover:text-[#28bdb2]"
+            type="button"
+            aria-label={t(open ? "accessibility.closeMenu" : "accessibility.openMenu")}
+            aria-expanded={open}
+            onClick={() => setOpen((value) => !value)}
+          >
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
     </header>
   );
