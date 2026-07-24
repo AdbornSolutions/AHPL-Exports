@@ -14,7 +14,8 @@ const socialLinkClass =
 
 const quickLinks = [
   { labelKey: "navigation.home", to: "/" }, { labelKey: "navigation.about", to: "/about-us" },
-  { labelKey: "navigation.products", to: "/product" }, { labelKey: "navigation.blog", to: "/blog" },
+  { labelKey: "navigation.products", to: "/product" }, { labelKey: "navigation.saffron", to: "/saffron" },
+  { labelKey: "navigation.blog", to: "/blog" },
   { labelKey: "navigation.contact", to: "/contact-us" },
 ];
 

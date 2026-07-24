@@ -1,4 +1,7 @@
-/* global process */
+import { inquiryValues } from "../src/config/inquiryOptions.js";
+import { formEndpoints } from "../config/formEndpoints.js";
+
+const ALLOWED_SERVICES = new Set(inquiryValues);
 
 const clean = (value, maxLength) =>
   typeof value === "string" ? value.trim().slice(0, maxLength) : "";
@@ -7,12 +10,6 @@ export default async function handler(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return response.status(405).json({ ok: false, error: "Method not allowed." });
-  }
-
-  const endpoint = process.env.GOOGLE_CONTACT_SHEETS_WEB_APP_URL;
-  if (!endpoint) {
-    console.error("GOOGLE_CONTACT_SHEETS_WEB_APP_URL is not configured.");
-    return response.status(503).json({ ok: false, error: "Contact form service is unavailable." });
   }
 
   const body =
@@ -32,14 +29,14 @@ export default async function handler(request, response) {
     !submission.name ||
     !/^[+()\d\s.-]{7,20}$/.test(submission.phone) ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email) ||
-    !submission.service ||
+    !ALLOWED_SERVICES.has(submission.service) ||
     !submission.message
   ) {
     return response.status(400).json({ ok: false, error: "Invalid contact form submission." });
   }
 
   try {
-    const googleResponse = await fetch(endpoint, {
+    const googleResponse = await fetch(formEndpoints.contactInquiry, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(submission),

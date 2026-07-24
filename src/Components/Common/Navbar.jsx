@@ -33,6 +33,40 @@ const productDropdownGroups = [
   },
 ];
 
+const LanguageMenu = ({
+  currentLanguage,
+  currentLanguageLabel,
+  onLanguageChange,
+  t,
+  className = "",
+}) => (
+  <div className={`group relative ${className}`}>
+    <button
+      className="flex items-center gap-1 border-0 bg-transparent text-[13px] font-semibold text-[#183255] transition hover:text-[#28bdb2] max-[850px]:p-3"
+      type="button"
+      aria-label={t("language.select")}
+    >
+      {t(currentLanguageLabel)}
+      <ChevronDown className="transition duration-200 group-hover:rotate-180 group-focus-within:rotate-180" size={14} />
+    </button>
+    <div className="pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100">
+      <div className="grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:shadow-none">
+        {languages.map((language) => (
+          <button
+            className={`px-4 py-2 text-left text-[14px] font-medium transition hover:bg-[#eef8f8] hover:text-[#28bdb2] ${currentLanguage === language.code ? "text-[#28bdb2]" : "text-[#183255]"}`}
+            type="button"
+            key={language.code}
+            lang={language.code}
+            onClick={() => onLanguageChange(language.code)}
+          >
+            {t(language.labelKey)}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
 const Navbar = () => {
   const { t, i18n } = useTranslation("common");
   const [open, setOpen] = useState(false);
@@ -51,17 +85,18 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 h-[72px] border-b border-[#0d2d51]/5 bg-[#f1f6f8]/95 backdrop-blur-[14px] max-[850px]:h-[66px]">
-      <div className={`${containerClass} flex h-full items-center justify-between gap-7`}>
+      <div className={`${containerClass} grid h-full grid-cols-[150px_minmax(0,1fr)_auto] items-center gap-7 max-[850px]:flex max-[850px]:justify-between`}>
         <Link className="flex h-[52px] w-[150px] items-center overflow-hidden max-[850px]:w-32" to="/" aria-label={t("accessibility.home")}>
           <img className="h-24 w-[146px] object-cover object-center mix-blend-multiply max-[850px]:w-[125px]" src={navLogo} alt={t("accessibility.logo")} />
         </Link>
 
-        <nav
-          className={`flex items-center gap-[30px] max-[850px]:absolute max-[850px]:left-3.5 max-[850px]:right-3.5 max-[850px]:top-[66px] max-[850px]:grid max-[850px]:gap-1 max-[850px]:rounded-b-[18px] max-[850px]:bg-[#f5f9fa] max-[850px]:p-3.5 max-[850px]:shadow-[0_18px_30px_rgba(12,39,74,0.12)] max-[850px]:transition max-[850px]:duration-200 ${
-            open ? "max-[850px]:translate-y-0 max-[850px]:opacity-100" : "max-[850px]:pointer-events-none max-[850px]:-translate-y-2.5 max-[850px]:opacity-0"
-          }`}
-          aria-label={t("accessibility.mainNavigation")}
-        >
+        <div className="contents">
+          <nav
+            className={`flex items-center justify-self-center gap-[30px] max-[850px]:absolute max-[850px]:left-3.5 max-[850px]:right-3.5 max-[850px]:top-[66px] max-[850px]:grid max-[850px]:gap-1 max-[850px]:rounded-b-[18px] max-[850px]:bg-[#f5f9fa] max-[850px]:p-3.5 max-[850px]:shadow-[0_18px_30px_rgba(12,39,74,0.12)] max-[850px]:transition max-[850px]:duration-200 ${
+              open ? "max-[850px]:translate-y-0 max-[850px]:opacity-100" : "max-[850px]:pointer-events-none max-[850px]:-translate-y-2.5 max-[850px]:opacity-0"
+            }`}
+            aria-label={t("accessibility.mainNavigation")}
+          >
           {links.map((link) =>
             link.hasDropdown ? (
               <div className="group relative max-[850px]:grid" key={link.to}>
@@ -115,39 +150,31 @@ const Navbar = () => {
             )
           )}
 
-          <div className="group relative max-[850px]:grid">
-            <button
-              className="flex items-center gap-1 border-0 bg-transparent text-[13px] font-semibold text-[#183255] transition hover:text-[#28bdb2] max-[850px]:p-3"
-              type="button"
-              aria-label={t("language.select")}
-            >
-              {t(currentLanguageLabel)}
-              <ChevronDown className="transition duration-200 group-hover:rotate-180 group-focus-within:rotate-180" size={14} />
-            </button>
-            <div className="pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100">
-              <div className="grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:shadow-none">
-                {languages.map((language) => (
-                  <button
-                    className={`px-4 py-2 text-left text-[14px] font-medium transition hover:bg-[#eef8f8] hover:text-[#28bdb2] ${currentLanguage === language.code ? "text-[#28bdb2]" : "text-[#183255]"}`}
-                    type="button"
-                    key={language.code}
-                    lang={language.code}
-                    onClick={() => {
-                      i18n.changeLanguage(language.code);
-                      setOpen(false);
-                    }}
-                  >
-                    {t(language.labelKey)}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </nav>
+          <LanguageMenu
+            className="hidden max-[850px]:grid"
+            currentLanguage={currentLanguage}
+            currentLanguageLabel={currentLanguageLabel}
+            onLanguageChange={(code) => {
+              i18n.changeLanguage(code);
+              setOpen(false);
+            }}
+            t={t}
+          />
+          </nav>
 
-        <Link className={`${pillButtonClass} max-[850px]:hidden`} to="/contact-us">
-          {t("buttons.getQuote")} <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
-        </Link>
+          <div className="flex items-center gap-5 max-[850px]:hidden">
+            <LanguageMenu
+              currentLanguage={currentLanguage}
+              currentLanguageLabel={currentLanguageLabel}
+              onLanguageChange={(code) => i18n.changeLanguage(code)}
+              t={t}
+            />
+
+            <Link className={pillButtonClass} to="/contact-us">
+              {t("buttons.getQuote")} <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
+            </Link>
+          </div>
+        </div>
 
         <button
           className="hidden cursor-pointer place-items-center border-0 bg-transparent text-[#172b50] max-[850px]:grid"

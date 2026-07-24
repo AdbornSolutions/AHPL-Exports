@@ -2,23 +2,13 @@ import contactBg from "../assets/form.png";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import FormStatusToast from "./Common/FormStatusToast";
+import { inquiryOptions } from "../config/inquiryOptions";
 
 const fieldClass =
   "h-11 w-full rounded-[9px] border border-[#c8c8c8] bg-white/85 px-3 text-[13px] text-[#27344b] outline-none transition placeholder:text-[#707070] focus:border-[#2EC4B6] focus:bg-white focus:shadow-[0_0_0_3px_rgba(46,196,182,0.16)]";
 
 const labelClass = "grid gap-2 text-left text-[16px] font-semibold text-black";
-
-const inquiries = [
-  "Handicraft",
-  "Metal Table Decor",
-  "Metal Wall Decor",
-  "Polyresin Decor",
-  "Marble Decor",
-  "Lifestyle & Utility",
-  "Wooden Decor",
-  "Industrial V-Belts",
-  "Saffron",
-];
 
 const initialForm = {
   name: "",
@@ -98,7 +88,9 @@ const ContactForm = () => {
         <label className={labelClass}>
           {t("contactForm.inquiry")}
           <select className={`${fieldClass} appearance-auto`} name="inquiry" value={form.inquiry} onChange={updateField} required>
-            {inquiries.map((inquiry) => <option value={inquiry} key={inquiry}>{inquiry}</option>)}
+            {inquiryOptions.map(({ value, labelKey }) => (
+              <option value={value} key={value}>{t(labelKey, { ns: "common" })}</option>
+            ))}
           </select>
         </label>
 
@@ -124,10 +116,12 @@ const ContactForm = () => {
           {status === "submitting" ? "Sending..." : t("buttons.requestQuote", { ns: "common" })}
         </button>
 
-        <div aria-live="polite" className="min-h-5 text-center text-sm font-medium">
-          {status === "success" && <p className="text-[#168477]">Thank you. Your inquiry has been submitted successfully.</p>}
-          {status === "error" && <p className="text-red-700">We could not submit your inquiry. Please try again.</p>}
-        </div>
+        <FormStatusToast
+          status={status}
+          successMessage="We’ve received your inquiry and will get back to you shortly."
+          errorMessage="We could not submit your inquiry. Please try again."
+          onDismiss={() => setStatus("idle")}
+        />
       </form>
     </div>
   </section>

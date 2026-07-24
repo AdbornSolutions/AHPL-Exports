@@ -9,6 +9,17 @@
 const SPREADSHEET_ID = "10eWdZBq3apYxzqjYhdVjacjDdmBxLqUZs695-gUocsY";
 const SHEET_NAME = "Contact us Inquery";
 const REQUIRED_HEADERS = ["Name", "Phone", "Email", "Service", "Message"];
+const ALLOWED_SERVICES = [
+  "Handicraft",
+  "Metal Table Decor",
+  "Metal Wall Decor",
+  "Polyresin Decor",
+  "Marble Decor",
+  "Lifestyle & Utility",
+  "Wooden Decor",
+  "Industrial V-Belts",
+  "Saffron",
+];
 
 // Google Apps Script invokes this function for Web App POST requests.
 // eslint-disable-next-line no-unused-vars
@@ -81,6 +92,10 @@ function validateSubmission(submission) {
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.Email)) {
     throw new Error("A valid email address is required.");
+  }
+
+  if (!ALLOWED_SERVICES.includes(submission.Service)) {
+    throw new Error("The selected service is not allowed.");
   }
 }
 
