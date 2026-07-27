@@ -64,9 +64,17 @@ function doPost(event) {
         throw new Error(`Missing sheet headers: ${missingHeaders.join(", ")}`);
       }
 
-      const row = headers.map((header) => safeSheetValue(submission[header] || ""));
+      const row = headers.map((header) =>
+        header === "Phone"
+          ? submission[header] || ""
+          : safeSheetValue(submission[header] || ""),
+      );
       const rowNumber = sheet.getLastRow() + 1;
-      sheet.getRange(rowNumber, 1, 1, row.length).setValues([row]);
+      const rowRange = sheet.getRange(rowNumber, 1, 1, row.length);
+      const phoneColumn = headers.indexOf("Phone") + 1;
+
+      sheet.getRange(rowNumber, phoneColumn).setNumberFormat("@");
+      rowRange.setValues([row]);
       SpreadsheetApp.flush();
 
       return jsonResponse({ ok: true, sheet: sheet.getName(), row: rowNumber });

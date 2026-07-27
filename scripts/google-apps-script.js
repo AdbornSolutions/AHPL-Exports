@@ -37,7 +37,7 @@ function doPost(event) {
     const submission = {
       Name: clean(data.name, 100),
       Email: clean(data.email, 254),
-      Phone: clean(data.phone, 20),
+      Phone: normalizePhone(data.phone),
       Inquiry: clean(data.inquiry, 100),
       Comment: clean(data.comment, 2000),
     };
@@ -64,7 +64,7 @@ function doPost(event) {
 
       const lastColumn = sheet.getLastColumn();
       const headers = lastColumn
-        ? sheet.getRange(1, 1, 1, lastColumn).getDisplayValues()[0].map(String)
+        ? sheet.getRange(1, 1, 1, lastColumn).getDisplayValues()[0].map((header) => header.trim())
         : [];
 
       const missingHeaders = REQUIRED_HEADERS.filter((header) => !headers.includes(header));
@@ -72,9 +72,17 @@ function doPost(event) {
         throw new Error(`Missing sheet headers: ${missingHeaders.join(", ")}`);
       }
 
-      const row = headers.map((header) => safeSheetValue(submission[header] || ""));
+      const row = headers.map((header) =>
+        header === "Phone"
+          ? submission[header] || ""
+          : safeSheetValue(submission[header] || ""),
+      );
       const rowNumber = sheet.getLastRow() + 1;
-      sheet.getRange(rowNumber, 1, 1, row.length).setValues([row]);
+      const rowRange = sheet.getRange(rowNumber, 1, 1, row.length);
+      const phoneColumn = headers.indexOf("Phone") + 1;
+
+      sheet.getRange(rowNumber, phoneColumn).setNumberFormat("@");
+      rowRange.setValues([row]);
 
       SpreadsheetApp.flush();
 
@@ -103,7 +111,7 @@ function validateSubmission(submission) {
     throw new Error("A valid email address is required.");
   }
 
-  if (!/^[+()\d\s.-]{7,20}$/.test(submission.Phone)) {
+  if (!/^\+?\d{7,15}$/.test(submission.Phone)) {
     throw new Error("A valid phone number is required.");
   }
 
@@ -114,6 +122,13 @@ function validateSubmission(submission) {
 
 function clean(value, maxLength) {
   return String(value || "").trim().slice(0, maxLength);
+}
+
+function normalizePhone(value) {
+  const rawPhone = clean(value, 30);
+  const phoneDigits = rawPhone.replace(/\D/g, "").slice(0, 15);
+
+  return rawPhone.startsWith("+") ? `+${phoneDigits}` : phoneDigits;
 }
 
 function safeSheetValue(value) {

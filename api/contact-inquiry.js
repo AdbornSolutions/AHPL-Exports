@@ -16,10 +16,13 @@ export default async function handler(request, response) {
     typeof request.body === "string"
       ? Object.fromEntries(new URLSearchParams(request.body))
       : request.body || {};
+  const rawPhone = clean(body.phone, 20);
+  const phoneDigits = rawPhone.replace(/\D/g, "").slice(0, 15);
+  const phone = rawPhone.startsWith("+") ? `+${phoneDigits}` : phoneDigits;
 
   const submission = {
     name: clean(body.name, 100),
-    phone: clean(body.phone, 20),
+    phone,
     email: clean(body.email, 254),
     service: clean(body.service, 150),
     message: clean(body.message, 2000),
@@ -27,7 +30,7 @@ export default async function handler(request, response) {
 
   if (
     !submission.name ||
-    !/^[+()\d\s.-]{7,20}$/.test(submission.phone) ||
+    !/^\+?\d{7,15}$/.test(submission.phone) ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email) ||
     !ALLOWED_SERVICES.has(submission.service) ||
     !submission.message

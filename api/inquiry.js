@@ -2,9 +2,17 @@ import { inquiryValues } from "../src/config/inquiryOptions.js";
 import { formEndpoints } from "../config/formEndpoints.js";
 
 const ALLOWED_INQUIRIES = new Set(inquiryValues);
+const GOOGLE_REQUEST_TIMEOUT_MS = 25000;
 
 const clean = (value, maxLength) =>
   typeof value === "string" ? value.trim().slice(0, maxLength) : "";
+
+const normalizePhone = (value) => {
+  const rawPhone = clean(value, 30);
+  const phoneDigits = rawPhone.replace(/\D/g, "").slice(0, 15);
+
+  return rawPhone.startsWith("+") ? `+${phoneDigits}` : phoneDigits;
+};
 
 export default async function handler(request, response) {
   if (request.method !== "POST") {
@@ -20,7 +28,7 @@ export default async function handler(request, response) {
   const submission = {
     name: clean(body.name, 100),
     email: clean(body.email, 254),
-    phone: clean(body.phone, 20),
+    phone: normalizePhone(body.phone),
     inquiry: clean(body.inquiry, 100),
     comment: clean(body.comment, 2000),
   };
@@ -28,7 +36,7 @@ export default async function handler(request, response) {
   if (
     !submission.name ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email) ||
-    !/^[+()\d\s.-]{7,20}$/.test(submission.phone) ||
+    !/^\+?\d{7,15}$/.test(submission.phone) ||
     !ALLOWED_INQUIRIES.has(submission.inquiry) ||
     !submission.comment
   ) {
@@ -40,7 +48,7 @@ export default async function handler(request, response) {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(submission),
-      signal: AbortSignal.timeout(10000),
+      signal: AbortSignal.timeout(GOOGLE_REQUEST_TIMEOUT_MS),
       redirect: "follow",
     });
 
@@ -59,7 +67,11 @@ export default async function handler(request, response) {
       row: result.row,
     });
   } catch (error) {
-    console.error("Inquiry submission error:", error);
+    console.error("Inquiry submission error:", {
+      name: error?.name,
+      message: error?.message,
+      cause: error?.cause?.message,
+    });
     return response.status(502).json({ ok: false, error: "Unable to save inquiry." });
   }
 }

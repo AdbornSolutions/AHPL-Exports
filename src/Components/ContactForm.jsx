@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import FormStatusToast from "./Common/FormStatusToast";
 import { inquiryOptions } from "../config/inquiryOptions";
+import { EMAIL_PATTERN, normalizePhone, PHONE_PATTERN } from "../utils/formValidation";
 
 const fieldClass =
   "h-11 w-full rounded-[9px] border border-[#c8c8c8] bg-white/85 px-3 text-[13px] text-[#27344b] outline-none transition placeholder:text-[#707070] focus:border-[#2EC4B6] focus:bg-white focus:shadow-[0_0_0_3px_rgba(46,196,182,0.16)]";
@@ -35,7 +36,10 @@ const ContactForm = () => {
       const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(form),
+        body: new URLSearchParams({
+          ...form,
+          phone: normalizePhone(form.phone),
+        }),
       });
       const result = await response.json().catch(() => null);
 
@@ -51,80 +55,130 @@ const ContactForm = () => {
   };
 
   return (
-  <section id="contact-us" className="pb-16 pt-5">
-    <div
-      className={`${containerClass} grid min-h-[690px] grid-cols-[1fr_420px] items-center gap-14 overflow-hidden rounded-[28px] bg-cover bg-center px-16 py-[34px] text-white max-lg:grid-cols-[1fr_390px] max-lg:px-10 max-md:grid-cols-1 max-md:px-5 max-md:py-10`}
-      style={{ backgroundImage: `url("${contactBg}")` }}
-    >
-      <div className="max-w-[690px] max-md:pt-12">
-        <span className="inline-flex rounded-full border border-[#2EC4B6] px-5 py-3 text-[14px] font-bold text-[#2EC4B6]">
-          {t("contactForm.eyebrow")}
-        </span>
-
-        <h2 className="mt-7 text-[clamp(42px,5vw,58px)] font-bold leading-[1.18] tracking-normal text-white max-sm:text-[38px]">
-          {t("contactForm.title")}
-        </h2>
-      </div>
-
-      <form
-        className="relative grid gap-[18px] bg-white/90 px-[50px] pb-[30px] pt-10 text-[#172b50] shadow-[-10px_10px_0_rgba(255,255,255,0.22)] backdrop-blur-sm [clip-path:polygon(0_0,78%_0,100%_18%,100%_100%,0_100%)] max-lg:px-9 max-md:mx-auto max-md:w-full max-md:max-w-[460px] max-md:[clip-path:none] max-md:rounded-[28px] max-sm:px-5"
-        onSubmit={submitInquiry}
+    <section id="contact-us" className="pb-16 pt-5">
+      <div
+        className={`${containerClass} grid min-h-[690px] grid-cols-[1fr_420px] items-center gap-14 overflow-hidden rounded-[28px] bg-cover bg-center px-16 py-[34px] text-white max-lg:grid-cols-[1fr_390px] max-lg:px-10 max-md:grid-cols-1 max-md:px-5 max-md:py-10`}
+        style={{ backgroundImage: `url("${contactBg}")` }}
       >
-        <h3 className="text-[30px] font-bold leading-none text-[#172b50]">{t("contactForm.formTitle")}</h3>
-        <div className="h-px w-full bg-black/25" />
+        <div className="max-w-[690px] max-md:pt-12">
+          <span className="inline-flex rounded-full border border-[#2EC4B6] px-5 py-3 text-[14px] font-bold text-[#2EC4B6]">
+            {t("contactForm.eyebrow")}
+          </span>
 
-        <label className={labelClass}>
-          {t("contactForm.name")}<input className={fieldClass} type="text" name="name" value={form.name} onChange={updateField} placeholder={t("contactForm.placeholders.name")} autoComplete="name" required maxLength="100" />
-        </label>
+          <h2 className="mt-7 text-[clamp(42px,5vw,58px)] font-bold leading-[1.18] tracking-normal text-white max-sm:text-[38px]">
+            {t("contactForm.title")}
+          </h2>
+        </div>
 
-        <label className={labelClass}>
-          {t("contactForm.email")}<input className={fieldClass} type="email" name="email" value={form.email} onChange={updateField} placeholder={t("contactForm.placeholders.email")} autoComplete="email" required maxLength="254" />
-        </label>
-
-        <label className={labelClass}>
-          {t("contactForm.phone")}<input className={fieldClass} type="tel" name="phone" value={form.phone} onChange={updateField} placeholder={t("contactForm.placeholders.phone")} autoComplete="tel" required minLength="7" maxLength="20" />
-        </label>
-
-        <label className={labelClass}>
-          {t("contactForm.inquiry")}
-          <select className={`${fieldClass} appearance-auto`} name="inquiry" value={form.inquiry} onChange={updateField} required>
-            {inquiryOptions.map(({ value, labelKey }) => (
-              <option value={value} key={value}>{t(labelKey, { ns: "common" })}</option>
-            ))}
-          </select>
-        </label>
-
-        <label className={labelClass}>
-          {t("contactForm.comment")}
-          <textarea
-            className={`${fieldClass} h-20 resize-none py-3`}
-            rows="3"
-            name="comment"
-            value={form.comment}
-            onChange={updateField}
-            placeholder={t("contactForm.placeholders.message")}
-            required
-            maxLength="2000"
-          />
-        </label>
-
-        <button
-          className="mt-3 min-h-[50px] w-full rounded-[9px] border-0 bg-[#2EC4B6] px-5 text-[18px] font-medium text-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(46,196,182,0.28)] disabled:cursor-not-allowed disabled:opacity-60"
-          type="submit"
-          disabled={status === "submitting"}
+        <form
+          className="relative grid gap-[18px] bg-white/90 px-[50px] pb-[30px] pt-10 text-[#172b50] shadow-[-10px_10px_0_rgba(255,255,255,0.22)] backdrop-blur-sm [clip-path:polygon(0_0,78%_0,100%_18%,100%_100%,0_100%)] max-lg:px-9 max-md:mx-auto max-md:w-full max-md:max-w-[460px] max-md:[clip-path:none] max-md:rounded-[28px] max-sm:px-5"
+          onSubmit={submitInquiry}
         >
-          {status === "submitting" ? "Sending..." : t("buttons.requestQuote", { ns: "common" })}
-        </button>
+          <h3 className="text-[30px] font-bold leading-none text-[#172b50]">
+            {t("contactForm.formTitle")}
+          </h3>
+          <div className="h-px w-full bg-black/25" />
 
-        <FormStatusToast
-          status={status}
-          successMessage="We’ve received your inquiry and will get back to you shortly."
-          errorMessage="We could not submit your inquiry. Please try again."
-          onDismiss={() => setStatus("idle")}
-        />
-      </form>
-    </div>
-  </section>
+          <label className={labelClass}>
+            {t("contactForm.name")}
+            <input
+              className={fieldClass}
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={updateField}
+              placeholder={t("contactForm.placeholders.name")}
+              autoComplete="name"
+              required
+              maxLength="100"
+            />
+          </label>
+
+          <label className={labelClass}>
+            {t("contactForm.email")}
+            <input
+              className={fieldClass}
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={updateField}
+              placeholder={t("contactForm.placeholders.email")}
+              autoComplete="email"
+              required
+              maxLength="254"
+              pattern={EMAIL_PATTERN}
+              title="Enter a valid email address ending in .com"
+            />
+          </label>
+
+          <label className={labelClass}>
+            {t("contactForm.phone")}
+            <input
+              className={fieldClass}
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={updateField}
+              placeholder="+91 1234567890"
+              autoComplete="tel"
+              inputMode="tel"
+              required
+              maxLength="30"
+              pattern={PHONE_PATTERN}
+              title="Enter 7 to 15 digits, with or without a country code (for example +919876543210 or 9876543210)"
+            />
+          </label>
+
+          <label className={labelClass}>
+            {t("contactForm.inquiry")}
+            <select
+              className={`${fieldClass} appearance-auto`}
+              name="inquiry"
+              value={form.inquiry}
+              onChange={updateField}
+              required
+            >
+              {inquiryOptions.map(({ value, labelKey }) => (
+                <option value={value} key={value}>
+                  {t(labelKey, { ns: "common" })}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className={labelClass}>
+            {t("contactForm.comment")}
+            <textarea
+              className={`${fieldClass} h-20 resize-none py-3`}
+              rows="3"
+              name="comment"
+              value={form.comment}
+              onChange={updateField}
+              placeholder={t("contactForm.placeholders.message")}
+              required
+              maxLength="2000"
+            />
+          </label>
+
+          <button
+            className="mt-3 min-h-[50px] w-full rounded-[9px] border-0 bg-[#2EC4B6] px-5 text-[18px] font-medium text-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(46,196,182,0.28)] disabled:cursor-not-allowed disabled:opacity-60"
+            type="submit"
+            disabled={status === "submitting"}
+          >
+            {status === "submitting"
+              ? "Sending..."
+              : t("buttons.requestQuote", { ns: "common" })}
+          </button>
+
+          <FormStatusToast
+            status={status}
+            successMessage="We’ve received your inquiry and will get back to you shortly."
+            errorMessage="We could not submit your inquiry. Please try again."
+            onDismiss={() => setStatus("idle")}
+          />
+        </form>
+      </div>
+    </section>
   );
 };
 
