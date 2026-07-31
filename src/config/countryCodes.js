@@ -1,0 +1,15 @@
+export const countryCodes = [
+  ["India", "+91"], ["United States", "+1"], ["United Kingdom", "+44"],
+  ["United Arab Emirates", "+971"], ["Australia", "+61"], ["Canada", "+1"],
+  ["China", "+86"], ["France", "+33"], ["Germany", "+49"], ["Italy", "+39"],
+  ["Japan", "+81"], ["South Korea", "+82"], ["Saudi Arabia", "+966"],
+  ["Singapore", "+65"], ["Spain", "+34"], ["South Africa", "+27"],
+  ["Thailand", "+66"], ["Turkey", "+90"], ["Vietnam", "+84"], ["Brazil", "+55"],
+  ["Mexico", "+52"], ["Argentina", "+54"], ["Bangladesh", "+880"],
+  ["Belgium", "+32"], ["Denmark", "+45"], ["Egypt", "+20"], ["Hong Kong", "+852"],
+  ["Indonesia", "+62"], ["Ireland", "+353"], ["Kenya", "+254"], ["Malaysia", "+60"],
+  ["Netherlands", "+31"], ["New Zealand", "+64"], ["Nigeria", "+234"],
+  ["Pakistan", "+92"], ["Philippines", "+63"], ["Poland", "+48"], ["Portugal", "+351"],
+  ["Qatar", "+974"], ["Russia", "+7"], ["Sri Lanka", "+94"], ["Sweden", "+46"],
+  ["Switzerland", "+41"], ["Taiwan", "+886"], ["Ukraine", "+380"],
+];

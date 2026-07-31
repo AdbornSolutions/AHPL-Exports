@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Footer from "../Components/Common/Footer";
 import Hero from "../Components/Hero";
+import CountryCodeSelect from "../Components/Common/CountryCodeSelect";
 import contactCardBg from "../assets/Contactcard.png";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
@@ -21,7 +22,7 @@ const contactItems = [
   {
     icon: Phone,
     titleKey: "cards.phone",
-    value: "+918920279982",
+    value: "+918920279982 , +91 7710771081" , 
   },
   {
     icon: MapPin,
@@ -41,22 +42,6 @@ const initialForm = {
   service: "",
   message: "",
 };
-
-const countryCodes = [
-  ["India", "+91"], ["United States", "+1"], ["United Kingdom", "+44"],
-  ["United Arab Emirates", "+971"], ["Australia", "+61"], ["Canada", "+1"],
-  ["China", "+86"], ["France", "+33"], ["Germany", "+49"], ["Italy", "+39"],
-  ["Japan", "+81"], ["South Korea", "+82"], ["Saudi Arabia", "+966"],
-  ["Singapore", "+65"], ["Spain", "+34"], ["South Africa", "+27"],
-  ["Thailand", "+66"], ["Turkey", "+90"], ["Vietnam", "+84"], ["Brazil", "+55"],
-  ["Mexico", "+52"], ["Argentina", "+54"], ["Bangladesh", "+880"],
-  ["Belgium", "+32"], ["Denmark", "+45"], ["Egypt", "+20"], ["Hong Kong", "+852"],
-  ["Indonesia", "+62"], ["Ireland", "+353"], ["Kenya", "+254"], ["Malaysia", "+60"],
-  ["Netherlands", "+31"], ["New Zealand", "+64"], ["Nigeria", "+234"],
-  ["Pakistan", "+92"], ["Philippines", "+63"], ["Poland", "+48"], ["Portugal", "+351"],
-  ["Qatar", "+974"], ["Russia", "+7"], ["Sri Lanka", "+94"], ["Sweden", "+46"],
-  ["Switzerland", "+41"], ["Taiwan", "+886"], ["Ukraine", "+380"],
-];
 
 const Contactus = () => {
   const { t } = useTranslation(["contact", "common"]);
@@ -141,7 +126,7 @@ const Contactus = () => {
           </div>
 
           <form
-            className="relative mt-8 grid grid-cols-2 gap-x-[18px] gap-y-[22px] overflow-hidden rounded-[12px] max-md:grid-cols-1"
+            className="relative mt-8 grid grid-cols-2 gap-x-[18px] gap-y-[22px] rounded-[12px] max-md:grid-cols-1"
             onSubmit={submitContactInquiry}
           >
             <input
@@ -155,21 +140,14 @@ const Contactus = () => {
               required
               maxLength="100"
             />
-            <div className="flex h-[54px] overflow-hidden rounded-full bg-white focus-within:shadow-[0_0_0_3px_rgba(48,200,187,0.2)]">
-              <select
-                className="w-[112px] shrink-0 border-0 border-r border-[#d9e1e5] bg-transparent px-3 text-[14px] font-semibold text-[#183255] outline-none"
-                name="countryCode"
+            <div className="flex h-[54px] rounded-full bg-white focus-within:shadow-[0_0_0_3px_rgba(48,200,187,0.2)]">
+              <CountryCodeSelect
+                className="h-full shrink-0"
                 value={form.countryCode}
-                onChange={updateField}
-                aria-label="Country calling code"
-                required
-              >
-                {countryCodes.map(([country, code]) => (
-                  <option value={code} key={`${country}-${code}`}>
-                    {code} {country}
-                  </option>
-                ))}
-              </select>
+                onChange={(countryCode) =>
+                  setForm((current) => ({ ...current, countryCode }))
+                }
+              />
               <input
                 className="min-w-0 flex-1 border-0 bg-transparent px-[18px] text-[14px] text-[#183255] outline-none placeholder:text-[#8b8b8b]"
                 type="tel"

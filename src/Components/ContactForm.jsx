@@ -3,8 +3,9 @@ import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import FormStatusToast from "./Common/FormStatusToast";
+import CountryCodeSelect from "./Common/CountryCodeSelect";
 import { inquiryOptions } from "../config/inquiryOptions";
-import { EMAIL_PATTERN, normalizePhone, PHONE_PATTERN } from "../utils/formValidation";
+import { EMAIL_PATTERN, normalizePhone } from "../utils/formValidation";
 
 const fieldClass =
   "h-11 w-full rounded-[9px] border border-[#c8c8c8] bg-white/85 px-3 text-[13px] text-[#27344b] outline-none transition placeholder:text-[#707070] focus:border-[#2EC4B6] focus:bg-white focus:shadow-[0_0_0_3px_rgba(46,196,182,0.16)]";
@@ -14,8 +15,9 @@ const labelClass = "grid gap-2 text-left text-[16px] font-semibold text-black";
 const initialForm = {
   name: "",
   email: "",
+  countryCode: "+91",
   phone: "",
-  inquiry: "Handicraft",
+  inquiry: "",
   comment: "",
 };
 
@@ -31,14 +33,15 @@ const ContactForm = () => {
   const submitInquiry = async (event) => {
     event.preventDefault();
     setStatus("submitting");
+    const { countryCode, ...submissionForm } = form;
 
     try {
       const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
-          ...form,
-          phone: normalizePhone(form.phone),
+          ...submissionForm,
+          phone: normalizePhone(`${countryCode}${form.phone}`),
         }),
       });
       const result = await response.json().catch(() => null);
@@ -113,20 +116,29 @@ const ContactForm = () => {
 
           <label className={labelClass}>
             {t("contactForm.phone")}
-            <input
-              className={fieldClass}
-              type="tel"
-              name="phone"
-              value={form.phone}
-              onChange={updateField}
-              placeholder="+91 1234567890"
-              autoComplete="tel"
-              inputMode="tel"
-              required
-              maxLength="30"
-              pattern={PHONE_PATTERN}
-              title="Enter 7 to 15 digits, with or without a country code (for example +919876543210 or 9876543210)"
-            />
+            <div className="flex h-11 rounded-[9px] border border-[#c8c8c8] bg-white/85 focus-within:border-[#2EC4B6] focus-within:bg-white focus-within:shadow-[0_0_0_3px_rgba(46,196,182,0.16)]">
+              <CountryCodeSelect
+                className="h-full shrink-0"
+                value={form.countryCode}
+                onChange={(countryCode) =>
+                  setForm((current) => ({ ...current, countryCode }))
+                }
+              />
+              <input
+                className="min-w-0 flex-1 border-0 bg-transparent px-3 text-[13px] text-[#27344b] outline-none placeholder:text-[#707070]"
+                type="tel"
+                name="phone"
+                value={form.phone}
+                onChange={updateField}
+                placeholder="Enter the no."
+                autoComplete="tel-national"
+                inputMode="numeric"
+                required
+                maxLength="15"
+                pattern="[0-9]{7,15}"
+                title="Enter a phone number containing 7 to 15 digits"
+              />
+            </div>
           </label>
 
           <label className={labelClass}>
@@ -138,11 +150,15 @@ const ContactForm = () => {
               onChange={updateField}
               required
             >
+              <option value="" disabled>
+                Select a product
+              </option>
               {inquiryOptions.map(({ value, labelKey }) => (
                 <option value={value} key={value}>
                   {t(labelKey, { ns: "common" })}
                 </option>
               ))}
+              <option value="Other">Other</option>
             </select>
           </label>
 
