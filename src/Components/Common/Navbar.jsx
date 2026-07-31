@@ -40,17 +40,21 @@ const LanguageMenu = ({
   t,
   className = "",
   mobileInline = false,
+  isOpen = false,
+  onToggle,
 }) => (
   <div className={`group relative ${className}`}>
     <button
       className="flex items-center gap-1 border-0 bg-transparent text-[13px] font-semibold text-[#183255] transition hover:text-[#28bdb2] max-[850px]:p-3"
       type="button"
       aria-label={t("language.select")}
+      aria-expanded={mobileInline ? isOpen : undefined}
+      onClick={onToggle}
     >
       {t(currentLanguageLabel)}
       <ChevronDown className="transition duration-200 group-hover:rotate-180 group-focus-within:rotate-180" size={14} />
     </button>
-    <div className={`pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 ${mobileInline ? "" : "max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100"}`}>
+    <div className={`pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 ${mobileInline && isOpen ? "!pointer-events-auto !opacity-100" : ""} ${mobileInline ? "" : "max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100"}`}>
       <div className={`grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] ${mobileInline ? "" : "max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:shadow-none"}`}>
         {languages.map((language) => (
           <button
@@ -71,6 +75,7 @@ const LanguageMenu = ({
 const Navbar = () => {
   const { t, i18n } = useTranslation("common");
   const [open, setOpen] = useState(false);
+  const [languageOpen, setLanguageOpen] = useState(false);
   const currentLanguage =
     languages.find(({ code }) => code === i18n.resolvedLanguage)?.code ?? "en";
   const currentLanguageLabel =
@@ -175,8 +180,11 @@ const Navbar = () => {
             currentLanguageLabel={currentLanguageLabel}
             onLanguageChange={(code) => {
               i18n.changeLanguage(code);
+              setLanguageOpen(false);
               setOpen(false);
             }}
+            isOpen={languageOpen}
+            onToggle={() => setLanguageOpen((value) => !value)}
             t={t}
           />
 
