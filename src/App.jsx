@@ -1,5 +1,6 @@
 import Navbar from "./Components/Common/Navbar";
 import ScrollToTop from "./Components/Common/ScrollToTop";
+import WhatsAppButton from "./Components/Common/WhatsAppButton";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contactus from "./pages/Contactus";
@@ -20,6 +21,7 @@ const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
     <ScrollToTop />
     <Navbar />
+    <WhatsAppButton />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<About />} />
