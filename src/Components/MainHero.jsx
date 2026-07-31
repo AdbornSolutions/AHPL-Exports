@@ -9,7 +9,7 @@ const MainHero = () => {
   return (
   <section
     id="home"
-    className="relative flex min-h-[555px] items-center overflow-hidden max-md:min-h-[600px]"
+    className="relative flex min-h-[555px] items-center overflow-hidden max-md:min-h-[600px] max-md:before:absolute max-md:before:inset-0 max-md:before:z-[1] max-md:before:bg-[linear-gradient(90deg,rgba(8,35,70,0.92)_0%,rgba(8,35,70,0.78)_44%,rgba(8,35,70,0.22)_100%)]"
   >
     <div
       className="absolute inset-0 bg-cover bg-center max-md:hidden"
@@ -21,7 +21,7 @@ const MainHero = () => {
       alt=""
       aria-hidden="true"
     />
-    <div className={`${containerClass} relative pb-5`}>
+    <div className={`${containerClass} relative z-10 pb-5`}>
       <span className="text-[13px] font-bold text-[#34d6c6]">{t("hero.eyebrow")}</span>
       <h1 className="my-[18px] mb-7 max-w-[690px] text-[clamp(40px,5vw,66px)] font-bold leading-[1.08] tracking-normal text-white max-md:text-[40px]">
         {t("hero.title")}<br />
