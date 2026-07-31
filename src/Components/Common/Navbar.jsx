@@ -39,6 +39,7 @@ const LanguageMenu = ({
   onLanguageChange,
   t,
   className = "",
+  mobileInline = false,
 }) => (
   <div className={`group relative ${className}`}>
     <button
@@ -49,8 +50,8 @@ const LanguageMenu = ({
       {t(currentLanguageLabel)}
       <ChevronDown className="transition duration-200 group-hover:rotate-180 group-focus-within:rotate-180" size={14} />
     </button>
-    <div className="pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100">
-      <div className="grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:shadow-none">
+    <div className={`pointer-events-none absolute right-0 top-full z-50 w-[165px] pt-4 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 ${mobileInline ? "" : "max-[850px]:pointer-events-auto max-[850px]:static max-[850px]:w-full max-[850px]:pt-0 max-[850px]:opacity-100"}`}>
+      <div className={`grid rounded-[8px] border border-[#d8e3e8] bg-white py-2 shadow-[0_18px_34px_rgba(13,45,81,0.14)] ${mobileInline ? "" : "max-[850px]:ml-3 max-[850px]:border-l-2 max-[850px]:border-r-0 max-[850px]:border-y-0 max-[850px]:border-[#28bdb2]/35 max-[850px]:bg-transparent max-[850px]:shadow-none"}`}>
         {languages.map((language) => (
           <button
             className={`px-4 py-2 text-left text-[14px] font-medium transition hover:bg-[#eef8f8] hover:text-[#28bdb2] ${currentLanguage === language.code ? "text-[#28bdb2]" : "text-[#183255]"}`}
@@ -150,16 +151,6 @@ const Navbar = () => {
             )
           )}
 
-          <LanguageMenu
-            className="hidden max-[850px]:grid"
-            currentLanguage={currentLanguage}
-            currentLanguageLabel={currentLanguageLabel}
-            onLanguageChange={(code) => {
-              i18n.changeLanguage(code);
-              setOpen(false);
-            }}
-            t={t}
-          />
           </nav>
 
           <div className="flex items-center gap-5 max-[850px]:hidden">
@@ -177,6 +168,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden items-center gap-2 max-[850px]:flex">
+          <LanguageMenu
+            className="max-[850px]:block"
+            mobileInline
+            currentLanguage={currentLanguage}
+            currentLanguageLabel={currentLanguageLabel}
+            onLanguageChange={(code) => {
+              i18n.changeLanguage(code);
+              setOpen(false);
+            }}
+            t={t}
+          />
+
           <Link
             className={`${pillButtonClass} min-h-10 shrink-0 whitespace-nowrap px-3.5 text-[clamp(9px,2.8vw,12px)] max-[480px]:px-2.5`}
             to="/contact-us"
