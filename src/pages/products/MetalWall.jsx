@@ -1,13 +1,10 @@
-import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { slugify } from "../../data/productCatalog";
 import Footer from "../../Components/Common/Footer";
-import {
-  buttonIconClass,
-  containerClass,
-  pillButtonClass,
-} from "../../utils/tailwindClasses";
+import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
+import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
+import brochurePdf from "../../assets/PDF/metalwall.pdf";
 import heroImage from "../../assets/products-images/Metal-wall/hero.png";
 import aboutImage from "../../assets/products-images/Metal-wall/about.png";
 import rangeOne from "../../assets/products-images/Metal-wall/1.png";
@@ -96,12 +93,7 @@ const MetalWall = () => {
             ))}
           </div>
 
-          <a className={`${pillButtonClass} mt-10`} href="/contact-us">
-            {common.viewBrochure}
-            <span className={buttonIconClass}>
-              <ArrowUpRight size={15} />
-            </span>
-          </a>
+          <BrochureDownloadDialog brochureUrl={brochurePdf} fileName="metal-wall-brochure.pdf" buttonLabel={common.viewBrochure} />
         </div>
       </section>
 
