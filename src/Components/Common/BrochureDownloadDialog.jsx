@@ -3,12 +3,15 @@ import { ArrowUpRight, Download, X } from "lucide-react";
 import { buttonIconClass, pillButtonClass } from "../../utils/tailwindClasses";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const brochureFormEndpoint =
+  "https://script.google.com/macros/s/AKfycbwpnkclxII_n8BB05CqkDPSOuBEUYqgg4JBfpm0AC4Zas9saVMIz-_gWIgBPokNaWL-/exec";
 
 const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Brochure" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const dialogRef = useRef(null);
   const titleId = useId();
 
@@ -30,11 +33,12 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
   }, [isOpen]);
 
   const closeDialog = () => {
+    if (isSubmitting) return;
     setIsOpen(false);
     setErrors({});
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const nextErrors = {};
 
@@ -45,13 +49,38 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
-    const downloadLink = document.createElement("a");
-    downloadLink.href = brochureUrl;
-    downloadLink.download = fileName;
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    downloadLink.remove();
-    closeDialog();
+    setIsSubmitting(true);
+
+    try {
+      const payload = new URLSearchParams({
+        name: name.trim(),
+        email: email.trim(),
+        brochure: fileName,
+        source: "AHPL Website Brochure Form",
+      });
+
+      await fetch(brochureFormEndpoint, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: payload,
+      });
+
+      const downloadLink = document.createElement("a");
+      downloadLink.href = brochureUrl;
+      downloadLink.download = fileName;
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      downloadLink.remove();
+      setName("");
+      setEmail("");
+      setErrors({});
+      setIsOpen(false);
+    } catch {
+      setErrors({ form: "Unable to submit your details. Please check your connection and try again." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -84,6 +113,7 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
               type="button"
               aria-label="Close brochure form"
               onClick={closeDialog}
+              disabled={isSubmitting}
             >
               <X size={19} />
             </button>
@@ -99,6 +129,11 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
             </p>
 
             <form className="mt-7 space-y-5" onSubmit={handleSubmit} noValidate>
+              {errors.form && (
+                <p className="rounded-xl bg-[#fff1f1] px-4 py-3 text-xs font-semibold leading-relaxed text-[#c83f3f]" role="alert">
+                  {errors.form}
+                </p>
+              )}
               <div>
                 <label className="mb-2 block text-[13px] font-bold text-[#1b3156]" htmlFor={`${titleId}-name`}>
                   Name <span className="text-[#e25555]">*</span>
@@ -112,8 +147,9 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
                   value={name}
                   onChange={(event) => {
                     setName(event.target.value);
-                    if (errors.name) setErrors((current) => ({ ...current, name: undefined }));
+                    if (errors.name || errors.form) setErrors((current) => ({ ...current, name: undefined, form: undefined }));
                   }}
+                  disabled={isSubmitting}
                   aria-invalid={Boolean(errors.name)}
                 />
                 {errors.name && <p className="mt-1.5 text-xs font-medium text-[#d64545]">{errors.name}</p>}
@@ -132,19 +168,21 @@ const BrochureDownloadDialog = ({ brochureUrl, fileName, buttonLabel = "View Bro
                   value={email}
                   onChange={(event) => {
                     setEmail(event.target.value);
-                    if (errors.email) setErrors((current) => ({ ...current, email: undefined }));
+                    if (errors.email || errors.form) setErrors((current) => ({ ...current, email: undefined, form: undefined }));
                   }}
+                  disabled={isSubmitting}
                   aria-invalid={Boolean(errors.email)}
                 />
                 {errors.email && <p className="mt-1.5 text-xs font-medium text-[#d64545]">{errors.email}</p>}
               </div>
 
               <button
-                className="flex min-h-12 w-full items-center justify-center gap-2.5 rounded-full bg-[#30c8bb] px-6 text-[14px] font-bold text-white shadow-[0_12px_28px_rgba(48,200,187,0.28)] transition hover:-translate-y-0.5 hover:bg-[#28bcb0] focus:outline-none focus:ring-4 focus:ring-[#30c8bb]/25"
+                className="flex min-h-12 w-full items-center justify-center gap-2.5 rounded-full bg-[#30c8bb] px-6 text-[14px] font-bold text-white shadow-[0_12px_28px_rgba(48,200,187,0.28)] transition hover:-translate-y-0.5 hover:bg-[#28bcb0] focus:outline-none focus:ring-4 focus:ring-[#30c8bb]/25 disabled:cursor-wait disabled:opacity-70 disabled:hover:translate-y-0"
                 type="submit"
+                disabled={isSubmitting}
               >
-                Submit
-                <Download size={18} aria-hidden="true" />
+                {isSubmitting ? "Submitting..." : "Submit"}
+                <Download className={isSubmitting ? "animate-pulse" : ""} size={18} aria-hidden="true" />
               </button>
             </form>
           </div>
