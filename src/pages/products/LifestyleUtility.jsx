@@ -50,7 +50,7 @@ const LifestyleUtility = () => {
               {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </div>
-          <img className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
+          <img className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
         </div>
       </section>
 

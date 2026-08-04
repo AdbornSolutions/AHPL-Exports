@@ -92,8 +92,8 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 h-[72px] border-b border-[#0d2d51]/5 bg-[#f1f6f8]/95 backdrop-blur-[14px] max-[850px]:h-[66px]">
       <div className={`${containerClass} grid h-full grid-cols-[150px_minmax(0,1fr)_auto] items-center gap-7 max-[850px]:flex max-[850px]:justify-between`}>
-        <Link className="flex h-[52px] w-[150px] shrink-0 items-center overflow-hidden max-[850px]:w-28 max-[480px]:w-24 max-[380px]:w-20" to="/" aria-label={t("accessibility.home")}>
-          <img className="h-24 w-[146px] object-cover object-center mix-blend-multiply max-[850px]:w-28 max-[480px]:w-24 max-[380px]:w-20" src={navLogo} alt={t("accessibility.logo")} />
+        <Link className="flex h-[52px] w-[150px] shrink-0 items-center max-[850px]:w-28 max-[480px]:w-24 max-[380px]:w-20" to="/" aria-label={t("accessibility.home")}>
+          <img className="block h-auto w-full mix-blend-multiply" src={navLogo} alt={t("accessibility.logo")} />
         </Link>
 
         <div className="contents">

@@ -6,7 +6,7 @@ import productTwo from "../assets/product2.png";
 import productThree from "../assets/product3.png";
 import productFour from "../assets/product4.png";
 import product5 from "../assets/product5.png";
-import product6 from "../assets/product6.png";
+import product6 from "../assets/products-images/Lifestyle & Utility/Subtract (10).png";
 import product7 from "../assets/product7.png";
 
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";

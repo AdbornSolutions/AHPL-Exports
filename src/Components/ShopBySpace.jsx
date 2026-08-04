@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import livingRoomImg from "../assets/livingroom_shopbyspace.png";
-import diningSpaceImg from "../assets/Dining_space_shopbyspace.png";
-import entrywayImg from "../assets/Entryway_shopbyspace.png";
-import prayerRoomImg from "../assets/PrayerRoom_shopbyspace.png";
-import workDeskImg from "../assets/workdesk_shopbyspace.png";
+import livingRoomImg from "../assets/shop1.png";
+import diningSpaceImg from "../assets/shop2.png";
+import entrywayImg from "../assets/shop3.jpg";
+import prayerRoomImg from "../assets/shop4.png";
+import workDeskImg from "../assets/shop5.png";
 
 const spaces = [
   {

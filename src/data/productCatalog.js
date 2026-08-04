@@ -104,7 +104,11 @@ const categoryDefinitions = [
         descriptionTwo: "Mounted on a wood-look presentation base, this commemorative piece is ideal for educational institutions, offices, libraries, and thoughtful gifting. It serves as a lasting reminder of curiosity, humility, public service, and the power of aspiration.",
       },
     ],
-    names: sharedNames, files: ["1.jpg", "2.png", "3.jpg", "4.jpg", "5.jpg", "6.png", "7.png", "8.png", "9.png", "10.png"],
+    names: [
+      "Rudra-Ansh (Black)", "Bowing Colt", "Mayureshwar", "Snow Owl", "Elephant Trail",
+      "Brocade Stallion", "Winged Ascent", "Powder Blue Bust", "Chhatrapati", "Twin Grace",
+    ],
+    files: ["1.jpg", "2.png", "3.jpg", "4.jpg", "5.jpg", "6.png", "7.png", "8.png", "9.png", "10.png"],
   },
   {
     slug: "marble-decor", folder: "Marble Decor", title: "Marble Decor", material: "Premium Natural Marble",
@@ -210,4 +214,3 @@ export const getProduct = (categorySlug, productSlug) => {
 };
 
 export { slugify };
-
