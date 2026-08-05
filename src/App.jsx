@@ -16,6 +16,7 @@ import ProductDetail from "./pages/products/ProductDetail";
 import IndustryVBelt from "./pages/products/Industry-v-Belt";
 import { Route, Routes } from "react-router-dom";
 import Saffron from "./pages/Saffron";
+import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
 
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
@@ -36,6 +37,7 @@ const App = () => (
       <Route path="/product/industrial-v-belts" element={<IndustryVBelt />} />
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
       <Route path="/contact-us" element={<Contactus />} />
     </Routes>
   </div>

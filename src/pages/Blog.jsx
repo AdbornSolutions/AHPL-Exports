@@ -8,13 +8,23 @@ import blogTwo from '../assets/blog2.png'
 import blogThree from '../assets/blog3.png'
 import { containerClass } from '../utils/tailwindClasses'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import latestBlogImage from '../assets/Blogs/B1-1.png'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
 const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
-  const posts = [...blogPosts, ...blogPosts]
+  const posts = [
+    {
+      title: 'What Makes a Home Decor Manufacturer India Stand Out in Global Markets?',
+      description: 'Discover why global buyers choose Indian home decor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.',
+      image: latestBlogImage,
+      to: '/home-decor-manufacturer-india-stand-out-global-markets',
+    },
+    ...blogPosts,
+  ]
   return (
     <>
       <Hero title={t('pageTitle')} />
@@ -39,13 +49,13 @@ const Blog = () => {
                   {post.description}
                 </p>
 
-                <a
+                <Link
                   className="mt-5 inline-flex items-center gap-3 text-[16px] font-medium text-[#30c8bb] no-underline"
-                  href="#"
+                  to={post.to || '/blog'}
                   aria-label={t('viewMoreAbout', { title: post.title })}
                 >
                   {t('buttons.viewMore', { ns: 'common' })} <ArrowRight size={18} strokeWidth={2} />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
