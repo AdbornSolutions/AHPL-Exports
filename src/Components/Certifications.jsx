@@ -24,11 +24,11 @@ const Certifications = () => {
         </span>
       </h2>
 
-      <div className="mx-auto mt-16 flex flex-wrap items-center justify-center gap-12 sm:gap-16 md:gap-24">
+      <div className="mx-auto mt-16 flex flex-nowrap items-center justify-center gap-3 sm:gap-16 md:gap-24">
         {certifications.map(({ image, nameIndex }) => {
           const name = t(`certifications.items.${nameIndex}`);
           return (
-          <div className="flex h-28 w-44 items-center justify-center md:h-36 md:w-60" key={name}>
+          <div className="flex h-24 min-w-0 flex-1 items-center justify-center sm:h-28 sm:w-44 sm:flex-none md:h-36 md:w-60" key={name}>
             <img
               className="max-h-full max-w-full object-contain transition duration-300 hover:scale-105"
               src={image}
