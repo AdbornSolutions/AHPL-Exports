@@ -91,8 +91,8 @@ const HomeDecorManufacturerBlog = () => {
             <p>The answer goes far beyond price. It lies in quality, innovation, reliability, and the ability to create products that appeal to global tastes while preserving authentic craftsmanship.</p>
 
             <h2>Why India Has Become a Global Home Décor Hub</h2>
-            <p>India has emerged as one of the world’s leading destinations for premium home décor manufacturing. Today, international buyers, retailers, wholesalers, hotels, and interior designers increasingly rely on an experienced <strong>Home Decor Manufacturer India</strong> for unique collections that combine tradition with contemporary aesthetics.</p>
-            <p>From handcrafted sculptures and decorative accessories to premium wall art and elegant tabletop décor, Indian manufacturers serve buyers across Europe, the Middle East, Africa, North America, and Asia. This growing demand has positioned India as a trusted <strong>Home Decor Exporter India</strong>.</p>
+            <p>India has emerged as one of the world’s leading destinations for premium home décor manufacturing. Today, international buyers, retailers, wholesalers, hotels, and interior designers increasingly rely on an experienced <strong >Home Decor Manufacturer India</strong> for unique collections that combine tradition with contemporary aesthetics.</p>
+            <p>From handcrafted sculptures and decorative accessories to premium wall art and elegant tabletop décor, Indian manufacturers serve buyers across Europe, the Middle East, Africa, North America, and Asia. This growing demand has positioned India as a trusted <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/how-to-choose-the-best-indian-handicrafts-exporter">Indian Handicrafts Exporter</Link>.</p>
 
             <h2>Craftsmanship That Machines Cannot Replace</h2>
             <p>Generations of artisans have perfected techniques in metalwork, woodcraft, resin art, and decorative finishing. Unlike mass-produced products, handcrafted décor pieces offer uniqueness that customers genuinely appreciate. Every elegant tabletop accent and intricate metal wall décor reflects skill, creativity, and precision.</p>
@@ -125,14 +125,14 @@ const HomeDecorManufacturerBlog = () => {
 
             <section className="my-14 rounded-3xl bg-[#112f55] p-7 text-white md:p-10">
               <h2 className="!mt-0 !text-white">Why AHPL Exports Is a Trusted Global Partner</h2>
-              <p className="!text-white/75">At AHPL Exports, exceptional décor begins with thoughtful design and uncompromising quality. As a trusted Home Decor Manufacturer India, we combine craftsmanship, innovation, and global manufacturing expertise to inspire homes, hotels, offices, and retail spaces worldwide.</p>
+              <p className="!text-white/75">At <a className="font-semibold text-white underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#58d8cd]" href="https://www.ahplexports.com/">AHPL Exports</a>, exceptional décor begins with thoughtful design and uncompromising quality. As a trusted Home Decor Manufacturer India, we combine craftsmanship, innovation, and global manufacturing expertise to inspire homes, hotels, offices, and retail spaces worldwide.</p>
               <p className="!text-white/75">Through our premium brand Saffron, we offer:</p>
               <BulletList items={saffronOfferings} />
             </section>
 
             <h2>Conclusion</h2>
             <p>Global buyers don’t simply choose a supplier. They choose reliability, craftsmanship, consistency, and long-term value. That is exactly what makes a Home Decor Manufacturer India stand apart in global markets.</p>
-            <p>With premium designs, export expertise, scalable manufacturing, and customer-focused solutions, Indian manufacturers continue to shape the future of the international home décor industry.</p>
+            <p>With premium designs, export expertise, scalable manufacturing, and customer-focused solutions, <a className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" href="https://www.ahplexports.com/">AHPL Exports</a> continues to shape the future of the international home décor industry.</p>
 
             <div className="my-12 flex flex-col items-start justify-between gap-6 rounded-3xl bg-[#eaf9f7] p-8 md:flex-row md:items-center">
               <div><h2 className="!m-0 !text-2xl">Looking for a trusted home décor partner?</h2><p className="!mb-0 mt-2">Source timeless craftsmanship designed for modern global markets.</p></div>

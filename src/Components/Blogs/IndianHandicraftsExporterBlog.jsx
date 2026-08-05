@@ -94,7 +94,7 @@ const IndianHandicraftsExporterBlog = () => {
             <p className="mt-5">Having clear objectives helps identify the right supplier instead of choosing based solely on cost.</p>
 
             <h2>Evaluate Product Quality Instead of Price Alone</h2>
-            <p>Price is important, but quality determines customer satisfaction and repeat business. A reliable <strong>Home Decor Manufacturer India</strong> focuses on:</p>
+            <p>Price is important, but quality determines customer satisfaction and repeat business. A reliable <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</Link> focuses on:</p>
             <BulletList items={qualityStandards} />
             <p className="mt-5">Cheaper suppliers may reduce manufacturing costs by compromising on materials, resulting in higher return rates and dissatisfied customers.</p>
             <div className="my-8 rounded-2xl bg-[#eff9f8] p-6"><h3 className="mb-3 text-xl font-bold text-[#183255]">The Trade-off</h3><p className="!mb-1">Lower prices may improve short-term profits.</p><p className="!mb-1">Higher quality creates stronger customer loyalty and long-term growth.</p><p className="!mb-0 font-semibold text-[#183255]">Finding the right balance is essential.</p></div>
@@ -155,7 +155,7 @@ const IndianHandicraftsExporterBlog = () => {
 
             <section className="my-14 rounded-3xl bg-[#112f55] p-7 text-white md:p-10">
               <h2 className="!mt-0 !text-white">Why Businesses Choose AHPL Exports</h2>
-              <p className="!text-white/75">At AHPL Exports, we understand that global buyers expect more than attractive products. As a trusted Indian Handicrafts Exporter, Home Decor Manufacturer India, and Home Decor Exporter India, we combine craftsmanship with international manufacturing standards to create products that inspire homes, hotels, offices, and retail spaces worldwide.</p>
+              <p className="!text-white/75">At <a className="font-semibold text-white underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#58d8cd]" href="https://www.ahplexports.com/">AHPL Exports</a>, we understand that global buyers expect more than attractive products. As a trusted Indian Handicrafts Exporter, Home Decor Manufacturer India, and Home Decor Exporter India, we combine craftsmanship with international manufacturing standards to create products that inspire homes, hotels, offices, and retail spaces worldwide.</p>
               <p className="!text-white/75">Through our premium brand Saffron, we offer:</p>
               <BulletList items={ahplOfferings} />
               <p className="!mb-0 mt-5 !text-white/75">Our commitment to quality, innovation, and customer satisfaction makes us a dependable sourcing partner for importers, wholesalers, distributors, retailers, and corporate buyers.</p>
@@ -164,7 +164,7 @@ const IndianHandicraftsExporterBlog = () => {
             <h2>Conclusion</h2>
             <p>Choosing the best Indian Handicrafts Exporter involves much more than comparing product prices. Businesses should carefully evaluate manufacturing capability, product quality, export experience, customization options, innovation, and long-term reliability.</p>
             <p>Balancing these factors may require a slightly higher initial investment, but the result is stronger customer satisfaction, better brand reputation, and sustainable business growth.</p>
-            <p>For businesses seeking premium home decor, handcrafted products, and dependable export solutions, partnering with an experienced manufacturer like AHPL Exports provides the confidence needed to succeed in competitive global markets.</p>
+            <p>For businesses seeking premium home decor, handcrafted products, and dependable export solutions, partnering with an experienced manufacturer like <a className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" href="https://www.ahplexports.com/">AHPL Exports</a> provides the confidence needed to succeed in competitive global markets.</p>
 
             <div className="my-12 flex flex-col items-start justify-between gap-6 rounded-3xl bg-[#eaf9f7] p-8 md:flex-row md:items-center">
               <div><h2 className="!m-0 !text-2xl">Looking for a trusted handicrafts export partner?</h2><p className="!mb-0 mt-2">Build your next collection with quality, craftsmanship, and dependable global delivery.</p></div>
