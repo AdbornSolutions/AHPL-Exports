@@ -1,15 +1,25 @@
 import { ArrowRight } from "lucide-react";
-import blogOne from "../assets/blog1.png";
 import blogTwo from "../assets/blog2.png";
 import blogThree from "../assets/blog3.png";
+import homeDecorBlog from "../assets/Blogs/B1-1.png";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-const postImages = [blogOne, blogTwo, blogThree];
+const postImages = [blogTwo, blogThree];
 
 const LatestBlog = () => {
   const { t } = useTranslation(["blogs", "common"]);
-  const posts = t("posts", { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }));
+  const translatedPosts = t("posts", { returnObjects: true });
+  const posts = [
+    {
+      title: "What Makes a Home Decor Manufacturer India Stand Out in Global Markets?",
+      short: "Discover why global buyers choose Indian home décor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.",
+      image: homeDecorBlog,
+      to: "/home-decor-manufacturer-india-stand-out-global-markets",
+    },
+    ...translatedPosts.slice(1).map((post, index) => ({ ...post, image: postImages[index], to: "/blog" })),
+  ];
   return (
   <section id="blog" className={`${sectionClass} text-center`}>
     <div className={containerClass}>
@@ -22,7 +32,7 @@ const LatestBlog = () => {
             <div className="p-5">
               <h3 className="mb-3 min-h-[50px] text-lg font-bold leading-[1.3] text-[#172b50] max-md:min-h-0">{post.title}</h3>
               <p className="mb-[18px] min-h-[84px] text-[13px] leading-[1.45] text-[#6d7889] max-md:min-h-0">{post.short}</p>
-              <a className="inline-flex items-center gap-1.5 text-xs font-bold text-[#30c8bb] no-underline" href="/blog">{t("buttons.viewMore", { ns: "common" })} <ArrowRight size={15} /></a>
+              <Link className="inline-flex items-center gap-1.5 text-xs font-bold text-[#30c8bb] no-underline" to={post.to}>{t("buttons.viewMore", { ns: "common" })} <ArrowRight size={15} /></Link>
             </div>
           </article>
         ))}
