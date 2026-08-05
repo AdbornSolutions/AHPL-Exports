@@ -103,10 +103,10 @@ const Footer = () => {
 
       <div className="mt-6 flex justify-between gap-6 border-t border-white/15 pt-[22px] text-[10px] text-[#91a1b9] max-md:flex-col">
         <span className="flex flex-wrap gap-x-5 gap-y-2">
-          <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/contact-us">
+          <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/privacy-policy">
             {t("privacy")}
           </Link>
-          <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/contact-us">
+          <Link className="text-[#91a1b9] no-underline transition hover:text-[#30c8bb]" to="/terms-and-conditions">
             {t("terms")}
           </Link>
         </span>

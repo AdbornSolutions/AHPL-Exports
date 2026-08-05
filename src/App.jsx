@@ -18,6 +18,8 @@ import { Route, Routes } from "react-router-dom";
 import Saffron from "./pages/Saffron";
 import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
 import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
@@ -41,6 +43,8 @@ const App = () => (
       <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
       <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
       <Route path="/contact-us" element={<Contactus />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
     </Routes>
   </div>
 );

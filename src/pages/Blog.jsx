@@ -10,6 +10,7 @@ import { containerClass } from '../utils/tailwindClasses'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import latestBlogImage from '../assets/Blogs/B1-1.png'
+import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.png'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -22,6 +23,12 @@ const Blog = () => {
       description: 'Discover why global buyers choose Indian home decor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.',
       image: latestBlogImage,
       to: '/home-decor-manufacturer-india-stand-out-global-markets',
+    },
+    {
+      title: 'How to Choose the Best Indian Handicrafts Exporter for Your Business',
+      description: 'Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.',
+      image: handicraftsExporterBlogImage,
+      to: '/how-to-choose-the-best-indian-handicrafts-exporter',
     },
     ...blogPosts,
   ]
