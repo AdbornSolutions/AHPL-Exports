@@ -17,6 +17,7 @@ import IndustryVBelt from "./pages/products/Industry-v-Belt";
 import { Route, Routes } from "react-router-dom";
 import Saffron from "./pages/Saffron";
 import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
+import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
 
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
@@ -38,6 +39,7 @@ const App = () => (
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
+      <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
       <Route path="/contact-us" element={<Contactus />} />
     </Routes>
   </div>

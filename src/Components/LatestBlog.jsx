@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import blogTwo from "../assets/blog2.png";
 import blogThree from "../assets/blog3.png";
 import homeDecorBlog from "../assets/Blogs/B1-1.png";
+import handicraftsExporterBlog from "../assets/Blogs/B2-1.png";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -18,7 +19,13 @@ const LatestBlog = () => {
       image: homeDecorBlog,
       to: "/home-decor-manufacturer-india-stand-out-global-markets",
     },
-    ...translatedPosts.slice(1).map((post, index) => ({ ...post, image: postImages[index], to: "/blog" })),
+    {
+      title: "How to Choose the Best Indian Handicrafts Exporter for Your Business",
+      short: "Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.",
+      image: handicraftsExporterBlog,
+      to: "/how-to-choose-the-best-indian-handicrafts-exporter",
+    },
+    ...translatedPosts.slice(2).map((post, index) => ({ ...post, image: postImages[index + 1], to: "/blog" })),
   ];
   return (
   <section id="blog" className={`${sectionClass} text-center`}>
