@@ -1,17 +1,13 @@
 import { ArrowRight } from "lucide-react";
-import blogTwo from "../assets/blog2.png";
-import blogThree from "../assets/blog3.png";
 import homeDecorBlog from "../assets/Blogs/B1-1.png";
 import handicraftsExporterBlog from "../assets/Blogs/B2-1.png";
+import decorativeItemsExporterBlog from "../assets/Blogs/B3-1.png";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const postImages = [blogTwo, blogThree];
-
 const LatestBlog = () => {
   const { t } = useTranslation(["blogs", "common"]);
-  const translatedPosts = t("posts", { returnObjects: true });
   const posts = [
     {
       title: "What Makes a Home Decor Manufacturer India Stand Out in Global Markets?",
@@ -25,7 +21,12 @@ const LatestBlog = () => {
       image: handicraftsExporterBlog,
       to: "/how-to-choose-the-best-indian-handicrafts-exporter",
     },
-    ...translatedPosts.slice(2).map((post, index) => ({ ...post, image: postImages[index + 1], to: "/blog" })),
+    {
+      title: "How Decorative Items Exporter Companies Ensure Global Quality Standards",
+      short: "Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.",
+      image: decorativeItemsExporterBlog,
+      to: "/how-decorative-items-exporter-ensure-global-quality-standards",
+    },
   ];
   return (
   <section id="blog" className={`${sectionClass} text-center`}>

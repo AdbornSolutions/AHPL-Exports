@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import latestBlogImage from '../assets/Blogs/B1-1.png'
 import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.png'
+import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.png'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -29,6 +30,12 @@ const Blog = () => {
       description: 'Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.',
       image: handicraftsExporterBlogImage,
       to: '/how-to-choose-the-best-indian-handicrafts-exporter',
+    },
+    {
+      title: 'How Decorative Items Exporter Companies Ensure Global Quality Standards',
+      description: 'Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.',
+      image: decorativeItemsExporterBlogImage,
+      to: '/how-decorative-items-exporter-ensure-global-quality-standards',
     },
     ...blogPosts,
   ]

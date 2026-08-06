@@ -18,6 +18,7 @@ import { Route, Routes } from "react-router-dom";
 import Saffron from "./pages/Saffron";
 import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
 import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
+import DecorativeItemsExporterBlog from "./Components/Blogs/DecorativeItemsExporterBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 
@@ -42,6 +43,7 @@ const App = () => (
       <Route path="/blog" element={<Blog />} />
       <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
       <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
+      <Route path="/how-decorative-items-exporter-ensure-global-quality-standards" element={<DecorativeItemsExporterBlog />} />
       <Route path="/contact-us" element={<Contactus />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
