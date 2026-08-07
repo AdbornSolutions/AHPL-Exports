@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 import latestBlogImage from '../assets/Blogs/B1-1.png'
 import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.png'
 import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.png'
+import metalWallDecorBlogImage from '../assets/Blogs/B4-1.jpeg'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -19,6 +20,12 @@ const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
   const posts = [
+    {
+      title: 'How African Importers Can Find a Trusted Metal Wall Decor Manufacturer',
+      description: 'Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.',
+      image: metalWallDecorBlogImage,
+      to: '/metal-wall-decor-manufacturer',
+    },
     {
       title: 'What Makes a Home Decor Manufacturer India Stand Out in Global Markets?',
       description: 'Discover why global buyers choose Indian home decor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.',
