@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -7,34 +6,15 @@ import diningSpaceImg from "../assets/shop2.png";
 import entrywayImg from "../assets/shop3.jpg";
 import prayerRoomImg from "../assets/shop4.png";
 import workDeskImg from "../assets/shop5.png";
+import { spaceCollections } from "../data/spaceCollections";
 
-const spaces = [
-  {
-    nameKey: "saffron.spaces.livingRoom",
-    to: "/#",
-    image: livingRoomImg,
-  },
-  {
-    nameKey: "saffron.spaces.diningSpace",
-    to: "/#",
-    image: diningSpaceImg,
-  },
-  {
-    nameKey: "saffron.spaces.entryway",
-    to: "/#",
-    image: entrywayImg,
-  },
-  {
-    nameKey: "saffron.spaces.prayerRoom",
-    to: "/#",
-    image: prayerRoomImg,
-  },
-  {
-    nameKey: "saffron.spaces.workDesk",
-    to: "/#",
-    image: workDeskImg,
-  },
-];
+const spaceImages = {
+  "festive-decor": livingRoomImg,
+  "corporate-gifting": diningSpaceImg,
+  "office-study-decor": entrywayImg,
+  "living-room-decor": prayerRoomImg,
+  "divine-decor": workDeskImg,
+};
 
 const ShopBySpace = () => {
   const { t } = useTranslation("common");
@@ -42,36 +22,31 @@ const ShopBySpace = () => {
   return (
     <section className="bg-white py-[60px] max-md:py-10">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-[1240px] max-md:w-[calc(100%_-_24px)]">
-        {/* Section Heading */}
-        <div className="text-center mb-10">
+        <div className="mb-10 text-center">
           <h2 className="text-[clamp(32px,3.8vw,48px)] font-bold tracking-tight text-[#172b50]">
-            {t("saffron.spaceTitle")}{" "}
+            {t("saffron.spaceTitle")} {" "}
             <span className="text-[#30c8bb]">{t("saffron.spaceHighlight")}</span>
           </h2>
         </div>
 
-        {/* Spaces Grid — 5 columns, matching ShopByCategory layout */}
         <div className="grid grid-cols-5 gap-6 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
-          {spaces.map((space) => (
-            <div key={space.nameKey} className="flex flex-col">
-              {/* Image Card */}
+          {spaceCollections.map((space) => (
+            <div key={space.slug} className="flex flex-col">
               <Link
-                to={space.to}
-                className="overflow-hidden rounded-[24px] bg-[#f5f5f2] aspect-square block shadow-sm hover:shadow-md transition-shadow duration-300"
+                to={`/shop-by-space/${space.slug}`}
+                className="group block aspect-square overflow-hidden rounded-[24px] bg-[#f5f5f2] shadow-sm transition-shadow duration-300 hover:shadow-md"
               >
                 <img
-                  src={space.image}
+                  src={spaceImages[space.slug]}
                   alt={t(space.nameKey)}
-                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
-
-              {/* Label / Link */}
               <Link
-                to={space.to}
-                className="mt-4 text-[16px] font-semibold text-[#172b50] hover:text-[#30c8bb] transition-colors duration-200 inline-flex items-center gap-1.5 no-underline"
+                to={`/shop-by-space/${space.slug}`}
+                className="mt-4 inline-flex items-center gap-1.5 text-[16px] font-semibold text-[#172b50] no-underline transition-colors duration-200 hover:text-[#30c8bb]"
               >
-                {t(space.nameKey)} &rarr;
+                {t(space.nameKey)} <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           ))}

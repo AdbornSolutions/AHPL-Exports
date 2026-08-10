@@ -22,6 +22,7 @@ import DecorativeItemsExporterBlog from "./Components/Blogs/DecorativeItemsExpor
 import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorManufacturerBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import SpaceProducts from "./pages/SpaceProducts";
 
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
@@ -32,6 +33,7 @@ const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<About />} />
       <Route path="/saffron" element={<Saffron />} />
+      <Route path="/shop-by-space/:spaceSlug" element={<SpaceProducts />} />
       <Route path="/product" element={<Industries />} />
       <Route path="/product/metal-table-decor" element={<Metaltable />} />
       <Route path="/product/metal-wall-decor" element={<MetalWall />} />
