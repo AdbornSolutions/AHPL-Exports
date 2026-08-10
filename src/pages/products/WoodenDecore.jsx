@@ -1,9 +1,11 @@
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { slugify } from "../../data/productCatalog";
 import Footer from "../../Components/Common/Footer";
-import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
+import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
+import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
+import brochurePdf from "../../assets/PDF/AHPL_Teakwood_Tales_Catalogue (1).pdf";
 import heroImage from "../../assets/products-images/Wooden Decor/Rectangle 20 (2).png";
 import aboutImage from "../../assets/products-images/Wooden Decor/Subtract (7).png";
 import rangeOne from "../../assets/products-images/Wooden Decor/1.png";
@@ -51,7 +53,11 @@ const WoodenDecore = () => {
           <div className="mt-10 grid grid-cols-5 gap-x-6 gap-y-7 text-left max-xl:gap-x-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
             {productRange.map((product, index) => <Link className="group text-inherit no-underline" to={`/product/wooden-decor/${slugify(product.name)}`} key={product.name}><div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]"><img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={productNames[index]} /></div><h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{productNames[index]}</h3></Link>)}
           </div>
-          <a className={`${pillButtonClass} mt-10`} href="/contact-us">{common.viewBrochure} <span className={buttonIconClass}><ArrowUpRight size={15} /></span></a>
+          <BrochureDownloadDialog
+            brochureUrl={brochurePdf}
+            fileName="AHPL-Teakwood-Tales-Catalogue.pdf"
+            buttonLabel={common.viewBrochure}
+          />
         </div>
       </section>
 
