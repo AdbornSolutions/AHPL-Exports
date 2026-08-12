@@ -14,7 +14,7 @@ import LifestyleUtility from "./pages/products/LifestyleUtility";
 import WoodenDecore from "./pages/products/WoodenDecore";
 import ProductDetail from "./pages/products/ProductDetail";
 import IndustryVBelt from "./pages/products/Industry-v-Belt";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Saffron from "./pages/Saffron";
 import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
 import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
@@ -23,7 +23,11 @@ import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorMan
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import SpaceProducts from "./pages/SpaceProducts";
-
+import CopperArticles from "./pages/products/CopperArticles";
+import Makhana from "./pages/products/Makhana";
+import DehydratedPowders from "./pages/products/DehydratedPowders";
+import BiomassPallette from "./pages/products/BiomassPallette";
+import MultaniMitti from "./pages/products/MultaniMitti";
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
     <ScrollToTop />
@@ -42,6 +46,16 @@ const App = () => (
       <Route path="/product/lifestyle-utility" element={<LifestyleUtility />} />
       <Route path="/product/wooden-decor" element={<WoodenDecore />} />
       <Route path="/product/industrial-v-belts" element={<IndustryVBelt />} />
+      <Route path="/product/copper-articles" element={<CopperArticles />} />
+      <Route path="/product/CopperArticles" element={<Navigate to="/product/copper-articles" replace />} />
+      <Route path="/product/makhana" element={<Makhana />} />
+      <Route path="/product/Makhana" element={<Navigate to="/product/makhana" replace />} />
+      <Route path="/product/dehydrated-powders" element={<DehydratedPowders />} />
+      <Route path="/product/DehydratedPowders" element={<Navigate to="/product/dehydrated-powders" replace />} />
+      <Route path="/product/biomass-pellets" element={<BiomassPallette />} />
+      <Route path="/product/Biomass" element={<Navigate to="/product/biomass-pellets" replace />} />
+      <Route path="/product/multani-mitti" element={<MultaniMitti />} />
+      <Route path="/product/MultaniMitti" element={<Navigate to="/product/multani-mitti" replace />} />
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />

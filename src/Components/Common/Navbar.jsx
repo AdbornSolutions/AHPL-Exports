@@ -31,6 +31,16 @@ const productDropdownGroups = [
     labelKey: "navigation.industrialGoods",
     links: [{ labelKey: "productCategories.belts", to: "/product/industrial-v-belts" }],
   },
+  {
+    labelKey: "Others",
+    links: [
+      { labelKey: "CopperArticles", to: "/product/copper-articles" },
+      { labelKey: "Biomass", to: "/product/biomass-pellets" },
+      { labelKey: "Makhana", to: "/product/makhana" },
+      { labelKey: "DehydratedPowders", to: "/product/dehydrated-powders" },
+      { labelKey: "MultaniMitti", to: "/product/multani-mitti" },
+    ],
+  },
 ];
 
 const LanguageMenu = ({
