@@ -20,15 +20,15 @@ import rangeNine from "../../assets/products-images/Wooden Decor/9.png";
 import rangeTen from "../../assets/products-images/Wooden Decor/10.png";
 
 const productRange = [
-  { name: "Rudra-Ansh (Black)", image: rangeOne }, { name: "Ashwa", image: rangeTwo },
-  { name: "Mayureshwar", image: rangeThree }, { name: "Night-Charm (White)", image: rangeFour },
-  { name: "Gaj-Jhoola", image: rangeFive }, { name: "Carbon Horse", image: rangeSix },
-  { name: "Aura-Hawk", image: rangeSeven }, { name: "Midnight Monk (White)", image: rangeEight },
-  { name: "Chhatrapati", image: rangeNine }, { name: "Twin Grace", image: rangeTen },
+  { name: "Rajasthani Couple Tealights", image: rangeOne }, { name: "Elephant Tealights Column", image: rangeTwo },
+  { name: "Sawari Elephant Procession", image: rangeThree }, { name: "Peacock Quill Pen", image: rangeFour },
+  { name: "Rajasthani Quill pen", image: rangeFive }, { name: "Arched temple Mandir", image: rangeSix },
+  { name: "Peacock pen stand", image: rangeSeven }, { name: "Rajasthani Folk Musician Wooden Décor Set", image: rangeEight },
+  { name: "Nine-box Spice", image: rangeNine }, { name: "Taj coaster & Drawer", image: rangeTen },
 ];
 
 const WoodenDecore = () => {
-  const { t } = useTranslation("categories"); const content = t("wooden", { returnObjects: true }); const common = t("common", { returnObjects: true }); const productNames = t("sharedProducts", { returnObjects: true });
+  const { t } = useTranslation("categories"); const content = t("wooden", { returnObjects: true }); const common = t("common", { returnObjects: true });
   return (
   <>
     <main className="bg-white text-[#1b3156]">
@@ -51,7 +51,7 @@ const WoodenDecore = () => {
           <h2 className="mx-auto max-w-[760px] text-[clamp(34px,4vw,52px)] font-bold leading-[1.18] text-[#1b3156]">{content.rangeTitle} <span className="text-[#30c8bb]">{content.rangeHighlight}</span></h2>
           <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">{common.rangeIntro}</p>
           <div className="mt-10 grid grid-cols-5 gap-x-6 gap-y-7 text-left max-xl:gap-x-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
-            {productRange.map((product, index) => <Link className="group text-inherit no-underline" to={`/product/wooden-decor/${slugify(product.name)}`} key={product.name}><div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]"><img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={productNames[index]} /></div><h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{productNames[index]}</h3></Link>)}
+            {productRange.map((product) => <Link className="group text-inherit no-underline" to={`/product/wooden-decor/${slugify(product.name)}`} key={product.name}><div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]"><img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} /></div><h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{product.name}</h3></Link>)}
           </div>
           <BrochureDownloadDialog
             brochureUrl={brochurePdf}

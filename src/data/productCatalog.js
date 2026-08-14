@@ -17,6 +17,11 @@ const sharedNames = [
   "Carbon Horse", "Aura-Hawk", "Midnight Monk (White)", "Chhatrapati", "Twin Grace",
 ];
 
+const woodenDecorNames = [
+  "Rajasthani Couple Tealights", "Elephant Tealights Column", "Sawari Elephant Procession", "Peacock Quill Pen", "Rajasthani Quill pen",
+  "Arched temple Mandir", "Peacock pen stand", "Rajasthani Folk Musician Wooden Décor Set", "Nine-box Spice", "Taj coaster & Drawer",
+];
+
 const categoryDefinitions = [
   {
     slug: "metal-table-decor", folder: "Metal-table", title: "Metal Table Decor",
@@ -146,7 +151,7 @@ const categoryDefinitions = [
   {
     slug: "wooden-decor", folder: "Wooden Decor", title: "Wooden Decor", material: "Premium Seasoned Wood",
     finish: "Natural, Matte, Polished, Painted & Custom", subtitle: "Handcrafted Wooden Accent Rich in Indian Artistry",
-    names: sharedNames,
+    names: woodenDecorNames,
     files: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"],
   },
 ];
