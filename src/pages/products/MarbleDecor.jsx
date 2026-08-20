@@ -21,20 +21,20 @@ import rangeNine from "../../assets/products-images/Marble Decor/9.png";
 import rangeTen from "../../assets/products-images/Marble Decor/10.png";
 
 const productRange = [
-  { name: "Rudra-Ansh (Black)", image: rangeOne },
-  { name: "Ashwa", image: rangeTwo },
-  { name: "Mayureshwar", image: rangeThree },
-  { name: "Night-Charm (White)", image: rangeFour },
-  { name: "Gaj-Jhoola", image: rangeFive },
-  { name: "Carbon Horse", image: rangeSix },
-  { name: "Aura-Hawk", image: rangeSeven },
-  { name: "Midnight Monk (White)", image: rangeEight },
-  { name: "Chhatrapati", image: rangeNine },
-  { name: "Twin Grace", image: rangeTen },
+  { name: "Verdant Marble Dispenser", image: rangeOne },
+  { name: "Stacked Marble Tealight Holders", image: rangeTwo },
+  { name: "Brass-Line Square Coasters", image: rangeThree },
+  { name: "Rosebud Tealight", image: rangeFour },
+  { name: "Royal Lady Marble Portrait Plate", image: rangeFive },
+  { name: "Ganesha Marble Chowki", image: rangeSix },
+  { name: "Peacock Fan Coaster Set", image: rangeSeven },
+  { name: "Peacock Photo Frame", image: rangeEight },
+  { name: "Meenakari Marble Surahi", image: rangeNine },
+  { name: "Peacock Meenakari Marble Plate", image: rangeTen },
 ];
 
 const MarbleDecor = () => {
-  const { t } = useTranslation("categories"); const content = t("marble", { returnObjects: true }); const common = t("common", { returnObjects: true }); const productNames = t("sharedProducts", { returnObjects: true });
+  const { t } = useTranslation("categories"); const content = t("marble", { returnObjects: true }); const common = t("common", { returnObjects: true });
   return (
   <>
     <main className="bg-white text-[#1b3156]">
@@ -63,12 +63,12 @@ const MarbleDecor = () => {
           </h2>
           <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">{common.rangeIntro}</p>
           <div className="mt-10 grid grid-cols-5 gap-x-6 gap-y-7 text-left max-xl:gap-x-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
-            {productRange.map((product, index) => (
+            {productRange.map((product) => (
               <Link className="group text-inherit no-underline" to={`/product/marble-decor/${slugify(product.name)}`} key={product.name}>
                 <div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]">
-                  <img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={productNames[index]} />
+                  <img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} />
                 </div>
-                <h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{productNames[index]}</h3>
+                <h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{product.name}</h3>
               </Link>
             ))}
           </div>

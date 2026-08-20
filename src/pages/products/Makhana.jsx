@@ -1,26 +1,11 @@
 import { CheckCircle2 } from "lucide-react";
 import Footer from "../../Components/Common/Footer";
-import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
 import { containerClass } from "../../utils/tailwindClasses";
-import brochurePdf from "../../assets/PDF/polyresin.pdf";
+import ProductRangeGrid from "../../Components/Products/ProductRangeGrid";
+import { makhanaProducts } from "../../data/otherProductRanges";
 import heroImage from "../../assets/products-images/Makhana/Hero.png";
-import aboutImage from "../../assets/products-images/CopperArticles/About.jpg";
-import whyChooseImage from "../../assets/products-images/CopperArticles/WhyChoose.png";
-
-const productRange = [
-  "Copper Water Bottles",
-  "Copper Jugs & Pitchers",
-  "Copper Glasses & Tumblers",
-  "Copper Drinkware Sets",
-  "Copper Idols & Figurines",
-  "Decorative Copper Articles",
-  "Copper Pooja Accessories",
-  "Copper Bowls & Trays",
-  "Gift Sets",
-  "Customized Copper Products",
-  "Copper Idols & Figurines",
-  "Decorative Copper Articles",
-];
+import aboutImage from "../../assets/products-images/Makhana/about.png";
+import whyChooseImage from "../../assets/products-images/Makhana/whychoose.png";
 
 const reasons = [
   "Premium Quality Selection",
@@ -62,20 +47,8 @@ const Makhana = () => (
           <h2 className="mx-auto max-w-[650px] text-[clamp(34px,4vw,52px)] font-bold leading-[1.18] text-[#1b3156]">
             Explore Our <span className="text-[#30c8bb]">Makhana Options</span>
           </h2>
-          <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">We export a wide variety of decorative products, including:</p>
-
-          <div className="mt-1 grid grid-cols-6 gap-x-5 gap-y-7 text-center max-xl:grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
-            {productRange.map((product, index) => (
-              <article className="group" key={`${product}-${index}`}>
-                <div className="aspect-square overflow-hidden rounded-xl  shadow-[inset_0_0_0_1px_rgba(142,63,30,0.12)] transition duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-                  <div className="flex h-full items-center justify-center text-[clamp(28px,3vw,44px)] font-semibold text-black" aria-hidden="true">N/A</div>
-                </div>
-                <h3 className="mt-4 text-[14px] font-bold leading-tight text-[#555b64] max-sm:text-[13px]">{product}</h3>
-              </article>
-            ))}
-          </div>
-
-          <BrochureDownloadDialog brochureUrl={brochurePdf} fileName="AHPL-Copper-Articles.pdf" buttonLabel="View Brochure" />
+          <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">Natural and roasted fox nuts in classic, masala, and retail-ready options.</p>
+          <ProductRangeGrid products={makhanaProducts} categorySlug="makhana" />
         </div>
       </section>
 

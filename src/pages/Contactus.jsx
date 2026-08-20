@@ -187,9 +187,9 @@ const Contactus = () => {
               <option value="" disabled>
                 Select a product
               </option>
-              {inquiryOptions.map(({ value, labelKey }) => (
+              {inquiryOptions.map(({ value, labelKey, label }) => (
                 <option value={value} key={value}>
-                  {t(labelKey, { ns: "common" })}
+                  {label ?? t(labelKey, { ns: "common" })}
                 </option>
               ))}
               <option value="Other">Other</option>

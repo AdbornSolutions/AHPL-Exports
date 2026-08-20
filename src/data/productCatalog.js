@@ -12,17 +12,63 @@ const findImage = (folder, file) => {
   return entry?.[1];
 };
 
-const sharedNames = [
-  "Rudra-Ansh (Black)", "Ashwa", "Mayureshwar", "Night-Charm (White)", "Gaj-Jhoola",
-  "Carbon Horse", "Aura-Hawk", "Midnight Monk (White)", "Chhatrapati", "Twin Grace",
-];
-
 const woodenDecorNames = [
   "Rajasthani Couple Tealights", "Elephant Tealights Column", "Sawari Elephant Procession", "Peacock Quill Pen", "Rajasthani Quill pen",
   "Arched temple Mandir", "Peacock pen stand", "Rajasthani Folk Musician Wooden Décor Set", "Nine-box Spice", "Taj coaster & Drawer",
 ];
 
+const marbleDecorProducts = [
+  { name: "Verdant Marble Dispenser", file: "1.png", shortDescription: "A cylindrical green marble liquid-soap dispenser finished with a warm metallic pump for refined bathroom and vanity styling.", description: "Verdant Marble Dispenser pairs the natural depth of green stone with a streamlined silhouette and copper-tone pump. Its substantial marble body brings a premium, grounded presence to washbasins, guest bathrooms, spas, and hospitality interiors." },
+  { name: "Stacked Marble Tealight Holders", file: "2.png", shortDescription: "A coordinated set of square white marble tealight holders with layered edges and softly recessed candle wells.", description: "Stacked Marble Tealight Holders turn clean geometric forms into an elegant ambient-light display. The natural veining and stepped construction suit dining tables, consoles, festive arrangements, and calm contemporary interiors." },
+  { name: "Brass-Line Square Coasters", file: "3.png", shortDescription: "Four square white marble coasters accented with fine parallel brass lines for a polished modern table setting.", description: "Brass-Line Square Coasters combine cool natural stone with restrained metallic detailing. Their crisp square profile protects surfaces while adding a sophisticated accent to coffee tables, dining settings, bars, and premium gifting collections." },
+  { name: "Rosebud Tealight", file: "4.png", shortDescription: "A rounded marble tealight enriched with colourful rosebud-inspired Meenakari artwork and a gold-edged rim.", description: "Rosebud Tealight celebrates traditional Indian surface decoration in a compact functional form. Hand-painted florals wrap the rounded body, creating a warm decorative glow for prayer rooms, festive tables, and curated gift sets." },
+  { name: "Royal Lady Marble Portrait Plate", file: "5.png", shortDescription: "A decorative marble plate featuring a hand-painted royal lady portrait framed by an ornate yellow floral border.", description: "Royal Lady Marble Portrait Plate draws inspiration from classical Indian miniature painting. The expressive portrait and intricate border make it a distinctive display piece for consoles, cabinets, cultural interiors, and heritage-inspired gifting." },
+  { name: "Ganesha Marble Chowki", file: "6.png", shortDescription: "A hand-painted Lord Ganesha idol seated on a raised square marble chowki with red, green, and gold detailing.", description: "Ganesha Marble Chowki combines devotional symbolism with detailed Meenakari-style artistry. The compact raised platform and vibrant finish make it suitable for home temples, festive décor, ceremonies, and meaningful corporate or personal gifts." },
+  { name: "Peacock Fan Coaster Set", file: "7.png", shortDescription: "A round marble coaster set enriched with colourful peacock-feather and floral Meenakari motifs.", description: "Peacock Fan Coaster Set combines practical tabletop protection with richly painted Indian artistry. Its smooth stone construction and ornate peacock-inspired decoration make it a distinctive addition to dining spaces and gifting collections." },
+  { name: "Peacock Photo Frame", file: "8.png", shortDescription: "An ornate round marble photo frame with a richly patterned peacock-inspired red, green, and gold border.", description: "Peacock Photo Frame surrounds a treasured photograph with detailed hand-painted ornamentation. Presented on a stand, it creates a graceful focal point for living rooms, entry consoles, hospitality spaces, and festive displays." },
+  { name: "Meenakari Marble Surahi", file: "9.png", shortDescription: "A decorative marble surahi with a pointed lid, sculpted form, and vivid yellow, red, green, and gold artwork.", description: "Meenakari Marble Surahi reinterprets a traditional Indian vessel as an ornamental collectible. Its slender finial, rounded body, and intricate hand-painted panels lend height, colour, and cultural detail to curated interior displays." },
+  { name: "Peacock Meenakari Marble Plate", file: "10.png", shortDescription: "A decorative marble plate showcasing twin peacocks among detailed floral vines in green, blue, pink, and gold.", description: "Peacock Meenakari Marble Plate celebrates an enduring Indian motif through fine hand-painted detail. The balanced twin-peacock composition and included display stand make it ideal for premium décor, wedding gifting, and cultural collections." },
+];
+
+const lifestyleUtilityProducts = [
+  { name: "Blue Blossom Quilted Pouch Set", file: "1.png", shortDescription: "A coordinated trio of quilted zip pouches in a fresh blue floral print for cosmetics, travel essentials, and everyday organisation.", description: "Blue Blossom Quilted Pouch Set brings flexible organisation to travel and daily routines. Three useful sizes keep beauty products, jewellery, stationery, chargers, and small accessories separated, while soft quilting helps protect their contents." },
+  { name: "Crimson Jungle Quilted Tote", file: "2.png", shortDescription: "A spacious red quilted tote patterned with stylised trees and animals, finished with comfortable fabric handles.", description: "Crimson Jungle Quilted Tote combines a bold Indian-inspired print with a roomy, lightweight structure. It is suited to shopping, work, travel, or casual outings and folds easily when not in use." },
+  { name: "Rose Stripe Quilted Tote", file: "3.png", shortDescription: "A structured pink-and-white striped quilted tote with delicate heart motifs and reinforced striped handles.", description: "Rose Stripe Quilted Tote offers a clean, cheerful carry-all for errands, gifting, and everyday essentials. Vertical quilting and coordinated handles give the soft textile bag a neat silhouette and dependable shape." },
+  { name: "Festive Paisley Quilted Tote", file: "4.png", shortDescription: "A compact white quilted tote animated by colourful paisley motifs and pink striped handles and trim.", description: "Festive Paisley Quilted Tote balances a playful multicolour print with practical proportions. The padded construction is lightweight yet structured, making it a versatile choice for lunches, small shopping trips, gifts, or daily accessories." },
+  { name: "Pink Palm Quilted Lunch Bag", file: "5.png", shortDescription: "A boxy pink quilted carry bag decorated with dark palm trees and finished with comfortable matching handles.", description: "Pink Palm Quilted Lunch Bag provides a compact, easy-carry format for meals, snacks, cosmetics, or small travel items. Its wide rectangular shape, soft padding, and tropical print make everyday utility feel bright and distinctive." },
+  { name: "Scarlet Bloom Quilted Tote", file: "6.png", shortDescription: "A roomy pale-green quilted tote featuring vivid red botanical motifs and contrasting patterned handles.", description: "Scarlet Bloom Quilted Tote uses expressive floral pattern and tactile quilting to elevate a practical everyday bag. Its broad opening and generous body are suited to shopping, beach days, craft supplies, and casual travel." },
+  { name: "Safari Sun Quilted Tote", file: "7.png", shortDescription: "A vibrant yellow quilted tote illustrated with zebras and tropical foliage for a playful statement carry-all.", description: "Safari Sun Quilted Tote pairs an adventurous animal print with a spacious, soft-sided silhouette. Strong fabric handles and a lightweight padded body support daily errands, weekend trips, and colourful gifting collections." },
+  { name: "Indigo Wave Quilted Tote", file: "8.png", shortDescription: "A deep-indigo quilted tote with rhythmic white motifs, striped handles, and a relaxed handcrafted finish.", description: "Indigo Wave Quilted Tote draws on traditional resist-print aesthetics in a versatile contemporary bag. Its roomy shape carries everyday essentials comfortably while the dark palette makes it practical for frequent use." },
+  { name: "Mustard Palm Quilted Pouch", file: "9.png", shortDescription: "A flat mustard-and-white striped quilted pouch with embroidered-style palm motifs and a convenient wrist loop.", description: "Mustard Palm Quilted Pouch keeps travel papers, cosmetics, cables, or small personal items neatly contained. The slim silhouette slips easily into larger bags, while the tropical embroidery-inspired surface gives it a premium resort character." },
+  { name: "Indigo Boho Quilted Tote", file: "10.png", shortDescription: "A compact ivory quilted tote with indigo folk motifs, striped trim, and softly padded carry handles.", description: "Indigo Boho Quilted Tote combines a handcrafted block-print look with an easy upright form. Ideal for lunches, small errands, gifting, or accessories, it offers lightweight utility with a calm blue-and-white palette." },
+];
+
 const categoryDefinitions = [
+  {
+    slug: "biomass-pellets", title: "Biomass Pellets", material: "Wood, Bamboo & Agricultural Biomass",
+    finish: "Natural, Densified & Custom Grades", subtitle: "Renewable Fuel Pellets for Efficient Industrial Energy",
+    predefinedProducts: biomassProducts,
+  },
+  {
+    slug: "copper-articles", title: "Copper Articles", material: "Premium Copper",
+    finish: "Hammered, Embossed, Polished, Antique & Custom", subtitle: "Handcrafted Copperware with Timeless Indian Character",
+    predefinedProducts: copperProducts,
+  },
+  {
+    slug: "dehydrated-powders", title: "Dehydrated Powders", material: "Dehydrated Vegetables & Spices",
+    finish: "Fine Powder, Bulk & Retail-Ready", subtitle: "Shelf-Stable Natural Ingredients for Global Food Applications",
+    predefinedProducts: dehydratedPowderProducts,
+  },
+  {
+    slug: "makhana", title: "Makhana", material: "Popped Lotus Seeds",
+    finish: "Natural, Roasted, Seasoned & Retail-Ready", subtitle: "Premium Indian Fox Nuts for Modern Snacking",
+    predefinedProducts: makhanaProducts,
+  },
+  {
+    slug: "multani-mitti", title: "Multani Mitti", material: "Natural Fuller's Earth Clay",
+    finish: "Raw, Fine Powder, Bulk & Retail-Ready", subtitle: "Naturally Purifying Clay for Beauty and Wellness",
+    predefinedProducts: multaniMittiProducts,
+  },
   {
     slug: "metal-table-decor", folder: "Metal-table", title: "Metal Table Decor",
     material: "Iron, Aluminum, Brass & Stainless Steel", finish: "Powder Coated, Antique, Matte, Glossy & Custom",
@@ -118,7 +164,7 @@ const categoryDefinitions = [
   {
     slug: "marble-decor", folder: "Marble Decor", title: "Marble Decor", material: "Premium Natural Marble",
     finish: "Polished, Matte, Honed & Custom", subtitle: "Timeless Natural Stone Decor with Artisan Detailing",
-    names: sharedNames, files: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"],
+    detailedProducts: marbleDecorProducts,
   },
   {
     slug: "lifestyle-utility", folder: "Lifestyle & Utility", title: "Lifestyle & Utility", material: "Textile, Metal, Wood & Mixed Materials",
@@ -146,7 +192,7 @@ const categoryDefinitions = [
         descriptionTwo: "The tonal pink palette and illustrated botanical print make it a distinctive gifting and lifestyle accessory. Durable quilting helps the pouch maintain its form while remaining lightweight enough for effortless packing.",
       },
     ],
-    names: sharedNames, files: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"],
+    detailedProducts: lifestyleUtilityProducts,
   },
   {
     slug: "wooden-decor", folder: "Wooden Decor", title: "Wooden Decor", material: "Premium Seasoned Wood",
@@ -157,7 +203,28 @@ const categoryDefinitions = [
 ];
 
 export const productCatalog = categoryDefinitions.map((category) => {
-  const catalogProducts = category.names.map((name, index) => {
+  const catalogProducts = category.predefinedProducts?.map((product) => ({
+    ...product,
+    slug: slugify(product.name),
+    images: [product.image],
+    shortDescription: product.description,
+  })) ?? category.detailedProducts?.map((product) => {
+    const mainImage = findImage(category.folder, product.file);
+    const baseName = product.file.replace(/\.[^/.]+$/, "");
+    const extension = product.file.split(".").pop();
+    const images = [
+      mainImage,
+      findImage(category.folder, `${baseName}-top.${extension}`),
+      findImage(category.folder, `${baseName}-bottom.${extension}`),
+    ].filter(Boolean);
+
+    return {
+      ...product,
+      slug: slugify(product.name),
+      image: mainImage,
+      images,
+    };
+  }) ?? category.names.map((name, index) => {
     const file = category.files[index];
     const mainImage = findImage(category.folder, file);
 
@@ -219,3 +286,10 @@ export const getProduct = (categorySlug, productSlug) => {
 };
 
 export { slugify };
+import {
+  biomassProducts,
+  copperProducts,
+  dehydratedPowderProducts,
+  makhanaProducts,
+  multaniMittiProducts,
+} from "./otherProductRanges";

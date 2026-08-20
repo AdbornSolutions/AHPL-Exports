@@ -6,6 +6,11 @@ export const inquiryOptions = [
   { value: "Marble Decor", labelKey: "productCategories.marble" },
   { value: "Lifestyle & Utility", labelKey: "productCategories.lifestyle" },
   { value: "Wooden Decor", labelKey: "productCategories.wooden" },
+  { value: "Copper Articles", label: "Copper Articles" },
+  { value: "Biomass Pellets", label: "Biomass Pellets" },
+  { value: "Dehydrated Powders", label: "Dehydrated Powders" },
+  { value: "Makhana", label: "Makhana" },
+  { value: "Multani Mitti", label: "Multani Mitti" },
   { value: "Industrial V-Belts", labelKey: "productCategories.belts" },
   { value: "Saffron", labelKey: "navigation.saffron" },
 ];
