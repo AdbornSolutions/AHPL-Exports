@@ -1,9 +1,11 @@
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { slugify } from "../../data/productCatalog";
 import Footer from "../../Components/Common/Footer";
-import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
+import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
+import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
+import brochurePdf from "../../assets/PDF/lifestyle.pdf";
 import heroImage from "../../assets/products-images/Lifestyle & Utility/Rectangle 20 (5).png";
 import aboutImage from "../../assets/products-images/Lifestyle & Utility/Subtract (10).png";
 import whyChooseImage from "../../assets/products-images/Lifestyle & Utility/whyChoose.png";
@@ -19,15 +21,15 @@ import rangeNine from "../../assets/products-images/Lifestyle & Utility/9.png";
 import rangeTen from "../../assets/products-images/Lifestyle & Utility/10.png";
 
 const productRange = [
-  { name: "Blue Blossom Quilted Pouch Set", image: rangeOne },
-  { name: "Crimson Jungle Quilted Tote", image: rangeTwo },
-  { name: "Rose Stripe Quilted Tote", image: rangeThree },
-  { name: "Festive Paisley Quilted Tote", image: rangeFour },
+  { name: "Dahila Pouch meadow", image: rangeOne },
+  { name: "Prowling Tiger Tote", image: rangeTwo },
+  { name: "SweetHeart Stripe Tote", image: rangeThree },
+  { name: "Rosebud Quilted Tote", image: rangeFour },
   { name: "Pink Palm Quilted Lunch Bag", image: rangeFive },
-  { name: "Scarlet Bloom Quilted Tote", image: rangeSix },
+  { name: "Watermelon Quilted Tote", image: rangeSix },
   { name: "Safari Sun Quilted Tote", image: rangeSeven },
   { name: "Indigo Wave Quilted Tote", image: rangeEight },
-  { name: "Mustard Palm Quilted Pouch", image: rangeNine },
+  { name: "Palm Grove Sleeve, Orchre", image: rangeNine },
   { name: "Indigo Boho Quilted Tote", image: rangeTen },
 ];
 
@@ -70,7 +72,11 @@ const LifestyleUtility = () => {
               </Link>
             ))}
           </div>
-          <a className={`${pillButtonClass} mt-10`} href="/contact-us">{common.viewBrochure} <span className={buttonIconClass}><ArrowUpRight size={15} /></span></a>
+          <BrochureDownloadDialog
+            brochureUrl={brochurePdf}
+            fileName="lifestyle.pdf"
+            buttonLabel={common.viewBrochure}
+          />
         </div>
       </section>
 
