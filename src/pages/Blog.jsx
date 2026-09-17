@@ -13,6 +13,8 @@ import latestBlogImage from '../assets/Blogs/B1-1.png'
 import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.png'
 import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.png'
 import metalWallDecorBlogImage from '../assets/Blogs/B4-1.jpeg'
+import merchantExporterBlogImage from '../assets/Blogs/B5-1.png'
+import b2bSourcingBlogImage from '../assets/Blogs/B6-1.png'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -20,6 +22,18 @@ const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
   const posts = [
+    {
+      title: 'B2B Sourcing in India: A Guide for International Buyers',
+      description: 'Learn how B2B sourcing in India works, the advantages it offers, how to find good suppliers, ensure product quality, and how AHPL Exporter helps international buyers source dependable products.',
+      image: b2bSourcingBlogImage,
+      to: '/b2b-sourcing-in-india-guide-for-international-buyers',
+    },
+    {
+      title: 'Benefits of Working with an Indian Merchant Exporter',
+      description: 'Discover the benefits of working with a merchant exporter from India and how AHPL Exporter helps global buyers source quality Indian products with ease.',
+      image: merchantExporterBlogImage,
+      to: '/benefits-of-working-with-indian-merchant-exporter',
+    },
     {
       title: 'How African Importers Can Find a Trusted Metal Wall Decor Manufacturer',
       description: 'Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.',

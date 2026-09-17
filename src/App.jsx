@@ -20,6 +20,8 @@ import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerB
 import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
 import DecorativeItemsExporterBlog from "./Components/Blogs/DecorativeItemsExporterBlog";
 import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorManufacturerBlog";
+import MerchantExporterBlog from "./Components/Blogs/MerchantExporterBlog";
+import B2BSourcingIndiaBlog from "./Components/Blogs/B2BSourcingIndiaBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import SpaceProducts from "./pages/SpaceProducts";
@@ -62,6 +64,8 @@ const App = () => (
       <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
       <Route path="/how-decorative-items-exporter-ensure-global-quality-standards" element={<DecorativeItemsExporterBlog />} />
       <Route path="/metal-wall-decor-manufacturer" element={<MetalWallDecorManufacturerBlog />} />
+      <Route path="/benefits-of-working-with-indian-merchant-exporter" element={<MerchantExporterBlog />} />
+      <Route path="/b2b-sourcing-in-india-guide-for-international-buyers" element={<B2BSourcingIndiaBlog />} />
       <Route path="/contact-us" element={<Contactus />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
