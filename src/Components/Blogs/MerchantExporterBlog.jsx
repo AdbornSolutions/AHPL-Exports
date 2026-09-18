@@ -53,7 +53,7 @@ const BulletList = ({ items }) => (
 const MerchantExporterBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/benefits-of-working-with-indian-merchant-exporter`
+    const canonicalUrl = `${window.location.origin}/blog/benefits-of-working-with-indian-merchant-exporter`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover the benefits of working with a merchant exporter from India and how AHPL Exporter helps global buyers source quality Indian products with ease.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Merchant Exporter from India, Indian merchant exporter, export products from India, Indian handicrafts exporter, industrial goods exporter, Indian product sourcing, global sourcing from India' } },

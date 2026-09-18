@@ -41,7 +41,7 @@ const BulletList = ({ items }) => (
 const IndianHandicraftsExporterBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/how-to-choose-the-best-indian-handicrafts-exporter`
+    const canonicalUrl = `${window.location.origin}/blog/how-to-choose-the-best-indian-handicrafts-exporter`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Looking for an Indian Handicrafts Exporter? Discover key factors like quality, manufacturing, export experience, and trusted sourcing for global buyers.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Indian Handicrafts Exporter' } },
@@ -94,7 +94,7 @@ const IndianHandicraftsExporterBlog = () => {
             <p className="mt-5">Having clear objectives helps identify the right supplier instead of choosing based solely on cost.</p>
 
             <h2>Evaluate Product Quality Instead of Price Alone</h2>
-            <p>Price is important, but quality determines customer satisfaction and repeat business. A reliable <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</Link> focuses on:</p>
+            <p>Price is important, but quality determines customer satisfaction and repeat business. A reliable <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/blog/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</Link> focuses on:</p>
             <BulletList items={qualityStandards} />
             <p className="mt-5">Cheaper suppliers may reduce manufacturing costs by compromising on materials, resulting in higher return rates and dissatisfied customers.</p>
             <div className="my-8 rounded-2xl bg-[#eff9f8] p-6"><h3 className="mb-3 text-xl font-bold text-[#183255]">The Trade-off</h3><p className="!mb-1">Lower prices may improve short-term profits.</p><p className="!mb-1">Higher quality creates stronger customer loyalty and long-term growth.</p><p className="!mb-0 font-semibold text-[#183255]">Finding the right balance is essential.</p></div>

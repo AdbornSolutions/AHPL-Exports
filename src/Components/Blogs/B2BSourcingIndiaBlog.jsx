@@ -63,7 +63,7 @@ const BulletList = ({ items }) => (
 const B2BSourcingIndiaBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/b2b-sourcing-in-india-guide-for-international-buyers`
+    const canonicalUrl = `${window.location.origin}/blog/b2b-sourcing-in-india-guide-for-international-buyers`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Learn how B2B sourcing in India works, the advantages it offers, how to find good suppliers, ensure product quality, and how AHPL Exporter helps international buyers source dependable products.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Sourcing Agent from India, B2B sourcing in India, Indian suppliers, Indian manufacturers, Product sourcing from India, India sourcing services, Wholesale suppliers in India, Indian export suppliers' } },

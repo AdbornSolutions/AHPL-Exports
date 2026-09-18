@@ -38,7 +38,7 @@ const BulletList = ({ items }) => (
 const DecorativeItemsExporterBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/how-decorative-items-exporter-ensure-global-quality-standards`
+    const canonicalUrl = `${window.location.origin}/blog/how-decorative-items-exporter-ensure-global-quality-standards`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Decorative Items Exporter' } },
@@ -88,7 +88,7 @@ const DecorativeItemsExporterBlog = () => {
             <h2>Quality Starts with Premium Raw Materials</h2>
             <p>Every great decorative product begins with high-quality materials. Reliable manufacturers carefully select materials that offer durability and visual appeal.</p>
             <BulletList items={materials} />
-            <p className="mt-5">A trusted <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</Link> understands that superior raw materials create products that last longer and perform better in international markets.</p>
+            <p className="mt-5">A trusted <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/blog/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</Link> understands that superior raw materials create products that last longer and perform better in international markets.</p>
 
             <h2>Skilled Craftsmanship Makes Every Product Unique</h2>
             <p>Machines improve efficiency, but skilled artisans add character. Indian craftsmanship has earned worldwide recognition because every handcrafted product reflects attention to detail.</p>
@@ -141,7 +141,7 @@ const DecorativeItemsExporterBlog = () => {
             <h2>Long-Term Relationships Depend on Trust</h2>
             <p>Global buyers rarely look for one-time suppliers. They look for reliable partners. A dependable exporter offers:</p>
             <BulletList items={partnerQualities} />
-            <p className="mt-5">These qualities create lasting business relationships. Buyers can also review our guide to <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/how-to-choose-the-best-indian-handicrafts-exporter">choosing the best Indian handicrafts exporter</Link> before selecting a sourcing partner.</p>
+            <p className="mt-5">These qualities create lasting business relationships. Buyers can also review our guide to <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/blog/how-to-choose-the-best-indian-handicrafts-exporter">choosing the best Indian handicrafts exporter</Link> before selecting a sourcing partner.</p>
 
             <section className="my-14 rounded-3xl bg-[#112f55] p-7 text-white md:p-10">
               <h2 className="!mt-0 !text-white">Why Businesses Trust AHPL Exports</h2>

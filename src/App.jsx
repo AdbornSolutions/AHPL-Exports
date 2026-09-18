@@ -60,12 +60,18 @@ const App = () => (
       <Route path="/product/MultaniMitti" element={<Navigate to="/product/multani-mitti" replace />} />
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
-      <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
-      <Route path="/how-decorative-items-exporter-ensure-global-quality-standards" element={<DecorativeItemsExporterBlog />} />
-      <Route path="/metal-wall-decor-manufacturer" element={<MetalWallDecorManufacturerBlog />} />
-      <Route path="/benefits-of-working-with-indian-merchant-exporter" element={<MerchantExporterBlog />} />
-      <Route path="/b2b-sourcing-in-india-guide-for-international-buyers" element={<B2BSourcingIndiaBlog />} />
+      <Route path="/blog/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
+      <Route path="/blog/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
+      <Route path="/blog/how-decorative-items-exporter-ensure-global-quality-standards" element={<DecorativeItemsExporterBlog />} />
+      <Route path="/blog/metal-wall-decor-manufacturer" element={<MetalWallDecorManufacturerBlog />} />
+      <Route path="/blog/benefits-of-working-with-indian-merchant-exporter" element={<MerchantExporterBlog />} />
+      <Route path="/blog/b2b-sourcing-in-india-guide-for-international-buyers" element={<B2BSourcingIndiaBlog />} />
+      <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<Navigate to="/blog/home-decor-manufacturer-india-stand-out-global-markets" replace />} />
+      <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<Navigate to="/blog/how-to-choose-the-best-indian-handicrafts-exporter" replace />} />
+      <Route path="/how-decorative-items-exporter-ensure-global-quality-standards" element={<Navigate to="/blog/how-decorative-items-exporter-ensure-global-quality-standards" replace />} />
+      <Route path="/metal-wall-decor-manufacturer" element={<Navigate to="/blog/metal-wall-decor-manufacturer" replace />} />
+      <Route path="/benefits-of-working-with-indian-merchant-exporter" element={<Navigate to="/blog/benefits-of-working-with-indian-merchant-exporter" replace />} />
+      <Route path="/b2b-sourcing-in-india-guide-for-international-buyers" element={<Navigate to="/blog/b2b-sourcing-in-india-guide-for-international-buyers" replace />} />
       <Route path="/contact-us" element={<Contactus />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

@@ -42,7 +42,7 @@ const InternalLink = ({ children, to }) => (
 const MetalWallDecorManufacturerBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/metal-wall-decor-manufacturer`
+    const canonicalUrl = `${window.location.origin}/blog/metal-wall-decor-manufacturer`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Metal Wall Decor Manufacturer' } },
@@ -89,7 +89,7 @@ const MetalWallDecorManufacturerBlog = () => {
 
             <h2>Why India Has Become a Preferred Manufacturing Hub</h2>
             <p>India has earned global recognition for premium handcrafted decor. Skilled artisans, modern facilities, and competitive pricing make it a preferred sourcing destination for international buyers.</p>
-            <p>An experienced <InternalLink to="/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</InternalLink> combines traditional craftsmanship with modern production technology to create products that appeal to global markets.</p>
+            <p>An experienced <InternalLink to="/blog/home-decor-manufacturer-india-stand-out-global-markets">Home Decor Manufacturer India</InternalLink> combines traditional craftsmanship with modern production technology to create products that appeal to global markets.</p>
 
             <h2>Define Your Business Needs Before Selecting a Manufacturer</h2>
             <p>Every business has different sourcing requirements. Before approaching manufacturers, clearly identify what you need.</p>
@@ -118,7 +118,7 @@ const MetalWallDecorManufacturerBlog = () => {
             <h2>Export Experience Matters as Much as Manufacturing</h2>
             <p>Producing premium products is only one part of international trade. An experienced Decorative Items Exporter understands:</p>
             <BulletList items={exportExperience} />
-            <p className="mt-5">These services make importing easier for buyers across Africa. Learn how an experienced <InternalLink to="/how-decorative-items-exporter-ensure-global-quality-standards">Decorative Items Exporter maintains global quality standards</InternalLink> throughout manufacturing and shipment.</p>
+            <p className="mt-5">These services make importing easier for buyers across Africa. Learn how an experienced <InternalLink to="/blog/how-decorative-items-exporter-ensure-global-quality-standards">Decorative Items Exporter maintains global quality standards</InternalLink> throughout manufacturing and shipment.</p>
 
             <h2>Evaluate Packaging Before Placing Bulk Orders</h2>
             <p>Even premium products can lose value if they arrive damaged. Professional exporters invest in secure packaging to protect every shipment.</p>

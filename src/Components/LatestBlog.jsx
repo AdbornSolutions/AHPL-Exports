@@ -13,19 +13,19 @@ const LatestBlog = () => {
       title: "What Makes a Home Decor Manufacturer India Stand Out in Global Markets?",
       short: "Discover why global buyers choose Indian home décor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.",
       image: homeDecorBlog,
-      to: "/home-decor-manufacturer-india-stand-out-global-markets",
+      to: "/blog/home-decor-manufacturer-india-stand-out-global-markets",
     },
     {
       title: "How to Choose the Best Indian Handicrafts Exporter for Your Business",
       short: "Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.",
       image: handicraftsExporterBlog,
-      to: "/how-to-choose-the-best-indian-handicrafts-exporter",
+      to: "/blog/how-to-choose-the-best-indian-handicrafts-exporter",
     },
     {
       title: "How Decorative Items Exporter Companies Ensure Global Quality Standards",
       short: "Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.",
       image: decorativeItemsExporterBlog,
-      to: "/how-decorative-items-exporter-ensure-global-quality-standards",
+      to: "/blog/how-decorative-items-exporter-ensure-global-quality-standards",
     },
   ];
   return (

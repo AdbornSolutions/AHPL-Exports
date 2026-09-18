@@ -33,7 +33,7 @@ const BulletList = ({ items }) => (
 const HomeDecorManufacturerBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/home-decor-manufacturer-india-stand-out-global-markets`
+    const canonicalUrl = `${window.location.origin}/blog/home-decor-manufacturer-india-stand-out-global-markets`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover what makes a Home Decor Manufacturer India a preferred choice for global buyers. Learn how AHPL Exports delivers premium handcrafted décor, private label solutions, and wholesale home décor products worldwide.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Home Decor Manufacturer India' } },
@@ -92,7 +92,7 @@ const HomeDecorManufacturerBlog = () => {
 
             <h2>Why India Has Become a Global Home Décor Hub</h2>
             <p>India has emerged as one of the world’s leading destinations for premium home décor manufacturing. Today, international buyers, retailers, wholesalers, hotels, and interior designers increasingly rely on an experienced <strong >Home Decor Manufacturer India</strong> for unique collections that combine tradition with contemporary aesthetics.</p>
-            <p>From handcrafted sculptures and decorative accessories to premium wall art and elegant tabletop décor, Indian manufacturers serve buyers across Europe, the Middle East, Africa, North America, and Asia. This growing demand has positioned India as a trusted <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/how-to-choose-the-best-indian-handicrafts-exporter">Indian Handicrafts Exporter</Link>.</p>
+            <p>From handcrafted sculptures and decorative accessories to premium wall art and elegant tabletop décor, Indian manufacturers serve buyers across Europe, the Middle East, Africa, North America, and Asia. This growing demand has positioned India as a trusted <Link className="font-semibold text-[#183255] underline decoration-[#30c8bb] underline-offset-4 transition hover:text-[#30c8bb]" to="/blog/how-to-choose-the-best-indian-handicrafts-exporter">Indian Handicrafts Exporter</Link>.</p>
 
             <h2>Craftsmanship That Machines Cannot Replace</h2>
             <p>Generations of artisans have perfected techniques in metalwork, woodcraft, resin art, and decorative finishing. Unlike mass-produced products, handcrafted décor pieces offer uniqueness that customers genuinely appreciate. Every elegant tabletop accent and intricate metal wall décor reflects skill, creativity, and precision.</p>
