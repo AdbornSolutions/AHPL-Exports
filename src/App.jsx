@@ -22,6 +22,8 @@ import DecorativeItemsExporterBlog from "./Components/Blogs/DecorativeItemsExpor
 import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorManufacturerBlog";
 import MerchantExporterBlog from "./Components/Blogs/MerchantExporterBlog";
 import B2BSourcingIndiaBlog from "./Components/Blogs/B2BSourcingIndiaBlog";
+import BestWoodenDecorSupplierBlog from "./Components/Blogs/BestWoodenDecorSupplierBlog";
+import PolyresinDecorSupplierBlog from "./Components/Blogs/PolyresinDecorSupplierBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import SpaceProducts from "./pages/SpaceProducts";
@@ -66,6 +68,8 @@ const App = () => (
       <Route path="/blog/metal-wall-decor-manufacturer" element={<MetalWallDecorManufacturerBlog />} />
       <Route path="/blog/benefits-of-working-with-indian-merchant-exporter" element={<MerchantExporterBlog />} />
       <Route path="/blog/b2b-sourcing-in-india-guide-for-international-buyers" element={<B2BSourcingIndiaBlog />} />
+      <Route path="/blog/best-wooden-decor-supplier-global-wholesale-buyers" element={<BestWoodenDecorSupplierBlog />} />
+      <Route path="/blog/leading-polyresin-decor-supplier-global-importers-wholesalers" element={<PolyresinDecorSupplierBlog />} />
       <Route path="/home-decor-manufacturer-india-stand-out-global-markets" element={<Navigate to="/blog/home-decor-manufacturer-india-stand-out-global-markets" replace />} />
       <Route path="/how-to-choose-the-best-indian-handicrafts-exporter" element={<Navigate to="/blog/how-to-choose-the-best-indian-handicrafts-exporter" replace />} />
       <Route path="/how-decorative-items-exporter-ensure-global-quality-standards" element={<Navigate to="/blog/how-decorative-items-exporter-ensure-global-quality-standards" replace />} />

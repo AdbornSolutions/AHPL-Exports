@@ -15,6 +15,8 @@ import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.png'
 import metalWallDecorBlogImage from '../assets/Blogs/B4-1.jpeg'
 import merchantExporterBlogImage from '../assets/Blogs/B5-1.png'
 import b2bSourcingBlogImage from '../assets/Blogs/B6-1.png'
+import woodenDecorSupplierBlogImage from '../assets/Blogs/B7-1.png'
+import polyresinDecorSupplierBlogImage from '../assets/Blogs/B8-1.png'
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -22,6 +24,18 @@ const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
   const posts = [
+    {
+      title: 'Leading Polyresin Decor Supplier for Global Importers and Wholesalers',
+      description: 'Discover why AHPL Exports is a trusted polyresin decor supplier offering export-ready quality, custom designs, and multi-category sourcing for global buyers.',
+      image: polyresinDecorSupplierBlogImage,
+      to: '/blog/leading-polyresin-decor-supplier-global-importers-wholesalers',
+    },
+    {
+      title: 'Best Wooden Decor Supplier for Global Wholesale Buyers: Why AHPL Exports Should Be Your First Call',
+      description: 'Looking for the best wooden decor supplier? AHPL Exports offers premium wooden and metal decor, metal table decor, and custom manufacturing for global B2B buyers.',
+      image: woodenDecorSupplierBlogImage,
+      to: '/blog/best-wooden-decor-supplier-global-wholesale-buyers',
+    },
     {
       title: 'B2B Sourcing in India: A Guide for International Buyers',
       description: 'Learn how B2B sourcing in India works, the advantages it offers, how to find good suppliers, ensure product quality, and how AHPL Exporter helps international buyers source dependable products.',
