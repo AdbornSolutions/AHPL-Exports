@@ -33,11 +33,9 @@ const BulletList = ({ items }) => (
 const HomeDecorManufacturerBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/home-decor-manufacturer-india-stand-out-global-markets`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover what makes a Home Decor Manufacturer India a preferred choice for global buyers. Learn how AHPL Exports delivers premium handcrafted décor, private label solutions, and wholesale home décor products worldwide.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Home Decor Manufacturer India' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
 
     const managedElements = metadata.map(({ selector, tag, attributes }) => {

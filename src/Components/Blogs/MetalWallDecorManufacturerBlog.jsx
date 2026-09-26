@@ -42,11 +42,9 @@ const InternalLink = ({ children, to }) => (
 const MetalWallDecorManufacturerBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/metal-wall-decor-manufacturer`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Metal Wall Decor Manufacturer' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
     const managedElements = metadata.map(({ selector, tag, attributes }) => {
       let element = document.head.querySelector(selector)

@@ -95,11 +95,9 @@ const DetailCards = ({ items }) => (
 const PolyresinDecorSupplierBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/leading-polyresin-decor-supplier-global-importers-wholesalers`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Choose a reliable polyresin decor supplier for consistent quality, export-ready compliance, custom designs, and multi-category sourcing for global wholesale orders.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'polyresin decor supplier, metal decor supplier, metal table decor supplier, metal decor wholesale, wooden decor supplier' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
     const managedElements = metadata.map(({ selector, tag, attributes }) => {
       let element = document.head.querySelector(selector)

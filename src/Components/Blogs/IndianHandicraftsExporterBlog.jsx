@@ -41,11 +41,9 @@ const BulletList = ({ items }) => (
 const IndianHandicraftsExporterBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/how-to-choose-the-best-indian-handicrafts-exporter`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Looking for an Indian Handicrafts Exporter? Discover key factors like quality, manufacturing, export experience, and trusted sourcing for global buyers.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Indian Handicrafts Exporter' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
     const managedElements = metadata.map(({ selector, tag, attributes }) => {
       let element = document.head.querySelector(selector)

@@ -32,9 +32,11 @@ import Makhana from "./pages/products/Makhana";
 import DehydratedPowders from "./pages/products/DehydratedPowders";
 import BiomassPallette from "./pages/products/BiomassPallette";
 import MultaniMitti from "./pages/products/MultaniMitti";
+import RouteSeo from "./Components/Common/RouteSeo";
 const App = () => (
   <div className="overflow-hidden bg-white text-[#162b50] antialiased">
     <ScrollToTop />
+    <RouteSeo />
     <Navbar />
     <WhatsAppButton />
     <Routes>

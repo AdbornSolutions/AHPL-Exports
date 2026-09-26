@@ -106,11 +106,9 @@ const DetailCards = ({ items }) => (
 const BestWoodenDecorSupplierBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/best-wooden-decor-supplier-global-wholesale-buyers`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Looking for the best wooden decor supplier for your retail or hospitality business? AHPL Exports offers premium wooden and metal decor, metal table decor, and custom home decor manufacturing for global B2B buyers.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'best wooden decor supplier, metal decor supplier, metal table decor supplier, wooden decor wholesale, global wholesale buyers' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
     const managedElements = metadata.map(({ selector, tag, attributes }) => {
       let element = document.head.querySelector(selector)

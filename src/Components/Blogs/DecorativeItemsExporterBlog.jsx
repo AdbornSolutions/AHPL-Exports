@@ -38,11 +38,9 @@ const BulletList = ({ items }) => (
 const DecorativeItemsExporterBlog = () => {
   useEffect(() => {
     const previousTitle = document.title
-    const canonicalUrl = `${window.location.origin}/blog/how-decorative-items-exporter-ensure-global-quality-standards`
     const metadata = [
       { selector: 'meta[name="description"]', tag: 'meta', attributes: { name: 'description', content: 'Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.' } },
       { selector: 'meta[name="keywords"]', tag: 'meta', attributes: { name: 'keywords', content: 'Decorative Items Exporter' } },
-      { selector: 'link[rel="canonical"]', tag: 'link', attributes: { rel: 'canonical', href: canonicalUrl } },
     ]
     const managedElements = metadata.map(({ selector, tag, attributes }) => {
       let element = document.head.querySelector(selector)
