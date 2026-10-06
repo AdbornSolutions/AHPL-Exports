@@ -1,3 +1,7 @@
+import industrialBlog from '../data/industrialVBeltBlog.json'
+import industrialBlogImage from '../assets/Blogs/B10-1.png'
+import luxuryBlog from '../data/luxuryHomeDecorBlog.json'
+import luxuryBlogImage from '../assets/Blogs/B9-1.png'
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
@@ -24,6 +28,8 @@ const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
   const posts = [
+    { title: industrialBlog.title, description: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
+    { title: luxuryBlog.title, description: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
     {
       title: 'Leading Polyresin Decor Supplier for Global Importers and Wholesalers',
       description: 'Discover why AHPL Exports is a trusted polyresin decor supplier offering export-ready quality, custom designs, and multi-category sourcing for global buyers.',

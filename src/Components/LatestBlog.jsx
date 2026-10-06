@@ -1,7 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import homeDecorBlog from "../assets/Blogs/B1-1.png";
-import handicraftsExporterBlog from "../assets/Blogs/B2-1.png";
-import decorativeItemsExporterBlog from "../assets/Blogs/B3-1.png";
+import industrialBlog from "../data/industrialVBeltBlog.json";
+import industrialBlogImage from "../assets/Blogs/B10-1.png";
+import luxuryBlog from "../data/luxuryHomeDecorBlog.json";
+import luxuryBlogImage from "../assets/Blogs/B9-1.png";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -15,18 +17,8 @@ const LatestBlog = () => {
       image: homeDecorBlog,
       to: "/blog/home-decor-manufacturer-india-stand-out-global-markets",
     },
-    {
-      title: "How to Choose the Best Indian Handicrafts Exporter for Your Business",
-      short: "Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.",
-      image: handicraftsExporterBlog,
-      to: "/blog/how-to-choose-the-best-indian-handicrafts-exporter",
-    },
-    {
-      title: "How Decorative Items Exporter Companies Ensure Global Quality Standards",
-      short: "Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.",
-      image: decorativeItemsExporterBlog,
-      to: "/blog/how-decorative-items-exporter-ensure-global-quality-standards",
-    },
+    { title: industrialBlog.title, short: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
+    { title: luxuryBlog.title, short: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
   ];
   return (
   <section id="blog" className={`${sectionClass} text-center`}>

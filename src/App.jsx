@@ -23,6 +23,8 @@ import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorMan
 import MerchantExporterBlog from "./Components/Blogs/MerchantExporterBlog";
 import B2BSourcingIndiaBlog from "./Components/Blogs/B2BSourcingIndiaBlog";
 import BestWoodenDecorSupplierBlog from "./Components/Blogs/BestWoodenDecorSupplierBlog";
+import IndustrialVBeltExporterBlog from "./Components/Blogs/IndustrialVBeltExporterBlog";
+import LuxuryHomeDecorWholesaleBlog from "./Components/Blogs/LuxuryHomeDecorWholesaleBlog";
 import PolyresinDecorSupplierBlog from "./Components/Blogs/PolyresinDecorSupplierBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
@@ -63,6 +65,8 @@ const App = () => (
       <Route path="/product/multani-mitti" element={<MultaniMitti />} />
       <Route path="/product/MultaniMitti" element={<Navigate to="/product/multani-mitti" replace />} />
       <Route path="/product/:categorySlug/:productSlug" element={<ProductDetail />} />
+      <Route path="/blog/luxury-home-decor-wholesale-exporter" element={<LuxuryHomeDecorWholesaleBlog />} />
+      <Route path="/blog/industrial-v-belt-exporter" element={<IndustrialVBeltExporterBlog />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
       <Route path="/blog/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />
