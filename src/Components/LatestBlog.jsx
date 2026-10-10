@@ -1,5 +1,6 @@
+import cottonBlog from '../data/cottonToteBagBlog.json';
+import cottonBlogImage from '../assets/Blogs/B11-1.jpeg';
 import { ArrowRight } from "lucide-react";
-import homeDecorBlog from "../assets/Blogs/B1-1.png";
 import industrialBlog from "../data/industrialVBeltBlog.json";
 import industrialBlogImage from "../assets/Blogs/B10-1.png";
 import luxuryBlog from "../data/luxuryHomeDecorBlog.json";
@@ -11,12 +12,7 @@ import { Link } from "react-router-dom";
 const LatestBlog = () => {
   const { t } = useTranslation(["blogs", "common"]);
   const posts = [
-    {
-      title: "What Makes a Home Decor Manufacturer India Stand Out in Global Markets?",
-      short: "Discover why global buyers choose Indian home décor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.",
-      image: homeDecorBlog,
-      to: "/blog/home-decor-manufacturer-india-stand-out-global-markets",
-    },
+    { title: cottonBlog.title, short: cottonBlog.description, image: cottonBlogImage, to: cottonBlog.path },
     { title: industrialBlog.title, short: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
     { title: luxuryBlog.title, short: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
   ];
