@@ -1,10 +1,10 @@
+import biomassBlog from '../data/biomassBlog.json';
+import biomassBlogImage from '../assets/Blogs/B13-1.jpeg';
+import makhanaBlog from '../data/makhanaBlog.json';
+import makhanaBlogImage from '../assets/Blogs/B12-1.jpeg';
 import cottonBlog from '../data/cottonToteBagBlog.json';
 import cottonBlogImage from '../assets/Blogs/B11-1.jpeg';
 import { ArrowRight } from "lucide-react";
-import industrialBlog from "../data/industrialVBeltBlog.json";
-import industrialBlogImage from "../assets/Blogs/B10-1.png";
-import luxuryBlog from "../data/luxuryHomeDecorBlog.json";
-import luxuryBlogImage from "../assets/Blogs/B9-1.png";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 const LatestBlog = () => {
   const { t } = useTranslation(["blogs", "common"]);
   const posts = [
+    { title: biomassBlog.title, short: biomassBlog.description, image: biomassBlogImage, to: biomassBlog.path },
+    { title: makhanaBlog.title, short: makhanaBlog.description, image: makhanaBlogImage, to: makhanaBlog.path },
     { title: cottonBlog.title, short: cottonBlog.description, image: cottonBlogImage, to: cottonBlog.path },
-    { title: industrialBlog.title, short: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
-    { title: luxuryBlog.title, short: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
   ];
   return (
   <section id="blog" className={`${sectionClass} text-center`}>

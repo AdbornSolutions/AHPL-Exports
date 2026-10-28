@@ -1,3 +1,5 @@
+import BiomassExporterBlog from './Components/Blogs/BiomassExporterBlog';
+import MakhanaExporterBlog from './Components/Blogs/MakhanaExporterBlog';
 import CottonToteBagExporterBlog from './Components/Blogs/CottonToteBagExporterBlog';
 import Navbar from "./Components/Common/Navbar";
 import ScrollToTop from "./Components/Common/ScrollToTop";
@@ -69,6 +71,8 @@ const App = () => (
       <Route path="/blog/luxury-home-decor-wholesale-exporter" element={<LuxuryHomeDecorWholesaleBlog />} />
       <Route path="/blog/industrial-v-belt-exporter" element={<IndustrialVBeltExporterBlog />} />
       <Route path="/blog/cotton-tote-bag-exporter-india" element={<CottonToteBagExporterBlog />} />
+      <Route path="/blog/makhana-exporter-from-india" element={<MakhanaExporterBlog />} />
+      <Route path="/blog/biomass-exporter-from-india" element={<BiomassExporterBlog />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/home-decor-manufacturer-india-stand-out-global-markets" element={<HomeDecorManufacturerBlog />} />
       <Route path="/blog/how-to-choose-the-best-indian-handicrafts-exporter" element={<IndianHandicraftsExporterBlog />} />

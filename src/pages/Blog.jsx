@@ -1,3 +1,7 @@
+import biomassBlog from '../data/biomassBlog.json';
+import biomassBlogImage from '../assets/Blogs/B13-1.jpeg';
+import makhanaBlog from '../data/makhanaBlog.json';
+import makhanaBlogImage from '../assets/Blogs/B12-1.jpeg';
 import cottonBlog from '../data/cottonToteBagBlog.json'
 import cottonBlogImage from '../assets/Blogs/B11-1.jpeg'
 import industrialBlog from '../data/industrialVBeltBlog.json'
@@ -30,6 +34,8 @@ const Blog = () => {
   const { t } = useTranslation(['blogs', 'common'])
   const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
   const posts = [
+    { title: biomassBlog.title, description: biomassBlog.description, image: biomassBlogImage, to: biomassBlog.path },
+    { title: makhanaBlog.title, description: makhanaBlog.description, image: makhanaBlogImage, to: makhanaBlog.path },
     { title: cottonBlog.title, description: cottonBlog.description, image: cottonBlogImage, to: cottonBlog.path },
     { title: industrialBlog.title, description: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
     { title: luxuryBlog.title, description: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
