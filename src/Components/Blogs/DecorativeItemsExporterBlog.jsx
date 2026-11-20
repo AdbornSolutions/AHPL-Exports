@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Footer from '../Common/Footer'
-import blogHero from '../../assets/Blogs/B3-1.png'
-import blogFeature from '../../assets/Blogs/B3-2.png'
+import blogHero from '../../assets/Blogs/B3-1.webp'
+import blogFeature from '../../assets/Blogs/B3-2.webp'
 import { containerClass } from '../../utils/tailwindClasses'
 
 const materials = ['Premium metals', 'Resin', 'Ceramic', 'Wood', 'Glass', 'Sustainable materials']

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
-import productOne from "../assets/product1.png";
-import productTwo from "../assets/product2.png";
-import productThree from "../assets/product3.png";
-import productFour from "../assets/product4.png";
-import product5 from "../assets/product5.png";
-import product6 from "../assets/products-images/Lifestyle & Utility/Subtract (10).png";
-import product7 from "../assets/product7.png";
+import productOne from "../assets/product1.webp";
+import productTwo from "../assets/product2.webp";
+import productThree from "../assets/product3.webp";
+import productFour from "../assets/product4.webp";
+import product5 from "../assets/product5.webp";
+import product6 from "../assets/products-images/Lifestyle & Utility/Subtract (10).webp";
+import product7 from "../assets/product7.webp";
 
 import { containerClass, darkEyebrowClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";

@@ -6,19 +6,19 @@ import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDial
 import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import brochurePdf from "../../assets/PDF/lifestyle.pdf";
-import heroImage from "../../assets/products-images/Lifestyle & Utility/Rectangle 20 (5).png";
-import aboutImage from "../../assets/products-images/Lifestyle & Utility/Subtract (10).png";
-import whyChooseImage from "../../assets/products-images/Lifestyle & Utility/whyChoose.png";
-import rangeOne from "../../assets/products-images/Lifestyle & Utility/1.png";
-import rangeTwo from "../../assets/products-images/Lifestyle & Utility/2.png";
-import rangeThree from "../../assets/products-images/Lifestyle & Utility/3.png";
-import rangeFour from "../../assets/products-images/Lifestyle & Utility/4.png";
-import rangeFive from "../../assets/products-images/Lifestyle & Utility/5.png";
-import rangeSix from "../../assets/products-images/Lifestyle & Utility/6.png";
-import rangeSeven from "../../assets/products-images/Lifestyle & Utility/7.png";
-import rangeEight from "../../assets/products-images/Lifestyle & Utility/8.png";
-import rangeNine from "../../assets/products-images/Lifestyle & Utility/9.png";
-import rangeTen from "../../assets/products-images/Lifestyle & Utility/10.png";
+import heroImage from "../../assets/products-images/Lifestyle & Utility/Rectangle 20 (5).webp";
+import aboutImage from "../../assets/products-images/Lifestyle & Utility/Subtract (10).webp";
+import whyChooseImage from "../../assets/products-images/Lifestyle & Utility/whyChoose.webp";
+import rangeOne from "../../assets/products-images/Lifestyle & Utility/1.webp";
+import rangeTwo from "../../assets/products-images/Lifestyle & Utility/2.webp";
+import rangeThree from "../../assets/products-images/Lifestyle & Utility/3.webp";
+import rangeFour from "../../assets/products-images/Lifestyle & Utility/4.webp";
+import rangeFive from "../../assets/products-images/Lifestyle & Utility/5.webp";
+import rangeSix from "../../assets/products-images/Lifestyle & Utility/6.webp";
+import rangeSeven from "../../assets/products-images/Lifestyle & Utility/7.webp";
+import rangeEight from "../../assets/products-images/Lifestyle & Utility/8.webp";
+import rangeNine from "../../assets/products-images/Lifestyle & Utility/9.webp";
+import rangeTen from "../../assets/products-images/Lifestyle & Utility/10.webp";
 
 const productRange = [
   { name: "Dahila Pouch meadow", image: rangeOne },

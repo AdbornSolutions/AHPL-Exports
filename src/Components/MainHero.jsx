@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import heroImage from "../assets/herobanner.png";
-import mobileHeroImage from "../assets/mobileherobg.png";
+import heroImage from "../assets/herobanner.webp";
+import mobileHeroImage from "../assets/mobileherobg.webp";
 import { buttonIconClass, containerClass, pillButtonClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 

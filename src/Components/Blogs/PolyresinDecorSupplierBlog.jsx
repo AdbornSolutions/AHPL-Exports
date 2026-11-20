@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { CheckCircle2 } from 'lucide-react'
 import Footer from '../Common/Footer'
-import blogHero from '../../assets/Blogs/B8-1.png'
-import blogFeature from '../../assets/Blogs/B8-2.png'
+import blogHero from '../../assets/Blogs/B8-1.webp'
+import blogFeature from '../../assets/Blogs/B8-2.webp'
 import { containerClass } from '../../utils/tailwindClasses'
 
 const polyresinAdvantages = [

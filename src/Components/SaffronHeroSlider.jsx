@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import saffronHeroOne from "../assets/image.png";
-import saffronHeroTwo from "../assets/image2.png";
-import saffronHeroThree from "../assets/image3.png";
-import saffronHeroFour from "../assets/image4.png";
+import saffronHeroOne from "../assets/image.webp";
+import saffronHeroTwo from "../assets/image2.webp";
+import saffronHeroThree from "../assets/image3.webp";
+import saffronHeroFour from "../assets/image4.webp";
 
 const banners = [
   saffronHeroOne,

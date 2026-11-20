@@ -3,9 +3,9 @@ import Footer from "../../Components/Common/Footer";
 import { containerClass } from "../../utils/tailwindClasses";
 import ProductRangeGrid from "../../Components/Products/ProductRangeGrid";
 import { makhanaProducts } from "../../data/otherProductRanges";
-import heroImage from "../../assets/products-images/Makhana/Hero.png";
-import aboutImage from "../../assets/products-images/Makhana/about.png";
-import whyChooseImage from "../../assets/products-images/Makhana/whychoose.png";
+import heroImage from "../../assets/products-images/Makhana/Hero.webp";
+import aboutImage from "../../assets/products-images/Makhana/about.webp";
+import whyChooseImage from "../../assets/products-images/Makhana/whychoose.webp";
 
 const reasons = [
   "Premium Quality Selection",

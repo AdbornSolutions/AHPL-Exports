@@ -6,19 +6,19 @@ import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
 import brochurePdf from "../../assets/PDF/polyresin.pdf";
-import heroImage from "../../assets/products-images/Poyresin Decor/hero.png";
-import aboutImage from "../../assets/products-images/Poyresin Decor/about.png";
-import whyChooseImage from "../../assets/products-images/Poyresin Decor/whychoose.png";
-import rangeOne from "../../assets/products-images/Poyresin Decor/1.jpg";
-import rangeTwo from "../../assets/products-images/Poyresin Decor/2.png";
-import rangeThree from "../../assets/products-images/Poyresin Decor/3.jpg";
-import rangeFour from "../../assets/products-images/Poyresin Decor/4.jpg";
-import rangeFive from "../../assets/products-images/Poyresin Decor/5.jpg";
-import rangeSix from "../../assets/products-images/Poyresin Decor/6.png";
-import rangeSeven from "../../assets/products-images/Poyresin Decor/7.png";
-import rangeEight from "../../assets/products-images/Poyresin Decor/8.png";
-import rangeNine from "../../assets/products-images/Poyresin Decor/9.png";
-import rangeTen from "../../assets/products-images/Poyresin Decor/10.png";
+import heroImage from "../../assets/products-images/Poyresin Decor/hero.webp";
+import aboutImage from "../../assets/products-images/Poyresin Decor/about.webp";
+import whyChooseImage from "../../assets/products-images/Poyresin Decor/whychoose.webp";
+import rangeOne from "../../assets/products-images/Poyresin Decor/1.webp";
+import rangeTwo from "../../assets/products-images/Poyresin Decor/2.webp";
+import rangeThree from "../../assets/products-images/Poyresin Decor/3.webp";
+import rangeFour from "../../assets/products-images/Poyresin Decor/4.webp";
+import rangeFive from "../../assets/products-images/Poyresin Decor/5.webp";
+import rangeSix from "../../assets/products-images/Poyresin Decor/6.webp";
+import rangeSeven from "../../assets/products-images/Poyresin Decor/7.webp";
+import rangeEight from "../../assets/products-images/Poyresin Decor/8.webp";
+import rangeNine from "../../assets/products-images/Poyresin Decor/9.webp";
+import rangeTen from "../../assets/products-images/Poyresin Decor/10.webp";
 
 const productRange = [
   { name: "Rudra-Ansh (Black)", image: rangeOne },

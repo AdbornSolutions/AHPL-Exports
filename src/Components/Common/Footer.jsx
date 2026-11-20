@@ -1,8 +1,8 @@
 import { Mail, MapPin, Phone, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import footerBg from "../../assets/footer.png";
-import footerLogo from "../../assets/footerlogo.png";
+import footerBg from "../../assets/footer.webp";
+import footerLogo from "../../assets/footerlogo.webp";
 import { containerClass } from "../../utils/tailwindClasses";
 
 const footerLinkClass =

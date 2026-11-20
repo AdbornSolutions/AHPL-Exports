@@ -1,6 +1,6 @@
 import { BadgeCheck } from "lucide-react";
-import footerBg from "../assets/footer.png";
-import experience from "../assets/Group 9.png";
+import footerBg from "../assets/footer.webp";
+import experience from "../assets/Group 9.webp";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 

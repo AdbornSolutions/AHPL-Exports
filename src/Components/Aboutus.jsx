@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import ship from "../assets/Subtract.png";
-import truck from "../assets/Subtract (1).png";
+import ship from "../assets/Subtract.webp";
+import truck from "../assets/Subtract (1).webp";
 import {
   buttonIconClass,
   containerClass,

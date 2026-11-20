@@ -1,4 +1,4 @@
-import whatsappIcon from "../../assets/icon/watsapp.png";
+import whatsappIcon from "../../assets/icon/watsapp.webp";
 
 const WhatsAppButton = () => (
   <a

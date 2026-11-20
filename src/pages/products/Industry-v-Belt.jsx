@@ -3,10 +3,10 @@ import { CheckCircle2, ChevronDown, CircleCheck, ShieldCheck } from "lucide-reac
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Common/Footer";
 import { containerClass } from "../../utils/tailwindClasses";
-import heroImage from "../../assets/products-images/Industry-v-belt/hero.png";
-import aboutImage from "../../assets/products-images/Industry-v-belt/about.png";
-import whyChooseImage from "../../assets/products-images/Industry-v-belt/whychoose.png";
-import craftedBg from "../../assets/products-images/Industry-v-belt/craftedbg.png";
+import heroImage from "../../assets/products-images/Industry-v-belt/hero.webp";
+import aboutImage from "../../assets/products-images/Industry-v-belt/about.webp";
+import whyChooseImage from "../../assets/products-images/Industry-v-belt/whychoose.webp";
+import craftedBg from "../../assets/products-images/Industry-v-belt/craftedbg.webp";
 import { useTranslation } from "react-i18next";
 
 const IndustryVBelt = () => {

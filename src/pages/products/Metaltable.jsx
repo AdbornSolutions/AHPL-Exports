@@ -6,19 +6,19 @@ import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
 import brochurePdf from "../../assets/PDF/metal-table.pdf";
-import heroImage from "../../assets/products-images/Metal-table/hero.png";
-import aboutImage from "../../assets/products-images/Metal-table/about.png";
-import whyChooseImage from "../../assets/products-images/Metal-table/whychoose.png";
-import rangeOne from "../../assets/products-images/Metal-table/1.png";
-import rangeTwo from "../../assets/products-images/Metal-table/2.png";
-import rangeThree from "../../assets/products-images/Metal-table/3.png";
-import rangeFour from "../../assets/products-images/Metal-table/4.png";
-import rangeFive from "../../assets/products-images/Metal-table/5.png";
-import rangeSix from "../../assets/products-images/Metal-table/6.png";
-import rangeSeven from "../../assets/products-images/Metal-table/7.png";
-import rangeEight from "../../assets/products-images/Metal-table/8.png";
-import rangeNine from "../../assets/products-images/Metal-table/9.png";
-import rangeTen from "../../assets/products-images/Metal-table/10.png";
+import heroImage from "../../assets/products-images/Metal-table/hero.webp";
+import aboutImage from "../../assets/products-images/Metal-table/about.webp";
+import whyChooseImage from "../../assets/products-images/Metal-table/whychoose.webp";
+import rangeOne from "../../assets/products-images/Metal-table/1.webp";
+import rangeTwo from "../../assets/products-images/Metal-table/2.webp";
+import rangeThree from "../../assets/products-images/Metal-table/3.webp";
+import rangeFour from "../../assets/products-images/Metal-table/4.webp";
+import rangeFive from "../../assets/products-images/Metal-table/5.webp";
+import rangeSix from "../../assets/products-images/Metal-table/6.webp";
+import rangeSeven from "../../assets/products-images/Metal-table/7.webp";
+import rangeEight from "../../assets/products-images/Metal-table/8.webp";
+import rangeNine from "../../assets/products-images/Metal-table/9.webp";
+import rangeTen from "../../assets/products-images/Metal-table/10.webp";
 
 const productRange = [
   { name: "Mangal- Jyoti(Black)", image: rangeOne },

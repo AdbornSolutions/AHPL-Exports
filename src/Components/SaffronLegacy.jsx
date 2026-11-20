@@ -1,6 +1,5 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
-import craftedHandImage from "../assets/crafted_hand_image.png";
+import craftedHandImage from "../assets/crafted_hand_image.webp";
 
 const SaffronLegacy = () => {
   const { t } = useTranslation("common");

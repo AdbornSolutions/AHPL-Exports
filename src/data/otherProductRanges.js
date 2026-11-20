@@ -1,10 +1,10 @@
 const productImages = import.meta.glob(
-  "../assets/products-images/ahpl others product image/**/*.png",
+  "../assets/products-images/ahpl others product image/**/*.webp",
   { eager: true, import: "default" },
 );
 
 const image = (folder, fileName) => {
-  const assetPath = `../assets/products-images/ahpl others product image/${folder}/${fileName}.png`;
+  const assetPath = `../assets/products-images/ahpl others product image/${folder}/${fileName}.webp`;
 
   if (!productImages[assetPath]) {
     throw new Error(`Missing product image: ${assetPath}`);

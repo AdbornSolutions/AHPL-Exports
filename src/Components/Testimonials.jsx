@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { containerClass } from "../utils/tailwindClasses";
-import client1 from "../assets/testimonials/indian-client-1.png";
-import client2 from "../assets/testimonials/indian-client-2.png";
-import client3 from "../assets/testimonials/indian-client-3.png";
-import client4 from "../assets/testimonials/indian-client-4.png";
-import client5 from "../assets/testimonials/indian-client-5.png";
-import client6 from "../assets/testimonials/indian-client-6.png";
-import client7 from "../assets/testimonials/indian-client-7.png";
-import client8 from "../assets/testimonials/indian-client-8.png";
+import client1 from "../assets/testimonials/indian-client-1.webp";
+import client2 from "../assets/testimonials/indian-client-2.webp";
+import client3 from "../assets/testimonials/indian-client-3.webp";
+import client4 from "../assets/testimonials/indian-client-4.webp";
+import client5 from "../assets/testimonials/indian-client-5.webp";
+import client6 from "../assets/testimonials/indian-client-6.webp";
+import client7 from "../assets/testimonials/indian-client-7.webp";
+import client8 from "../assets/testimonials/indian-client-8.webp";
 import { useTranslation } from "react-i18next";
 const clientImages = [client1, client2, client3, client4, client5, client6, client7, client8];
 

@@ -3,9 +3,9 @@ import Footer from "../../Components/Common/Footer";
 import { containerClass } from "../../utils/tailwindClasses";
 import ProductRangeGrid from "../../Components/Products/ProductRangeGrid";
 import { dehydratedPowderProducts } from "../../data/otherProductRanges";
-import heroImage from "../../assets/products-images/DehydratedPowders/Hero.png";
-import aboutImage from "../../assets/products-images/DehydratedPowders/about.png";
-import whyChooseImage from "../../assets/products-images/DehydratedPowders/whychoose.png";
+import heroImage from "../../assets/products-images/DehydratedPowders/Hero.webp";
+import aboutImage from "../../assets/products-images/DehydratedPowders/about.webp";
+import whyChooseImage from "../../assets/products-images/DehydratedPowders/whychoose.webp";
 
 const reasons = [
   "Premium Quality Selection",

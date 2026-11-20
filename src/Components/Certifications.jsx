@@ -1,6 +1,6 @@
-import logoOne from "../assets/logo1.png";
-import logoTwo from "../assets/logo2.png";
-import logoThree from "../assets/logo3.png";
+import logoOne from "../assets/logo1.webp";
+import logoTwo from "../assets/logo2.webp";
+import logoThree from "../assets/logo3.webp";
 import { containerClass, eyebrowClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 

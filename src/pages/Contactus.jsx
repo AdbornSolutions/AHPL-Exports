@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Footer from "../Components/Common/Footer";
 import Hero from "../Components/Hero";
 import CountryCodeSelect from "../Components/Common/CountryCodeSelect";
-import contactCardBg from "../assets/Contactcard.png";
+import contactCardBg from "../assets/Contactcard.webp";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";

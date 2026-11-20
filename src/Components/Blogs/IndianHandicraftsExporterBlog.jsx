@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Footer from '../Common/Footer'
-import blogHero from '../../assets/Blogs/B2-1.png'
-import blogFeature from '../../assets/Blogs/B2-2.png'
+import blogHero from '../../assets/Blogs/B2-1.webp'
+import blogFeature from '../../assets/Blogs/B2-2.webp'
 import { containerClass } from '../../utils/tailwindClasses'
 
 const requirements = ['Are you sourcing premium home decor?', 'Do you require bulk manufacturing?', 'Will you need customized products?', 'Are private label services important?', 'Do you plan to import regularly?']

@@ -5,18 +5,18 @@ import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
 import brochurePdf from "../../assets/PDF/metalwall.pdf";
-import heroImage from "../../assets/products-images/Metal-wall/hero.png";
-import aboutImage from "../../assets/products-images/Metal-wall/about.png";
-import rangeOne from "../../assets/products-images/Metal-wall/1.png";
-import rangeTwo from "../../assets/products-images/Metal-wall/2.png";
-import rangeThree from "../../assets/products-images/Metal-wall/3.png";
-import rangeFour from "../../assets/products-images/Metal-wall/4.png";
-import rangeFive from "../../assets/products-images/Metal-wall/5.png";
-import rangeSix from "../../assets/products-images/Metal-wall/6.png";
-import rangeSeven from "../../assets/products-images/Metal-wall/7.png";
-import rangeEight from "../../assets/products-images/Metal-wall/8.png";
-import rangeNine from "../../assets/products-images/Metal-wall/9.png";
-import rangeTen from "../../assets/products-images/Metal-wall/10.png";
+import heroImage from "../../assets/products-images/Metal-wall/hero.webp";
+import aboutImage from "../../assets/products-images/Metal-wall/about.webp";
+import rangeOne from "../../assets/products-images/Metal-wall/1.webp";
+import rangeTwo from "../../assets/products-images/Metal-wall/2.webp";
+import rangeThree from "../../assets/products-images/Metal-wall/3.webp";
+import rangeFour from "../../assets/products-images/Metal-wall/4.webp";
+import rangeFive from "../../assets/products-images/Metal-wall/5.webp";
+import rangeSix from "../../assets/products-images/Metal-wall/6.webp";
+import rangeSeven from "../../assets/products-images/Metal-wall/7.webp";
+import rangeEight from "../../assets/products-images/Metal-wall/8.webp";
+import rangeNine from "../../assets/products-images/Metal-wall/9.webp";
+import rangeTen from "../../assets/products-images/Metal-wall/10.webp";
 
 const productRange = [
   { name: "Turban Tales", image: rangeOne },

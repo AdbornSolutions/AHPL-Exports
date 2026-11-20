@@ -1,9 +1,9 @@
 import biomassBlog from '../data/biomassBlog.json';
-import biomassBlogImage from '../assets/Blogs/B13-1.jpeg';
+import biomassBlogImage from '../assets/Blogs/B13-1.webp';
 import makhanaBlog from '../data/makhanaBlog.json';
-import makhanaBlogImage from '../assets/Blogs/B12-1.jpeg';
+import makhanaBlogImage from '../assets/Blogs/B12-1.webp';
 import cottonBlog from '../data/cottonToteBagBlog.json';
-import cottonBlogImage from '../assets/Blogs/B11-1.jpeg';
+import cottonBlogImage from '../assets/Blogs/B11-1.webp';
 import { ArrowRight } from "lucide-react";
 import { containerClass, eyebrowClass, sectionClass, sectionTitleClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";

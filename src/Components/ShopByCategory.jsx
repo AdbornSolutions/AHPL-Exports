@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-import metalTableSaffron from "../assets/metal_table_saffron.png";
-import metalWallSaffron from "../assets/metal_wall_saffron.png";
-import polyResinSaffron from "../assets/poly_resin_Decor.png";
-import lifestylesSaffron from "../assets/lifetsyles_utility_saffron.png";
+import lifestylesSaffron from "../assets/lifetsyles_utility_saffron.webp";
+import metalTableSaffron from "../assets/metal_table_saffron.webp";
+import metalWallSaffron from "../assets/metal_wall_saffron.webp";
+import polyResinSaffron from "../assets/poly_resin_Decor.webp";
 
 const categories = [
   {

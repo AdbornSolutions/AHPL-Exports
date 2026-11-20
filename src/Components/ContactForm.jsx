@@ -1,4 +1,4 @@
-import contactBg from "../assets/form.png";
+import contactBg from "../assets/form.webp";
 import { containerClass } from "../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";

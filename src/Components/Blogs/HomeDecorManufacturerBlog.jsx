@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Footer from '../Common/Footer'
-import blogHero from '../../assets/Blogs/B1-1.png'
-import blogFeature from '../../assets/Blogs/B1-2.png'
+import blogHero from '../../assets/Blogs/B1-1.webp'
+import blogFeature from '../../assets/Blogs/B1-2.webp'
 import { containerClass } from '../../utils/tailwindClasses'
 
 const solutions = ['Bulk manufacturing', 'Product customization', 'OEM production', 'Private labeling', 'Packaging solutions', 'Export documentation', 'Timely international shipping']

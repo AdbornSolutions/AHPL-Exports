@@ -3,9 +3,9 @@ import "@fontsource/poppins/600.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import emergingMarketsImage from "../assets/export_business_blog.png";
-import exportDocumentationImage from "../assets/exprt_doc_blog.png";
-import globalSourcingImage from "../assets/global-sourcing_blog.png";
+import emergingMarketsImage from "../assets/export_business_blog.webp";
+import exportDocumentationImage from "../assets/exprt_doc_blog.webp";
+import globalSourcingImage from "../assets/global-sourcing_blog.webp";
 
 const postImages = [
   exportDocumentationImage,

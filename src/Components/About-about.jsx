@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import aboutImg from "../assets/About-about.png";
+import aboutImg from "../assets/About-about.webp";
 
 const tabKeys = ["about", "vision", "mission"];
 

@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Footer from '../Common/Footer'
-import blogHero from '../../assets/Blogs/B4-1.jpeg'
-import blogFeature from '../../assets/Blogs/B4-2.png'
+import blogHero from '../../assets/Blogs/B4-1.webp'
+import blogFeature from '../../assets/Blogs/B4-2.webp'
 import { containerClass } from '../../utils/tailwindClasses'
 
 const businessQuestions = ['What type of customers do you serve?', 'Do you require luxury or budget-friendly collections?', 'Are you importing for retail or wholesale?', 'Do you need customized designs?', 'Will you place regular bulk orders?']

@@ -6,19 +6,19 @@ import { containerClass } from "../../utils/tailwindClasses";
 import { useTranslation } from "react-i18next";
 import BrochureDownloadDialog from "../../Components/Common/BrochureDownloadDialog";
 import brochurePdf from "../../assets/PDF/metaldecor.pdf";
-import heroImage from "../../assets/products-images/Marble Decor/hero.png";
-import aboutImage from "../../assets/products-images/Marble Decor/about.png";
-import whyChooseImage from "../../assets/products-images/Marble Decor/whyChoose.png";
-import rangeOne from "../../assets/products-images/Marble Decor/1.png";
-import rangeTwo from "../../assets/products-images/Marble Decor/2.png";
-import rangeThree from "../../assets/products-images/Marble Decor/3.png";
-import rangeFour from "../../assets/products-images/Marble Decor/4.png";
-import rangeFive from "../../assets/products-images/Marble Decor/5.png";
-import rangeSix from "../../assets/products-images/Marble Decor/6.png";
-import rangeSeven from "../../assets/products-images/Marble Decor/7.png";
-import rangeEight from "../../assets/products-images/Marble Decor/8.png";
-import rangeNine from "../../assets/products-images/Marble Decor/9.png";
-import rangeTen from "../../assets/products-images/Marble Decor/10.png";
+import heroImage from "../../assets/products-images/Marble Decor/hero.webp";
+import aboutImage from "../../assets/products-images/Marble Decor/about.webp";
+import whyChooseImage from "../../assets/products-images/Marble Decor/whyChoose.webp";
+import rangeOne from "../../assets/products-images/Marble Decor/1.webp";
+import rangeTwo from "../../assets/products-images/Marble Decor/2.webp";
+import rangeThree from "../../assets/products-images/Marble Decor/3.webp";
+import rangeFour from "../../assets/products-images/Marble Decor/4.webp";
+import rangeFive from "../../assets/products-images/Marble Decor/5.webp";
+import rangeSix from "../../assets/products-images/Marble Decor/6.webp";
+import rangeSeven from "../../assets/products-images/Marble Decor/7.webp";
+import rangeEight from "../../assets/products-images/Marble Decor/8.webp";
+import rangeNine from "../../assets/products-images/Marble Decor/9.webp";
+import rangeTen from "../../assets/products-images/Marble Decor/10.webp";
 
 const productRange = [
   { name: "Verdant Marble Dispenser", image: rangeOne },

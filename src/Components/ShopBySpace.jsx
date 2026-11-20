@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import livingRoomImg from "../assets/shop1.png";
-import diningSpaceImg from "../assets/shop2.png";
-import entrywayImg from "../assets/shop3.jpg";
-import prayerRoomImg from "../assets/shop4.png";
-import workDeskImg from "../assets/shop5.png";
+import livingRoomImg from "../assets/shop1.webp";
+import diningSpaceImg from "../assets/shop2.webp";
+import entrywayImg from "../assets/shop3.webp";
+import prayerRoomImg from "../assets/shop4.webp";
+import workDeskImg from "../assets/shop5.webp";
 import { spaceCollections } from "../data/spaceCollections";
 
 const spaceImages = {

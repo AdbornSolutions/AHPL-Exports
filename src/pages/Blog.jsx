@@ -1,32 +1,32 @@
 import biomassBlog from '../data/biomassBlog.json';
-import biomassBlogImage from '../assets/Blogs/B13-1.jpeg';
+import biomassBlogImage from '../assets/Blogs/B13-1.webp';
 import makhanaBlog from '../data/makhanaBlog.json';
-import makhanaBlogImage from '../assets/Blogs/B12-1.jpeg';
+import makhanaBlogImage from '../assets/Blogs/B12-1.webp';
 import cottonBlog from '../data/cottonToteBagBlog.json'
-import cottonBlogImage from '../assets/Blogs/B11-1.jpeg'
+import cottonBlogImage from '../assets/Blogs/B11-1.webp'
 import industrialBlog from '../data/industrialVBeltBlog.json'
-import industrialBlogImage from '../assets/Blogs/B10-1.png'
+import industrialBlogImage from '../assets/Blogs/B10-1.webp'
 import luxuryBlog from '../data/luxuryHomeDecorBlog.json'
-import luxuryBlogImage from '../assets/Blogs/B9-1.png'
+import luxuryBlogImage from '../assets/Blogs/B9-1.webp'
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
 import Hero from '../Components/Hero'
 import Footer from '../Components/Common/Footer'
-import blogOne from '../assets/blog1.png'
-import blogTwo from '../assets/blog2.png'
-import blogThree from '../assets/blog3.png'
+import blogOne from '../assets/blog1.webp'
+import blogTwo from '../assets/blog2.webp'
+import blogThree from '../assets/blog3.webp'
 import { containerClass } from '../utils/tailwindClasses'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import latestBlogImage from '../assets/Blogs/B1-1.png'
-import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.png'
-import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.png'
-import metalWallDecorBlogImage from '../assets/Blogs/B4-1.jpeg'
-import merchantExporterBlogImage from '../assets/Blogs/B5-1.png'
-import b2bSourcingBlogImage from '../assets/Blogs/B6-1.png'
-import woodenDecorSupplierBlogImage from '../assets/Blogs/B7-1.png'
-import polyresinDecorSupplierBlogImage from '../assets/Blogs/B8-1.png'
+import latestBlogImage from '../assets/Blogs/B1-1.webp'
+import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.webp'
+import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.webp'
+import metalWallDecorBlogImage from '../assets/Blogs/B4-1.webp'
+import merchantExporterBlogImage from '../assets/Blogs/B5-1.webp'
+import b2bSourcingBlogImage from '../assets/Blogs/B6-1.webp'
+import woodenDecorSupplierBlogImage from '../assets/Blogs/B7-1.webp'
+import polyresinDecorSupplierBlogImage from '../assets/Blogs/B8-1.webp'
 
 const postImages = [blogOne, blogTwo, blogThree]
 

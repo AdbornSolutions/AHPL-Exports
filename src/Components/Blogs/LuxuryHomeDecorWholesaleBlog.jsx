@@ -1,8 +1,8 @@
 ﻿import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Common/Footer'
-import hero from '../../assets/Blogs/B9-1.png'
-import feature from '../../assets/Blogs/B9-2.png'
+import hero from '../../assets/Blogs/B9-1.webp'
+import feature from '../../assets/Blogs/B9-2.webp'
 import blog from '../../data/luxuryHomeDecorBlog.json'
 import { containerClass } from '../../utils/tailwindClasses'
 

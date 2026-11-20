@@ -3,9 +3,9 @@ import Footer from "../../Components/Common/Footer";
 import { containerClass } from "../../utils/tailwindClasses";
 import ProductRangeGrid from "../../Components/Products/ProductRangeGrid";
 import { copperProducts } from "../../data/otherProductRanges";
-import heroImage from "../../assets/products-images/CopperArticles/Hero.png";
-import aboutImage from "../../assets/products-images/CopperArticles/About.jpg";
-import whyChooseImage from "../../assets/products-images/CopperArticles/WhyChoose.png";
+import heroImage from "../../assets/products-images/CopperArticles/Hero.webp";
+import aboutImage from "../../assets/products-images/CopperArticles/About.webp";
+import whyChooseImage from "../../assets/products-images/CopperArticles/WhyChoose.webp";
 
 const reasons = [
   "Diverse Product Range",

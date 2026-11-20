@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import navLogo from "../../assets/navlogo.png";
+import navLogo from "../../assets/navlogo.webp";
 import { languages } from "../../config/languages";
 import { buttonIconClass, containerClass, pillButtonClass } from "../../utils/tailwindClasses";
 
