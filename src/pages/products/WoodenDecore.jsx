@@ -32,7 +32,7 @@ const WoodenDecore = () => {
   return (
   <>
     <main className="bg-white text-[#1b3156]">
-      <section className="bg-[#eadcc6]"><img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} /></section>
+      <section className="bg-[#eadcc6]"><img loading="lazy" decoding="async" className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} /></section>
 
       <section className="py-[68px] max-lg:py-14 max-md:py-10">
         <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.9fr_1fr] items-center gap-14 max-lg:grid-cols-1 max-lg:gap-8`}>
@@ -42,7 +42,7 @@ const WoodenDecore = () => {
               {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </div>
-          <img className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
+          <img loading="lazy" decoding="async" className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
         </div>
       </section>
 
@@ -51,7 +51,7 @@ const WoodenDecore = () => {
           <h2 className="mx-auto max-w-[760px] text-[clamp(34px,4vw,52px)] font-bold leading-[1.18] text-[#1b3156]">{content.rangeTitle} <span className="text-[#30c8bb]">{content.rangeHighlight}</span></h2>
           <p className="mt-4 text-[15px] font-semibold text-[#8b929b]">{common.rangeIntro}</p>
           <div className="mt-10 grid grid-cols-5 gap-x-6 gap-y-7 text-left max-xl:gap-x-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
-            {productRange.map((product) => <Link className="group text-inherit no-underline" to={`/product/wooden-decor/${slugify(product.name)}`} key={product.name}><div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]"><img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} /></div><h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{product.name}</h3></Link>)}
+            {productRange.map((product) => <Link className="group text-inherit no-underline" to={`/product/wooden-decor/${slugify(product.name)}`} key={product.name}><div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]"><img loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} /></div><h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{product.name}</h3></Link>)}
           </div>
           <BrochureDownloadDialog
             brochureUrl={brochurePdf}
@@ -68,8 +68,8 @@ const WoodenDecore = () => {
 
       <section className="pb-[76px] max-md:pb-12"><div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.95fr_1fr] items-center gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
         <div className="relative mx-auto h-[430px] w-full max-w-[690px] max-sm:h-[330px]" aria-hidden="true">
-          <img className="absolute left-0 top-0 h-[76%] w-[58%] rounded-[42px_42px_42px_0] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)]" src={rangeTen} alt="" />
-          <img className="absolute bottom-0 right-[6%] h-[58%] w-[53%] rounded-[24px] border-[6px] border-white object-cover shadow-[0_18px_36px_rgba(27,49,86,0.16)]" src={rangeSeven} alt="" />
+          <img loading="lazy" decoding="async" className="absolute left-0 top-0 h-[76%] w-[58%] rounded-[42px_42px_42px_0] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)]" src={rangeTen} alt="" />
+          <img loading="lazy" decoding="async" className="absolute bottom-0 right-[6%] h-[58%] w-[53%] rounded-[24px] border-[6px] border-white object-cover shadow-[0_18px_36px_rgba(27,49,86,0.16)]" src={rangeSeven} alt="" />
         </div>
         <div><span className="inline-flex rounded-full border border-[#30c8bb] px-6 py-2 text-[12px] font-bold text-[#30c8bb]">{common.whyChoose}</span>
           <h2 className="mt-6 text-[clamp(34px,4vw,52px)] font-bold leading-[1.12] text-[#1b3156]">{content.whyTitle} <span className="text-[#30c8bb]">{content.whyHighlight}</span></h2>

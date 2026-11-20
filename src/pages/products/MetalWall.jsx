@@ -39,7 +39,7 @@ const MetalWall = () => {
   <>
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#e9e4db]">
-        <img
+        <img loading="lazy" decoding="async"
           className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain"
           src={heroImage}
           alt={content.heroAlt}
@@ -59,7 +59,7 @@ const MetalWall = () => {
             </div>
           </div>
 
-          <img
+          <img loading="lazy" decoding="async"
             className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto"
             src={aboutImage}
             alt={content.aboutAlt}
@@ -80,7 +80,7 @@ const MetalWall = () => {
             {productRange.map((product, index) => (
               <Link className="group text-inherit no-underline" to={`/product/metal-wall-decor/${slugify(product.name)}`} key={product.name}>
                 <div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]">
-                  <img
+                  <img loading="lazy" decoding="async"
                     className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                     src={product.image}
                     alt={content.products[index]}

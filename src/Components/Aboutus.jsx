@@ -18,7 +18,7 @@ const Aboutus = () => {
   <section id="about-us" className={sectionClass}>
     <div className={containerClass}>
       <div className="grid grid-cols-[245px_1fr_245px] items-center gap-8 max-[980px]:grid-cols-[160px_1fr_160px] max-[980px]:gap-5 max-md:grid-cols-2 max-[430px]:gap-2">
-        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={ship} alt={t("about.shipAlt")} />
+        <img loading="lazy" decoding="async" className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={ship} alt={t("about.shipAlt")} />
         <div className="text-center max-md:col-span-full max-md:row-start-1">
 
           <h2 className={sectionTitleClass}>{t("about.title")} <span className="text-[#30c8bb]">{t("about.titleHighlight")}</span></h2>
@@ -29,7 +29,7 @@ const Aboutus = () => {
             {t("buttons.moreAbout", { ns: "common" })} <span className={buttonIconClass}><ArrowUpRight size={15} /></span>
           </a>
         </div>
-        <img className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={truck} alt={t("about.truckAlt")} />
+        <img loading="lazy" decoding="async" className="max-h-[385px] w-full object-contain max-md:max-h-[260px]" src={truck} alt={t("about.truckAlt")} />
       </div>
 
       <div className="mt-[58px] grid grid-cols-4 gap-[18px] max-md:grid-cols-2 max-[430px]:gap-2.5">

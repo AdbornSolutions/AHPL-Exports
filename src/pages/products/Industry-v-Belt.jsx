@@ -17,7 +17,7 @@ const IndustryVBelt = () => {
     <>
       <main className="bg-white text-[#1b3156]">
         <section className="bg-[#eef3f7]">
-          <img className="h-auto min-h-[260px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} />
+          <img loading="lazy" decoding="async" className="h-auto min-h-[260px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} />
         </section>
 
         <section className="py-[70px] max-md:py-12">
@@ -28,7 +28,7 @@ const IndustryVBelt = () => {
                 {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
             </div>
-            <img className="ml-auto w-full max-w-[600px] object-cover max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
+            <img loading="lazy" decoding="async" className="ml-auto w-full max-w-[600px] object-cover max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
           </div>
         </section>
 
@@ -43,7 +43,7 @@ const IndustryVBelt = () => {
 
         <section className="pb-[78px] max-md:pb-12">
           <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.92fr_1fr] items-center gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
-            <img className="w-full max-w-[650px] max-lg:mx-auto" src={whyChooseImage} alt={content.whyAlt} />
+            <img loading="lazy" decoding="async" className="w-full max-w-[650px] max-lg:mx-auto" src={whyChooseImage} alt={content.whyAlt} />
             <div>
               <span className="inline-flex rounded-full border border-[#30c8bb] px-6 py-2 text-[12px] font-bold text-[#30c8bb]">{common.whyChoose}</span>
               <h2 className="mt-6 text-[clamp(34px,4vw,52px)] font-bold leading-[1.12] text-black">{content.whyTitle}<br /><span className="text-[#30c8bb]">{content.whyHighlight}</span></h2>

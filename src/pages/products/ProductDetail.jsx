@@ -29,7 +29,7 @@ const ProductDetail = () => {
         <section className={`${containerClass} grid max-w-[1460px] grid-cols-[1.03fr_1fr] gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
           <div>
             <div className="aspect-square overflow-hidden bg-[#f4f1eb]">
-              <img
+              <img loading="lazy" decoding="async"
                 className="h-full w-full object-contain transition-opacity duration-300"
                 src={
                   product.images?.[selectedImage] ||
@@ -54,7 +54,7 @@ const ProductDetail = () => {
                     key={`${product.slug}-${imageIndex}`}
                     aria-label={t("productDetail.showImage", { name: product.name, number: imageIndex + 1 })}
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       className="h-full w-full object-cover"
                       src={image}
                       alt={t("productDetail.thumbnail", { name: product.name, number: imageIndex + 1 })}
@@ -82,7 +82,7 @@ const ProductDetail = () => {
           {activeTab === "description" ? (
             <div className="grid grid-cols-[1.45fr_0.75fr] gap-16 py-10 max-lg:grid-cols-1">
               <div><h2 className="text-[32px] font-bold">{t("productDetail.heritage")}</h2><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{descriptionOne}</p><p className="mt-5 text-[17px] leading-[1.55] text-[#686868]">{descriptionTwo}</p></div>
-              <img className="aspect-[1.18/1] h-full max-h-[390px] w-full rounded-[14px] object-cover" src={product.image} alt={`${product.name} detail`} />
+              <img loading="lazy" decoding="async" className="aspect-[1.18/1] h-full max-h-[390px] w-full rounded-[14px] object-cover" src={product.image} alt={`${product.name} detail`} />
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-x-10 py-10 max-md:grid-cols-1">{[[t("productDetail.specLabels.category"), category.title], [t("productDetail.specLabels.material"), category.material], [t("productDetail.specLabels.finish"), category.finish], [t("productDetail.specLabels.style"), t("productDetail.style")], [t("productDetail.specLabels.application"), t("productDetail.application")], [t("productDetail.specLabels.origin"), t("details.india")]].map(([label, value]) => <div className="grid grid-cols-[0.7fr_1fr] border-b border-[#dfe4e8] py-5" key={label}><strong>{label}</strong><span className="text-[#6c7480]">{value}</span></div>)}</div>
@@ -91,7 +91,7 @@ const ProductDetail = () => {
 
         <section className={`${containerClass} mt-5 max-w-[1600px]`}>
           <div className="mb-8 flex items-end justify-between"><h2 className="text-[clamp(32px,4vw,48px)] font-bold">{t("productDetail.complementary")} <span className="text-[#30c8bb]">{t("productDetail.complementaryHighlight")}</span></h2><div className="flex gap-3"><span className="grid size-11 place-items-center rounded-full border-2 border-[#1b3156]"><ArrowLeft size={20} /></span><span className="grid size-11 place-items-center rounded-full border-2 border-[#1b3156]"><ArrowRight size={20} /></span></div></div>
-          <div className="grid grid-cols-5 gap-6 max-lg:grid-cols-3 max-sm:grid-cols-2">{complementary.map((item) => <Link className="group text-[#333] no-underline" to={`/product/${category.slug}/${item.slug}`} key={item.slug}><div className="aspect-square overflow-hidden bg-[#f3f1ed]"><img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={item.image} alt={item.name} /></div><h3 className="mt-4 text-[16px] font-semibold">{item.name}</h3></Link>)}</div>
+          <div className="grid grid-cols-5 gap-6 max-lg:grid-cols-3 max-sm:grid-cols-2">{complementary.map((item) => <Link className="group text-[#333] no-underline" to={`/product/${category.slug}/${item.slug}`} key={item.slug}><div className="aspect-square overflow-hidden bg-[#f3f1ed]"><img loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={item.image} alt={item.name} /></div><h3 className="mt-4 text-[16px] font-semibold">{item.name}</h3></Link>)}</div>
         </section>
       </main>
       <Footer />

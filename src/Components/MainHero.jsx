@@ -20,6 +20,8 @@ const MainHero = () => {
       src={mobileHeroImage}
       alt=""
       aria-hidden="true"
+      loading="eager"
+      decoding="async"
     />
     <div className={`${containerClass} relative z-10 pb-5`}>
       <span className="text-[13px] font-bold text-[#34d6c6]">{t("hero.eyebrow")}</span>

@@ -36,7 +36,7 @@ const ShopBySpace = () => {
                 to={`/shop-by-space/${space.slug}`}
                 className="group block aspect-square overflow-hidden rounded-[24px] bg-[#f5f5f2] shadow-sm transition-shadow duration-300 hover:shadow-md"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={spaceImages[space.slug]}
                   alt={t(space.nameKey)}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"

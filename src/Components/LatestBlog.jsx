@@ -24,7 +24,7 @@ const LatestBlog = () => {
       <div className="mt-[38px] grid grid-cols-3 gap-6 text-left max-md:grid-cols-1">
         {posts.map((post) => (
           <article className="overflow-hidden rounded-2xl border border-[#dbe2e8] bg-white shadow-[0_10px_30px_rgba(13,44,76,0.04)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(13,44,76,0.1)]" key={post.title}>
-            <div className="h-[190px] overflow-hidden bg-[#eaf1f4]"><img className="h-full w-full object-cover" src={post.image} alt="" /></div>
+            <div className="h-[190px] overflow-hidden bg-[#eaf1f4]"><img loading="lazy" decoding="async" className="h-full w-full object-cover" src={post.image} alt="" /></div>
             <div className="p-5">
               <h3 className="mb-3 min-h-[50px] text-lg font-bold leading-[1.3] text-[#172b50] max-md:min-h-0">{post.title}</h3>
               <p className="mb-[18px] min-h-[84px] text-[13px] leading-[1.45] text-[#6d7889] max-md:min-h-0">{post.short}</p>

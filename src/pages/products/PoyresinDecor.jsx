@@ -41,7 +41,7 @@ const PoyresinDecor = () => {
   <>
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#2b241d]">
-        <img className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} />
+        <img loading="lazy" decoding="async" className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain" src={heroImage} alt={content.heroAlt} />
       </section>
 
       <section className="py-[68px] max-lg:py-14 max-md:py-10">
@@ -54,7 +54,7 @@ const PoyresinDecor = () => {
               {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </div>
-          <img className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
+          <img loading="lazy" decoding="async" className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover shadow-[0_18px_36px_rgba(27,49,86,0.12)] max-lg:mx-auto" src={aboutImage} alt={content.aboutAlt} />
         </div>
       </section>
 
@@ -68,7 +68,7 @@ const PoyresinDecor = () => {
             {productRange.map((product) => (
               <Link className="group text-inherit no-underline" to={`/product/polyresin-decor/${slugify(product.name)}`} key={product.name}>
                 <div className="aspect-[1.08/1] overflow-hidden bg-[#f5f5f2]">
-                  <img className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} />
+                  <img loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-300 group-hover:scale-105" src={product.image} alt={product.name} />
                 </div>
                 <h3 className="mt-4 text-[14px] font-bold leading-tight text-[#6f737b] max-sm:text-[13px]">{product.name}</h3>
               </Link>
@@ -94,7 +94,7 @@ const PoyresinDecor = () => {
 
       <section className="pb-[76px] max-md:pb-12">
         <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.95fr_1fr] items-center gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
-          <img className="w-full max-w-[690px] max-lg:mx-auto" src={whyChooseImage} alt={content.whyAlt} />
+          <img loading="lazy" decoding="async" className="w-full max-w-[690px] max-lg:mx-auto" src={whyChooseImage} alt={content.whyAlt} />
           <div>
             <span className="inline-flex rounded-full border border-[#30c8bb] px-6 py-2 text-[12px] font-bold text-[#30c8bb]">{common.whyChoose}</span>
             <h2 className="mt-6 text-[clamp(34px,4vw,52px)] font-bold leading-[1.12] text-[#1b3156]">

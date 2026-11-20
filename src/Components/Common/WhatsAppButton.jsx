@@ -9,7 +9,7 @@ const WhatsAppButton = () => (
     aria-label="Chat with us on WhatsApp at +91 89202 79982"
     title="Chat with us on WhatsApp"
   >
-    <img
+    <img loading="lazy" decoding="async"
       className="size-14 object-contain max-[480px]:size-12"
       src={whatsappIcon}
       alt=""

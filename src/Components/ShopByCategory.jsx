@@ -57,7 +57,7 @@ const ShopByCategory = () => {
                 to={category.to}
                 className="overflow-hidden rounded-[24px] bg-[#f5f5f2] aspect-square block shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={category.image}
                   alt={t(category.altKey)}
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"

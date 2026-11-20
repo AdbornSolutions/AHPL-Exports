@@ -42,7 +42,7 @@ const SaffronLatestBlog = () => {
               key={post.title}
               className="flex min-h-[425px] flex-col rounded-[15px] border border-[#d0d0d0] bg-white p-[14px]"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={postImages[index]}
                 alt={post.title}
                 className={`h-[169px] w-full rounded-[9px] object-cover ${

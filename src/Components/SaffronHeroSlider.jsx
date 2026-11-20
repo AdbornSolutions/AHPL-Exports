@@ -73,6 +73,9 @@ const SaffronHeroSlider = () => {
               src={banner}
               alt={`${t("navigation.saffron")} ${index + 1}`}
               draggable="false"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={index === 0 ? "high" : "auto"}
             />
           </div>
         ))}

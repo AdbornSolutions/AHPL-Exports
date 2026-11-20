@@ -18,7 +18,7 @@ const DehydratedPowders = () => (
   <>
     <main className="bg-white text-[#1b3156]">
       <section className="bg-[#efe0cf]">
-        <img
+        <img loading="lazy" decoding="async"
           className="h-auto min-h-[250px] w-full object-cover object-center max-md:min-h-0 max-md:object-contain"
           src={heroImage}
           alt="Premium copper bottles, jugs, glasses, decor, and utility articles crafted in India"
@@ -38,7 +38,7 @@ const DehydratedPowders = () => (
               <p>Suitable for snacking, seasoning, retail packs, gifting, and food processing, our makhana range can support both bulk and customized packaging requirements.</p>
             </div>
           </div>
-          <img className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover  max-lg:mx-auto" src={aboutImage} alt="Indian artisan handcrafting premium copper articles" />
+          <img loading="lazy" decoding="async" className="ml-auto w-full max-w-[600px] rounded-[24px] object-cover  max-lg:mx-auto" src={aboutImage} alt="Indian artisan handcrafting premium copper articles" />
         </div>
       </section>
 
@@ -54,7 +54,7 @@ const DehydratedPowders = () => (
 
       <section className="pb-[76px] max-md:pb-12">
         <div className={`${containerClass} grid max-w-[1480px] grid-cols-[0.95fr_1fr] items-center gap-16 max-lg:grid-cols-1 max-lg:gap-9`}>
-          <img className="w-full max-w-[690px] max-lg:mx-auto" src={whyChooseImage} alt="Copper drinkware and handcrafted copper idol collection" />
+          <img loading="lazy" decoding="async" className="w-full max-w-[690px] max-lg:mx-auto" src={whyChooseImage} alt="Copper drinkware and handcrafted copper idol collection" />
           <div>
             <span className="inline-flex rounded-full border border-[#30c8bb] px-6 py-2 text-[12px] font-bold text-[#30c8bb]">Why Choose AHPL</span>
             <h2 className="mt-6 text-[clamp(34px,4vw,52px)] font-bold leading-[1.12] text-[#1b3156]">

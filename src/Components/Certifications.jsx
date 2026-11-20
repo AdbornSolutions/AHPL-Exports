@@ -29,7 +29,7 @@ const Certifications = () => {
           const name = t(`certifications.items.${nameIndex}`);
           return (
           <div className="flex h-24 min-w-0 flex-1 items-center justify-center sm:h-28 sm:w-44 sm:flex-none md:h-36 md:w-60" key={name}>
-            <img
+            <img loading="lazy" decoding="async"
               className="max-h-full max-w-full object-contain transition duration-300 hover:scale-105"
               src={image}
               alt={name}

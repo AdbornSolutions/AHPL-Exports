@@ -12,7 +12,7 @@ export default function Aboutabout() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
-          <div><img src={aboutImg} alt={t("imageAlt")} className="w-full -mt-24" /></div>
+          <div><img loading="lazy" decoding="async" src={aboutImg} alt={t("imageAlt")} className="w-full -mt-24" /></div>
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-[#21345B] leading-tight">
               {t("heading")} <span className="text-[#36C5BE]">{t("headingHighlight")}</span>

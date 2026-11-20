@@ -101,7 +101,7 @@ const Blog = () => {
               key={`${post.title}-${index}`}
             >
               <div className="h-[160px] overflow-hidden rounded-[7px] bg-[#eaf1f4] max-md:h-[210px] max-[480px]:h-[180px]">
-                <img className="h-full w-full object-cover" src={post.image} alt={post.title} />
+                <img loading="lazy" decoding="async" className="h-full w-full object-cover" src={post.image} alt={post.title} />
               </div>
 
               <div className="pt-3">

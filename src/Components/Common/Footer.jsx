@@ -37,7 +37,7 @@ const Footer = () => {
       <div className="grid grid-cols-[1.5fr_0.65fr_1fr_1.15fr] gap-[42px] max-[980px]:grid-cols-[1.5fr_1fr_1fr] max-md:grid-cols-2 max-md:gap-x-5 max-md:gap-y-[30px] max-[430px]:grid-cols-1">
         <div className="max-md:col-span-full max-[430px]:col-span-1">
           <Link className="mb-6 block w-fit" to="/" aria-label={t("accessibility.home", { ns: "common" })}>
-            <img className="w-[170px]" src={footerLogo} alt={t("accessibility.logo", { ns: "common" })} />
+            <img loading="lazy" decoding="async" className="w-[170px]" src={footerLogo} alt={t("accessibility.logo", { ns: "common" })} />
           </Link>
           <h3 className="mb-4 text-[15px] font-bold">{t("aboutTitle")}</h3>
           <p className="text-xs leading-[1.55] text-[#becbe0]">

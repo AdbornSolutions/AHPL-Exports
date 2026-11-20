@@ -42,7 +42,7 @@ const WhyChoose = () => {
         </div>
 
         <div className="relative flex min-h-[365px] items-center justify-center max-md:min-h-0">
-          <img
+          <img loading="lazy" decoding="async"
             className="w-full max-w-[620px] object-contain drop-shadow-[0_28px_46px_rgba(0,0,0,0.24)] max-md:max-w-[560px]"
             src={experience}
             alt={t("whyChoose.imageAlt")}

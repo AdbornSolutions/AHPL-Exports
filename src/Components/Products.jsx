@@ -149,7 +149,7 @@ const Products = () => {
                 </div>
 
                 <div className="relative min-h-[455px] p-[34px] pl-0 max-lg:min-h-[390px] max-lg:p-6 max-lg:pl-0 max-md:min-h-[320px] max-md:p-4 max-sm:min-h-[260px]">
-                  <img
+                  <img loading="lazy" decoding="async"
                     className="h-full w-full rounded-[24px] object-cover [clip-path:polygon(15%_0,100%_0,100%_100%,0_100%,0_24%)] max-md:rounded-[18px] max-md:[clip-path:none]"
                     src={product.image}
                     alt={translatedProducts[index].alt}

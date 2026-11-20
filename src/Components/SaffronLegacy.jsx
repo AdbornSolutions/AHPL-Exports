@@ -11,7 +11,7 @@ const SaffronLegacy = () => {
         <div className="bg-[#182c4f] rounded-[26px] overflow-hidden grid grid-cols-[0.78fr_1.22fr] max-lg:grid-cols-1 shadow-[0_20px_40px_rgba(24,44,79,0.12)]">
           {/* Left Column - Image (Rendered natively inside the flex container to prevent cropping main subject) */}
           <div className="w-full h-full flex">
-            <img
+            <img loading="lazy" decoding="async"
               src={craftedHandImage}
               alt={t("saffron.legacy.titleLine1")}
               className="w-full h-full object-cover object-center block"
