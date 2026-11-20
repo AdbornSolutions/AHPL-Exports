@@ -16,6 +16,7 @@ const handpickedCategories = productCatalog.filter(
 const handpickedItems = Array.from({ length: 3 }, (_, productIndex) =>
   handpickedCategories.map((category) => {
     const product = category.handpickedProducts[productIndex];
+    if (!product) return null;
 
     return {
       name: product.name,
@@ -23,7 +24,7 @@ const handpickedItems = Array.from({ length: 3 }, (_, productIndex) =>
       image: product.image,
     };
   }),
-).flat();
+).flat().filter(Boolean);
 
 const HandpickedProducts = () => {
   const { t } = useTranslation("common");

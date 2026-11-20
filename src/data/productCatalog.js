@@ -7,8 +7,19 @@ const slugify = (value) =>
   value.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const findImage = (folder, file) => {
-  const suffix = `/products-images/${folder}/${file}`;
-  const entry = Object.entries(imageModules).find(([path]) => path.endsWith(suffix));
+  const normalizedFolder = folder.toLowerCase();
+  const normalizedFile = file.toLowerCase();
+  const fileBaseName = normalizedFile.replace(/\.[^/.]+$/, "");
+
+  const entry = Object.entries(imageModules).find(([path]) => {
+    const normalizedPath = path.replace(/\\/g, "/").toLowerCase();
+    const folderSuffix = `/products-images/${normalizedFolder}/`;
+    if (!normalizedPath.includes(folderSuffix)) return false;
+
+    const pathFileName = normalizedPath.split("/").pop();
+    const pathBaseName = pathFileName.replace(/\.[^/.]+$/, "");
+    return pathBaseName === fileBaseName;
+  });
   return entry?.[1];
 };
 
