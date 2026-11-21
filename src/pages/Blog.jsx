@@ -27,6 +27,7 @@ import merchantExporterBlogImage from '../assets/Blogs/B5-1.webp'
 import b2bSourcingBlogImage from '../assets/Blogs/B6-1.webp'
 import woodenDecorSupplierBlogImage from '../assets/Blogs/B7-1.webp'
 import polyresinDecorSupplierBlogImage from '../assets/Blogs/B8-1.webp'
+import RightMerchantExporterBlogImage from "../assets/Blogs/B14-1.webp";
 
 const postImages = [blogOne, blogTwo, blogThree]
 
@@ -87,7 +88,12 @@ const Blog = () => {
       image: decorativeItemsExporterBlogImage,
       to: '/blog/how-decorative-items-exporter-ensure-global-quality-standards',
     },
-    ...blogPosts,
+    {
+      title: 'How to Choose the Right Merchant Exporter from India in 2027',
+      description: 'Learn how to choose the right merchant exporter from India. Explore sourcing capabilities, product quality, pricing, documentation and export support.',
+      image: RightMerchantExporterBlogImage,
+      to: '/blog/how-to-choose-the-right-merchant-exporter-from-india',
+    },
   ]
   return (
     <>
