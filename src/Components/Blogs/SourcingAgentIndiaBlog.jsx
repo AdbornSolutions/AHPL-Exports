@@ -158,7 +158,7 @@ export default function SourcingAgentIndiaBlog() {
 
             <p>
               This is where choosing the right{" "}
-              <a to="https://www.ahplexports.com/blog/b2b-sourcing-in-india-guide-for-international-buyers">
+              <a href="https://www.ahplexports.com/blog/b2b-sourcing-in-india-guide-for-international-buyers">
                 Sourcing Agent in India
               </a>{" "}
               can make a meaningful difference. A reliable sourcing partner
@@ -326,7 +326,7 @@ export default function SourcingAgentIndiaBlog() {
 
             <p>
               Businesses looking for an{" "}
-              <a to="https://www.ahplexports.com/blog/industrial-v-belt-exporter">
+              <a href="https://www.ahplexports.com/blog/industrial-v-belt-exporter">
                 Industrial V Belt Exporter
               </a>{" "}
               should pay attention to belt dimensions, construction, application
@@ -370,7 +370,7 @@ export default function SourcingAgentIndiaBlog() {
               Supplier or Wholesale Home Decor Supplier can be a valuable
               sourcing connection. Buyers interested in premium decorative
               collections can also explore opportunities with a{" "}
-              <a to="https://www.ahplexports.com/blog/luxury-home-decor-wholesale-exporter">
+              <a href="https://www.ahplexports.com/blog/luxury-home-decor-wholesale-exporter">
                 Luxury Home Decor Exporter
               </a>
               .
@@ -616,7 +616,7 @@ export default function SourcingAgentIndiaBlog() {
 
             <p>
               A{" "}
-              <a to="https://www.ahplexports.com/blog/how-to-choose-the-right-merchant-exporter-from-india">
+              <a href="https://www.ahplexports.com/blog/how-to-choose-the-right-merchant-exporter-from-india">
                 Merchant Exporter from India
               </a>
               , on the other hand, purchases products from domestic
@@ -817,8 +817,8 @@ export default function SourcingAgentIndiaBlog() {
 
             <p>
               If your business is planning its next procurement project, connect
-              with <a to="https://www.ahplexports.com/blog">AHPL Exports</a> to
-              discuss your product requirements and explore sourcing
+              with <a href="https://www.ahplexports.com/blog">AHPL Exports</a>{" "}
+              to discuss your product requirements and explore sourcing
               opportunities from India.
             </p>
 

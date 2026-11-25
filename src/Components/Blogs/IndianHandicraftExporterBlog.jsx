@@ -142,7 +142,7 @@ export default function IndianHandicraftExporterBlog() {
 
             <p>
               Finding a reliable{" "}
-              <a to="https://www.ahplexports.com/">
+              <a href="https://www.ahplexports.com/">
                 Indian handicraft exporter
               </a>{" "}
               is useful in international markets.
