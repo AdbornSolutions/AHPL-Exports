@@ -1,113 +1,180 @@
-import biomassBlog from '../data/biomassBlog.json';
-import biomassBlogImage from '../assets/Blogs/B13-1.webp';
-import makhanaBlog from '../data/makhanaBlog.json';
-import makhanaBlogImage from '../assets/Blogs/B12-1.webp';
-import cottonBlog from '../data/cottonToteBagBlog.json'
-import cottonBlogImage from '../assets/Blogs/B11-1.webp'
-import industrialBlog from '../data/industrialVBeltBlog.json'
-import industrialBlogImage from '../assets/Blogs/B10-1.webp'
-import luxuryBlog from '../data/luxuryHomeDecorBlog.json'
-import luxuryBlogImage from '../assets/Blogs/B9-1.webp'
+import industrialBlogImage from "../assets/Blogs/B10-1.webp";
+import cottonBlogImage from "../assets/Blogs/B11-1.webp";
+import makhanaBlogImage from "../assets/Blogs/B12-1.webp";
+import biomassBlogImage from "../assets/Blogs/B13-1.webp";
+import luxuryBlogImage from "../assets/Blogs/B9-1.webp";
+import biomassBlog from "../data/biomassBlog.json";
+import cottonBlog from "../data/cottonToteBagBlog.json";
+import industrialBlog from "../data/industrialVBeltBlog.json";
+import luxuryBlog from "../data/luxuryHomeDecorBlog.json";
+import makhanaBlog from "../data/makhanaBlog.json";
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import { ArrowRight } from 'lucide-react'
-import Hero from '../Components/Hero'
-import Footer from '../Components/Common/Footer'
-import blogOne from '../assets/blog1.webp'
-import blogTwo from '../assets/blog2.webp'
-import blogThree from '../assets/blog3.webp'
-import { containerClass } from '../utils/tailwindClasses'
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
-import latestBlogImage from '../assets/Blogs/B1-1.webp'
-import handicraftsExporterBlogImage from '../assets/Blogs/B2-1.webp'
-import decorativeItemsExporterBlogImage from '../assets/Blogs/B3-1.webp'
-import metalWallDecorBlogImage from '../assets/Blogs/B4-1.webp'
-import merchantExporterBlogImage from '../assets/Blogs/B5-1.webp'
-import b2bSourcingBlogImage from '../assets/Blogs/B6-1.webp'
-import woodenDecorSupplierBlogImage from '../assets/Blogs/B7-1.webp'
-import polyresinDecorSupplierBlogImage from '../assets/Blogs/B8-1.webp'
+import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import Footer from "../Components/Common/Footer";
+import Hero from "../Components/Hero";
+import latestBlogImage from "../assets/Blogs/B1-1.webp";
 import RightMerchantExporterBlogImage from "../assets/Blogs/B14-1.webp";
+import IndianHandicraftExporterBlogImage from "../assets/Blogs/B15-1.webp";
+import SourcingAgentIndiaBlogImage from "../assets/Blogs/B16-1.webp";
+import handicraftsExporterBlogImage from "../assets/Blogs/B2-1.webp";
+import decorativeItemsExporterBlogImage from "../assets/Blogs/B3-1.webp";
+import metalWallDecorBlogImage from "../assets/Blogs/B4-1.webp";
+import merchantExporterBlogImage from "../assets/Blogs/B5-1.webp";
+import b2bSourcingBlogImage from "../assets/Blogs/B6-1.webp";
+import woodenDecorSupplierBlogImage from "../assets/Blogs/B7-1.webp";
+import polyresinDecorSupplierBlogImage from "../assets/Blogs/B8-1.webp";
+import blogOne from "../assets/blog1.webp";
+import blogTwo from "../assets/blog2.webp";
+import blogThree from "../assets/blog3.webp";
+import { containerClass } from "../utils/tailwindClasses";
 
-const postImages = [blogOne, blogTwo, blogThree]
+const postImages = [blogOne, blogTwo, blogThree];
 
 const Blog = () => {
-  const { t } = useTranslation(['blogs', 'common'])
-  const blogPosts = t('posts', { returnObjects: true }).map((post, index) => ({ ...post, image: postImages[index] }))
+  const { t } = useTranslation(["blogs", "common"]);
+  const blogPosts = t("posts", { returnObjects: true }).map((post, index) => ({
+    ...post,
+    image: postImages[index],
+  }));
   const posts = [
-    { title: biomassBlog.title, description: biomassBlog.description, image: biomassBlogImage, to: biomassBlog.path },
-    { title: makhanaBlog.title, description: makhanaBlog.description, image: makhanaBlogImage, to: makhanaBlog.path },
-    { title: cottonBlog.title, description: cottonBlog.description, image: cottonBlogImage, to: cottonBlog.path },
-    { title: industrialBlog.title, description: industrialBlog.description, image: industrialBlogImage, to: industrialBlog.path },
-    { title: luxuryBlog.title, description: luxuryBlog.description, image: luxuryBlogImage, to: luxuryBlog.path },
     {
-      title: 'Leading Polyresin Decor Supplier for Global Importers and Wholesalers',
-      description: 'Discover why AHPL Exports is a trusted polyresin decor supplier offering export-ready quality, custom designs, and multi-category sourcing for global buyers.',
+      title: biomassBlog.title,
+      description: biomassBlog.description,
+      image: biomassBlogImage,
+      to: biomassBlog.path,
+    },
+    {
+      title: makhanaBlog.title,
+      description: makhanaBlog.description,
+      image: makhanaBlogImage,
+      to: makhanaBlog.path,
+    },
+    {
+      title: cottonBlog.title,
+      description: cottonBlog.description,
+      image: cottonBlogImage,
+      to: cottonBlog.path,
+    },
+    {
+      title: industrialBlog.title,
+      description: industrialBlog.description,
+      image: industrialBlogImage,
+      to: industrialBlog.path,
+    },
+    {
+      title: luxuryBlog.title,
+      description: luxuryBlog.description,
+      image: luxuryBlogImage,
+      to: luxuryBlog.path,
+    },
+    {
+      title:
+        "Leading Polyresin Decor Supplier for Global Importers and Wholesalers",
+      description:
+        "Discover why AHPL Exports is a trusted polyresin decor supplier offering export-ready quality, custom designs, and multi-category sourcing for global buyers.",
       image: polyresinDecorSupplierBlogImage,
-      to: '/blog/leading-polyresin-decor-supplier-global-importers-wholesalers',
+      to: "/blog/leading-polyresin-decor-supplier-global-importers-wholesalers",
     },
     {
-      title: 'Best Wooden Decor Supplier for Global Wholesale Buyers: Why AHPL Exports Should Be Your First Call',
-      description: 'Looking for the best wooden decor supplier? AHPL Exports offers premium wooden and metal decor, metal table decor, and custom manufacturing for global B2B buyers.',
+      title:
+        "Best Wooden Decor Supplier for Global Wholesale Buyers: Why AHPL Exports Should Be Your First Call",
+      description:
+        "Looking for the best wooden decor supplier? AHPL Exports offers premium wooden and metal decor, metal table decor, and custom manufacturing for global B2B buyers.",
       image: woodenDecorSupplierBlogImage,
-      to: '/blog/best-wooden-decor-supplier-global-wholesale-buyers',
+      to: "/blog/best-wooden-decor-supplier-global-wholesale-buyers",
     },
     {
-      title: 'B2B Sourcing in India: A Guide for International Buyers',
-      description: 'Learn how B2B sourcing in India works, the advantages it offers, how to find good suppliers, ensure product quality, and how AHPL Exporter helps international buyers source dependable products.',
+      title: "B2B Sourcing in India: A Guide for International Buyers",
+      description:
+        "Learn how B2B sourcing in India works, the advantages it offers, how to find good suppliers, ensure product quality, and how AHPL Exporter helps international buyers source dependable products.",
       image: b2bSourcingBlogImage,
-      to: '/blog/b2b-sourcing-in-india-guide-for-international-buyers',
+      to: "/blog/b2b-sourcing-in-india-guide-for-international-buyers",
     },
     {
-      title: 'Benefits of Working with an Indian Merchant Exporter',
-      description: 'Discover the benefits of working with a merchant exporter from India and how AHPL Exporter helps global buyers source quality Indian products with ease.',
+      title: "Benefits of Working with an Indian Merchant Exporter",
+      description:
+        "Discover the benefits of working with a merchant exporter from India and how AHPL Exporter helps global buyers source quality Indian products with ease.",
       image: merchantExporterBlogImage,
-      to: '/blog/benefits-of-working-with-indian-merchant-exporter',
+      to: "/blog/benefits-of-working-with-indian-merchant-exporter",
     },
     {
-      title: 'How African Importers Can Find a Trusted Metal Wall Decor Manufacturer',
-      description: 'Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.',
+      title:
+        "How African Importers Can Find a Trusted Metal Wall Decor Manufacturer",
+      description:
+        "Discover how African importers can choose a trusted Metal Wall Decor Manufacturer for premium quality, reliable exports, and long-term business success.",
       image: metalWallDecorBlogImage,
-      to: '/blog/metal-wall-decor-manufacturer',
+      to: "/blog/metal-wall-decor-manufacturer",
     },
     {
-      title: 'What Makes a Home Decor Manufacturer India Stand Out in Global Markets?',
-      description: 'Discover why global buyers choose Indian home decor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.',
+      title:
+        "What Makes a Home Decor Manufacturer India Stand Out in Global Markets?",
+      description:
+        "Discover why global buyers choose Indian home decor manufacturers for premium craftsmanship, private label solutions, and reliable worldwide exports.",
       image: latestBlogImage,
-      to: '/blog/home-decor-manufacturer-india-stand-out-global-markets',
+      to: "/blog/home-decor-manufacturer-india-stand-out-global-markets",
     },
     {
-      title: 'How to Choose the Best Indian Handicrafts Exporter for Your Business',
-      description: 'Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.',
+      title:
+        "How to Choose the Best Indian Handicrafts Exporter for Your Business",
+      description:
+        "Discover the key factors global buyers should consider when choosing a reliable Indian handicrafts exporter for quality, customization, and long-term growth.",
       image: handicraftsExporterBlogImage,
-      to: '/blog/how-to-choose-the-best-indian-handicrafts-exporter',
+      to: "/blog/how-to-choose-the-best-indian-handicrafts-exporter",
     },
     {
-      title: 'How Decorative Items Exporter Companies Ensure Global Quality Standards',
-      description: 'Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.',
+      title:
+        "How Decorative Items Exporter Companies Ensure Global Quality Standards",
+      description:
+        "Discover how a trusted Decorative Items Exporter ensures global quality standards through premium craftsmanship, quality control, and reliable exports.",
       image: decorativeItemsExporterBlogImage,
-      to: '/blog/how-decorative-items-exporter-ensure-global-quality-standards',
+      to: "/blog/how-decorative-items-exporter-ensure-global-quality-standards",
     },
     {
-      title: 'How to Choose the Right Merchant Exporter from India in 2027',
-      description: 'Learn how to choose the right merchant exporter from India. Explore sourcing capabilities, product quality, pricing, documentation and export support.',
+      title: "How to Choose the Right Merchant Exporter from India in 2027",
+      description:
+        "Learn how to choose the right merchant exporter from India. Explore sourcing capabilities, product quality, pricing, documentation and export support.",
       image: RightMerchantExporterBlogImage,
-      to: '/blog/how-to-choose-the-right-merchant-exporter-from-india',
+      to: "/blog/how-to-choose-the-right-merchant-exporter-from-india",
     },
-  ]
+    {
+      title: "Indian handicraft exporter in 2027",
+      description:
+        "We offer a wide range of metal, marble, resin, and wood handicraft products. Perfect for sourcing and supplying in international markets.",
+      image: IndianHandicraftExporterBlogImage,
+      to: "/blog/indian-handicraft-exporter",
+    },
+    {
+      title:
+        "Sourcing Agent in India 2027: How to Find the Right Partner for Global Business",
+      description:
+        "Looking for a reliable sourcing agent in India? Discover how AHPL Exports helps global buyers connect with Indian suppliers and source quality products.",
+      image: SourcingAgentIndiaBlogImage,
+      to: "/blog/sourcing-agent-in-india-2027",
+    },
+  ];
   return (
     <>
-      <Hero title={t('pageTitle')} />
+      <Hero title={t("pageTitle")} />
 
       <main className="bg-white py-[60px] max-md:py-10">
-        <div className={`${containerClass} grid grid-cols-3 gap-x-4 gap-y-[18px] max-lg:grid-cols-2 max-md:grid-cols-1`}>
+        <div
+          className={`${containerClass} grid grid-cols-3 gap-x-4 gap-y-[18px] max-lg:grid-cols-2 max-md:grid-cols-1`}
+        >
           {posts.map((post, index) => (
             <article
               className="rounded-[13px] border border-[#d8dce1] bg-white p-3 transition duration-200 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(19,48,84,0.1)]"
               key={`${post.title}-${index}`}
             >
               <div className="h-[160px] overflow-hidden rounded-[7px] bg-[#eaf1f4] max-md:h-[210px] max-[480px]:h-[180px]">
-                <img loading="lazy" decoding="async" className="h-full w-full object-cover" src={post.image} alt={post.title} />
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                  src={post.image}
+                  alt={post.title}
+                />
               </div>
 
               <div className="pt-3">
@@ -121,10 +188,11 @@ const Blog = () => {
 
                 <Link
                   className="mt-5 inline-flex items-center gap-3 text-[16px] font-medium text-[#30c8bb] no-underline"
-                  to={post.to || '/blog'}
-                  aria-label={t('viewMoreAbout', { title: post.title })}
+                  to={post.to || "/blog"}
+                  aria-label={t("viewMoreAbout", { title: post.title })}
                 >
-                  {t('buttons.viewMore', { ns: 'common' })} <ArrowRight size={18} strokeWidth={2} />
+                  {t("buttons.viewMore", { ns: "common" })}{" "}
+                  <ArrowRight size={18} strokeWidth={2} />
                 </Link>
               </div>
             </article>
@@ -134,7 +202,7 @@ const Blog = () => {
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

@@ -5,6 +5,7 @@ import BiomassExporterBlog from "./Components/Blogs/BiomassExporterBlog";
 import CottonToteBagExporterBlog from "./Components/Blogs/CottonToteBagExporterBlog";
 import DecorativeItemsExporterBlog from "./Components/Blogs/DecorativeItemsExporterBlog";
 import HomeDecorManufacturerBlog from "./Components/Blogs/HomeDecorManufacturerBlog";
+import IndianHandicraftExporterBlog from "./Components/Blogs/IndianHandicraftExporterBlog";
 import IndianHandicraftsExporterBlog from "./Components/Blogs/IndianHandicraftsExporterBlog";
 import IndustrialVBeltExporterBlog from "./Components/Blogs/IndustrialVBeltExporterBlog";
 import LuxuryHomeDecorWholesaleBlog from "./Components/Blogs/LuxuryHomeDecorWholesaleBlog";
@@ -13,6 +14,7 @@ import MerchantExporterBlog from "./Components/Blogs/MerchantExporterBlog";
 import MerchantExporterIndiaBlog from "./Components/Blogs/MerchantExporterIndiaBlog";
 import MetalWallDecorManufacturerBlog from "./Components/Blogs/MetalWallDecorManufacturerBlog";
 import PolyresinDecorSupplierBlog from "./Components/Blogs/PolyresinDecorSupplierBlog";
+import SourcingAgentIndiaBlog from "./Components/Blogs/SourcingAgentIndiaBlog";
 import Navbar from "./Components/Common/Navbar";
 import RouteSeo from "./Components/Common/RouteSeo";
 import ScrollToTop from "./Components/Common/ScrollToTop";
@@ -136,6 +138,14 @@ const App = () => (
         element={<MerchantExporterBlog />}
       />
       <Route
+        path="/blog/indian-handicraft-exporter"
+        element={<IndianHandicraftExporterBlog />}
+      />
+      <Route
+        path="/blog/sourcing-agent-in-india-2027"
+        element={<SourcingAgentIndiaBlog />}
+      />
+      <Route
         path="/blog/b2b-sourcing-in-india-guide-for-international-buyers"
         element={<B2BSourcingIndiaBlog />}
       />
@@ -182,6 +192,14 @@ const App = () => (
             replace
           />
         }
+      />
+      <Route
+        path="/indian-handicraft-exporter"
+        element={<Navigate to="/blog/indian-handicraft-exporter" replace />}
+      />
+      <Route
+        path="/sourcing-agent-in-india-2027"
+        element={<Navigate to="/blog/sourcing-agent-in-india-2027" replace />}
       />
       <Route
         path="/metal-wall-decor-manufacturer"
